@@ -34,5 +34,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::ObjectDelays
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectDelays
    :members:

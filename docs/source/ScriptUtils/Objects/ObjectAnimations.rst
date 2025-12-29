@@ -44,5 +44,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::ObjectAnimations
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectAnimations
    :members:

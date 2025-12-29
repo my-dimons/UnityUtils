@@ -14,3 +14,4 @@ Scripts
    
    ObjectDelays
    ObjectAnimations
+   ObjectColorFlash
