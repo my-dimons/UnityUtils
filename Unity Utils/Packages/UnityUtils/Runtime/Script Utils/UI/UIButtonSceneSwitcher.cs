@@ -27,6 +27,11 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            LoadScene();
+        }
+
+        private void LoadScene()
+        {
             bool useSceneName = sceneName != "";
             bool useBuildIndex = buildIndex != -1;
 
