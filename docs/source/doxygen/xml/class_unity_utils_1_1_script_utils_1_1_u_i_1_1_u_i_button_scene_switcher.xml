@@ -85,7 +85,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" line="28" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" bodystart="28" bodyend="42"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" line="28" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1a4b2d65aebf1b35ab7385845aafb5333e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher.LoadScene</definition>
+        <argsstring>()</argsstring>
+        <name>LoadScene</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher.LoadScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" line="33" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" bodystart="33" bodyend="47"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -124,9 +140,10 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" line="8" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" bodystart="9" bodyend="43"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" line="8" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSceneSwitcher.cs" bodystart="9" bodyend="48"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1ad82cbfb6171d2cffeac4b60cbb8533fc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</scope><name>buildIndex</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1a4b2d65aebf1b35ab7385845aafb5333e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</scope><name>LoadScene</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1ac4cf74fdb10c2987c915cef02d60c65e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</scope><name>logSwitch</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1aa96020549d438c2e4ca179b70a87eb37" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</scope><name>OnPointerClick</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1a9dcb2d6e71e03b1d547bfae6bb6ccc82" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</scope><name>sceneMode</name></member>

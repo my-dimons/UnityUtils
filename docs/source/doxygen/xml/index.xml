@@ -84,11 +84,13 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1afb3d737350e89f9c485de2000247ffad" kind="function"><name>CallFunctionAfterTimeCoroutine</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8b7c6a4479e236f90de1e3b6419dad65" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a764580347d79c4d885595155a6bd0f90" kind="function"><name>SpawnBurstParticle</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" kind="function"><name>SetParticleSystemColor</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" kind="function"><name>SetParticleSystemGradientColor</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" kind="function"><name>GetParticleSystem</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleModifier</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a155e3f459a42c8f0cb65a89591e9ab25" kind="function"><name>SetParticleSystemColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a992658b1efb0ea7b30b5366a887beafa" kind="function"><name>SetParticleSystemGradientColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1acb4ae74b1d7e4eea8ac602a54f355dd5" kind="function"><name>GetParticleSystem</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleSpawner</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" kind="function"><name>SpawnBurstParticle</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" kind="class"><name>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" kind="function"><name>GetScriptableObjects&lt; T &gt;</name></member>
@@ -102,6 +104,9 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" kind="function"><name>PlayAudioClipOnSource</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music" kind="class"><name>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" kind="variable"><name>musicSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" kind="variable"><name>fadeVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" kind="variable"><name>lastLoggedPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" kind="variable"><name>musicTracks</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a01739ca739685e352f8d04e24344d187" kind="variable"><name>currentPlayingTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1da5c6f9793376ca46b59dc064b3f940" kind="variable"><name>playOnAwake</name></member>
@@ -114,9 +119,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abaa7aaaba055da7ad7ebe13691a9cc5a" kind="variable"><name>logSongProgress</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" kind="variable"><name>logSongProgessEveryPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abc05157265ad9a1b606d5905efa22011" kind="variable"><name>playingMusicCoroutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" kind="variable"><name>fadeVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" kind="variable"><name>lastLoggedPercent</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" kind="variable"><name>musicSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a772726b4d48200d6b8a8744804f37998" kind="property"><name>Instance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8e1342fbf9e972feb053021961c4f58d" kind="function"><name>Awake</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ae3d9817bbcbfee665495596a41dd65d1" kind="function"><name>Start</name></member>
@@ -215,6 +217,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1a9dcb2d6e71e03b1d547bfae6bb6ccc82" kind="variable"><name>sceneMode</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1ac4cf74fdb10c2987c915cef02d60c65e" kind="variable"><name>logSwitch</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1aa96020549d438c2e4ca179b70a87eb37" kind="function"><name>OnPointerClick</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1a4b2d65aebf1b35ab7385845aafb5333e" kind="function"><name>LoadScene</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonSFX</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" kind="variable"><name>hoverEnterSfx</name></member>
@@ -311,7 +314,9 @@
   </compound>
   <compound refid="_object_delays_8cs" kind="file"><name>ObjectDelays.cs</name>
   </compound>
-  <compound refid="_particle_manager_8cs" kind="file"><name>ParticleManager.cs</name>
+  <compound refid="_particle_modifier_8cs" kind="file"><name>ParticleModifier.cs</name>
+  </compound>
+  <compound refid="_particle_spawner_8cs" kind="file"><name>ParticleSpawner.cs</name>
   </compound>
   <compound refid="_scriptable_object_manager_8cs" kind="file"><name>ScriptableObjectManager.cs</name>
   </compound>

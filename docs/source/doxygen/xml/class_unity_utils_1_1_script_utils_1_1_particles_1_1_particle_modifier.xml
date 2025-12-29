@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Particles::ParticleModifier</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a155e3f459a42c8f0cb65a89591e9ab25" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleModifier.SetParticleSystemColor</definition>
+        <argsstring>(GameObject particleSystem, Color color)</argsstring>
+        <name>SetParticleSystemColor</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleModifier.SetParticleSystemColor</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particleSystem</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the start color of the specified particle system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="11" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a992658b1efb0ea7b30b5366a887beafa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleModifier.SetParticleSystemGradientColor</definition>
+        <argsstring>(GameObject particleSystem, Gradient gradient)</argsstring>
+        <name>SetParticleSystemGradientColor</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleModifier.SetParticleSystemGradientColor</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particleSystem</declname>
+        </param>
+        <param>
+          <type>Gradient</type>
+          <declname>gradient</declname>
+        </param>
+        <briefdescription>
+<para>Sets the start color of the specified particle system to use the provided gradient. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="20" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1acb4ae74b1d7e4eea8ac602a54f355dd5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticleSystem</type>
+        <definition>static ParticleSystem UnityUtils.ScriptUtils.Particles.ParticleModifier.GetParticleSystem</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>GetParticleSystem</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleModifier.GetParticleSystem</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Tries to get the particle system on the given object, prints a warning message if it doesn&apos;t exist and returns null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="29" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="29" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="6" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="7" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1acb4ae74b1d7e4eea8ac602a54f355dd5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleModifier</scope><name>GetParticleSystem</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a155e3f459a42c8f0cb65a89591e9ab25" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleModifier</scope><name>SetParticleSystemColor</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a992658b1efb0ea7b30b5366a887beafa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleModifier</scope><name>SetParticleSystemGradientColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

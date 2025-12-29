@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="27" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="27" bodyend="32"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="17" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="17" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1adcbe0d61861918f7834d42fba958cd43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="40" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="40" bodyend="45"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="30" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="30" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af2b057b6a3c7a73edbe6243fdc43a714" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="57" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="57" bodyend="62"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="47" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="47" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a150e2f880f8736e457fec51e6136a0c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="73" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="73" bodyend="78"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="63" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="63" bodyend="68"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="80" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="80" bodyend="113"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="70" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="70" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -347,14 +347,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="115" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="115" bodyend="125"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="105" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="105" bodyend="115"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="16" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="17" bodyend="126"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="6" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="7" bodyend="116"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a66454cc1a0540e896823beb3047dab48" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>CreateAndPlayAudioClip</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlayAudioClipOnSource</name></member>

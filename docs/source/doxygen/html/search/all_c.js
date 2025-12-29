@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['particlemanager_0',['ParticleManager',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html',1,'UnityUtils::ScriptUtils::Particles']]],
-  ['particlemanager_2ecs_1',['ParticleManager.cs',['../_particle_manager_8cs.html',1,'']]],
-  ['pitchvariance_2',['pitchVariance',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a134326d73212920ba4bebbaed6b7da80',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
-  ['playcliponsource_3',['PlayClipOnSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#a150e2f880f8736e457fec51e6136a0c8',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
-  ['playcontinuousmusic_4',['PlayContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a3a877d3ce82171a3f80ae58ec3c17f4b',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['playingmusiccoroutine_5',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#abc05157265ad9a1b606d5905efa22011',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['playonawake_6',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a1da5c6f9793376ca46b59dc064b3f940',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['playsfxaudioclip_7',['PlaySfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#ac9b3d1cbb84ba0c3ff9a4cc05afb4b44',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
-  ['playsinglerandommusictrack_8',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a876ad7dcaed65730fabb8255a1440593',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['playspacialsfxaudioclip_9',['PlaySpacialSfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#af2b057b6a3c7a73edbe6243fdc43a714',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
-  ['playspecificmusictrack_10',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#ad145c126937f1581efd02370b578e909',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['playtimedsfxaudioclip_11',['PlayTimedSFXAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#adcbe0d61861918f7834d42fba958cd43',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]]
+  ['particlemodifier_0',['ParticleModifier',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html',1,'UnityUtils::ScriptUtils::Particles']]],
+  ['particlemodifier_2ecs_1',['ParticleModifier.cs',['../_particle_modifier_8cs.html',1,'']]],
+  ['particlespawner_2',['ParticleSpawner',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html',1,'UnityUtils::ScriptUtils::Particles']]],
+  ['particlespawner_2ecs_3',['ParticleSpawner.cs',['../_particle_spawner_8cs.html',1,'']]],
+  ['pitchvariance_4',['pitchVariance',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a134326d73212920ba4bebbaed6b7da80',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
+  ['playcliponsource_5',['PlayClipOnSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#a150e2f880f8736e457fec51e6136a0c8',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playcontinuousmusic_6',['PlayContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a3a877d3ce82171a3f80ae58ec3c17f4b',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playingmusiccoroutine_7',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#abc05157265ad9a1b606d5905efa22011',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playonawake_8',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a1da5c6f9793376ca46b59dc064b3f940',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playsfxaudioclip_9',['PlaySfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#ac9b3d1cbb84ba0c3ff9a4cc05afb4b44',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playsinglerandommusictrack_10',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a876ad7dcaed65730fabb8255a1440593',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playspacialsfxaudioclip_11',['PlaySpacialSfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#af2b057b6a3c7a73edbe6243fdc43a714',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playspecificmusictrack_12',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#ad145c126937f1581efd02370b578e909',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playtimedsfxaudioclip_13',['PlayTimedSFXAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#adcbe0d61861918f7834d42fba958cd43',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]]
 ];

@@ -18,7 +18,8 @@ var annotated_dup =
           [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ]
         ] ],
         [ "Particles", "namespace_unity_utils_1_1_script_utils_1_1_particles.html", [
-          [ "ParticleManager", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" ]
+          [ "ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" ],
+          [ "ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" ]
         ] ],
         [ "ScriptableObjects", "namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html", [
           [ "ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" ]

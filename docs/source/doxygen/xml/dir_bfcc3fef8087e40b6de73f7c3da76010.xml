@@ -2,7 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_bfcc3fef8087e40b6de73f7c3da76010" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/Particles</compoundname>
-    <innerfile refid="_particle_manager_8cs">ParticleManager.cs</innerfile>
+    <innerfile refid="_particle_modifier_8cs">ParticleModifier.cs</innerfile>
+    <innerfile refid="_particle_spawner_8cs">ParticleSpawner.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

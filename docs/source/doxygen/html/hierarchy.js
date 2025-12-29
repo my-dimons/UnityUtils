@@ -3,6 +3,7 @@ var hierarchy =
     [ "UnityUtils.ScriptUtils.Audio.AudioManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html", null ],
     [ "UnityUtils.ScriptUtils.Cameras.CameraShake", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html", null ],
     [ "IPointerClickHandler", null, [
+      [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html", null ]
     ] ],
@@ -41,7 +42,8 @@ var hierarchy =
     ] ],
     [ "UnityUtils.ScriptUtils.Objects.ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", null ],
     [ "UnityUtils.ScriptUtils.Objects.ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", null ],
-    [ "UnityUtils.ScriptUtils.Particles.ParticleManager", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html", null ],
+    [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
+    [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
     [ "UnityUtils.ScriptUtils.ScriptableObjects.ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", null ],
     [ "UnityUtils.ScriptUtils.Audio.SfxManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html", null ]
 ];

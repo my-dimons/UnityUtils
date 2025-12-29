@@ -5,6 +5,7 @@
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a76ae6ab5a46c5baf88ee1d2e53799912" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -116,6 +117,9 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
       <node id="3">
         <label>IPointerEnterHandler</label>
       </node>
@@ -133,10 +137,15 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
       <node id="3">
         <label>IPointerEnterHandler</label>
       </node>
@@ -154,6 +163,8 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

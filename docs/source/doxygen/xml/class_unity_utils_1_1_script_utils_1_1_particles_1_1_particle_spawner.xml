@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Particles::ParticleSpawner</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleSpawner.SpawnBurstParticle</definition>
+        <argsstring>(GameObject particlePrefab, Vector3 position, Transform parent=null, Color color=default, Gradient gradient=default)</argsstring>
+        <name>SpawnBurstParticle</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleSpawner.SpawnBurstParticle</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particlePrefab</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>parent</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>Gradient</type>
+          <declname>gradient</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Spawns a burst particle prefab at the given position Has adjustable color or gradient, but doesn&apos;t need to be inputted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particlePrefab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Particle system to spawn (Gameobject with particle system applied)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to spawn the particlePrefab at</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent to parent the prefab to on spawn</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color to set the particlePrefab to</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gradient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gradient to set the particlePrefab to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="18" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="18" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="7" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="8" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleSpawner</scope><name>SpawnBurstParticle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

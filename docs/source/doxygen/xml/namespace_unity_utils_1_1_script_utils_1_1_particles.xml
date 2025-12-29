@@ -2,11 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::Particles</compoundname>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" prot="public">UnityUtils::ScriptUtils::Particles::ParticleManager</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" prot="public">UnityUtils::ScriptUtils::Particles::ParticleModifier</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" prot="public">UnityUtils::ScriptUtils::Particles::ParticleSpawner</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="4" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="4" column="1"/>
   </compounddef>
 </doxygen>
