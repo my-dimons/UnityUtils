@@ -1,10 +1,10 @@
-ParticleManager
+ParticleModifier
 ================
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Particles`
      
-The **ParticleManager** is used to easily play and edit particle systems.
+The **ParticleModifier** is used to easily play particle systems.
 
 Example Usage
 -------------
@@ -15,21 +15,17 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	public GameObject particlePrefab;
    	public GameObject particles;
    	
    	void Start()
    	{
-   	   // Spawn burst particles.
-   	   ParticleManager.SpawnBurstParticles(particlePrefab, Vector3.zero);
-   	   
    	   // Set particle system colour.
-   	   ParticleManager.SetParticleSystemColor(particles, Color.blue);
+   	   ParticleModifier.SetParticleSystemColor(particles, Color.blue);
    	}
    }
    
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Particles::ParticleManager
+.. doxygenclass:: UnityUtils::ScriptUtils::Particles::ParticleModifier
    :members:

@@ -8,7 +8,7 @@ using static UnityUtils.ScriptUtils.Audio.AudioManager;
 namespace UnityUtils.ScriptUtils.UI
 {
     [RequireComponent(typeof(Button))]
-    public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler 
     {
         [Header("Debug")]
 

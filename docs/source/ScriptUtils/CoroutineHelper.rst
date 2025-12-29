@@ -4,7 +4,7 @@ CoroutineHelper
 **NAMESPACE:**
    `UnityUtils.ScriptUtils`
      
-The **CoroutineHelper** script is used to start coroutines in a static class.
+The **CoroutineHelper** script is used to start coroutines in a static class. Coroutines are stopped on scene load.
 
 Example Usage
 -------------
@@ -29,6 +29,7 @@ Example Usage
    	   Debug.Log("Coroutine Ended");
    	}
    }  
+   
 Functions
 ---------
 

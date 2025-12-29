@@ -44,7 +44,7 @@ namespace UnityUtils.ScriptUtils.UI
         {
             foreach (GameObject particle in particles)
             {
-                ParticleManager.SpawnBurstParticle(particle, transform.position);
+                ParticleSpawner.SpawnBurstParticle(particle, transform.position);
             }
 
             if (logSpawn)
