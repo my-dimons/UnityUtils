@@ -1,3 +1,10 @@
+## v1.2.1
+
+### Additions
+- UIButtonQuitGame
+
+### Changes
+
 ## v1.2
 
 ### Additions

@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityUtils.ScriptUtils.Audio;
-using static UnityUtils.ScriptUtils.Audio.AudioManager;
 
 namespace UnityUtils.ScriptUtils.UI
 {
     [RequireComponent(typeof(Button))]
-    public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler 
+    public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         [Header("Debug")]
 

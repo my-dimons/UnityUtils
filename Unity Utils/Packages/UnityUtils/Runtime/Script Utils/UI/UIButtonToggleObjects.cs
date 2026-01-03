@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityUtils.ScriptUtils.Audio;
-using UnityUtils.ScriptUtils.Particles;
-using static UnityUtils.ScriptUtils.Audio.AudioManager;
 
 namespace UnityUtils.ScriptUtils.UI
 {
@@ -13,13 +9,13 @@ namespace UnityUtils.ScriptUtils.UI
     {
         [Header("Objects")]
 
-        /// Will spawn all prefabs in this array on hover
+        /// Will toggle all objects's active state in this array on hover
         public GameObject[] hoverToggleObjects;
 
-        /// Will spawn all prefabs in this array on hover exit
+        /// Will toggle all objects's active state in this array on hover exit
         public GameObject[] exitToggleObjects;
 
-        /// Will spawn all prefabs in this array on click
+        /// Will toggle all objects's active state in this array on click
         public GameObject[] clickToggleObjects;
 
         [Header("Debug")]

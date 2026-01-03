@@ -22,3 +22,4 @@ Scripts
    UIButtonToggleObjects
    UIButtonSceneSwitcher
    UIButtonHoverPosition
+   UIButtonQuitGame

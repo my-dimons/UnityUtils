@@ -118,7 +118,7 @@ namespace UnityUtils.ScriptUtils.UI
         void ExitHoverAnimation()
         {
             ObjectAnimations.AnimateTransformRotation(applyTransform, useRandomRotation ? currentRandomRotation : hoverRotationVector, originalRotation, rotationAnimationSeconds, useRealtime, SizingCurve);
-            
+
             if (logRotateBack)
                 Debug.Log("Rotating button back");
 

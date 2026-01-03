@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityUtils.ScriptUtils.Audio;
 using UnityUtils.ScriptUtils.Particles;
-using static UnityUtils.ScriptUtils.Audio.AudioManager;
 
 namespace UnityUtils.ScriptUtils.UI
 {
