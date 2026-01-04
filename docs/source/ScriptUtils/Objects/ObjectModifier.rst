@@ -1,4 +1,4 @@
-ObjectModifier
+ObjectModifiers
 ==========
 
 **NAMESPACE:**
@@ -42,10 +42,10 @@ Example Usage
    	   // Adds a modifier temporarily for 1 second.
    	   healthModifiers.AddTemporaryModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Flat, 3), 1);
    	}
-  }
+   }
   
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifier
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifiers
    :members:
