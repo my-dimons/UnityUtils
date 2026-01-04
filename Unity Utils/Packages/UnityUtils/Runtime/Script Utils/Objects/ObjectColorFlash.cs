@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System.IO;
+
 namespace UnityUtils.ScriptUtils.Objects
 {
     public class ObjectColorFlash : MonoBehaviour

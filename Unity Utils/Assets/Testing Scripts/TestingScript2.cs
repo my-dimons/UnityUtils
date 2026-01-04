@@ -4,11 +4,30 @@ using UnityUtils.ScriptUtils;
 using UnityUtils.ScriptUtils.Objects;
 using UnityEngine.SceneManagement;
 using UnityUtils.ScriptUtils.Cameras;
+using JetBrains.Annotations;
 
 public class TestingScript2 : MonoBehaviour
 {
     private void Start()
     {
+        ObjectModifiers modifierTest = new ObjectModifiers();
+        modifierTest.AddModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Flat, 1));
+        modifierTest.AddModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Multiplier, 5));
+        modifierTest.AddModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Flat, 14));
+        modifierTest.AddModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Division, 3));
+        modifierTest.AddModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Flat, 19));
+        modifierTest.PrintModifierOrder();
+        modifierTest.PrintModifiers();
+
+        modifierTest.SortModifiers();
+
+        modifierTest.PrintModifiers();
+
+        Debug.Log("value of 1: " + modifierTest.CalculateModifiers(1));
+        Debug.Log("value of 5: " + modifierTest.CalculateModifiers(5));
+
+        modifierTest.AddTemporaryModifier(new ObjectModifierData(ObjectModifiers.ModifierType.Flat, 3), 1);
+
         ObjectDelays.CallFunctionAfterTime(() => CameraShake.Screenshake(intensity: 5), 3);
         ObjectDelays.CallFunctionAfterTime(() => GetComponent<ObjectColorFlash>().FlashColor(Color.blue, 2), 3);
     }

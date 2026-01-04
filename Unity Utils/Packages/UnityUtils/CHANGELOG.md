@@ -1,7 +1,9 @@
 ## v1.2.1
 
 ### Additions
-- UIButtonQuitGame
+- UIButtonQuitGame.cs
+- ObjectModifiers.cs
+- ObjectModifierData.cs
 
 ### Changes
 

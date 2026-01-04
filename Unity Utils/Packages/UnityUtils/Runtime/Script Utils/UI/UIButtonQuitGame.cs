@@ -5,7 +5,7 @@ using UnityEngine.UI;
 namespace UnityUtils.ScriptUtils.UI
 {
     [RequireComponent(typeof(Button))]
-    public class UIButtonQuitGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UIButtonQuitGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         [Header("Objects")]
 

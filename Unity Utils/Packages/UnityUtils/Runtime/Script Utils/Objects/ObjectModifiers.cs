@@ -1,0 +1,158 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityUtils.ScriptUtils;
+
+namespace UnityUtils.ScriptUtils.Objects
+{
+    public class ObjectModifiers
+    {
+        /// Types of modifiers (Flat = '-/+', Multiplier = '*', Division = '/')
+        public enum ModifierType
+        {
+            Flat,
+            Multiplier,
+            Division
+        }
+
+        /// The default modifier order
+        public static readonly ModifierType[] DEFAULT_MODIFIER_ORDER = new ModifierType[] { ModifierType.Flat, ModifierType.Multiplier, ModifierType.Division };
+
+        /// The applied modifier order
+        public ModifierType[] ModifierOrder = DEFAULT_MODIFIER_ORDER;
+
+        /// Modifiers to be applied when calculating modifiers, must be modified via <see cref="AddModifier(ObjectModifierData)"/>, or temporarily modified via <see cref="AddTemporaryModifier(ObjectModifierData, float, bool)"/>
+        public List<ObjectModifierData> Modifiers { get; private set; } = new List<ObjectModifierData>();
+
+        /// <summary>
+        /// Adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>
+        /// </summary>
+        /// <param name="modifier">The modifier to add to the object</param>
+        public void AddModifier(ObjectModifierData modifier) { Modifiers.Add(modifier); }
+
+        /// <summary>
+        /// Creates a new <see cref="ObjectModifierData"/> with the specified <see cref="ModifierType"/> and value and adds it to <see cref="Modifiers"/>
+        /// </summary>
+        /// <param name="modifierType">The type of modifier to add</param>
+        /// <param name="modifierValue">The value associated with the modifier</param>
+        public void AddModifier(ModifierType modifierType, float modifierValue) { Modifiers.Add(new ObjectModifierData(modifierType, modifierValue)); }
+
+        /// <summary>
+        /// Temporarily adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>. Once the time is over, it will remove the <see cref="ObjectModifierData"/> from <see cref="Modifiers"/>
+        /// </summary>
+        /// <param name="modifier">The modifier to apply to the object.</param>
+        /// <param name="time">(In seconds) how long the <see cref="ObjectModifierData"/> stays in <see cref="Modifiers"/> for</param>
+        /// <param name="useRealtime">Indicates whether the duration should be measured using real time instead of game time</param>
+        public void AddTemporaryModifier(ObjectModifierData modifier, float time, bool useRealtime = false)
+        {
+            CoroutineHelper.Starter.StartCoroutine(AddTemporaryModifierCoroutine(modifier, time, useRealtime));
+        }
+
+        private IEnumerator AddTemporaryModifierCoroutine(ObjectModifierData modifier, float time, bool useRealtime)
+        {
+            AddModifier(modifier);
+            yield return useRealtime ? new WaitForSecondsRealtime(time) : new WaitForSeconds(time);
+            RemoveModifier(modifier);
+        }
+
+        /// <summary>
+        /// Removes the specified modifier from <see cref="Modifiers"/>
+        /// </summary>
+        /// <param name="modifierType">The modifier to remove from the object</param>
+        public void RemoveModifier(ObjectModifierData modifierType) { Modifiers.Remove(modifierType); }
+
+        /// <summary>
+        /// Calculates the result of applying all <see cref="Modifiers"/> to the input value.
+        /// </summary>
+        /// <param name="inputValue">The initial value to which modifiers will be applied.</param>
+        /// <param name="sortModifiers">true to sort the modifiers before applying them based on <see cref="ModifierOrder"/>; otherwise, false</param>
+        /// <returns>Value calculated based on the <see cref="Modifiers"/></returns>
+        public float CalculateModifiers(float inputValue, bool sortModifiers = true)
+        {
+            if (sortModifiers)
+                SortModifiers();
+
+            float finalValue = inputValue;
+
+            foreach (ObjectModifierData modifier in Modifiers)
+            {
+                switch (modifier.modifierType)
+                {
+                    case ModifierType.Flat:
+                        finalValue += modifier.modifierValue;
+                        break;
+                    case ModifierType.Multiplier:
+                        finalValue *= modifier.modifierValue;
+                        break;
+                    case ModifierType.Division:
+                        finalValue /= modifier.modifierValue;
+                        break;
+                }
+            }
+
+            return finalValue;
+        }
+
+        /// <summary>
+        /// Sorts <see cref="Modifiers"/> according to the specified order of <paramref name="sort"/>.
+        /// </summary>
+        /// <param name="sort"><see cref="ModifierType"/> array that defines the desired sort order. Modifiers are ordered to match the sequence
+        /// of types in this array.</param>
+        public void SortModifiers(ModifierType[] sort)
+        {
+            List<ObjectModifierData> SortedModifiers = Modifiers;
+
+            SortedModifiers.Sort((a, b) =>
+            {
+                int indexA = System.Array.IndexOf(sort, a.modifierType);
+                int indexB = System.Array.IndexOf(sort, b.modifierType);
+
+                return indexA.CompareTo(indexB);
+            });
+
+            Modifiers = SortedModifiers;
+        }
+
+        /// <summary>
+        /// Sorts <see cref="Modifiers"/> using <see cref="ModifierOrder"/>.
+        /// </summary>
+        public void SortModifiers()
+        {
+            SortModifiers(ModifierOrder);
+        }
+
+        /// <summary>
+        /// Prints the type and value of each <see cref="Modifiers"/> to the debug log.
+        /// </summary>
+        public void PrintModifiers()
+        {
+            string printOutput = "";
+
+            foreach (ObjectModifierData modifier in Modifiers)
+            {
+                string modifierType = "Modifier Type: " + modifier.modifierType.ToString();
+                string modifierValue = "Modifier Value: " + modifier.modifierValue.ToString();
+
+                printOutput += modifierType + ", " + modifierValue + "\n";
+
+            }
+
+            Debug.Log(printOutput);
+        }
+
+        /// <summary>
+        /// Outputs the current order of <see cref="ModifierOrder"/> to the debug log.
+        /// </summary>
+        public void PrintModifierOrder()
+        {
+            string printOutput = "Modifier Order: ";
+
+            foreach (ModifierType modifier in ModifierOrder)
+            {
+                printOutput += modifier + " ";
+            }
+
+            Debug.Log(printOutput);
+        }
+    }
+}

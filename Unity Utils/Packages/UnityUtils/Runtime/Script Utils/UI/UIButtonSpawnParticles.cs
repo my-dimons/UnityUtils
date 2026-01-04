@@ -6,7 +6,7 @@ using UnityUtils.ScriptUtils.Particles;
 namespace UnityUtils.ScriptUtils.UI
 {
     [RequireComponent(typeof(Button))]
-    public class UIButtonSpawnParticles : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UIButtonSpawnParticles : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         [Header("Particles")]
 
