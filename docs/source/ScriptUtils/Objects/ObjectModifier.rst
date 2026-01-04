@@ -4,7 +4,7 @@ ObjectModifiers
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Objects`
      
-The **ObjectModifier** script is used in turn with :doc:`ObjectModifierData` to apply modifiers to variables. 
+The **ObjectModifiers** script is used in turn with :doc:`ObjectModifierData` to apply modifiers to variables. 
 
 .. note::
 

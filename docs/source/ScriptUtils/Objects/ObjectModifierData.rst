@@ -4,7 +4,7 @@ ObjectModifierData
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Objects`
      
-The **ObjectModifierData** script is used in turn with :doc:`ObjectModifier` to apply modifiers to variables
+The **ObjectModifierData** script is used in turn with :doc:`ObjectModifiers` to apply modifiers to variables
 
 Example Usage
 -------------
@@ -22,7 +22,7 @@ Example Usage
    	   // Creates a new ObjectModifierData object
    	   data = new ObjectModifierData(ObjectModifiers.ModifierType.Division, 3))
    	}
-  }
+   }
   
 Functions
 ---------
