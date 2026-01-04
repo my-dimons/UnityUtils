@@ -15,5 +15,5 @@ Scripts
    ObjectDelays
    ObjectAnimations
    ObjectColorFlash
-   ObjectModifier
+   ObjectModifiers
    ObjectModifierData
