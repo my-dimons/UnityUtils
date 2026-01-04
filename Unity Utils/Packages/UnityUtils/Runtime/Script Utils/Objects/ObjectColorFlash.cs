@@ -4,6 +4,7 @@ using System.IO;
 
 namespace UnityUtils.ScriptUtils.Objects
 {
+    [RequireComponent(typeof(SpriteRenderer))]
     public class ObjectColorFlash : MonoBehaviour
     {
         [Header("Debug Logs")]
