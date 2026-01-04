@@ -6,6 +6,7 @@
     <innerfile refid="_u_i_button_hover_expand_8cs">UIButtonHoverExpand.cs</innerfile>
     <innerfile refid="_u_i_button_hover_position_8cs">UIButtonHoverPosition.cs</innerfile>
     <innerfile refid="_u_i_button_hover_rotate_8cs">UIButtonHoverRotate.cs</innerfile>
+    <innerfile refid="_u_i_button_quit_game_8cs">UIButtonQuitGame.cs</innerfile>
     <innerfile refid="_u_i_button_scene_switcher_8cs">UIButtonSceneSwitcher.cs</innerfile>
     <innerfile refid="_u_i_button_sfx_8cs">UIButtonSfx.cs</innerfile>
     <innerfile refid="_u_i_button_spawn_particles_8cs">UIButtonSpawnParticles.cs</innerfile>

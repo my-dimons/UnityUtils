@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Objects::ObjectModifierData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref></type>
+        <definition>ObjectModifiers.ModifierType UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierType</definition>
+        <argsstring></argsstring>
+        <name>modifierType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="5" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierValue</definition>
+        <argsstring></argsstring>
+        <name>modifierValue</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a278c8d5533240b6d8e2d61ef093964b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityUtils.ScriptUtils.Objects.ObjectModifierData.ObjectModifierData</definition>
+        <argsstring>(ObjectModifiers.ModifierType modifierType, float modifierValue)</argsstring>
+        <name>ObjectModifierData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.ObjectModifierData</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref></type>
+          <declname>modifierType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>modifierValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="8" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="8" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Objects.ObjectModifierData</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>modifierType</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.Objects.ObjectModifiers</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers"/>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="3" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="4" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData</scope><name>modifierType</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData</scope><name>modifierValue</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a278c8d5533240b6d8e2d61ef093964b5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData</scope><name>ObjectModifierData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

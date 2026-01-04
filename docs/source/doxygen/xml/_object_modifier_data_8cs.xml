@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_object_modifier_data_8cs" kind="file" language="C#">
+    <compoundname>ObjectModifierData.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifierData</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_objects">UnityUtils::ScriptUtils::Objects</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kindref="compound">UnityUtils.ScriptUtils.Objects</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3" refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a278c8d5533240b6d8e2d61ef093964b5" kindref="member">ObjectModifierData</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" kindref="member">modifierType</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" kindref="member">modifierValue</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a278c8d5533240b6d8e2d61ef093964b5" kindref="member">ObjectModifierData</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" kindref="compound">ObjectModifiers</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ModifierType</ref><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" kindref="member">modifierType</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" kindref="member">modifierValue</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.modifierType<sp/>=<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" kindref="member">modifierType</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.modifierValue<sp/>=<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" kindref="member">modifierValue</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs"/>
+  </compounddef>
+</doxygen>

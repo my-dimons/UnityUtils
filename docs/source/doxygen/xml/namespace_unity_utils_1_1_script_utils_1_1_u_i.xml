@@ -6,6 +6,7 @@
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game" prot="public">UnityUtils::ScriptUtils::UI::UIButtonQuitGame</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSFX</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</innerclass>
@@ -14,6 +15,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonDebugLogs.cs" line="8" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonDebugLogs.cs" line="5" column="1"/>
   </compounddef>
 </doxygen>

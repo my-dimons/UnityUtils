@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="11" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="12" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="14" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="15" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a30c5be54746bff0d8a5ceac9f690d751" prot="private" static="no" mutable="no">
         <type>Material</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="18" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="19" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1aa4f631c48875315841a8ee13084596cd" prot="private" static="no" mutable="no">
         <type>Material</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="20" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="21" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" prot="private" static="no" mutable="no">
         <type>SpriteRenderer</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="22" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="22" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="23" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7b66d4817ea097f4cdab9060c7c968f3" prot="private" static="no" mutable="no">
         <type>Color</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="24" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="24" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="25" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" prot="private" static="no" mutable="no">
         <type>Coroutine</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="26" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="27" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="16" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="16" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="17" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="28" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="28" bodyend="41"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="29" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="29" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a8cd72420f1e60c79a7b83e7bdf25a527" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="67" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="67" bodyend="84"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="68" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="68" bodyend="85"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="46" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="46" bodyend="49"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="47" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="56" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="56" bodyend="65"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="57" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="57" bodyend="66"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -248,7 +248,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="7" bodyend="85"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="7" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="8" bodyend="86"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashColor</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a30c5be54746bff0d8a5ceac9f690d751" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>flashMaterial</name></member>

@@ -84,6 +84,30 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1afb3d737350e89f9c485de2000247ffad" kind="function"><name>CallFunctionAfterTimeCoroutine</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8b7c6a4479e236f90de1e3b6419dad65" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectModifierData</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" kind="variable"><name>modifierType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" kind="variable"><name>modifierValue</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a278c8d5533240b6d8e2d61ef093964b5" kind="function"><name>ObjectModifierData</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectModifiers</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kind="enum"><name>ModifierType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9da745e3db6a7ffd50e1a72b39482f0882d" kind="enumvalue"><name>Flat</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9daee34a21131a5636ee8dcf521e2369bee" kind="enumvalue"><name>Multiplier</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9da3025cdaab2deb0bb2cd642449e570833" kind="enumvalue"><name>Division</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a327be8f2eb6957b226bedc4c5fb9daca" kind="variable"><name>DEFAULT_MODIFIER_ORDER</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a300ce01c959731bbfc6ef8ff3f7c494a" kind="variable"><name>ModifierOrder</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" kind="property"><name>Modifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a0d392e85253a1fab769703f2e5bac977" kind="function"><name>AddModifier</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a166ae274aa6d9cb49a1622eecd02a2c2" kind="function"><name>AddModifier</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a345e16ed56aaa66dad679ea2a404fd8a" kind="function"><name>AddTemporaryModifier</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aa8fcdbdb985b0e9ceb4c23b55fb4cf9b" kind="function"><name>RemoveModifier</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a0e2c08333523c52a37ddbd4018b41d14" kind="function"><name>CalculateModifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a31101e05e4050052c75c7198d17d7a4f" kind="function"><name>SortModifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1af11df11a9f58c463318dca916f6bb5fb" kind="function"><name>SortModifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a0e896667bacd0be2d555ca48a09a22fe" kind="function"><name>PrintModifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1ac3eead45f959652a96246c6724fbf3d5" kind="function"><name>PrintModifierOrder</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a41d2296981dcee377be29e3f7a867bda" kind="function"><name>AddTemporaryModifierCoroutine</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleModifier</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a155e3f459a42c8f0cb65a89591e9ab25" kind="function"><name>SetParticleSystemColor</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a992658b1efb0ea7b30b5366a887beafa" kind="function"><name>SetParticleSystemGradientColor</name></member>
@@ -211,6 +235,16 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9659493dd310e72215a17de4676f2587" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" kind="function"><name>OnPointerExit</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a882b1fa1f294832a3f43e5954c673cc2" kind="variable"><name>hoverQuit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a89c291f9246c9a9ffae076a53e459583" kind="variable"><name>exitQuit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad92170ee6ff16206fd7263c9de8c2087" kind="variable"><name>clickQuit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1add6b0ec7520642c46cae113425a1d32b" kind="variable"><name>logQuit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad33fb421062230789e34bb553e0f3107" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ae65996b682fda47ff212a9f1d82e92b2" kind="function"><name>OnPointerExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3a5a1fb15312aac861682f42f7078662" kind="function"><name>OnPointerClick</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a852e394c9c7f0b3f2f64f0a6be98f3f1" kind="function"><name>QuitGame</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1aa4465098921687070fb22d5d33c28389" kind="variable"><name>sceneName</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher_1ad82cbfb6171d2cffeac4b60cbb8533fc" kind="variable"><name>buildIndex</name></member>
@@ -254,8 +288,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kind="function"><name>OnPointerClick</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" kind="function"><name>ToggleObjects</name></member>
   </compound>
-  <compound refid="namespacestatic" kind="namespace"><name>static</name>
-  </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
@@ -281,8 +313,6 @@
   <compound refid="namespace_unity_utils_1_1_script_utils" kind="namespace"><name>UnityUtils::ScriptUtils</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kind="namespace"><name>UnityUtils::ScriptUtils::Audio</name>
-  </compound>
-  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="namespace"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_cameras" kind="namespace"><name>UnityUtils::ScriptUtils::Cameras</name>
   </compound>
@@ -314,6 +344,10 @@
   </compound>
   <compound refid="_object_delays_8cs" kind="file"><name>ObjectDelays.cs</name>
   </compound>
+  <compound refid="_object_modifier_data_8cs" kind="file"><name>ObjectModifierData.cs</name>
+  </compound>
+  <compound refid="_object_modifiers_8cs" kind="file"><name>ObjectModifiers.cs</name>
+  </compound>
   <compound refid="_particle_modifier_8cs" kind="file"><name>ParticleModifier.cs</name>
   </compound>
   <compound refid="_particle_spawner_8cs" kind="file"><name>ParticleSpawner.cs</name>
@@ -327,6 +361,8 @@
   <compound refid="_u_i_button_hover_position_8cs" kind="file"><name>UIButtonHoverPosition.cs</name>
   </compound>
   <compound refid="_u_i_button_hover_rotate_8cs" kind="file"><name>UIButtonHoverRotate.cs</name>
+  </compound>
+  <compound refid="_u_i_button_quit_game_8cs" kind="file"><name>UIButtonQuitGame.cs</name>
   </compound>
   <compound refid="_u_i_button_scene_switcher_8cs" kind="file"><name>UIButtonSceneSwitcher.cs</name>
   </compound>

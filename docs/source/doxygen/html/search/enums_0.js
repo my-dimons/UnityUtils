@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volumetype_0',['VolumeType',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['modifiertype_0',['ModifierType',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html#aeab004c6986f97db403b768d0a985b9d',1,'UnityUtils::ScriptUtils::Objects::ObjectModifiers']]]
 ];

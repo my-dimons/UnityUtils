@@ -5,6 +5,8 @@
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" prot="public">UnityUtils::ScriptUtils::Objects::ObjectAnimations</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" prot="public">UnityUtils::ScriptUtils::Objects::ObjectColorFlash</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" prot="public">UnityUtils::ScriptUtils::Objects::ObjectDelays</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifierData</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifiers</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

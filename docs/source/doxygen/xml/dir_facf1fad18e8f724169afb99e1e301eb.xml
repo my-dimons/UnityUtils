@@ -5,6 +5,8 @@
     <innerfile refid="_object_animations_8cs">ObjectAnimations.cs</innerfile>
     <innerfile refid="_object_color_flash_8cs">ObjectColorFlash.cs</innerfile>
     <innerfile refid="_object_delays_8cs">ObjectDelays.cs</innerfile>
+    <innerfile refid="_object_modifier_data_8cs">ObjectModifierData.cs</innerfile>
+    <innerfile refid="_object_modifiers_8cs">ObjectModifiers.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

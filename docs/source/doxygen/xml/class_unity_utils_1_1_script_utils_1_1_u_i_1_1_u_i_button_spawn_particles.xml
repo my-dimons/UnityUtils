@@ -5,6 +5,7 @@
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a02a76b078ec7315b5ffdc10f383061a8" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -19,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="17" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="17" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="14" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4ddf601a74156e0c3775792aa1f9ece4" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -34,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="20" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="17" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1aac66c4bfedf50856ecbdfe872fb380f9" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -49,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="23" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="23" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="20" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4efb31a0e91f9126130b08ec5dadf472" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -63,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="26" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="23" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -83,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="28" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="28" bodyend="31"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="25" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="25" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a79c9823b680448d3c0c7b3f6e555c5db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -101,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="33" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="33" bodyend="36"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="30" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1ada07523b1ea986b43ac4060efbd98bb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -119,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="38" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="38" bodyend="41"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="35" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="35" bodyend="38"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -139,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="43" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="43" bodyend="54"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="40" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="40" bodyend="51"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -147,6 +148,9 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
       <node id="3">
         <label>IPointerEnterHandler</label>
       </node>
@@ -164,10 +168,15 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
       <node id="3">
         <label>IPointerEnterHandler</label>
       </node>
@@ -186,9 +195,11 @@
         </childnode>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="12" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="13" bodyend="55"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="9" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="10" bodyend="52"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1aac66c4bfedf50856ecbdfe872fb380f9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</scope><name>clickParticlePrefabs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4ddf601a74156e0c3775792aa1f9ece4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</scope><name>exitParticlePrefabs</name></member>

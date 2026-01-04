@@ -11,59 +11,55 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.EventSystems;</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">UnityUtils.ScriptUtils.Audio</ref>;</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kindref="compound">UnityUtils.ScriptUtils.Particles</ref>;</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">static<sp/><ref refid="namespace_unity_utils" kindref="compound">UnityUtils</ref>.<ref refid="namespace_unity_utils_1_1_script_utils" kindref="compound">ScriptUtils</ref>.<ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">Audio</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kindref="compound">AudioManager</ref>;</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" kindref="compound">UnityUtils.ScriptUtils.UI</ref></highlight></codeline>
-<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>[RequireComponent(typeof(Button))]</highlight></codeline>
-<codeline lineno="12" refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" kindref="compound">UIButtonToggleObjects</ref><sp/>:<sp/>MonoBehaviour,<sp/>IPointerEnterHandler,<sp/>IPointerExitHandler</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Objects&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" kindref="member">hoverToggleObjects</ref>;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" kindref="member">exitToggleObjects</ref>;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" kindref="member">clickToggleObjects</ref>;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Debug&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" kindref="member">logToggle</ref>;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a6caf821391115f9de1261aff5fdb64da" kindref="member">OnPointerEnter</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" kindref="member">hoverToggleObjects</ref>);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" kindref="member">OnPointerExit</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" kindref="member">exitToggleObjects</ref>);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kindref="member">OnPointerClick</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" kindref="member">clickToggleObjects</ref>);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ToggleObjects(GameObject[]<sp/>objects)</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(GameObject<sp/>obj<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>objects)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.SetActive(!obj.activeSelf);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" kindref="member">logToggle</ref>)</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Spawned<sp/>particle<sp/>system:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>objects);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.EventSystems;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" kindref="compound">UnityUtils.ScriptUtils.UI</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>[RequireComponent(typeof(Button))]</highlight></codeline>
+<codeline lineno="8" refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" kindref="compound">UIButtonToggleObjects</ref><sp/>:<sp/>MonoBehaviour,<sp/>IPointerEnterHandler,<sp/>IPointerExitHandler,<sp/>IPointerClickHandler</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Objects&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" kindref="member">hoverToggleObjects</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" kindref="member">exitToggleObjects</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" kindref="member">clickToggleObjects</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Debug&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" kindref="member">logToggle</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a6caf821391115f9de1261aff5fdb64da" kindref="member">OnPointerEnter</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" kindref="member">hoverToggleObjects</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" kindref="member">OnPointerExit</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" kindref="member">exitToggleObjects</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kindref="member">OnPointerClick</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToggleObjects(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" kindref="member">clickToggleObjects</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ToggleObjects(GameObject[]<sp/>objects)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(GameObject<sp/>obj<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>objects)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.SetActive(!obj.activeSelf);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" kindref="member">logToggle</ref>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Spawned<sp/>particle<sp/>system:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>objects);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs"/>
   </compounddef>
