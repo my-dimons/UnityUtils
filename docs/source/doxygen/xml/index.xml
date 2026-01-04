@@ -96,7 +96,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9da3025cdaab2deb0bb2cd642449e570833" kind="enumvalue"><name>Division</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a327be8f2eb6957b226bedc4c5fb9daca" kind="variable"><name>DEFAULT_MODIFIER_ORDER</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a300ce01c959731bbfc6ef8ff3f7c494a" kind="variable"><name>ModifierOrder</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" kind="property"><name>Modifiers</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" kind="variable"><name>Modifiers</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a0d392e85253a1fab769703f2e5bac977" kind="function"><name>AddModifier</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a166ae274aa6d9cb49a1622eecd02a2c2" kind="function"><name>AddModifier</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a345e16ed56aaa66dad679ea2a404fd8a" kind="function"><name>AddTemporaryModifier</name></member>

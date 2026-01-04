@@ -73,9 +73,7 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" line="22" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="property">
-      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" prot="public" static="no" mutable="no">
         <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kindref="compound">ObjectModifierData</ref> &gt;</type>
         <definition>List&lt;ObjectModifierData&gt; UnityUtils.ScriptUtils.Objects.ObjectModifiers.Modifiers</definition>
         <argsstring></argsstring>
@@ -89,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" line="25" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" bodystart="25" bodyend="25"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" line="25" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifiers.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
