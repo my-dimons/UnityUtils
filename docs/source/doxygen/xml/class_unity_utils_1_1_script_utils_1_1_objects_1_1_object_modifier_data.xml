@@ -10,12 +10,13 @@
         <name>modifierType</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierType</qualifiedname>
         <briefdescription>
+<para>Specifies the type of modifier applied to the object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="5" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="5" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="6" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -24,12 +25,13 @@
         <name>modifierValue</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierValue</qualifiedname>
         <briefdescription>
+<para>Value of the modifier applied to an operation or calculation. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="6" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="9" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -48,12 +50,31 @@
           <declname>modifierValue</declname>
         </param>
         <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kindref="compound">ObjectModifierData</ref> class with the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref> and value. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifierType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of modifier</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modifierValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value associated with the modifier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="8" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="8" bodyend="12"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="16" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="16" bodyend="20"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -73,7 +94,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="3" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="4" bodyend="13"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="3" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="4" bodyend="21"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a8f623ed4029107a39b1a7b8fef5c78ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData</scope><name>modifierType</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data_1a02c5f185ed082da6230ed313755678ff" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData</scope><name>modifierValue</name></member>
