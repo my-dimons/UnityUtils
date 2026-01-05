@@ -31,8 +31,6 @@ Example Usage
    	}
    }
    
-Functions
----------
+.. note :: 
 
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::ISaveData
-   :members:
+   This interface contains no implementable methods, but is used to make sure its a SaveData file (In use with SaveSystems).
