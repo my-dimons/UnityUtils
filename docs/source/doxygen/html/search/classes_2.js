@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['objectanimations_0',['ObjectAnimations',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html',1,'UnityUtils::ScriptUtils::Objects']]],
-  ['objectcolorflash_1',['ObjectColorFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html',1,'UnityUtils::ScriptUtils::Objects']]],
-  ['objectdelays_2',['ObjectDelays',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html',1,'UnityUtils::ScriptUtils::Objects']]],
-  ['objectmodifierdata_3',['ObjectModifierData',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data.html',1,'UnityUtils::ScriptUtils::Objects']]],
-  ['objectmodifiers_4',['ObjectModifiers',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html',1,'UnityUtils::ScriptUtils::Objects']]]
+  ['camerabillboard_0',['CameraBillboard',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html',1,'UnityUtils::ScriptUtils::Cameras']]],
+  ['camerashake_1',['CameraShake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html',1,'UnityUtils::ScriptUtils::Cameras']]],
+  ['coroutinehelper_2',['CoroutineHelper',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html',1,'UnityUtils::ScriptUtils']]]
 ];

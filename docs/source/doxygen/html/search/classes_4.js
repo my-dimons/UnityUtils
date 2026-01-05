@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['scriptableobjectmanager_0',['ScriptableObjectManager',['../class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html',1,'UnityUtils::ScriptUtils::ScriptableObjects']]],
-  ['sfxmanager_1',['SfxManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['simplebackgroundmusic_2',['SimpleBackgroundMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html',1,'UnityUtils::ScriptUtils::Audio']]]
+  ['objectanimations_0',['ObjectAnimations',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html',1,'UnityUtils::ScriptUtils::Objects']]],
+  ['objectcolorflash_1',['ObjectColorFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html',1,'UnityUtils::ScriptUtils::Objects']]],
+  ['objectdelays_2',['ObjectDelays',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html',1,'UnityUtils::ScriptUtils::Objects']]],
+  ['objectmodifierdata_3',['ObjectModifierData',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data.html',1,'UnityUtils::ScriptUtils::Objects']]],
+  ['objectmodifiers_4',['ObjectModifiers',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html',1,'UnityUtils::ScriptUtils::Objects']]]
 ];

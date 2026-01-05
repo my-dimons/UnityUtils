@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_save_system_utils_8cs" kind="file" language="C#">
+    <compoundname>SaveSystemUtils.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_save_system">UnityUtils::ScriptUtils::SaveSystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kindref="compound">SaveSystemUtils</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a462cb914973364581853a359bb538509" kindref="member">GetSaveFilePath</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>extension,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sequence<sp/>=<sp/>0)<sp/>=&gt;<sp/>Application.persistentDataPath<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>fileName<sp/>+<sp/>sequence<sp/>+<sp/>extension;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" kindref="member">LogSaveFileNotFound</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kindref="compound">SaveSystemConfig</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1a44fee88567a44818a5527924dc795c44" kindref="member">SAVE_FILE_NOT_FOUND_ERROR</ref><sp/>+<sp/>path);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" kindref="member">LogSaveFileCreated</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kindref="compound">SaveSystemConfig</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1ae3fabd29afeafc18e909765f9a034197" kindref="member">SAVE_FILE_CREATED_MESSAGE</ref><sp/>+<sp/>path);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" kindref="member">LogSaveFileLoaded</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kindref="compound">SaveSystemConfig</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1add519fb1bfa0ce640116ef9e5c3282e3" kindref="member">SAVE_FILE_LOADED_MESSAGE</ref><sp/>+<sp/>path);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs"/>
+  </compounddef>
+</doxygen>

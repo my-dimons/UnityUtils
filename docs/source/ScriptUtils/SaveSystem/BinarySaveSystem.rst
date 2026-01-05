@@ -22,7 +22,7 @@ Example Usage
    	
    	public void Save()
    	{
-   	   // Creates a file 
+   	   // Creates the save file
    	   BinarySaveSystem.Save<PlayerSaveData, Player>(this, fileName, input => new Player(input));
    	}
    	

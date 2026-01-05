@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "UnityUtils.ScriptUtils.Audio.AudioManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html", null ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system.html", null ],
     [ "UnityUtils.ScriptUtils.Cameras.CameraShake", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html", null ],
     [ "IPointerClickHandler", null, [
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
@@ -30,6 +31,7 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.UI.UIButtonSpawnParticles", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", null ]
     ] ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html", null ],
@@ -52,6 +54,8 @@ var hierarchy =
     [ "UnityUtils.ScriptUtils.Objects.ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemConfig", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config.html", null ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", null ],
     [ "UnityUtils.ScriptUtils.ScriptableObjects.ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", null ],
     [ "UnityUtils.ScriptUtils.Audio.SfxManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html", null ]
 ];

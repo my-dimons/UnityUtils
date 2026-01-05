@@ -23,6 +23,12 @@ var annotated_dup =
           [ "ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" ],
           [ "ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" ]
         ] ],
+        [ "SaveSystem", "namespace_unity_utils_1_1_script_utils_1_1_save_system.html", [
+          [ "BinarySaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system" ],
+          [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
+          [ "SaveSystemConfig", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" ],
+          [ "SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" ]
+        ] ],
         [ "ScriptableObjects", "namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html", [
           [ "ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" ]
         ] ],

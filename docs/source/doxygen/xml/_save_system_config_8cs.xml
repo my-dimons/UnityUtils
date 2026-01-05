@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_save_system_config_8cs" kind="file" language="C#">
+    <compoundname>SaveSystemConfig.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemConfig</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_save_system">UnityUtils::ScriptUtils::SaveSystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kindref="compound">SaveSystemConfig</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1a00303da3e19b9a035ccd7944060225b9" kindref="member">SPECIAL_SAVE_FILE_EXTENSION</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;.save&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1ae443186d8cfb1801fa5610c7a955be21" kindref="member">JSON_SAVE_FILE_EXTENSION</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;.json&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1a44fee88567a44818a5527924dc795c44" kindref="member">SAVE_FILE_NOT_FOUND_ERROR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Save<sp/>file<sp/>not<sp/>found<sp/>in:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1add519fb1bfa0ce640116ef9e5c3282e3" kindref="member">SAVE_FILE_LOADED_MESSAGE</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Save<sp/>file<sp/>loaded<sp/>from:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1ae3fabd29afeafc18e909765f9a034197" kindref="member">SAVE_FILE_CREATED_MESSAGE</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Save<sp/>file<sp/>created<sp/>in:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemConfig.cs"/>
+  </compounddef>
+</doxygen>

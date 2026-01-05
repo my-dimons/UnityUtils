@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kind="interface" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::ISaveData</compoundname>
+    <briefdescription>
+<para>Implimenting this interface means you must have &quot;[System.Serializable]&quot; above your class name. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/ISaveData.cs" line="8" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/ISaveData.cs" bodystart="8" bodyend="8"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

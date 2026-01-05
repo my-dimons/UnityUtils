@@ -4,17 +4,40 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc}{Screenshake}} (Transform camera=default, float intensity=1, float duration=0.\+5f, Animation\+Curve curve=default, bool use\+Realtime=true)
-\begin{DoxyCompactList}\small\item\em Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a563dab7904805e9577ddb918c8aec831}{Stop\+Screenshake}} (Transform camera)
+\begin{DoxyCompactList}\small\item\em Will stop the screenshake on the inputted camera. If the camera is not shaking a warning will be printed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_aac3539439afc70408a83173c0ae2e09a}{Is\+Screenshaking}} (Transform camera)
+\begin{DoxyCompactList}\small\item\em Returns true if the inputtted camera is currently screenshaking. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 static Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1}{default\+Screenshake\+Curve}}
-\begin{DoxyCompactList}\small\item\em Default curve used for screenshake. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default curve used for screenshake. \end{DoxyCompactList}\item 
+static Dictionary$<$ Transform, Vector3 $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a6804bc3c5756f17ccfd18a8f8fdb3c4e}{camera\+Base\+Positions}} = new()
+\begin{DoxyCompactList}\small\item\em Dictionary of base camera positions to reference. \end{DoxyCompactList}\item 
+static Dictionary$<$ Transform, IEnumerator $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a71483b07ee237f0382ee4e586b6f3625}{camera\+Coroutines}} = new()
+\begin{DoxyCompactList}\small\item\em Dictionary of coroutines that screenshaking cameras are using. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_aac3539439afc70408a83173c0ae2e09a}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!IsScreenshaking@{IsScreenshaking}}
+\index{IsScreenshaking@{IsScreenshaking}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{IsScreenshaking()}{IsScreenshaking()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_aac3539439afc70408a83173c0ae2e09a} 
+bool Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Is\+Screenshaking (\begin{DoxyParamCaption}\item[{Transform}]{camera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the inputtted camera is currently screenshaking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & Camera to check for screenshake\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!Screenshake@{Screenshake}}
 \index{Screenshake@{Screenshake}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
 \doxysubsubsection{\texorpdfstring{Screenshake()}{Screenshake()}}
@@ -24,6 +47,8 @@ void Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Screenshake (\begi
 
 
 Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. 
+
+For best results, don\textquotesingle{}t move the camera directly via any other scripts. Camera can also be any transform, so you can shake other objects with these
 
 
 \begin{DoxyParams}{Parameters}
@@ -38,11 +63,46 @@ Shakes the inputted camera for a specified amount of time with a certain intensi
 {\em use\+Realtime} & If true, will use Time.\+unscaled\+Deltatime, instead of Time.\+delta\+Time\\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a563dab7904805e9577ddb918c8aec831}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!StopScreenshake@{StopScreenshake}}
+\index{StopScreenshake@{StopScreenshake}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{StopScreenshake()}{StopScreenshake()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a563dab7904805e9577ddb918c8aec831} 
+void Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Stop\+Screenshake (\begin{DoxyParamCaption}\item[{Transform}]{camera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Will stop the screenshake on the inputted camera. If the camera is not shaking a warning will be printed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & Camera to stop screenshaking\\
+\hline
+\end{DoxyParams}
 
 
 \label{doc-variable-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_doc-variable-members}
 \doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a6804bc3c5756f17ccfd18a8f8fdb3c4e}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!cameraBasePositions@{cameraBasePositions}}
+\index{cameraBasePositions@{cameraBasePositions}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{cameraBasePositions}{cameraBasePositions}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a6804bc3c5756f17ccfd18a8f8fdb3c4e} 
+Dictionary$<$Transform, Vector3$>$ Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+camera\+Base\+Positions = new()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dictionary of base camera positions to reference. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a71483b07ee237f0382ee4e586b6f3625}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!cameraCoroutines@{cameraCoroutines}}
+\index{cameraCoroutines@{cameraCoroutines}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{cameraCoroutines}{cameraCoroutines}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a71483b07ee237f0382ee4e586b6f3625} 
+Dictionary$<$Transform, IEnumerator$>$ Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+camera\+Coroutines = new()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dictionary of coroutines that screenshaking cameras are using. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!defaultScreenshakeCurve@{defaultScreenshakeCurve}}
 \index{defaultScreenshakeCurve@{defaultScreenshakeCurve}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
 \doxysubsubsection{\texorpdfstring{defaultScreenshakeCurve}{defaultScreenshakeCurve}}
@@ -51,7 +111,7 @@ Animation\+Curve Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+defaul
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{=\ \textcolor{keyword}{new}\ AnimationCurve(}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}(}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0,\ 0),}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0.2f,\ 0.1f,\ -\/0.05f,\ -\/0.05f),}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(1,\ 0)}

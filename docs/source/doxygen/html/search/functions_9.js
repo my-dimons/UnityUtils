@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['screenshake_0',['Screenshake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html#a315ce8d6cfc7c18cef165dc4eed951fc',1,'UnityUtils::ScriptUtils::Cameras::CameraShake']]],
-  ['setparticlesystemcolor_1',['SetParticleSystemColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html#a155e3f459a42c8f0cb65a89591e9ab25',1,'UnityUtils::ScriptUtils::Particles::ParticleModifier']]],
-  ['setparticlesystemgradientcolor_2',['SetParticleSystemGradientColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html#a992658b1efb0ea7b30b5366a887beafa',1,'UnityUtils::ScriptUtils::Particles::ParticleModifier']]],
-  ['setslidervalue_3',['SetSliderValue',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html#a775806c538a3606bc6e49289cd4f63bf',1,'UnityUtils::ScriptUtils::Audio::AudioSlider']]],
-  ['setvolume_4',['SetVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a096134c5684b1ef0d8f46d9c0cf9a6a6',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['sortmodifiers_5',['SortModifiers',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html#a31101e05e4050052c75c7198d17d7a4f',1,'UnityUtils.ScriptUtils.Objects.ObjectModifiers.SortModifiers(ModifierType[] sort)'],['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html#af11df11a9f58c463318dca916f6bb5fb',1,'UnityUtils.ScriptUtils.Objects.ObjectModifiers.SortModifiers()']]],
-  ['spawnburstparticle_6',['SpawnBurstParticle',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html#afe2dd4b725744f9986d1559c98c1eeaa',1,'UnityUtils::ScriptUtils::Particles::ParticleSpawner']]],
-  ['stopcontinousmusic_7',['StopContinousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a8f20e73131ad52fd98e943e902068b3a',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['stopmusicsource_8',['StopMusicSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a4d59a5a3184c6c20fb0f3a24816a2e44',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]]
+  ['playcliponsource_0',['PlayClipOnSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#a150e2f880f8736e457fec51e6136a0c8',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playcontinuousmusic_1',['PlayContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a3a877d3ce82171a3f80ae58ec3c17f4b',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playsfxaudioclip_2',['PlaySfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#ac9b3d1cbb84ba0c3ff9a4cc05afb4b44',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playsinglerandommusictrack_3',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a876ad7dcaed65730fabb8255a1440593',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playspacialsfxaudioclip_4',['PlaySpacialSfxAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#af2b057b6a3c7a73edbe6243fdc43a714',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['playspecificmusictrack_5',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#ad145c126937f1581efd02370b578e909',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['playtimedsfxaudioclip_6',['PlayTimedSFXAudioClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html#adcbe0d61861918f7834d42fba958cd43',1,'UnityUtils::ScriptUtils::Audio::SfxManager']]],
+  ['printmodifierorder_7',['PrintModifierOrder',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html#ac3eead45f959652a96246c6724fbf3d5',1,'UnityUtils::ScriptUtils::Objects::ObjectModifiers']]],
+  ['printmodifiers_8',['PrintModifiers',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html#a0e896667bacd0be2d555ca48a09a22fe',1,'UnityUtils::ScriptUtils::Objects::ObjectModifiers']]]
 ];

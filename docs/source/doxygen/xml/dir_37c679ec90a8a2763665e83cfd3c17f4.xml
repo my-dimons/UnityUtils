@@ -6,6 +6,7 @@
     <innerdir refid="dir_05061702fb7c106d220e1128a079bddb">Packages/UnityUtils/Runtime/Script Utils/Camera</innerdir>
     <innerdir refid="dir_facf1fad18e8f724169afb99e1e301eb">Packages/UnityUtils/Runtime/Script Utils/Objects</innerdir>
     <innerdir refid="dir_bfcc3fef8087e40b6de73f7c3da76010">Packages/UnityUtils/Runtime/Script Utils/Particles</innerdir>
+    <innerdir refid="dir_6530f09e37d2f8cd332a364b57f93297">Packages/UnityUtils/Runtime/Script Utils/Save System</innerdir>
     <innerdir refid="dir_36ed9bde031f6096a92cd6d1e38d0be1">Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects</innerdir>
     <innerdir refid="dir_b2eb90027e5128786193b5cba0b4dc25">Packages/UnityUtils/Runtime/Script Utils/UI</innerdir>
     <innerfile refid="_coroutine_helper_8cs">CoroutineHelper.cs</innerfile>

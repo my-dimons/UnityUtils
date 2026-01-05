@@ -7,6 +7,7 @@
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_cameras">UnityUtils::ScriptUtils::Cameras</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_objects">UnityUtils::ScriptUtils::Objects</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_particles">UnityUtils::ScriptUtils::Particles</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_save_system">UnityUtils::ScriptUtils::SaveSystem</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects">UnityUtils::ScriptUtils::ScriptableObjects</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_u_i">UnityUtils::ScriptUtils::UI</innernamespace>
     <briefdescription>

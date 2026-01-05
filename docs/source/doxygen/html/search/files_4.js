@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['scriptableobjectmanager_2ecs_0',['ScriptableObjectManager.cs',['../_scriptable_object_manager_8cs.html',1,'']]],
-  ['sfxmanager_2ecs_1',['SFXManager.cs',['../_s_f_x_manager_8cs.html',1,'']]],
-  ['simplebackgroundmusic_2ecs_2',['SimpleBackgroundMusic.cs',['../_simple_background_music_8cs.html',1,'']]]
+  ['objectanimations_2ecs_0',['ObjectAnimations.cs',['../_object_animations_8cs.html',1,'']]],
+  ['objectcolorflash_2ecs_1',['ObjectColorFlash.cs',['../_object_color_flash_8cs.html',1,'']]],
+  ['objectdelays_2ecs_2',['ObjectDelays.cs',['../_object_delays_8cs.html',1,'']]],
+  ['objectmodifierdata_2ecs_3',['ObjectModifierData.cs',['../_object_modifier_data_8cs.html',1,'']]],
+  ['objectmodifiers_2ecs_4',['ObjectModifiers.cs',['../_object_modifiers_8cs.html',1,'']]]
 ];

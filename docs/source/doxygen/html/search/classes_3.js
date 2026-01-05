@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['particlemodifier_0',['ParticleModifier',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html',1,'UnityUtils::ScriptUtils::Particles']]],
-  ['particlespawner_1',['ParticleSpawner',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html',1,'UnityUtils::ScriptUtils::Particles']]]
+  ['isavedata_0',['ISaveData',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html',1,'UnityUtils::ScriptUtils::SaveSystem']]]
 ];

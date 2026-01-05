@@ -9,7 +9,7 @@
         <argsstring></argsstring>
         <name>defaultScreenshakeCurve</name>
         <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.defaultScreenshakeCurve</qualifiedname>
-        <initializer>= new AnimationCurve(
+        <initializer>= new(
             new Keyframe(0, 0),
             new Keyframe(0.2f, 0.1f, -0.05f, -0.05f),
             new Keyframe(1, 0)
@@ -21,7 +21,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="9" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="9" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="10" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; Transform, Vector3 &gt;</type>
+        <definition>Dictionary&lt;Transform, Vector3&gt; UnityUtils.ScriptUtils.Cameras.CameraShake.cameraBasePositions</definition>
+        <argsstring></argsstring>
+        <name>cameraBasePositions</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.cameraBasePositions</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Dictionary of base camera positions to reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="17" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; Transform, IEnumerator &gt;</type>
+        <definition>Dictionary&lt;Transform, IEnumerator&gt; UnityUtils.ScriptUtils.Cameras.CameraShake.cameraCoroutines</definition>
+        <argsstring></argsstring>
+        <name>cameraCoroutines</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.cameraCoroutines</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Dictionary of coroutines that screenshaking cameras are using. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="20" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -60,6 +92,7 @@
 <para>Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. </para>
         </briefdescription>
         <detaileddescription>
+<para>For best results, don&apos;t move the camera directly via any other scripts. Camera can also be any transform, so you can shake other objects with these</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>camera</parametername>
@@ -105,7 +138,65 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="23" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="23" bodyend="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="31" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a563dab7904805e9577ddb918c8aec831" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Cameras.CameraShake.StopScreenshake</definition>
+        <argsstring>(Transform camera)</argsstring>
+        <name>StopScreenshake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.StopScreenshake</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Will stop the screenshake on the inputted camera. If the camera is not shaking a warning will be printed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera to stop screenshaking</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="68" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="68" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1aac3539439afc70408a83173c0ae2e09a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityUtils.ScriptUtils.Cameras.CameraShake.IsScreenshaking</definition>
+        <argsstring>(Transform camera)</argsstring>
+        <name>IsScreenshaking</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.IsScreenshaking</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the inputtted camera is currently screenshaking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera to check for screenshake</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="88" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="88" bodyend="94"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -141,18 +232,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="30" column="36" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="30" bodyend="44"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="43" column="36" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="43" bodyend="62"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="6" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="7" bodyend="45"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="7" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="8" bodyend="95"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraBasePositions</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraCoroutines</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1ac341fab1ebeb74397156f271e5a3a8d1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>defaultScreenshakeCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1aac3539439afc70408a83173c0ae2e09a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>IsScreenshaking</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a315ce8d6cfc7c18cef165dc4eed951fc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>Screenshake</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a3e43ce25d2ec4c2550f4101917566047" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>ScreenshakeCoroutine</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a563dab7904805e9577ddb918c8aec831" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>StopScreenshake</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

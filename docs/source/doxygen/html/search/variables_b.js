@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['scenemode_0',['sceneMode',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#a9dcb2d6e71e03b1d547bfae6bb6ccc82',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]],
-  ['scenename_1',['sceneName',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#aa4465098921687070fb22d5d33c28389',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]],
-  ['sizeanimationseconds_2',['sizeAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a88c3046734a3645154c58778039f6c65',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.sizeAnimationSeconds'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#a89424366b7a0b4d78b7b0182c06bc15f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.sizeAnimationSeconds']]],
-  ['sizingcurve_3',['SizingCurve',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#ae5b8ba3814d39b73fe09caf2f28cfeb2',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a006c0dd78261c3866dbb0e173bb9447f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve']]]
+  ['randomrotation_0',['randomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#ae0432b8b05ca7db427bdefad702351fc',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
+  ['randomsecondcooldownbetweensongs_1',['randomSecondCooldownBetweenSongs',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#abb645b48a507c093997957c5b7536e45',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['rotatebackafterhover_2',['rotateBackAfterHover',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a6380c66f4b1db51868e6660b9ffb9acf',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
+  ['rotationanimationseconds_3',['rotationAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a5e39b92b4fce792a762e67c87cc99596',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]]
 ];

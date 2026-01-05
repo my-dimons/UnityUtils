@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a462cb914973364581853a359bb538509" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath</definition>
+        <argsstring>(string fileName, string extension, int sequence=0)</argsstring>
+        <name>GetSaveFilePath</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>extension</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sequence</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned path is located within the application&apos;s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base name of the save file</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sequence number to append to the file name. Defaults to 0 if not specified</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the absolute path to the save file</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="17" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileNotFound</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LogSaveFileNotFound</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileNotFound</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Logs an error message indicating that a save file was not found at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full file system path of the save file that could not be located</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="23" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileCreated</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LogSaveFileCreated</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileCreated</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Logs a message indicating that a save file has been created at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full file system path where the save file was created</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="32" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileLoaded</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LogSaveFileLoaded</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileLoaded</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Logs a message indicating that a save file has been loaded at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file system path of the loaded save file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="41" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="7" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="8" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a462cb914973364581853a359bb538509" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveFilePath</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileCreated</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileLoaded</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileNotFound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

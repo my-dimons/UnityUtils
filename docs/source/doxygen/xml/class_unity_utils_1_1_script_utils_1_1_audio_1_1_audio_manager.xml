@@ -109,7 +109,7 @@
         <argsstring></argsstring>
         <name>audioVolumes</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioManager.audioVolumes</qualifiedname>
-        <initializer>= new Dictionary&lt;<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">VolumeType</ref>, float&gt;()
+        <initializer>= new()
         {
             { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kindref="member">VolumeType.Global</ref>, <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">MAX_AUDIO_VOLUME</ref> },
             { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">VolumeType.Sfx</ref>,    <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">MAX_AUDIO_VOLUME</ref> },

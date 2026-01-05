@@ -28,6 +28,10 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" kind="function"><name>OnSliderValueChanged</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a775806c538a3606bc6e49289cd4f63bf" kind="function"><name>SetSliderValue</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::BinarySaveSystem</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1a55b2c112ac4e27213a208fb3fba873ce" kind="function"><name>Save&lt; TData, TInput &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1ab869765dbac5ad7b0e67fecb5e39c38f" kind="function"><name>Load&lt; T &gt;</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard" kind="class"><name>UnityUtils::ScriptUtils::Cameras::CameraBillboard</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1aae650d2f829a586bad689e9178de9a8a" kind="variable"><name>useMainCamera</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" kind="variable"><name>billboardCamera</name></member>
@@ -38,7 +42,11 @@
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake" kind="class"><name>UnityUtils::ScriptUtils::Cameras::CameraShake</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1ac341fab1ebeb74397156f271e5a3a8d1" kind="variable"><name>defaultScreenshakeCurve</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" kind="variable"><name>cameraBasePositions</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" kind="variable"><name>cameraCoroutines</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a315ce8d6cfc7c18cef165dc4eed951fc" kind="function"><name>Screenshake</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a563dab7904805e9577ddb918c8aec831" kind="function"><name>StopScreenshake</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1aac3539439afc70408a83173c0ae2e09a" kind="function"><name>IsScreenshaking</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a3e43ce25d2ec4c2550f4101917566047" kind="function"><name>ScreenshakeCoroutine</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kind="class"><name>UnityUtils::ScriptUtils::CoroutineHelper</name>
@@ -48,8 +56,10 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aac56e3500f50ff4820d8069056f6717a" kind="function"><name>OnSceneUnloaded</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" kind="function"><name>OnDestroy</name></member>
   </compound>
+  <compound refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kind="interface"><name>UnityUtils::ScriptUtils::SaveSystem::ISaveData</name>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" kind="variable"><name>defaultAnimationCurve</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" kind="variable"><name>defaultAnimationCurve</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" kind="function"><name>AnimateTransformScale</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" kind="function"><name>AnimateTransformPosition</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" kind="function"><name>AnimateTransformRotation</name></member>
@@ -115,6 +125,19 @@
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleSpawner</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" kind="function"><name>SpawnBurstParticle</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemConfig</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1a00303da3e19b9a035ccd7944060225b9" kind="variable"><name>SPECIAL_SAVE_FILE_EXTENSION</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1ae443186d8cfb1801fa5610c7a955be21" kind="variable"><name>JSON_SAVE_FILE_EXTENSION</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1a44fee88567a44818a5527924dc795c44" kind="variable"><name>SAVE_FILE_NOT_FOUND_ERROR</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1add519fb1bfa0ce640116ef9e5c3282e3" kind="variable"><name>SAVE_FILE_LOADED_MESSAGE</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config_1ae3fabd29afeafc18e909765f9a034197" kind="variable"><name>SAVE_FILE_CREATED_MESSAGE</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a462cb914973364581853a359bb538509" kind="function"><name>GetSaveFilePath</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" kind="function"><name>LogSaveFileNotFound</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" kind="function"><name>LogSaveFileCreated</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" kind="function"><name>LogSaveFileLoaded</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" kind="class"><name>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" kind="function"><name>GetScriptableObjects&lt; T &gt;</name></member>
@@ -296,6 +319,8 @@
   </compound>
   <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
   </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary" kind="namespace"><name>System::Runtime::Serialization::Formatters::Binary</name>
+  </compound>
   <compound refid="namespace_system_1_1_transactions" kind="namespace"><name>System::Transactions</name>
   </compound>
   <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
@@ -319,6 +344,8 @@
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kind="namespace"><name>UnityUtils::ScriptUtils::Objects</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace"><name>UnityUtils::ScriptUtils::Particles</name>
+  </compound>
+  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kind="namespace"><name>UnityUtils::ScriptUtils::SaveSystem</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects" kind="namespace"><name>UnityUtils::ScriptUtils::ScriptableObjects</name>
   </compound>
@@ -352,6 +379,14 @@
   </compound>
   <compound refid="_particle_spawner_8cs" kind="file"><name>ParticleSpawner.cs</name>
   </compound>
+  <compound refid="_binary_save_system_8cs" kind="file"><name>BinarySaveSystem.cs</name>
+  </compound>
+  <compound refid="_i_save_data_8cs" kind="file"><name>ISaveData.cs</name>
+  </compound>
+  <compound refid="_save_system_config_8cs" kind="file"><name>SaveSystemConfig.cs</name>
+  </compound>
+  <compound refid="_save_system_utils_8cs" kind="file"><name>SaveSystemUtils.cs</name>
+  </compound>
   <compound refid="_scriptable_object_manager_8cs" kind="file"><name>ScriptableObjectManager.cs</name>
   </compound>
   <compound refid="_u_i_button_debug_logs_8cs" kind="file"><name>UIButtonDebugLogs.cs</name>
@@ -383,6 +418,8 @@
   <compound refid="dir_bfcc3fef8087e40b6de73f7c3da76010" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Particles</name>
   </compound>
   <compound refid="dir_0ba32af4da6183558d3f8099c65e298d" kind="dir"><name>Packages/UnityUtils/Runtime</name>
+  </compound>
+  <compound refid="dir_6530f09e37d2f8cd332a364b57f93297" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Save System</name>
   </compound>
   <compound refid="dir_37c679ec90a8a2763665e83cfd3c17f4" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils</name>
   </compound>

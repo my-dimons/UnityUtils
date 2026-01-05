@@ -1,0 +1,90 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils}{}\label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a462cb914973364581853a359bb538509}{Get\+Save\+File\+Path}} (string file\+Name, string extension, int sequence=0)
+\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name and sequence number (For multi-\/save possibilities). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abe5777c132d484cf0a40ad3508f9e30a}{Log\+Save\+File\+Not\+Found}} (string path)
+\begin{DoxyCompactList}\small\item\em Logs an error message indicating that a save file was not found at the specified path. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc}{Log\+Save\+File\+Created}} (string path)
+\begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been created at the specified path. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab0f485ace295fb7d57dc33f8c322b5b4}{Log\+Save\+File\+Loaded}} (string path)
+\begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been loaded at the specified path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a462cb914973364581853a359bb538509}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
+\index{GetSaveFilePath@{GetSaveFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a462cb914973364581853a359bb538509} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{string}]{extension}{, }\item[{int}]{sequence}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates the full file path for a save file using the specified file name and sequence number (For multi-\/save possibilities). 
+
+The returned path is located within the application\textquotesingle{}s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-\/appropriate location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The base name of the save file\\
+\hline
+{\em sequence} & The sequence number to append to the file name. Defaults to 0 if not specified\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the absolute path to the save file
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileCreated@{LogSaveFileCreated}}
+\index{LogSaveFileCreated@{LogSaveFileCreated}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{LogSaveFileCreated()}{LogSaveFileCreated()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Log\+Save\+File\+Created (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs a message indicating that a save file has been created at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The full file system path where the save file was created\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab0f485ace295fb7d57dc33f8c322b5b4}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileLoaded@{LogSaveFileLoaded}}
+\index{LogSaveFileLoaded@{LogSaveFileLoaded}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{LogSaveFileLoaded()}{LogSaveFileLoaded()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab0f485ace295fb7d57dc33f8c322b5b4} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Log\+Save\+File\+Loaded (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs a message indicating that a save file has been loaded at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file system path of the loaded save file\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abe5777c132d484cf0a40ad3508f9e30a}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileNotFound@{LogSaveFileNotFound}}
+\index{LogSaveFileNotFound@{LogSaveFileNotFound}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{LogSaveFileNotFound()}{LogSaveFileNotFound()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abe5777c132d484cf0a40ad3508f9e30a} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Log\+Save\+File\+Not\+Found (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs an error message indicating that a save file was not found at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The full file system path of the save file that could not be located\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\mbox{\hyperlink{_save_system_utils_8cs}{Save\+System\+Utils.\+cs}}\end{DoxyCompactItemize}

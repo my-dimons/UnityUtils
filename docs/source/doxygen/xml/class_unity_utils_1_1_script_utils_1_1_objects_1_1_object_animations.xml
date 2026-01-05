@@ -3,9 +3,9 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Objects::ObjectAnimations</compoundname>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" prot="private" static="yes" mutable="no">
-        <type>AnimationCurve</type>
-        <definition>AnimationCurve UnityUtils.ScriptUtils.Objects.ObjectAnimations.defaultAnimationCurve</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" prot="private" static="yes" mutable="no">
+        <type>readonly AnimationCurve</type>
+        <definition>readonly AnimationCurve UnityUtils.ScriptUtils.Objects.ObjectAnimations.defaultAnimationCurve</definition>
         <argsstring></argsstring>
         <name>defaultAnimationCurve</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.defaultAnimationCurve</qualifiedname>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="12" column="39" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="12" column="48" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -503,7 +503,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>defaultAnimationCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>defaultAnimationCurve</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeInAudio</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeOutAudio</name></member>
     </listofallmembers>

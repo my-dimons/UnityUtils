@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['uibuttondebuglogs_0',['UIButtonDebugLogs',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['uibuttonhoverexpand_1',['UIButtonHoverExpand',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['uibuttonhoverrotate_2',['UIButtonHoverRotate',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['uibuttonsfx_3',['UIButtonSFX',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['uibuttonspawnparticles_4',['UIButtonSpawnParticles',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['uibuttontoggleobjects_5',['UIButtonToggleObjects',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html',1,'UnityUtils::ScriptUtils::UI']]]
+  ['savesystemconfig_0',['SaveSystemConfig',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config.html',1,'UnityUtils::ScriptUtils::SaveSystem']]],
+  ['savesystemutils_1',['SaveSystemUtils',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html',1,'UnityUtils::ScriptUtils::SaveSystem']]],
+  ['scriptableobjectmanager_2',['ScriptableObjectManager',['../class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html',1,'UnityUtils::ScriptUtils::ScriptableObjects']]],
+  ['sfxmanager_3',['SfxManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
+  ['simplebackgroundmusic_4',['SimpleBackgroundMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html',1,'UnityUtils::ScriptUtils::Audio']]]
 ];

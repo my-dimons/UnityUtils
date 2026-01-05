@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::BinarySaveSystem</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1a55b2c112ac4e27213a208fb3fba873ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem.Save&lt; TData, TInput &gt;</definition>
+        <argsstring>(TInput inputData, string fileName, Func&lt; TInput, TData &gt; createSaveData)</argsstring>
+        <name>Save&lt; TData, TInput &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem.Save&lt; TData, TInput &gt;</qualifiedname>
+        <param>
+          <type>TInput</type>
+          <declname>inputData</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>Func&lt; TInput, TData &gt;</type>
+          <declname>createSaveData</declname>
+        </param>
+        <briefdescription>
+<para>Serializes the specified input data to a save file to be loaded later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses binary serialization to write the transformed data to disk. If a file with the specified name already exists, it will be overwritten</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the data to be serialized. Must implement <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the input data to be transformed and saved.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input data to be transformed and saved to the file.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file to which the data will be saved. Do not include any file extensions, file extension is determined by <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" kindref="compound">SaveSystemConfig</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>createSaveData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function that transforms the input data into a serializable object of type <emphasis>TData</emphasis> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" line="20" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" bodystart="20" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1ab869765dbac5ad7b0e67fecb5e39c38f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem.Load&lt; T &gt;</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>Load&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem.Load&lt; T &gt;</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Loads and deserializes save data of the specified type from a file with the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ensure that <emphasis>T</emphasis>  is compatible with the serialized data format</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of save data to load. Must implement <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file from which to load the save data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" line="40" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" bodystart="40" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" line="8" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/BinarySaveSystem.cs" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1ab869765dbac5ad7b0e67fecb5e39c38f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::BinarySaveSystem</scope><name>Load&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_1a55b2c112ac4e27213a208fb3fba873ce" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::BinarySaveSystem</scope><name>Save&lt; TData, TInput &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

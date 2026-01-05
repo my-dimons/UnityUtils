@@ -79,7 +79,7 @@
         <argsstring></argsstring>
         <name>Modifiers</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifiers.Modifiers</qualifiedname>
-        <initializer>= new List&lt;<ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kindref="compound">ObjectModifierData</ref>&gt;()</initializer>
+        <initializer>= new()</initializer>
         <briefdescription>
 <para>Modifiers to be applied when calculating modifiers, must be modified via <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a0d392e85253a1fab769703f2e5bac977" kindref="member">AddModifier(ObjectModifierData)</ref>, or temporarily modified via <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a345e16ed56aaa66dad679ea2a404fd8a" kindref="member">AddTemporaryModifier(ObjectModifierData, float, bool)</ref>. </para>
         </briefdescription>

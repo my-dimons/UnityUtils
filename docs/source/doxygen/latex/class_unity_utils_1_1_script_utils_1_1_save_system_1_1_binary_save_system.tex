@@ -1,0 +1,77 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Binary\+Save\+System Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system}{}\label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system}\index{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem@{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_a55b2c112ac4e27213a208fb3fba873ce}{Save$<$ TData, TInput $>$}} (TInput input\+Data, string file\+Name, Func$<$ TInput, TData $>$ create\+Save\+Data)
+\begin{DoxyCompactList}\small\item\em Serializes the specified input data to a save file to be loaded later. \end{DoxyCompactList}\item 
+static T \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_ab869765dbac5ad7b0e67fecb5e39c38f}{Load$<$ T $>$}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads and deserializes save data of the specified type from a file with the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_ab869765dbac5ad7b0e67fecb5e39c38f}\index{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem@{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem@{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_ab869765dbac5ad7b0e67fecb5e39c38f} 
+T Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Binary\+Save\+System.\+Load$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads and deserializes save data of the specified type from a file with the given name. 
+
+Ensure that {\itshape T}  is compatible with the serialized data format
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of save data to load. Must implement \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the file from which to load the save data.\\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]\end{description}
+\end{Desc}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_a55b2c112ac4e27213a208fb3fba873ce}\index{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem@{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem}!Save$<$ TData, TInput $>$@{Save$<$ TData, TInput $>$}}
+\index{Save$<$ TData, TInput $>$@{Save$<$ TData, TInput $>$}!UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem@{UnityUtils.ScriptUtils.SaveSystem.BinarySaveSystem}}
+\doxysubsubsection{\texorpdfstring{Save$<$ TData, TInput $>$()}{Save< TData, TInput >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system_a55b2c112ac4e27213a208fb3fba873ce} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Binary\+Save\+System.\+Save$<$ TData, TInput $>$ (\begin{DoxyParamCaption}\item[{TInput}]{input\+Data}{, }\item[{string}]{file\+Name}{, }\item[{Func$<$ TInput, TData $>$}]{create\+Save\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Serializes the specified input data to a save file to be loaded later. 
+
+Uses binary serialization to write the transformed data to disk. If a file with the specified name already exists, it will be overwritten
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TData} & The type of the data to be serialized. Must implement \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}\\
+\hline
+{\em TInput} & The type of the input data to be transformed and saved.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & The input data to be transformed and saved to the file.\\
+\hline
+{\em file\+Name} & The name of the file to which the data will be saved. Do not include any file extensions, file extension is determined by \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config}{Save\+System\+Config}\\
+\hline
+{\em create\+Save\+Data} & A function that transforms the input data into a serializable object of type {\itshape TData} \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TData} : {\em \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\mbox{\hyperlink{_binary_save_system_8cs}{Binary\+Save\+System.\+cs}}\end{DoxyCompactItemize}
