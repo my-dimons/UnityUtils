@@ -9,7 +9,7 @@
         public float modifierValue;
 
         /// <summary>
-        /// Initializes a new instance of the ObjectModifierData class with the <see cref="ObjectModifiers.ModifierType"/> and value.
+        /// Initializes a new Instance of the ObjectModifierData class with the <see cref="ObjectModifiers.ModifierType"/> and value.
         /// </summary>
         /// <param name="modifierType">The type of modifier</param>
         /// <param name="modifierValue">The value associated with the modifier</param>

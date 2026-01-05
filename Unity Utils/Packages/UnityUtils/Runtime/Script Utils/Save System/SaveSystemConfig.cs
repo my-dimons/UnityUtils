@@ -18,5 +18,12 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
         /// The message displayed when a save file is created
         public const string SAVE_FILE_CREATED_MESSAGE = "Save file created in: ";
+
+        /// Enum of available save systems
+        public enum SaveSystems
+        {
+            Binary,
+            Json
+        }
     }
 }

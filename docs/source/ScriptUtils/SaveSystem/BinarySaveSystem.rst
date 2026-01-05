@@ -6,6 +6,10 @@ BinarySaveSystem 
      
 The **BinarySaveSystem** script is used in turn with scripts like :doc:`ISaveData`. This save system encrypts save files into binary files, when loaded, save's are decrypted.
    
+.. warning::
+
+   The binary formatter used in this script is deprecated by Microsoft, so its better to use a different save system (This option is still available just in case).
+   
 Example Usage
 -------------
 .. code:: csharp

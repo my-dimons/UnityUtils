@@ -3,25 +3,26 @@ using TMPro;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 
-public class SaveTesting : MonoBehaviour
+public class SaveTesting : MonoBehaviour, ISaveableData
 {
     public int val1 = 2;
     public string val2 = "Unsaved";
 
     public TextMeshProUGUI intText;
     public TextMeshProUGUI stringText;
-
-    public void Save()
+     
+    public void Save<T>(T data) where T : ISaveData
     {
         BinarySaveSystem.Save<SaveDataTest, SaveTesting>(this, "saveTest", input => new SaveDataTest(input));
     }
 
-    public void Load()
-    {
-        SaveDataTest data = BinarySaveSystem.Load<SaveDataTest>("saveTest");
-
-        val1 = data.val1;
-        val2 = data.val2;
+    public void Load<T>(T data) where T : ISaveData
+    { 
+        if (data is SaveDataTest save)
+        {
+            val1 = save.val1;
+            val2 = save.val2;
+        }
     }
 
     private void Update()
