@@ -9,7 +9,7 @@ namespace UnityUtils.ScriptUtils.Objects
 {
     public static class ObjectAnimations
     {
-        private static AnimationCurve defaultAnimationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+        private static readonly AnimationCurve defaultAnimationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
         #region Transforms
         /// <summary>

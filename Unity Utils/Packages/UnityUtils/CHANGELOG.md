@@ -1,11 +1,15 @@
 ## v1.2.1
 
 ### Additions
-- UIButtonQuitGame.cs
-- ObjectModifiers.cs
-- ObjectModifierData.cs
+- UIButtonQuitGame
+- ObjectModifiers
+- ObjectModifierData
 - StopScreenshake(Transform camera) method to CameraShake.cs
 - IsScreenshaking(Transform camera) method to CameraShake.cs
+- BinarySaveSystem
+- ISaveData
+- SaveSystemConfig
+- SaveSystemManager (Might be renamed soon)
 
 ### Changes
 - Fixed camera shake from ending in an improper position

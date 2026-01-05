@@ -28,7 +28,7 @@ namespace UnityUtils.ScriptUtils.Audio
             Custom
         }
 
-        static readonly Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
+        static readonly Dictionary<VolumeType, float> audioVolumes = new()
         {
             { VolumeType.Global, MAX_AUDIO_VOLUME },
             { VolumeType.Sfx,    MAX_AUDIO_VOLUME },

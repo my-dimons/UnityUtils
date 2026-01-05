@@ -22,7 +22,7 @@ namespace UnityUtils.ScriptUtils.Cameras
         /// <summary>
         /// Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve
         /// </summary>
-        /// <remarks>For best results, don't move the camera directly via any other scripts. Try to keep it at (0, 0, 0) position locally</remarks>
+        /// <remarks>For best results, don't move the camera directly via any other scripts. Camera can also be any transform, so you can shake other objects with these</remarks>
         /// <param name="camera">Camera to apply screenshake to, default is Camera.main</param>
         /// <param name="intensity">A multiplier for more screenshake</param>
         /// <param name="duration">How many seconds the screenshake lasts for</param>

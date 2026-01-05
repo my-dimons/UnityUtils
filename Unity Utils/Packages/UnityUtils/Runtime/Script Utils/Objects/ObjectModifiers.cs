@@ -22,7 +22,7 @@ namespace UnityUtils.ScriptUtils.Objects
         public ModifierType[] ModifierOrder = DEFAULT_MODIFIER_ORDER;
 
         /// Modifiers to be applied when calculating modifiers, must be modified via <see cref="AddModifier(ObjectModifierData)"/>, or temporarily modified via <see cref="AddTemporaryModifier(ObjectModifierData, float, bool)"/>
-        public List<ObjectModifierData> Modifiers = new List<ObjectModifierData>();
+        public List<ObjectModifierData> Modifiers = new();
 
         /// <summary>
         /// Adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>

@@ -6,5 +6,5 @@ Download instructions here: https://mydimons-unity-utils.readthedocs.io/en/lates
 # Documentation
 Find the Unity Utils documentation here: https://mydimons-unity-utils.readthedocs.io/en/latest/
 
-# Blibber Blabber 
+# Contribution
 Feel free to use any of these scripts in any projects, and if you want to contribute to this project GO FOR IT!
