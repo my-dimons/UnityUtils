@@ -5,6 +5,7 @@ using System.Linq;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -18,7 +19,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The base name of the save file</param>
         /// <param name="sequence">The sequence number to append to the file name. Defaults to 0 if not specified</param>
         /// <returns>A string containing the absolute path to the save file</returns>
-        public static string GetSaveFilePath(string fileName, string extension, int sequence = 0) => Application.persistentDataPath + "/" + fileName + sequence + extension;
+        public static string GetSaveFilePath(string fileName, string extension) => Application.persistentDataPath + "/" + fileName + extension;
 
         /// <summary>
         /// Logs an error message indicating that a save file was not found at the specified path.

@@ -4,8 +4,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public interface ISaveableData
     {
-        public void Save<T>(T data) where T : ISaveData;
+        void SaveData<T>(T data) where T : ISaveData;
 
-        public void Load<T>(T data) where T : ISaveData;
+        void LoadData<T>(T data) where T : ISaveData;
     }
 }

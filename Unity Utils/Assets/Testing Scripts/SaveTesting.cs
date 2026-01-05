@@ -11,17 +11,21 @@ public class SaveTesting : MonoBehaviour, ISaveableData
     public TextMeshProUGUI intText;
     public TextMeshProUGUI stringText;
      
-    public void Save<T>(T data) where T : ISaveData
+    public void SaveData<T>(T data) where T : ISaveData
     {
-        BinarySaveSystem.Save<SaveDataTest, SaveTesting>(this, "saveTest", input => new SaveDataTest(input));
+        if (data is GameData save)
+        {
+            save.intValue = val1;
+            save.stringValue = val2;
+        }
     }
 
-    public void Load<T>(T data) where T : ISaveData
+    public void LoadData<T>(T data) where T : ISaveData
     { 
-        if (data is SaveDataTest save)
+        if (data is GameData save)
         {
-            val1 = save.val1;
-            val2 = save.val2;
+            val1 = save.intValue;
+            val2 = save.stringValue;
         }
     }
 
