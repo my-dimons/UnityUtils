@@ -1,4 +1,4 @@
-## v1.2.1
+## v1.3.0
 
 ### Additions
 - UIButtonQuitGame
@@ -14,7 +14,7 @@
 ### Changes
 - Fixed camera shake from ending in an improper position
 
-## v1.2
+## v1.2.0
 
 ### Additions
 - ObjectDelays.cs
