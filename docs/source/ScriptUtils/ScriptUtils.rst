@@ -14,4 +14,5 @@ This is where you will find useful scripts for quick unity development!
    UI/UI
    ScriptableObjects/ScriptableObjects
    Objects/Objects
+    SaveSystem/SaveSystem
    CoroutineHelper

@@ -13,10 +13,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// The error message used when a save file cannot be found at the specified location
         public const string SAVE_FILE_NOT_FOUND_ERROR = "Save file not found in: ";
 
-        /// The message used to indicate that a save file has been loaded
-        public const string SAVE_FILE_LOADED_MESSAGE = "Save file loaded in: ";
+        /// The message used to when a save file has been loaded
+        public const string SAVE_FILE_LOADED_MESSAGE = "Save file loaded from: ";
 
-        /// The message displayed when a save file is created, including the file path.
+        /// The message displayed when a save file is created
         public const string SAVE_FILE_CREATED_MESSAGE = "Save file created in: ";
     }
 }

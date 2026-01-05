@@ -4,7 +4,7 @@ using UnityUtils.ScriptUtils.SaveSystem;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
-    public static class SaveSystemManager
+    public static class SaveSystemUtils
     {
         /// <summary>
         /// Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities).

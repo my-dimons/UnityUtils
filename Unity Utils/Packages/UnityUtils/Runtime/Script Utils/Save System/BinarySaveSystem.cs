@@ -20,10 +20,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         public static void Save<TData, TInput>(TInput inputData, string fileName, Func<TInput, TData> createSaveData) where TData : ISaveData
         {
             BinaryFormatter formatter = new();
-            string path = SaveSystemManager.GetSaveFilePath(fileName, SaveSystemConfig.SPECIAL_SAVE_FILE_EXTENSION);
+            string path = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemConfig.SPECIAL_SAVE_FILE_EXTENSION);
 
             FileStream stream = new(path, FileMode.Create);
-            SaveSystemManager.LogSaveFileCreated(path);
+            SaveSystemUtils.LogSaveFileCreated(path);
 
             TData data = createSaveData(inputData);
 
@@ -39,7 +39,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The name of the file from which to load the save data.</param>
         public static T Load<T>(string fileName) where T : ISaveData
         {
-            string path = SaveSystemManager.GetSaveFilePath(fileName, SaveSystemConfig.SPECIAL_SAVE_FILE_EXTENSION);
+            string path = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemConfig.SPECIAL_SAVE_FILE_EXTENSION);
 
             if (File.Exists(path))
             {
@@ -54,7 +54,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             } 
             else
             {
-                SaveSystemManager.LogSaveFileNotFound(path);
+                SaveSystemUtils.LogSaveFileNotFound(path);
                 return default;
             }
         }
