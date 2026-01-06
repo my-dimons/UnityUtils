@@ -46,6 +46,9 @@ Example Usage
        }
    }
    
+Functions
+---------
+
 .. doxygenclass:: ISaveManager
    :namespace: UnityUtils::ScriptUtils::SaveSystem
    :members:

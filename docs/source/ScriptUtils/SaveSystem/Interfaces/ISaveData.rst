@@ -27,5 +27,9 @@ Example Usage
    	public string name;
    }
    
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::ISaveData
+Functions
+---------
+
+.. doxygenclass:: ISaveData
+   :namespace: UnityUtils::ScriptUtils::SaveSystem
    :members:
