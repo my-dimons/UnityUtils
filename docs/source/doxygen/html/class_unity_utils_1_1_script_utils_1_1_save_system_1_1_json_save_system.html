@@ -95,11 +95,11 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fc3b7821cac2aee8f6aa076a8d7316c" id="r_a6fc3b7821cac2aee8f6aa076a8d7316c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc3b7821cac2aee8f6aa076a8d7316c">Save</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> saveDataID)</td></tr>
-<tr class="memdesc:a6fc3b7821cac2aee8f6aa076a8d7316c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the inputted <em>saveDataID</em>  into its respective file.  <br /></td></tr>
+<tr class="memdesc:a6fc3b7821cac2aee8f6aa076a8d7316c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the inputted <em>saveDataID</em>  into <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a624e1538dbe1a48fab03eae36b0d2db3" title="The file name that this object is linked to.">SaveDataID.fileName</a> in a json format.  <br /></td></tr>
 <tr class="memitem:ad0f2c14782d3ad4b0328af5a4c65692a" id="r_ad0f2c14782d3ad4b0328af5a4c65692a"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0f2c14782d3ad4b0328af5a4c65692a">Load</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; saveDataIDs)</td></tr>
-<tr class="memdesc:ad0f2c14782d3ad4b0328af5a4c65692a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads json file data from the inputted files.  <br /></td></tr>
+<tr class="memdesc:ad0f2c14782d3ad4b0328af5a4c65692a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a list of <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a971b0e2bf3ba683aabfe331c7304276f" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file.  <br /></td></tr>
 <tr class="memitem:a00f2cde002f6de93df22b4d7eaa861f9" id="r_a00f2cde002f6de93df22b4d7eaa861f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f2cde002f6de93df22b4d7eaa861f9">LoadSingleSaveFile</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> saveDataID)</td></tr>
-<tr class="memdesc:a00f2cde002f6de93df22b4d7eaa861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a single save file from the files using a <em>fileName</em>  and <em>type</em> .  <br /></td></tr>
+<tr class="memdesc:a00f2cde002f6de93df22b4d7eaa861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a single <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a971b0e2bf3ba683aabfe331c7304276f" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ad0f2c14782d3ad4b0328af5a4c65692a" name="ad0f2c14782d3ad4b0328af5a4c65692a"></a>
@@ -125,7 +125,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads json file data from the inputted files. </p>
+<p>Deserializes a list of <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a971b0e2bf3ba683aabfe331c7304276f" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveDataIDs</td><td>A list of saveDataIDs to load the <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> of</td></tr>
@@ -159,11 +159,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads a single save file from the files using a <em>fileName</em>  and <em>type</em> . </p>
+<p>Deserializes a single <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a971b0e2bf3ba683aabfe331c7304276f" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>Name of the file to grab</td></tr>
-    <tr><td class="paramname">type</td><td>Type of file to grab</td></tr>
+    <tr><td class="paramname">saveDataID</td><td><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to deserialize</td></tr>
   </table>
   </dd>
 </dl>
@@ -194,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads the inputted <em>saveDataID</em>  into its respective file. </p>
+<p>Serializes the inputted <em>saveDataID</em>  into <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a624e1538dbe1a48fab03eae36b0d2db3" title="The file name that this object is linked to.">SaveDataID.fileName</a> in a json format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveDataID</td><td>saveDataID of the file to be saved</td></tr>

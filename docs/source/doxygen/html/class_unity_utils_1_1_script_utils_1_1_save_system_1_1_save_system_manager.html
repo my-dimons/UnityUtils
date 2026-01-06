@@ -95,11 +95,11 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8c76c78fd1dd53d0894fdb58dc8d31a" id="r_ae8c76c78fd1dd53d0894fdb58dc8d31a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8c76c78fd1dd53d0894fdb58dc8d31a">SaveGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
-<tr class="memdesc:ae8c76c78fd1dd53d0894fdb58dc8d31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
+<tr class="memdesc:ae8c76c78fd1dd53d0894fdb58dc8d31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
 <tr class="memitem:a96d5514a09fda359e9ab0fcf1cd02120" id="r_a96d5514a09fda359e9ab0fcf1cd02120"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d5514a09fda359e9ab0fcf1cd02120">LoadGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
-<tr class="memdesc:a96d5514a09fda359e9ab0fcf1cd02120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
+<tr class="memdesc:a96d5514a09fda359e9ab0fcf1cd02120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
 <tr class="memitem:a44ea94ab7d0fa6d624b639dc227be510" id="r_a44ea94ab7d0fa6d624b639dc227be510"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510">FindAllDataPersistanceObjects</a> ()</td></tr>
-<tr class="memdesc:a44ea94ab7d0fa6d624b639dc227be510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on.  <br /></td></tr>
+<tr class="memdesc:a44ea94ab7d0fa6d624b639dc227be510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a44ea94ab7d0fa6d624b639dc227be510" name="a44ea94ab7d0fa6d624b639dc227be510"></a>
@@ -125,7 +125,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Grab all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on. </p>
+<p>Gets all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of all objects with <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> attached</dd></dl>
 
 </div>
@@ -153,7 +153,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited. </p>
+<p>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataIDs</td><td>ID's to laod</td></tr>
@@ -186,7 +186,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited. </p>
+<p>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataIDs</td><td>Dictionary with the dataIDs ID and name to save with</td></tr>

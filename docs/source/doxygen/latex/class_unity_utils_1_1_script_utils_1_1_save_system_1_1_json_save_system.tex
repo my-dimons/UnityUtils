@@ -4,11 +4,11 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6fc3b7821cac2aee8f6aa076a8d7316c}{Save}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
-\begin{DoxyCompactList}\small\item\em Loads the inputted {\itshape save\+Data\+ID}  into its respective file. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a624e1538dbe1a48fab03eae36b0d2db3}{Save\+Data\+ID.\+file\+Name} in a json format. \end{DoxyCompactList}\item 
 static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a}{Load}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ save\+Data\+IDs)
-\begin{DoxyCompactList}\small\item\em Loads json file data from the inputted files. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a00f2cde002f6de93df22b4d7eaa861f9}{Load\+Single\+Save\+File}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
-\begin{DoxyCompactList}\small\item\em Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -22,7 +22,7 @@ List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_
 
 
 
-Loads json file data from the inputted files. 
+Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -40,13 +40,11 @@ List of all the loaded save datas
 
 
 
-Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . 
+Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em file\+Name} & Name of the file to grab\\
-\hline
-{\em type} & Type of file to grab\\
+{\em save\+Data\+ID} & \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} to deserialize\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -60,7 +58,7 @@ void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Save (\b
 
 
 
-Loads the inputted {\itshape save\+Data\+ID}  into its respective file. 
+Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a624e1538dbe1a48fab03eae36b0d2db3}{Save\+Data\+ID.\+file\+Name} in a json format. 
 
 
 \begin{DoxyParams}{Parameters}

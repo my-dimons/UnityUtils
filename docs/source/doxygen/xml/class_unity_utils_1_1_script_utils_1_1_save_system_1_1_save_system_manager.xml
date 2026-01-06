@@ -14,7 +14,7 @@
           <declname>dataIDs</declname>
         </param>
         <briefdescription>
-<para>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> inherited. </para>
+<para>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -43,7 +43,7 @@
           <declname>dataIDs</declname>
         </param>
         <briefdescription>
-<para>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> inherited. </para>
+<para>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -68,7 +68,7 @@
         <name>FindAllDataPersistanceObjects</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.FindAllDataPersistanceObjects</qualifiedname>
         <briefdescription>
-<para>Grab all <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> to call functions on. </para>
+<para>Gets all <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> to call functions on. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>List of all objects with <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> attached</para>

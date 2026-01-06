@@ -14,7 +14,7 @@
           <declname>saveDataID</declname>
         </param>
         <briefdescription>
-<para>Loads the inputted <emphasis>saveDataID</emphasis>  into its respective file. </para>
+<para>Serializes the inputted <emphasis>saveDataID</emphasis>  into <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a624e1538dbe1a48fab03eae36b0d2db3" kindref="member">SaveDataID.fileName</ref> in a json format. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -43,7 +43,7 @@
           <declname>saveDataIDs</declname>
         </param>
         <briefdescription>
-<para>Loads json file data from the inputted files. </para>
+<para>Deserializes a list of <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> (Gotten via <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a971b0e2bf3ba683aabfe331c7304276f" kindref="member">SaveDataID.dataInstance</ref>) from a json format file. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -74,23 +74,15 @@
           <declname>saveDataID</declname>
         </param>
         <briefdescription>
-<para>Loads a single save file from the files using a <emphasis>fileName</emphasis>  and <emphasis>type</emphasis> . </para>
+<para>Deserializes a single <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> (Gotten via <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a971b0e2bf3ba683aabfe331c7304276f" kindref="member">SaveDataID.dataInstance</ref>) from a json format file. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>fileName</parametername>
+<parametername>saveDataID</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Name of the file to grab</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>type</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Type of file to grab</para>
+<para><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> to deserialize</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -100,14 +92,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="71" column="33" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="71" bodyend="95"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="70" column="33" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="70" bodyend="94"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="11" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="12" bodyend="96"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="11" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="12" bodyend="95"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ad0f2c14782d3ad4b0328af5a4c65692a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Load</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a00f2cde002f6de93df22b4d7eaa861f9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>LoadSingleSaveFile</name></member>
