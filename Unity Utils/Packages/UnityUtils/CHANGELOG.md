@@ -27,14 +27,16 @@
 - UI Button animations have a variable for applied transform (Defaults to itself)
 - More Debug.Logs() in button scripts
 - ObjectColorFlash.cs
-- UIButtonHoverPosition.cs
-- UIButtonHoverDebugLogs.cs
-- UIButtonSpawnParticles.cs
-- UIButtonSceneSwitcher.cs
-- UIButtonToggleObjects.cs
 - Object Animation for UI Canvas group alpha
 - CameraShake.cs
 - CameraBillboard.cs
+- UI Buttons
+    - UIButtonHoverPosition.cs
+    - UIButtonHoverDebugLogs.cs
+    - UIButtonSpawnParticles.cs
+    - UIButtonSceneSwitcher.cs
+    - UIButtonToggleObjects.cs
+
 
 ### Changes
 - CoroutineStarter renamed to "CoroutineHelper"
