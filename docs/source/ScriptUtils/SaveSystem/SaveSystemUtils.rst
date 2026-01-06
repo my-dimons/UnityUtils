@@ -1,10 +1,10 @@
-SaveDataRegistry
+SaveSystemUtils
 ================
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.SaveSystem`
      
-The **SaveDataRegistry** script is used in turn with other save systems to assist with save systems. This script is used for creating and registering :doc:`SaveDataID`'s, and keeps track of all of the current :doc:`SaveDataID`'s
+The **SaveSystemUtils** script is used in turn with other save systems to assist with save systems. This script is mostly only used in official save system scripts, but could find use in other scripts
 
 Example Usage
 -------------
@@ -17,13 +17,13 @@ Example Usage
    {   	
    	void Start()
    	{
-   	   // Registers a GameData (example script) into the registry 
-   	   SaveDataID gameData = SaveDataRegistry.Register<GameData>("GameData", "game_save.json")
-      }
+   	   // Gets the global path to the save file "filename.save" with a certain file name
+   	   string path = SaveSystemUtils.GetSaveFilePath("filename", SaveSystemUtils.SPECIAL_SAVE_FILE_EXTENSION);
+   	}
    }
-   
+
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry
+.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils
    :members:

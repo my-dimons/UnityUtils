@@ -77,7 +77,7 @@ Player:
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
 
-   public class SaveTesting : MonoBehaviour, ISaveableData
+   public class Player : MonoBehaviour, ISaveableData
    {
        public int health = 2;
        public string name = "John";

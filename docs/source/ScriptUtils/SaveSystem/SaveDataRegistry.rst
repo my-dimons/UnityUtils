@@ -4,7 +4,7 @@ SaveSystemRegistry
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.SaveSystem`
      
-The **SaveSystemRegistry** script is used in turn with other save systems to assist with save systems. This script is used to store :doc:`ISaveData`'s via an ID system, data is stored in :doc:`SaveDataID`.
+The **SaveDataRegistry** script is used in turn with other save systems to assist with save systems. This script is used for creating and registering :doc:`SaveDataID`'s, and keeps track of all of the current :doc:`SaveDataID`'s
 
 Example Usage
 -------------
