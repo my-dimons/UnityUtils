@@ -6,10 +6,15 @@
 - ObjectModifierData
 - StopScreenshake(Transform camera) method to CameraShake.cs
 - IsScreenshaking(Transform camera) method to CameraShake.cs
-- BinarySaveSystem
-- ISaveData
-- SaveSystemConfig
-- SaveSystemManager (Might be renamed soon)
+- Save System
+    - ISaveData
+    - ISaveableData
+    - ISaveManager
+    - SaveDataID
+    - SaveDataRegistry
+    - SaveSystemManager
+    - SaveSystemUtils
+    - JsonSaveSystem
 
 ### Changes
 - Fixed camera shake from ending in an improper position
