@@ -5,9 +5,24 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public class SaveDataID
     {
+        /// The ID that this object is linked to
         public string id;
+
+        /// The file name that this object is linked to
         public string fileName;
+
+        /// Instance of the <see cref="ISaveData"/> linked to this object
         public ISaveData dataInstance;
+
+        /// The parent class type
         public Type classType;
+
+        public SaveDataID(string id, string fileName, ISaveData dataInstance, Type classType)
+        {
+            this.id = id;
+            this.fileName = fileName;
+            this.dataInstance = dataInstance;
+            this.classType = classType;
+        }
     }
 }

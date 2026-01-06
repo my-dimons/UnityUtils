@@ -668,7 +668,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1114040501}
-  - component: {fileID: 1114040500}
   - component: {fileID: 1114040502}
   m_Layer: 0
   m_Name: save manager
@@ -677,18 +676,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1114040500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114040499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31583a1541c6a9d4a9bb6cfe06cbd936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DataPersistanceManager
 --- !u!4 &1114040501
 Transform:
   m_ObjectHideFlags: 0

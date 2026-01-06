@@ -9,7 +9,7 @@ public class SaveManager : MonoBehaviour, ISaveManager
     public static SaveManager Instance { get; private set; }
 
     // A list with save file IDs
-    List<string> saveFiles = new();
+    List<SaveDataID> saveFiles = new();
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class SaveManager : MonoBehaviour, ISaveManager
 
     public void InitializeData()
     {
-        ISaveData gameData = SaveDataRegistry.CreateAndRegister<GameData>("GameData", "game_save");
-        saveFiles.Add(SaveDataRegistry.GetID(gameData));
+        SaveDataID gameData = SaveDataRegistry.Register<GameData>("GameData", "game_save.json");
+        saveFiles.Add(gameData);
     }
 }

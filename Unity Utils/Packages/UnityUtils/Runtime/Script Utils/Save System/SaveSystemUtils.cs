@@ -27,14 +27,23 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         public const string SAVE_FILE_CREATED_MESSAGE = "Save file created in: ";
 
         /// <summary>
-        /// Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities).
+        /// Generates the full file path for a save file using the specified file name and extension.
         /// </summary>
         /// <remarks>The returned path is located within the application's persistent data directory. Use
         /// this method to ensure save files are stored in a consistent and platform-appropriate location.</remarks>
         /// <param name="fileName">The base name of the save file</param>
-        /// <param name="sequence">The sequence number to append to the file name. Defaults to 0 if not specified</param>
+        /// <param name="extension">The "." extension to add to the file (Ex. ".json")</param>
         /// <returns>A string containing the absolute path to the save file</returns>
         public static string GetSaveFilePath(string fileName, string extension) => Application.persistentDataPath + "/" + fileName + extension;
+
+        /// <summary>
+        /// Generates the full file path for a save file using the specified file name.
+        /// </summary>
+        /// <remarks>The returned path is located within the application's persistent data directory. Use
+        /// this method to ensure save files are stored in a consistent and platform-appropriate location.</remarks>
+        /// <param name="fileName">The base name of the save file</param>
+        /// <returns>A string containing the absolute path to the save file</returns>
+        public static string GetSaveFilePath(string fileName) => Application.persistentDataPath + "/" + fileName;
 
         /// <summary>
         /// Logs an error message indicating that a save file was not found at the specified path.

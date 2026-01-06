@@ -9,19 +9,19 @@ using System;
 public static class JsonSaveSystem
 {
     /// <summary>
-    /// Loads the inputted <paramref name="dataID"/> into its respective file
+    /// Loads the inputted <paramref name="saveDataID"/> into its respective file
     /// </summary>
-    /// <param name="dataID">dataID of the file to be saved</param>
-    public static void Save(string dataID)
+    /// <param name="saveDataID">saveDataID of the file to be saved</param>
+    public static void Save(SaveDataID saveDataID)
     {
-        string fullPath = SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION);
+        string fullPath = SaveSystemUtils.GetSaveFilePath(saveDataID.fileName);
 
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
             // Serialize data into json
-            string dataToStore = JsonUtility.ToJson(SaveDataRegistry.GetInstance(dataID), true);
+            string dataToStore = JsonUtility.ToJson(saveDataID.dataInstance, true);
 
             // Write data into files
             using FileStream stream = new(fullPath, FileMode.Create);
@@ -37,16 +37,16 @@ public static class JsonSaveSystem
     /// <summary>
     /// Loads json file data from the inputted files
     /// </summary>
-    /// <param name="dataIDs">A list of dataIDs to load the <see cref="ISaveData"/> of</param>
+    /// <param name="saveDataIDs">A list of saveDataIDs to load the <see cref="ISaveData"/> of</param>
     /// <returns>List of all the loaded save datas</returns>
-    public static List<ISaveData> Load(List<string> dataIDs)
+    public static List<ISaveData> Load(List<SaveDataID> saveDataIDs)
     {
         List<ISaveData> loadedData = new();
 
         // Load data into list
-        foreach (string dataID in dataIDs)
+        foreach (SaveDataID dataID in saveDataIDs)
         {
-            Type type = SaveDataRegistry.GetClass(dataID);
+            Type type = dataID.classType;
 
             if (type != null)
             {
@@ -66,11 +66,11 @@ public static class JsonSaveSystem
     /// <param name="fileName">Name of the file to grab</param>
     /// <param name="type"><see cref="Type"/> of file to grab</param>
     /// <returns><see cref="ISaveData"/> with the loaded data from the file</returns>
-    public static ISaveData LoadSingleSaveFile(string dataID)
+    public static ISaveData LoadSingleSaveFile(SaveDataID saveDataID)
     {
         object loadedData = default;
 
-        string fullPath = SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION);
+        string fullPath = SaveSystemUtils.GetSaveFilePath(saveDataID.fileName);
 
         // Get single file
         if (File.Exists(fullPath))
@@ -81,7 +81,7 @@ public static class JsonSaveSystem
                 string json = File.ReadAllText(fullPath);
 
                 // Deserialize the data from json back into the object
-                loadedData = JsonUtility.FromJson(json, SaveDataRegistry.GetClass(dataID));
+                loadedData = JsonUtility.FromJson(json, saveDataID.classType);
             }
             catch (IOException e)
             {

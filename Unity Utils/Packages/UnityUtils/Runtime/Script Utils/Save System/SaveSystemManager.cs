@@ -10,24 +10,22 @@ public static class SaveSystemManager
     /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
     /// </summary>
     /// <param name="dataIDs">Dictionary with the dataIDs ID and name to save with</param>
-    public static void SaveGame(List<string> dataIDs)
+    public static void SaveGame(List<SaveDataID> dataIDs)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-        // Save dataID for each save dataID type
-        foreach (string dataID in dataIDs)
+        // Save saveID for each save saveID type
+        foreach (SaveDataID saveID in dataIDs)
         {
-            ISaveData data = SaveDataRegistry.GetInstance(dataID);
-
-            // Put dataID from files to ISaveData's
+            // Put saveID from files to ISaveData's
             foreach (ISaveableData saveable in saveableData)
             {
-                saveable.SaveData(data);
+                saveable.SaveData(saveID.dataInstance);
             }
 
-            JsonSaveSystem.Save(dataID);
+            JsonSaveSystem.Save(saveID);
 
-            SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
+            SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveID.fileName));
         }
     }
 
@@ -35,12 +33,12 @@ public static class SaveSystemManager
     /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
     /// </summary>
     /// <param name="dataIDs">ID's to laod</param>
-    public static void LoadGame(List<string> dataIDs)
+    public static void LoadGame(List<SaveDataID> dataIDs)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-        // Inject save dataID into saveable files
-        foreach (string dataID in dataIDs)
+        // Inject save saveID into saveable files
+        foreach (SaveDataID dataID in dataIDs)
         {
             ISaveData saveData = JsonSaveSystem.LoadSingleSaveFile(dataID);
 
@@ -48,7 +46,7 @@ public static class SaveSystemManager
             {
                 saveable.LoadData(saveData);
 
-                SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
+                SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(dataID.fileName));
             }
         }
     }
