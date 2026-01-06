@@ -7,21 +7,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public static class SaveDataRegistry
     {
-        // Dictionary mapping string ID -> function to create a new saveDataInstance
-        private static readonly Dictionary<string, Func<ISaveData>> saveDataTypes = new();
-
-        // Dictionary mapping string stored saveDataInstance -> ID
-        private static readonly Dictionary<ISaveData, string> saveDataIDss = new();
-
-        // Dictionary mapping string ID -> stored saveDataInstance
-        private static readonly Dictionary<string, ISaveData> saveDataInstances = new();
-
-        /// Dictionary mapping string ID -> Type of the object
-        private static readonly Dictionary<string, Type> saveDataClasses = new();
-
-        /// Dictionary mapping string ID -> string file name of the object
-        private static readonly Dictionary<string, string> saveDataFileNames = new();
-
         private static readonly List<SaveDataID> saveDataIDs = new();
 
         /// <summary>
@@ -30,76 +15,17 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <typeparam name="T"></typeparam>
         /// <param name="uniqueID">The unique ID of the new object</param>
         /// <param name="fileName">The file name of the save object</param>
+        /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameteres</returns>
-        public static SaveDataID Register<T>(string uniqueID, string fileName) where T : ISaveData, new()
+        public static SaveDataID Register<T>(string uniqueID, string fileName, bool useEncryption) where T : ISaveData, new()
         {
             // TODO: ADD CHECKS (if id already exists)
             ISaveData saveDataInstance = new T();
-            SaveDataID saveDataID = new SaveDataID(uniqueID, fileName, saveDataInstance, typeof(T));
+            SaveDataID saveDataID = new SaveDataID(uniqueID, fileName, saveDataInstance, typeof(T), useEncryption);
 
             saveDataIDs.Add(saveDataID);
 
             return saveDataID;
-        }
-
-        /// <summary>
-        /// Searches <see cref="saveDataClasses"/> for the matching <paramref name="dataID"/>, if found it will return the <see cref="Type"/> of class
-        /// </summary>
-        /// <param name="dataID">ID to search for</param>
-        /// <returns>Type of class</returns>
-        public static Type GetClass(string dataID)
-        {
-            SaveDataID data = GetSaveDataIDFromID(dataID);
-
-            if (data != null)
-                return data.classType;
-
-            return null;
-        }
-
-        /// <summary>
-        /// Searches <see cref="saveDataInstances"/> for the provided <paramref name="dataID"/>, if found it will return its matching ID 
-        /// </summary>
-        /// <param name="dataID">ID to search for</param>
-        /// <returns>ISaveData from <paramref name="dataID"/></returns>
-        public static ISaveData GetInstance(string dataID)
-        {
-            SaveDataID data = GetSaveDataIDFromID(dataID);
-
-            if (data != null)
-                return data.dataInstance;
-
-            return null;
-        }
-
-        /// <summary>
-        /// Searches <see cref="saveDataFileNames"/> for the provided <paramref name="dataID"/>, if found it will return its matching file name
-        /// </summary>
-        /// <param name="dataID">ID to search for</param>
-        /// <returns>file name from <paramref name="dataID"/></returns>
-        public static string GetFileName(string dataID)
-        {
-            SaveDataID data = GetSaveDataIDFromID(dataID);
-
-            if (data != null)
-                return data.fileName;
-
-            return null;
-        }
-
-        /// <summary>
-        /// Searches <see cref="saveDataFileNames"/> for the provided <paramref name="saveData"/>, if found it will return its matching file name
-        /// </summary>
-        /// <param name="saveData">ID to search for</param>
-        /// <returns>file name from <paramref name="saveData"/></returns>
-        public static string GetFileName(ISaveData saveData)
-        {
-            SaveDataID data = GetIDFromISaveData(saveData);
-
-            if (data != null)
-                return data.fileName;
-
-            return null;
         }
 
         /// <summary>

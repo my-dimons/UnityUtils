@@ -17,12 +17,16 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// The parent class type
         public Type classType;
 
-        public SaveDataID(string id, string fileName, ISaveData dataInstance, Type classType)
+        /// Wether or not this save data should be encrypted
+        public bool useEncryption;
+
+        public SaveDataID(string id, string fileName, ISaveData dataInstance, Type classType, bool useEncryption)
         {
             this.id = id;
             this.fileName = fileName;
             this.dataInstance = dataInstance;
             this.classType = classType;
+            this.useEncryption = useEncryption;
         }
     }
 }

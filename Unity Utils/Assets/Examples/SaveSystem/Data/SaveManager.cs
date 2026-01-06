@@ -28,7 +28,9 @@ public class SaveManager : MonoBehaviour, ISaveManager
 
     public void InitializeData()
     {
-        SaveDataID gameData = SaveDataRegistry.Register<GameData>("GameData", "game_save.json");
+        JsonSaveSystem.SetEncryptionKey(";fds'SRp[2r-~fdogjf)W$Kv-fjvDNJF)W4-vxFJfjds0fJ$)(-rjI*SJ09$K_VUSi980rth09");
+
+        SaveDataID gameData = SaveDataRegistry.Register<GameData>("GameData", "game_save.json", true);
         saveFiles.Add(gameData);
     }
 }

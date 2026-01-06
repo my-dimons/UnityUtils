@@ -10,6 +10,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public static class JsonSaveSystem
     {
+        private static string encryptionKey = "Key";
+
         /// <summary>
         /// Serializes the inputted <paramref name="saveDataID"/> into <see cref="SaveDataID.fileName"/> in a json format
         /// </summary>
@@ -23,7 +25,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
                 // Serialize data into json
-                string dataToStore = JsonUtility.ToJson(saveDataID.dataInstance, true);
+                string dataToStore = JsonUtility.ToJson(saveDataID.dataInstance, !saveDataID.useEncryption);
+
+                if (saveDataID.useEncryption)
+                    dataToStore = EncryptDecrypt(dataToStore);
 
                 // Write data into files
                 using FileStream stream = new(fullPath, FileMode.Create);
@@ -54,6 +59,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 {
                     ISaveData data = LoadSingleSaveFile(dataID);
 
+
                     if (data != null)
                         loadedData.Add(data);
                 }
@@ -81,6 +87,12 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 {
                     string json = File.ReadAllText(fullPath);
 
+                    // Data decryption
+                    if (saveDataID.useEncryption)
+                    {
+                        json = EncryptDecrypt(json);
+                    }
+
                     // Deserialize the data from json back into the object
                     loadedData = JsonUtility.FromJson(json, saveDataID.classType);
                 }
@@ -91,6 +103,23 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
 
             return loadedData as ISaveData;
+        }
+
+        public static void SetEncryptionKey(string key)
+        {
+            encryptionKey = key;
+        }
+
+        public static string EncryptDecrypt(string data)
+        {
+            string modifiedData = string.Empty;
+
+            for (int character = 0; character < data.Length; character++)
+            {
+                modifiedData += (char)(data[character] ^ encryptionKey[character % encryptionKey.Length]);
+            }
+
+            return modifiedData;
         }
     }
 }
