@@ -4,6 +4,7 @@
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/Camera</compoundname>
     <innerfile refid="_camera_billboard_8cs">CameraBillboard.cs</innerfile>
     <innerfile refid="_camera_shake_8cs">CameraShake.cs</innerfile>
+    <innerfile refid="_testing_script1_8cs">TestingScript1.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

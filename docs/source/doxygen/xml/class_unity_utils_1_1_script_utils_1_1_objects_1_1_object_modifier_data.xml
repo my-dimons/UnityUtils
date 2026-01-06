@@ -50,7 +50,7 @@
           <declname>modifierValue</declname>
         </param>
         <briefdescription>
-<para>Initializes a new instance of the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kindref="compound">ObjectModifierData</ref> class with the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref> and value. </para>
+<para>Initializes a new Instance of the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" kindref="compound">ObjectModifierData</ref> class with the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1aeab004c6986f97db403b768d0a985b9d" kindref="member">ObjectModifiers.ModifierType</ref> and value. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>

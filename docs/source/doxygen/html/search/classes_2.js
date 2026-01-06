@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['camerabillboard_0',['CameraBillboard',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html',1,'UnityUtils::ScriptUtils::Cameras']]],
-  ['camerashake_1',['CameraShake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html',1,'UnityUtils::ScriptUtils::Cameras']]],
-  ['coroutinehelper_2',['CoroutineHelper',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html',1,'UnityUtils::ScriptUtils']]]
+  ['isaveabledata_0',['ISaveableData',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html',1,'UnityUtils::ScriptUtils::SaveSystem']]],
+  ['isavedata_1',['ISaveData',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html',1,'UnityUtils::ScriptUtils::SaveSystem']]],
+  ['isavemanager_2',['ISaveManager',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html',1,'UnityUtils::ScriptUtils::SaveSystem']]]
 ];

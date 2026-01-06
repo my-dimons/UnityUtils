@@ -18,7 +18,7 @@ Example Usage
    	void Start()
    	{
    	   // Gets the global path to the save file "filename.save" with a certain file name
-   	   string path = SaveSystemUtils.GetSaveFilePath("filename", SaveSystemConfig.SPECIAL_SAVE_FILE_EXTENSION);
+   	   string path = SaveSystemUtils.GetSaveFilePath("filename", SaveSystemUtils.SPECIAL_SAVE_FILE_EXTENSION);
    	}
    }
    

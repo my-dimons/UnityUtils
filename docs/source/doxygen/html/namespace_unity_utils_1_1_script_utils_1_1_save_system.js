@@ -1,7 +1,7 @@
 var namespace_unity_utils_1_1_script_utils_1_1_save_system =
 [
-    [ "BinarySaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_binary_save_system" ],
-    [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
-    [ "SaveSystemConfig", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_config" ],
+    [ "ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" ],
+    [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" ],
+    [ "ISaveManager", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager" ],
     [ "SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" ]
 ];

@@ -8,6 +8,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     /// </summary>
     public interface ISaveData
     {
+        /// Data ID is used in the <see cref="SaveDataRegistry"/>. set string like so: public string DataID => nameof(CLASS_NAME);
         string DataID { get; }
     }
 }

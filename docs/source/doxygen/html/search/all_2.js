@@ -20,6 +20,8 @@ var searchData=
   ['clickvolume_17',['clickVolume',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
   ['coroutinehelper_18',['CoroutineHelper',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html',1,'UnityUtils::ScriptUtils']]],
   ['coroutinehelper_2ecs_19',['CoroutineHelper.cs',['../_coroutine_helper_8cs.html',1,'']]],
-  ['currentplayingtrack_20',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a01739ca739685e352f8d04e24344d187',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['custom_21',['Custom',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['create_20',['Create',['../class_save_data_registry.html#a0d71ba49ad14c8c432726c338e75342a',1,'SaveDataRegistry']]],
+  ['createandregister_3c_20t_20_3e_21',['CreateAndRegister&lt; T &gt;',['../class_save_data_registry.html#a3b151e1330ef82d7b2278c90166400c2',1,'SaveDataRegistry']]],
+  ['currentplayingtrack_22',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a01739ca739685e352f8d04e24344d187',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['custom_23',['Custom',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

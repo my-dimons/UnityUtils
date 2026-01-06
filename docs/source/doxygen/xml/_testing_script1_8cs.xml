@@ -3,7 +3,6 @@
   <compounddef id="_testing_script1_8cs" kind="file" language="C#">
     <compoundname>TestingScript1.cs</compoundname>
     <innerclass refid="class_testing_script1" prot="public">TestingScript1</innerclass>
-    <innernamespace refid="namespace_unity_engine_1_1_u_i">UnityEngine::UI</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -11,25 +10,26 @@
     <programlisting>
 <codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityUtils.ScriptUtils;</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="class_testing_script1" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_testing_script1" kindref="compound">TestingScript1</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
-<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kindref="member">testingValue</ref>;</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kindref="member">testingVector3</ref>;</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>is<sp/>called<sp/>once<sp/>before<sp/>the<sp/>first<sp/>execution<sp/>of<sp/>Update<sp/>after<sp/>the<sp/>MonoBehaviour<sp/>is<sp/>created</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectAnimations.AnimateImageOpacity(GetComponent&lt;Image&gt;(),<sp/>0.5f,<sp/>1,<sp/>2);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Animates<sp/>the<sp/>testingVector3<sp/>variable&apos;s<sp/>value<sp/>from<sp/>(0,<sp/>0,<sp/>0)<sp/>to<sp/>(0,<sp/>1,<sp/>4)<sp/>in<sp/>2<sp/>seconds.<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectAnimations.AnimateValue&lt;Vector3&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(0,<sp/>0,<sp/>0),<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(2,<sp/>2,<sp/>2),<sp/>2,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Vector3.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/><ref refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kindref="member">testingVector3</ref><sp/>=<sp/>value);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Animates<sp/>the<sp/>testingValue<sp/>variable&apos;s<sp/>value<sp/>from<sp/>1<sp/>to<sp/>3<sp/>in<sp/>2<sp/>seconds.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectAnimations.AnimateValue&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(1,<sp/>3,<sp/>2,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Mathf.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/><ref refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kindref="member">testingValue</ref><sp/>=<sp/>value);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils" kindref="compound">UnityUtils.ScriptUtils</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kindref="compound">UnityUtils.ScriptUtils.Objects</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_testing_script1" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_testing_script1" kindref="compound">TestingScript1</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kindref="member">testingValue</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kindref="member">testingVector3</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Starter<sp/>is<sp/>called<sp/>once<sp/>before<sp/>the<sp/>first<sp/>execution<sp/>of<sp/>Update<sp/>after<sp/>the<sp/>MonoBehaviour<sp/>is<sp/>created</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kindref="compound">ObjectAnimations</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" kindref="member">AnimateImageOpacity</ref>(GetComponent&lt;Image&gt;(),<sp/>0.5f,<sp/>1,<sp/>2);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Animates<sp/>the<sp/>testingVector3<sp/>variable&apos;s<sp/>value<sp/>from<sp/>(0,<sp/>0,<sp/>0)<sp/>to<sp/>(0,<sp/>1,<sp/>4)<sp/>in<sp/>2<sp/>seconds.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kindref="compound">ObjectAnimations</ref>.AnimateValue&lt;Vector3&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(0,<sp/>0,<sp/>0),<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(2,<sp/>2,<sp/>2),<sp/>2,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Vector3.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/><ref refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kindref="member">testingVector3</ref><sp/>=<sp/>value);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Animates<sp/>the<sp/>testingValue<sp/>variable&apos;s<sp/>value<sp/>from<sp/>1<sp/>to<sp/>3<sp/>in<sp/>2<sp/>seconds.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kindref="compound">ObjectAnimations</ref>.AnimateValue&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(1,<sp/>3,<sp/>2,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Mathf.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/><ref refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kindref="member">testingValue</ref><sp/>=<sp/>value);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Assets/TestingScript1.cs"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/TestingScript1.cs"/>
   </compounddef>
 </doxygen>

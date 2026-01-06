@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_save_data_registry" kind="class" language="C#" prot="public">
+    <compoundname>SaveDataRegistry</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_save_data_registry_1aae87856af243ccb178a1ab0119355308" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; string, Func&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt; &gt;</type>
+        <definition>readonly Dictionary&lt;string, Func&lt;ISaveData&gt; &gt; SaveDataRegistry.saveDataTypes</definition>
+        <argsstring></argsstring>
+        <name>saveDataTypes</name>
+        <qualifiedname>SaveDataRegistry.saveDataTypes</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="9" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_save_data_registry_1a08eca4a0a135f12cd90de7a032f873db" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref>, string &gt;</type>
+        <definition>readonly Dictionary&lt;ISaveData, string&gt; SaveDataRegistry.saveDataIDs</definition>
+        <argsstring></argsstring>
+        <name>saveDataIDs</name>
+        <qualifiedname>SaveDataRegistry.saveDataIDs</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="12" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_save_data_registry_1ae0d0cc7799e7f12f3964f613c72802b4" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; string, <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt;</type>
+        <definition>readonly Dictionary&lt;string, ISaveData&gt; SaveDataRegistry.saveDataInstances</definition>
+        <argsstring></argsstring>
+        <name>saveDataInstances</name>
+        <qualifiedname>SaveDataRegistry.saveDataInstances</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="15" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_save_data_registry_1a6b2976a5944db42af137b78eaed61d11" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; string, Type &gt;</type>
+        <definition>readonly Dictionary&lt;string, Type&gt; SaveDataRegistry.saveDataClasses</definition>
+        <argsstring></argsstring>
+        <name>saveDataClasses</name>
+        <qualifiedname>SaveDataRegistry.saveDataClasses</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Dictionary mapping string ID -&gt; Type of the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="18" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_save_data_registry_1a5129e6c5c1988c0c8c28d75cf0e42691" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SaveDataRegistry.Register&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>Register&lt; T &gt;</name>
+        <qualifiedname>SaveDataRegistry.Register&lt; T &gt;</qualifiedname>
+        <briefdescription>
+<para>Registers a new class to all the registry dictionaries to be referenced later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call <ref refid="class_save_data_registry_1a0d71ba49ad14c8c432726c338e75342a" kindref="member">Create(string)</ref> after this function, or call CreateAndRegister&lt;T&gt; for more simplicity</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class to register</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="25" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="25" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_save_data_registry_1a0d71ba49ad14c8c432726c338e75342a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
+        <definition>static ISaveData SaveDataRegistry.Create</definition>
+        <argsstring>(string dataID)</argsstring>
+        <name>Create</name>
+        <qualifiedname>SaveDataRegistry.Create</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>dataID</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call Register&lt;T&gt; then this function, or call CreateAndRegister&lt;T&gt; for more simplicity</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> to create</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Created <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="46" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_save_data_registry_1a3b151e1330ef82d7b2278c90166400c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
+        <definition>static ISaveData SaveDataRegistry.CreateAndRegister&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>CreateAndRegister&lt; T &gt;</name>
+        <qualifiedname>SaveDataRegistry.CreateAndRegister&lt; T &gt;</qualifiedname>
+        <briefdescription>
+<para>Creates and registers a new <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> into the registry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class to add into the registry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Registered <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="59" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_save_data_registry_1a5e6babd0ca71129d5186b1e5831d9152" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>static Type SaveDataRegistry.GetClass</definition>
+        <argsstring>(string dataID)</argsstring>
+        <name>GetClass</name>
+        <qualifiedname>SaveDataRegistry.GetClass</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>dataID</declname>
+        </param>
+        <briefdescription>
+<para>Searches saveDataClasses for the matching <emphasis>dataID</emphasis> , if found it will return the Type of class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID to search for</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Type of class</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="71" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_save_data_registry_1aa2e81137dca5bd4e0d3dd7cf80c778d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
+        <definition>static ISaveData SaveDataRegistry.GetInstance</definition>
+        <argsstring>(string dataID)</argsstring>
+        <name>GetInstance</name>
+        <qualifiedname>SaveDataRegistry.GetInstance</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>dataID</declname>
+        </param>
+        <briefdescription>
+<para>Searches saveDataInstances for the provided <emphasis>dataID</emphasis> , if found it will return its matching ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID to search for</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> from dataID</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="84" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_save_data_registry_1a6fb2fd5e9f0816b7b1db5dfac0c5d03d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string SaveDataRegistry.GetID</definition>
+        <argsstring>(ISaveData saveData)</argsstring>
+        <name>GetID</name>
+        <qualifiedname>SaveDataRegistry.GetID</qualifiedname>
+        <param>
+          <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
+          <declname>saveData</declname>
+        </param>
+        <briefdescription>
+<para>Searches saveDataIDs for <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref>, if found it will return its matching ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Save data to get ID from</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ID string</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="97" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="97" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="6" column="15" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="7" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_save_data_registry_1a0d71ba49ad14c8c432726c338e75342a" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>Create</name></member>
+      <member refid="class_save_data_registry_1a3b151e1330ef82d7b2278c90166400c2" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>CreateAndRegister&lt; T &gt;</name></member>
+      <member refid="class_save_data_registry_1a5e6babd0ca71129d5186b1e5831d9152" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>GetClass</name></member>
+      <member refid="class_save_data_registry_1a6fb2fd5e9f0816b7b1db5dfac0c5d03d" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>GetID</name></member>
+      <member refid="class_save_data_registry_1aa2e81137dca5bd4e0d3dd7cf80c778d7" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>GetInstance</name></member>
+      <member refid="class_save_data_registry_1a5129e6c5c1988c0c8c28d75cf0e42691" prot="public" virt="non-virtual"><scope>SaveDataRegistry</scope><name>Register&lt; T &gt;</name></member>
+      <member refid="class_save_data_registry_1a6b2976a5944db42af137b78eaed61d11" prot="private" virt="non-virtual"><scope>SaveDataRegistry</scope><name>saveDataClasses</name></member>
+      <member refid="class_save_data_registry_1a08eca4a0a135f12cd90de7a032f873db" prot="private" virt="non-virtual"><scope>SaveDataRegistry</scope><name>saveDataIDs</name></member>
+      <member refid="class_save_data_registry_1ae0d0cc7799e7f12f3964f613c72802b4" prot="private" virt="non-virtual"><scope>SaveDataRegistry</scope><name>saveDataInstances</name></member>
+      <member refid="class_save_data_registry_1aae87856af243ccb178a1ab0119355308" prot="private" virt="non-virtual"><scope>SaveDataRegistry</scope><name>saveDataTypes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

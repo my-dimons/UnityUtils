@@ -1,0 +1,144 @@
+\doxysection{Save\+Data\+Registry Class Reference}
+\hypertarget{class_save_data_registry}{}\label{class_save_data_registry}\index{SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_save_data_registry_a5129e6c5c1988c0c8c28d75cf0e42691}{Register$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Registers a new class to all the registry dictionaries to be referenced later. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_save_data_registry_a0d71ba49ad14c8c432726c338e75342a}{Create}} (string data\+ID)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_save_data_registry_a3b151e1330ef82d7b2278c90166400c2}{Create\+And\+Register$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Creates and registers a new \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} into the registry. \end{DoxyCompactList}\item 
+static Type \mbox{\hyperlink{class_save_data_registry_a5e6babd0ca71129d5186b1e5831d9152}{Get\+Class}} (string data\+ID)
+\begin{DoxyCompactList}\small\item\em Searches save\+Data\+Classes for the matching {\itshape data\+ID} , if found it will return the Type of class. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_save_data_registry_aa2e81137dca5bd4e0d3dd7cf80c778d7}{Get\+Instance}} (string data\+ID)
+\begin{DoxyCompactList}\small\item\em Searches save\+Data\+Instances for the provided {\itshape data\+ID} , if found it will return its matching ID. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_save_data_registry_a6fb2fd5e9f0816b7b1db5dfac0c5d03d}{Get\+ID}} (\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} save\+Data)
+\begin{DoxyCompactList}\small\item\em Searches save\+Data\+IDs for \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}, if found it will return its matching ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_save_data_registry_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_save_data_registry_a0d71ba49ad14c8c432726c338e75342a}\index{SaveDataRegistry@{SaveDataRegistry}!Create@{Create}}
+\index{Create@{Create}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_a0d71ba49ad14c8c432726c338e75342a} 
+\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Save\+Data\+Registry.\+Create (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}. 
+
+Call Register$<$\+T$>$ then this function, or call Create\+And\+Register$<$\+T$>$ for more simplicity
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+ID} & ID of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} to create\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Created \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}
+\end{DoxyReturn}
+\Hypertarget{class_save_data_registry_a3b151e1330ef82d7b2278c90166400c2}\index{SaveDataRegistry@{SaveDataRegistry}!CreateAndRegister$<$ T $>$@{CreateAndRegister$<$ T $>$}}
+\index{CreateAndRegister$<$ T $>$@{CreateAndRegister$<$ T $>$}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{CreateAndRegister$<$ T $>$()}{CreateAndRegister< T >()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_a3b151e1330ef82d7b2278c90166400c2} 
+\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Save\+Data\+Registry.\+Create\+And\+Register$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates and registers a new \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} into the registry. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class to add into the registry\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Registered \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\Hypertarget{class_save_data_registry_a5e6babd0ca71129d5186b1e5831d9152}\index{SaveDataRegistry@{SaveDataRegistry}!GetClass@{GetClass}}
+\index{GetClass@{GetClass}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{GetClass()}{GetClass()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_a5e6babd0ca71129d5186b1e5831d9152} 
+Type Save\+Data\+Registry.\+Get\+Class (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches save\+Data\+Classes for the matching {\itshape data\+ID} , if found it will return the Type of class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+ID} & ID to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of class
+\end{DoxyReturn}
+\Hypertarget{class_save_data_registry_a6fb2fd5e9f0816b7b1db5dfac0c5d03d}\index{SaveDataRegistry@{SaveDataRegistry}!GetID@{GetID}}
+\index{GetID@{GetID}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_a6fb2fd5e9f0816b7b1db5dfac0c5d03d} 
+string Save\+Data\+Registry.\+Get\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]{save\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches save\+Data\+IDs for \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}, if found it will return its matching ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Data} & Save data to get ID from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID string
+\end{DoxyReturn}
+\Hypertarget{class_save_data_registry_aa2e81137dca5bd4e0d3dd7cf80c778d7}\index{SaveDataRegistry@{SaveDataRegistry}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_aa2e81137dca5bd4e0d3dd7cf80c778d7} 
+\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Save\+Data\+Registry.\+Get\+Instance (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches save\+Data\+Instances for the provided {\itshape data\+ID} , if found it will return its matching ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+ID} & ID to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} from data\+ID
+\end{DoxyReturn}
+\Hypertarget{class_save_data_registry_a5129e6c5c1988c0c8c28d75cf0e42691}\index{SaveDataRegistry@{SaveDataRegistry}!Register$<$ T $>$@{Register$<$ T $>$}}
+\index{Register$<$ T $>$@{Register$<$ T $>$}!SaveDataRegistry@{SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{Register$<$ T $>$()}{Register< T >()}}
+{\footnotesize\ttfamily \label{class_save_data_registry_a5129e6c5c1988c0c8c28d75cf0e42691} 
+void Save\+Data\+Registry.\+Register$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new class to all the registry dictionaries to be referenced later. 
+
+Call \doxylink{class_save_data_registry_a0d71ba49ad14c8c432726c338e75342a}{Create(string)} after this function, or call Create\+And\+Register$<$\+T$>$ for more simplicity
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class to register\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\mbox{\hyperlink{_save_data_registry_8cs}{Save\+Data\+Registry.\+cs}}\end{DoxyCompactItemize}

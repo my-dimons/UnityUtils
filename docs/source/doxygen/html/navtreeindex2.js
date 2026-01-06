@@ -1,0 +1,20 @@
+var NAVTREEINDEX2 =
+{
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html":[0,0,0,0,4,0],
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html":[1,0,0,0,4,0],
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#a542b6c1d9a8f9fcb3b1fd19171f131d6":[0,0,0,0,4,0,1],
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#a542b6c1d9a8f9fcb3b1fd19171f131d6":[1,0,0,0,4,0,1],
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#abfde40bcc5250e53a4a52fa16024ef18":[0,0,0,0,4,0,0],
+"interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#abfde40bcc5250e53a4a52fa16024ef18":[1,0,0,0,4,0,0],
+"namespace_unity_utils.html":[0,0,0],
+"namespace_unity_utils_1_1_script_utils.html":[0,0,0,0],
+"namespace_unity_utils_1_1_script_utils_1_1_audio.html":[0,0,0,0,0],
+"namespace_unity_utils_1_1_script_utils_1_1_cameras.html":[0,0,0,0,1],
+"namespace_unity_utils_1_1_script_utils_1_1_objects.html":[0,0,0,0,2],
+"namespace_unity_utils_1_1_script_utils_1_1_particles.html":[0,0,0,0,3],
+"namespace_unity_utils_1_1_script_utils_1_1_save_system.html":[0,0,0,0,4],
+"namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html":[0,0,0,0,5],
+"namespace_unity_utils_1_1_script_utils_1_1_u_i.html":[0,0,0,0,6],
+"namespaces.html":[0,0],
+"pages.html":[]
+};

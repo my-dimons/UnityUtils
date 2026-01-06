@@ -8,9 +8,14 @@ using System;
 
 public static class JsonSaveSystem
 {
+    /// <summary>
+    /// Loads the inputted <paramref name="data"/> into the file with <paramref name="fileName"/>
+    /// </summary>
+    /// <param name="data">Data to load into the provided file</param>
+    /// <param name="fileName">File to load the data into</param>
     public static void Save(ISaveData data, string fileName)
     {
-        string fullPath = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemConfig.JSON_SAVE_FILE_EXTENSION);
+        string fullPath = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemUtils.JSON_SAVE_FILE_EXTENSION);
 
         try
         {
@@ -30,6 +35,11 @@ public static class JsonSaveSystem
         }
     }
 
+    /// <summary>
+    /// Loads json file data from the inputted files
+    /// </summary>
+    /// <param name="saveFiles">A list of <see cref="ISaveData"/> IDs and File Names</param>
+    /// <returns>List of all the loaded save datas</returns>
     public static List<ISaveData> Load(Dictionary<string, string> saveFiles)
     {
         List<ISaveData> loadedData = new();
@@ -56,11 +66,17 @@ public static class JsonSaveSystem
         return loadedData;
     }
 
+    /// <summary>
+    /// Loads a single save file from the files using a <paramref name="fileName"/> and <paramref name="type"/>
+    /// </summary>
+    /// <param name="fileName">Name of the file to grab</param>
+    /// <param name="type"><see cref="Type"/> of file to grab</param>
+    /// <returns><see cref="ISaveData"/> with the loaded data from the file</returns>
     public static ISaveData LoadSingleSaveFile(string fileName, Type type)
     {
         object loadedData = default;
 
-        string fullPath = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemConfig.JSON_SAVE_FILE_EXTENSION);
+        string fullPath = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemUtils.JSON_SAVE_FILE_EXTENSION);
 
         // Get single file
         if (File.Exists(fullPath))

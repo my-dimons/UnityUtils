@@ -6,6 +6,10 @@ using System.Linq;
 
 public static class SaveSystemManager
 {
+    /// <summary>
+    /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
+    /// </summary>
+    /// <param name="saveFiles">Dictionary with the saveFiles ID and name to save with</param>
     public static void SaveGame(Dictionary<string, string> saveFiles)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
@@ -27,6 +31,10 @@ public static class SaveSystemManager
         }
     }
 
+    /// <summary>
+    /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
+    /// </summary>
+    /// <param name="saveFiles">Dictionary with the saveFiles ID and name to load with</param>
     public static void LoadGame(Dictionary<string, string> saveFiles)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
@@ -44,11 +52,13 @@ public static class SaveSystemManager
             }
         }
     }
-
-    public static List<ISaveableData> FindAllDataPersistanceObjects()
-    {
-        return Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+    
+    /// <summary>
+    /// Grab all <see cref="ISaveableData"/> to call functions on
+    /// </summary>
+    /// <returns>List of all objects with <see cref="ISaveableData"/> attached</returns>
+    public static List<ISaveableData> FindAllDataPersistanceObjects() => 
+        Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
             .OfType<ISaveableData>()
             .ToList();
-    }
 }

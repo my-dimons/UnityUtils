@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kind="interface" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.SaveSystem.ISaveableData.SaveData&lt; T &gt;</definition>
+        <argsstring>(T data)</argsstring>
+        <name>SaveData&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.ISaveableData.SaveData&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="7" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.SaveSystem.ISaveableData.LoadData&lt; T &gt;</definition>
+        <argsstring>(T data)</argsstring>
+        <name>LoadData&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.ISaveableData.LoadData&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="9" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="5" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>LoadData&lt; T &gt;</name></member>
+      <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>SaveData&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

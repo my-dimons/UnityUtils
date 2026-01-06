@@ -1,0 +1,76 @@
+\doxysection{Json\+Save\+System Class Reference}
+\hypertarget{class_json_save_system}{}\label{class_json_save_system}\index{JsonSaveSystem@{JsonSaveSystem}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_json_save_system_a330a224cae82d611d68a3964a5848c03}{Save}} (\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} data, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads the inputted {\itshape data}  into the file with {\itshape file\+Name} . \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ \mbox{\hyperlink{class_json_save_system_aa08d0c2f69094d4e72d8186e2a862695}{Load}} (Dictionary$<$ string, string $>$ save\+Files)
+\begin{DoxyCompactList}\small\item\em Loads json file data from the inputted files. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_json_save_system_ae8b8c094c87b87053e274ca77e5b30bf}{Load\+Single\+Save\+File}} (string file\+Name, Type type)
+\begin{DoxyCompactList}\small\item\em Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_json_save_system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_save_system_aa08d0c2f69094d4e72d8186e2a862695}\index{JsonSaveSystem@{JsonSaveSystem}!Load@{Load}}
+\index{Load@{Load}!JsonSaveSystem@{JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_json_save_system_aa08d0c2f69094d4e72d8186e2a862695} 
+List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ Json\+Save\+System.\+Load (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{save\+Files}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads json file data from the inputted files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Files} & A list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} IDs and File Names\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all the loaded save datas
+\end{DoxyReturn}
+\Hypertarget{class_json_save_system_ae8b8c094c87b87053e274ca77e5b30bf}\index{JsonSaveSystem@{JsonSaveSystem}!LoadSingleSaveFile@{LoadSingleSaveFile}}
+\index{LoadSingleSaveFile@{LoadSingleSaveFile}!JsonSaveSystem@{JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{LoadSingleSaveFile()}{LoadSingleSaveFile()}}
+{\footnotesize\ttfamily \label{class_json_save_system_ae8b8c094c87b87053e274ca77e5b30bf} 
+\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Json\+Save\+System.\+Load\+Single\+Save\+File (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{Type}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of the file to grab\\
+\hline
+{\em type} & Type of file to grab\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} with the loaded data from the file
+\end{DoxyReturn}
+\Hypertarget{class_json_save_system_a330a224cae82d611d68a3964a5848c03}\index{JsonSaveSystem@{JsonSaveSystem}!Save@{Save}}
+\index{Save@{Save}!JsonSaveSystem@{JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_json_save_system_a330a224cae82d611d68a3964a5848c03} 
+void Json\+Save\+System.\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]{data}{, }\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the inputted {\itshape data}  into the file with {\itshape file\+Name} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to load into the provided file\\
+\hline
+{\em file\+Name} & File to load the data into\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\mbox{\hyperlink{_json_save_system_8cs}{Json\+Save\+System.\+cs}}\end{DoxyCompactItemize}

@@ -94,18 +94,31 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a462cb914973364581853a359bb538509" id="r_a462cb914973364581853a359bb538509"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a462cb914973364581853a359bb538509">GetSaveFilePath</a> (string fileName, string extension, int sequence=0)</td></tr>
-<tr class="memdesc:a462cb914973364581853a359bb538509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities).  <br /></td></tr>
+<tr class="memitem:aa49ee94cfe14136eaddb96c8f8aa9334" id="r_aa49ee94cfe14136eaddb96c8f8aa9334"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49ee94cfe14136eaddb96c8f8aa9334">GetSaveFilePath</a> (string fileName, string extension)</td></tr>
+<tr class="memdesc:aa49ee94cfe14136eaddb96c8f8aa9334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities).  <br /></td></tr>
 <tr class="memitem:abe5777c132d484cf0a40ad3508f9e30a" id="r_abe5777c132d484cf0a40ad3508f9e30a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe5777c132d484cf0a40ad3508f9e30a">LogSaveFileNotFound</a> (string path)</td></tr>
 <tr class="memdesc:abe5777c132d484cf0a40ad3508f9e30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error message indicating that a save file was not found at the specified path.  <br /></td></tr>
 <tr class="memitem:a22c2f625f701aeeb416b1d4f48a53abc" id="r_a22c2f625f701aeeb416b1d4f48a53abc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22c2f625f701aeeb416b1d4f48a53abc">LogSaveFileCreated</a> (string path)</td></tr>
 <tr class="memdesc:a22c2f625f701aeeb416b1d4f48a53abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message indicating that a save file has been created at the specified path.  <br /></td></tr>
 <tr class="memitem:ab0f485ace295fb7d57dc33f8c322b5b4" id="r_ab0f485ace295fb7d57dc33f8c322b5b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f485ace295fb7d57dc33f8c322b5b4">LogSaveFileLoaded</a> (string path)</td></tr>
 <tr class="memdesc:ab0f485ace295fb7d57dc33f8c322b5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message indicating that a save file has been loaded at the specified path.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae82e13ad8d6974d658f8d03d1b6999d6" id="r_ae82e13ad8d6974d658f8d03d1b6999d6"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82e13ad8d6974d658f8d03d1b6999d6">SPECIAL_SAVE_FILE_EXTENSION</a> = &quot;.save&quot;</td></tr>
+<tr class="memdesc:ae82e13ad8d6974d658f8d03d1b6999d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default file extension used for save files not needing a specific extension.  <br /></td></tr>
+<tr class="memitem:a1d4c639a005c4e74afa106f605c0b01d" id="r_a1d4c639a005c4e74afa106f605c0b01d"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d4c639a005c4e74afa106f605c0b01d">JSON_SAVE_FILE_EXTENSION</a> = &quot;.json&quot;</td></tr>
+<tr class="memdesc:a1d4c639a005c4e74afa106f605c0b01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">.json file extension  <br /></td></tr>
+<tr class="memitem:a7a5121a35481691448fb488f9b8a067e" id="r_a7a5121a35481691448fb488f9b8a067e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a5121a35481691448fb488f9b8a067e">SAVE_FILE_NOT_FOUND_ERROR</a> = &quot;Save file not found in: &quot;</td></tr>
+<tr class="memdesc:a7a5121a35481691448fb488f9b8a067e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The error message used when a save file cannot be found at the specified location.  <br /></td></tr>
+<tr class="memitem:a6b85adcd747dfe307696710bbdbea9a0" id="r_a6b85adcd747dfe307696710bbdbea9a0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b85adcd747dfe307696710bbdbea9a0">SAVE_FILE_LOADED_MESSAGE</a> = &quot;Save file loaded from: &quot;</td></tr>
+<tr class="memdesc:a6b85adcd747dfe307696710bbdbea9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message used to when a save file has been loaded.  <br /></td></tr>
+<tr class="memitem:ab12ab4c43c64944e4c5eb405cadb2a75" id="r_ab12ab4c43c64944e4c5eb405cadb2a75"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12ab4c43c64944e4c5eb405cadb2a75">SAVE_FILE_CREATED_MESSAGE</a> = &quot;Save file created in: &quot;</td></tr>
+<tr class="memdesc:ab12ab4c43c64944e4c5eb405cadb2a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is created.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a462cb914973364581853a359bb538509" name="a462cb914973364581853a359bb538509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462cb914973364581853a359bb538509">&#9670;&#160;</a></span>GetSaveFilePath()</h2>
+<a id="aa49ee94cfe14136eaddb96c8f8aa9334" name="aa49ee94cfe14136eaddb96c8f8aa9334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49ee94cfe14136eaddb96c8f8aa9334">&#9670;&#160;</a></span>GetSaveFilePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,12 +134,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sequence</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -245,6 +253,127 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a1d4c639a005c4e74afa106f605c0b01d" name="a1d4c639a005c4e74afa106f605c0b01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4c639a005c4e74afa106f605c0b01d">&#9670;&#160;</a></span>JSON_SAVE_FILE_EXTENSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.JSON_SAVE_FILE_EXTENSION = &quot;.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>.json file extension </p>
+
+</div>
+</div>
+<a id="ab12ab4c43c64944e4c5eb405cadb2a75" name="ab12ab4c43c64944e4c5eb405cadb2a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12ab4c43c64944e4c5eb405cadb2a75">&#9670;&#160;</a></span>SAVE_FILE_CREATED_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_CREATED_MESSAGE = &quot;Save file created in: &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The message displayed when a save file is created. </p>
+
+</div>
+</div>
+<a id="a6b85adcd747dfe307696710bbdbea9a0" name="a6b85adcd747dfe307696710bbdbea9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b85adcd747dfe307696710bbdbea9a0">&#9670;&#160;</a></span>SAVE_FILE_LOADED_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_LOADED_MESSAGE = &quot;Save file loaded from: &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The message used to when a save file has been loaded. </p>
+
+</div>
+</div>
+<a id="a7a5121a35481691448fb488f9b8a067e" name="a7a5121a35481691448fb488f9b8a067e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5121a35481691448fb488f9b8a067e">&#9670;&#160;</a></span>SAVE_FILE_NOT_FOUND_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_NOT_FOUND_ERROR = &quot;Save file not found in: &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The error message used when a save file cannot be found at the specified location. </p>
+
+</div>
+</div>
+<a id="ae82e13ad8d6974d658f8d03d1b6999d6" name="ae82e13ad8d6974d658f8d03d1b6999d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82e13ad8d6974d658f8d03d1b6999d6">&#9670;&#160;</a></span>SPECIAL_SAVE_FILE_EXTENSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SPECIAL_SAVE_FILE_EXTENSION = &quot;.save&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The default file extension used for save files not needing a specific extension. </p>
 
 </div>
 </div>

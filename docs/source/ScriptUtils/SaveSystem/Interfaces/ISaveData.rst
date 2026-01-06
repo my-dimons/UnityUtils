@@ -13,24 +13,19 @@ The **ISaveData** is used in turn with other save systems. **ISaveData** Is inhe
 Example Usage
 -------------
 .. code:: csharp
-   
+
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
    
    [System.Serializable]
-   public class PlayerSaveData : ISaveData
+   public class PlayerData : ISaveData
    {
-   	public float health;
-   	public float level;
+   	// DataID is required
+   	public string DataID => nameof(PlayerData);
    	
-   	// Constructor for saving data (Player is an example script)
-   	public PlayerSaveData(Player player)
-   	{
-   	   health = player.health;
-   	   level = player.level;
-   	}
+   	public float health;
+   	public string name;
    }
    
-.. note :: 
-
-   This interface contains no implementable methods, but is used to make sure its a SaveData file (In use with SaveSystems).
+.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::Interfaces::ISaveData
+   :members:
