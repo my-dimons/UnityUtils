@@ -57,7 +57,6 @@
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" kind="function"><name>LoadData&lt; T &gt;</name></member>
   </compound>
   <compound refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kind="interface"><name>UnityUtils::ScriptUtils::SaveSystem::ISaveData</name>
-    <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data_1a067332e4fc9b73c2c33045d1f7dacf85" kind="property"><name>DataID</name></member>
   </compound>
   <compound refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager" kind="interface"><name>UnityUtils::ScriptUtils::SaveSystem::ISaveManager</name>
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1a1ac58a312a3e0e3c347a210bf2872ff4" kind="function"><name>Save</name></member>
@@ -65,9 +64,9 @@
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1abfb5d0805e84c733242e4c7209b2ac3a" kind="function"><name>InitializeData</name></member>
   </compound>
   <compound refid="class_json_save_system" kind="class"><name>JsonSaveSystem</name>
-    <member refid="class_json_save_system_1a330a224cae82d611d68a3964a5848c03" kind="function"><name>Save</name></member>
-    <member refid="class_json_save_system_1aa08d0c2f69094d4e72d8186e2a862695" kind="function"><name>Load</name></member>
-    <member refid="class_json_save_system_1ae8b8c094c87b87053e274ca77e5b30bf" kind="function"><name>LoadSingleSaveFile</name></member>
+    <member refid="class_json_save_system_1a3c5597e390c10b09fdae60ce8737ca0e" kind="function"><name>Save</name></member>
+    <member refid="class_json_save_system_1a655292aaead3c8a9cee0973191423c81" kind="function"><name>Load</name></member>
+    <member refid="class_json_save_system_1abca0d693ca2b98f1ea69b45a17acb410" kind="function"><name>LoadSingleSaveFile</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" kind="variable"><name>defaultAnimationCurve</name></member>
@@ -137,21 +136,32 @@
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleSpawner</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" kind="function"><name>SpawnBurstParticle</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1af9bebbea091fa753a46f7a03ef628ae2" kind="variable"><name>id</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a624e1538dbe1a48fab03eae36b0d2db3" kind="variable"><name>fileName</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a971b0e2bf3ba683aabfe331c7304276f" kind="variable"><name>dataInstance</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a460830851c7fa731a6c904db09fe6f98" kind="variable"><name>classType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a473f0baf7b3f5da84df9c46abeb2cdc2" kind="function"><name>SaveDataID</name></member>
+  </compound>
   <compound refid="class_save_data_registry" kind="class"><name>SaveDataRegistry</name>
     <member refid="class_save_data_registry_1aae87856af243ccb178a1ab0119355308" kind="variable"><name>saveDataTypes</name></member>
-    <member refid="class_save_data_registry_1a08eca4a0a135f12cd90de7a032f873db" kind="variable"><name>saveDataIDs</name></member>
+    <member refid="class_save_data_registry_1aaf9bd908bee4db900eb332dd1ff658c7" kind="variable"><name>saveDataIDss</name></member>
     <member refid="class_save_data_registry_1ae0d0cc7799e7f12f3964f613c72802b4" kind="variable"><name>saveDataInstances</name></member>
     <member refid="class_save_data_registry_1a6b2976a5944db42af137b78eaed61d11" kind="variable"><name>saveDataClasses</name></member>
-    <member refid="class_save_data_registry_1a5129e6c5c1988c0c8c28d75cf0e42691" kind="function"><name>Register&lt; T &gt;</name></member>
-    <member refid="class_save_data_registry_1a0d71ba49ad14c8c432726c338e75342a" kind="function"><name>Create</name></member>
-    <member refid="class_save_data_registry_1a3b151e1330ef82d7b2278c90166400c2" kind="function"><name>CreateAndRegister&lt; T &gt;</name></member>
+    <member refid="class_save_data_registry_1abe06ad6739f246430c96c9c4eea0351c" kind="variable"><name>saveDataFileNames</name></member>
+    <member refid="class_save_data_registry_1a514a83f9cd73338a15cf02a4fd9d6f59" kind="variable"><name>saveDataIDs</name></member>
+    <member refid="class_save_data_registry_1ad6cef2c9a8fa4ae7ea04ff0a39a1cda0" kind="function"><name>Register&lt; T &gt;</name></member>
     <member refid="class_save_data_registry_1a5e6babd0ca71129d5186b1e5831d9152" kind="function"><name>GetClass</name></member>
     <member refid="class_save_data_registry_1aa2e81137dca5bd4e0d3dd7cf80c778d7" kind="function"><name>GetInstance</name></member>
+    <member refid="class_save_data_registry_1a753b28ef73933dddb515176f59e163de" kind="function"><name>GetFileName</name></member>
+    <member refid="class_save_data_registry_1a7c9662f307d583aceb65033d3a90b0af" kind="function"><name>GetFileName</name></member>
     <member refid="class_save_data_registry_1a6fb2fd5e9f0816b7b1db5dfac0c5d03d" kind="function"><name>GetID</name></member>
+    <member refid="class_save_data_registry_1aeff9c02cbce23e73993a26fd489f97a6" kind="function"><name>GetSaveDataIDFromID</name></member>
+    <member refid="class_save_data_registry_1af31a9725b1d7bd712693403dae885535" kind="function"><name>GetIDFromISaveData</name></member>
   </compound>
   <compound refid="class_save_system_manager" kind="class"><name>SaveSystemManager</name>
-    <member refid="class_save_system_manager_1a406952eba21df756e0e41a7e85eeb16b" kind="function"><name>SaveGame</name></member>
-    <member refid="class_save_system_manager_1ac5a48c8d85d915e4d9fd9de0e9b96dc6" kind="function"><name>LoadGame</name></member>
+    <member refid="class_save_system_manager_1ad5f1f2df55daa8f1d6d81d0a785dd4ca" kind="function"><name>SaveGame</name></member>
+    <member refid="class_save_system_manager_1af174743ffaf82d601ba6353455159e13" kind="function"><name>LoadGame</name></member>
     <member refid="class_save_system_manager_1a0436251e2367ac89645c23847aac566b" kind="function"><name>FindAllDataPersistanceObjects</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</name>
@@ -161,6 +171,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a6b85adcd747dfe307696710bbdbea9a0" kind="variable"><name>SAVE_FILE_LOADED_MESSAGE</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab12ab4c43c64944e4c5eb405cadb2a75" kind="variable"><name>SAVE_FILE_CREATED_MESSAGE</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1aa49ee94cfe14136eaddb96c8f8aa9334" kind="function"><name>GetSaveFilePath</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" kind="function"><name>GetSaveFilePath</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" kind="function"><name>LogSaveFileNotFound</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" kind="function"><name>LogSaveFileCreated</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" kind="function"><name>LogSaveFileLoaded</name></member>
@@ -423,6 +434,8 @@
   <compound refid="_i_save_manager_8cs" kind="file"><name>ISaveManager.cs</name>
   </compound>
   <compound refid="_json_save_system_8cs" kind="file"><name>JsonSaveSystem.cs</name>
+  </compound>
+  <compound refid="_save_data_i_d_8cs" kind="file"><name>SaveDataID.cs</name>
   </compound>
   <compound refid="_save_data_registry_8cs" kind="file"><name>SaveDataRegistry.cs</name>
   </compound>

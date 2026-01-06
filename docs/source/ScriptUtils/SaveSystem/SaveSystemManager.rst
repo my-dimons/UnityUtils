@@ -16,7 +16,7 @@ Example Usage
    public class ExampleScript : MonoBehaviour
    {
    	// A list with save file IDs and file names
-   	Dictionary<string, string> saveFiles = new();
+   	Dictionary<SaveDataID> saveFiles = new();
    	
    	void Start()
    	{

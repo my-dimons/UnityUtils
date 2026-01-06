@@ -57,6 +57,7 @@ var hierarchy =
     [ "UnityUtils.ScriptUtils.Objects.ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.SaveDataID", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html", null ],
     [ "SaveDataRegistry", "class_save_data_registry.html", null ],
     [ "SaveSystemManager", "class_save_system_manager.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", null ],

@@ -20,9 +20,6 @@ Example Usage
    [System.Serializable]
    public class PlayerData : ISaveData
    {
-   	// DataID is required
-   	public string DataID => nameof(PlayerData);
-   	
    	public float health;
    	public string name;
    }

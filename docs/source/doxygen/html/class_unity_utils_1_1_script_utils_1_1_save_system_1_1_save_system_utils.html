@@ -95,7 +95,9 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa49ee94cfe14136eaddb96c8f8aa9334" id="r_aa49ee94cfe14136eaddb96c8f8aa9334"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49ee94cfe14136eaddb96c8f8aa9334">GetSaveFilePath</a> (string fileName, string extension)</td></tr>
-<tr class="memdesc:aa49ee94cfe14136eaddb96c8f8aa9334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities).  <br /></td></tr>
+<tr class="memdesc:aa49ee94cfe14136eaddb96c8f8aa9334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and extension.  <br /></td></tr>
+<tr class="memitem:abab8c6849773bb4bfa36392ccaadbf7c" id="r_abab8c6849773bb4bfa36392ccaadbf7c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abab8c6849773bb4bfa36392ccaadbf7c">GetSaveFilePath</a> (string fileName)</td></tr>
+<tr class="memdesc:abab8c6849773bb4bfa36392ccaadbf7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name.  <br /></td></tr>
 <tr class="memitem:abe5777c132d484cf0a40ad3508f9e30a" id="r_abe5777c132d484cf0a40ad3508f9e30a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe5777c132d484cf0a40ad3508f9e30a">LogSaveFileNotFound</a> (string path)</td></tr>
 <tr class="memdesc:abe5777c132d484cf0a40ad3508f9e30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error message indicating that a save file was not found at the specified path.  <br /></td></tr>
 <tr class="memitem:a22c2f625f701aeeb416b1d4f48a53abc" id="r_a22c2f625f701aeeb416b1d4f48a53abc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22c2f625f701aeeb416b1d4f48a53abc">LogSaveFileCreated</a> (string path)</td></tr>
@@ -117,8 +119,43 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:ab12ab4c43c64944e4c5eb405cadb2a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is created.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="abab8c6849773bb4bfa36392ccaadbf7c" name="abab8c6849773bb4bfa36392ccaadbf7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab8c6849773bb4bfa36392ccaadbf7c">&#9670;&#160;</a></span>GetSaveFilePath() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates the full file path for a save file using the specified file name. </p>
+<p>The returned path is located within the application's persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The base name of the save file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the absolute path to the save file</dd></dl>
+
+</div>
+</div>
 <a id="aa49ee94cfe14136eaddb96c8f8aa9334" name="aa49ee94cfe14136eaddb96c8f8aa9334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa49ee94cfe14136eaddb96c8f8aa9334">&#9670;&#160;</a></span>GetSaveFilePath()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49ee94cfe14136eaddb96c8f8aa9334">&#9670;&#160;</a></span>GetSaveFilePath() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,12 +181,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities). </p>
+<p>Generates the full file path for a save file using the specified file name and extension. </p>
 <p>The returned path is located within the application's persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>The base name of the save file</td></tr>
-    <tr><td class="paramname">sequence</td><td>The sequence number to append to the file name. Defaults to 0 if not specified</td></tr>
+    <tr><td class="paramname">extension</td><td>The "." extension to add to the file (Ex. ".json")</td></tr>
   </table>
   </dd>
 </dl>

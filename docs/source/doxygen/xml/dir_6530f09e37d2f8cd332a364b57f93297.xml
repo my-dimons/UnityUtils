@@ -4,6 +4,7 @@
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/Save System</compoundname>
     <innerdir refid="dir_01763d216a89254562e1888e62894c4c">Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces</innerdir>
     <innerfile refid="_json_save_system_8cs">JsonSaveSystem.cs</innerfile>
+    <innerfile refid="_save_data_i_d_8cs">SaveDataID.cs</innerfile>
     <innerfile refid="_save_data_registry_8cs">SaveDataRegistry.cs</innerfile>
     <innerfile refid="_save_system_manager_8cs">SaveSystemManager.cs</innerfile>
     <innerfile refid="_save_system_utils_8cs">SaveSystemUtils.cs</innerfile>

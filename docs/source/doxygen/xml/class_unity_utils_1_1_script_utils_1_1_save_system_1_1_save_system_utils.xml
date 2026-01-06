@@ -100,7 +100,7 @@
           <declname>extension</declname>
         </param>
         <briefdescription>
-<para>Generates the full file path for a save file using the specified file name and sequence number (For multi-save possibilities). </para>
+<para>Generates the full file path for a save file using the specified file name and extension. </para>
         </briefdescription>
         <detaileddescription>
 <para>The returned path is located within the application&apos;s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</para>
@@ -114,10 +114,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>sequence</parametername>
+<parametername>extension</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The sequence number to append to the file name. Defaults to 0 if not specified</para>
+<para>The &quot;.&quot; extension to add to the file (Ex. &quot;.json&quot;)</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -128,6 +128,38 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="37" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>GetSaveFilePath</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Generates the full file path for a save file using the specified file name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned path is located within the application&apos;s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base name of the save file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the absolute path to the save file</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="46" column="30"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -156,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="43" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="43" bodyend="46"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="52" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -185,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="52" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="52" bodyend="55"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="61" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="61" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -214,16 +246,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="61" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="61" bodyend="64"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="70" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="70" bodyend="73"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="65"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="74"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1aa49ee94cfe14136eaddb96c8f8aa9334" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveFilePath</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveFilePath</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a1d4c639a005c4e74afa106f605c0b01d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>JSON_SAVE_FILE_EXTENSION</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileCreated</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileLoaded</name></member>

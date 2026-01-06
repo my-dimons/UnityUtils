@@ -94,10 +94,10 @@ $(function(){initNavTree('class_save_system_manager.html','','class_save_system_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a406952eba21df756e0e41a7e85eeb16b" id="r_a406952eba21df756e0e41a7e85eeb16b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a406952eba21df756e0e41a7e85eeb16b">SaveGame</a> (Dictionary&lt; string, string &gt; saveFiles)</td></tr>
-<tr class="memdesc:a406952eba21df756e0e41a7e85eeb16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
-<tr class="memitem:ac5a48c8d85d915e4d9fd9de0e9b96dc6" id="r_ac5a48c8d85d915e4d9fd9de0e9b96dc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a48c8d85d915e4d9fd9de0e9b96dc6">LoadGame</a> (Dictionary&lt; string, string &gt; saveFiles)</td></tr>
-<tr class="memdesc:ac5a48c8d85d915e4d9fd9de0e9b96dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
+<tr class="memitem:ad5f1f2df55daa8f1d6d81d0a785dd4ca" id="r_ad5f1f2df55daa8f1d6d81d0a785dd4ca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5f1f2df55daa8f1d6d81d0a785dd4ca">SaveGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
+<tr class="memdesc:ad5f1f2df55daa8f1d6d81d0a785dd4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
+<tr class="memitem:af174743ffaf82d601ba6353455159e13" id="r_af174743ffaf82d601ba6353455159e13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af174743ffaf82d601ba6353455159e13">LoadGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
+<tr class="memdesc:af174743ffaf82d601ba6353455159e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited.  <br /></td></tr>
 <tr class="memitem:a0436251e2367ac89645c23847aac566b" id="r_a0436251e2367ac89645c23847aac566b"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0436251e2367ac89645c23847aac566b">FindAllDataPersistanceObjects</a> ()</td></tr>
 <tr class="memdesc:a0436251e2367ac89645c23847aac566b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on.  <br /></td></tr>
 </table>
@@ -130,8 +130,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5a48c8d85d915e4d9fd9de0e9b96dc6" name="ac5a48c8d85d915e4d9fd9de0e9b96dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a48c8d85d915e4d9fd9de0e9b96dc6">&#9670;&#160;</a></span>LoadGame()</h2>
+<a id="af174743ffaf82d601ba6353455159e13" name="af174743ffaf82d601ba6353455159e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af174743ffaf82d601ba6353455159e13">&#9670;&#160;</a></span>LoadGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void SaveSystemManager.LoadGame </td>
           <td>(</td>
-          <td class="paramtype">Dictionary&lt; string, string &gt;</td>          <td class="paramname"><span class="paramname"><em>saveFiles</em></span></td><td>)</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>dataIDs</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,15 +156,15 @@ Static Public Member Functions</h2></td></tr>
 <p>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveFiles</td><td>Dictionary with the saveFiles ID and name to load with</td></tr>
+    <tr><td class="paramname">dataIDs</td><td>ID's to laod</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a406952eba21df756e0e41a7e85eeb16b" name="a406952eba21df756e0e41a7e85eeb16b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a406952eba21df756e0e41a7e85eeb16b">&#9670;&#160;</a></span>SaveGame()</h2>
+<a id="ad5f1f2df55daa8f1d6d81d0a785dd4ca" name="ad5f1f2df55daa8f1d6d81d0a785dd4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f1f2df55daa8f1d6d81d0a785dd4ca">&#9670;&#160;</a></span>SaveGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +175,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void SaveSystemManager.SaveGame </td>
           <td>(</td>
-          <td class="paramtype">Dictionary&lt; string, string &gt;</td>          <td class="paramname"><span class="paramname"><em>saveFiles</em></span></td><td>)</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>dataIDs</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -189,7 +189,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> inherited. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveFiles</td><td>Dictionary with the saveFiles ID and name to save with</td></tr>
+    <tr><td class="paramname">dataIDs</td><td>Dictionary with the dataIDs ID and name to save with</td></tr>
   </table>
   </dd>
 </dl>

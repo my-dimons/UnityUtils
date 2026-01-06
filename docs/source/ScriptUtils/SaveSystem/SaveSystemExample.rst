@@ -4,54 +4,92 @@ Save System Example
 Example of a Save System
 -------------
 
-PlayerSaveData:
+(Holds data to be stored across sessions)
+PlayerData:
 
 .. code:: csharp
    
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
+   using System;
    
-   [System.Serializable]
-   public class PlayerSaveData : ISaveData
+   [Serializable]
+   public class PlayerData : ISaveData
    {
    	public float health;
-   	public float level;
-   	
-   	public PlayerSaveData(Player player)
-   	{
-   	   health = player.health;
-   	   level = player.level;
-   	}
+   	public float name;
+   }
+   
+(Handles saving, loading, and creating the data)
+SaveManager:
+
+   using UnityEngine;
+   using UnityUtils.ScriptUtils.SaveSystem;
+
+   public class SaveManager : MonoBehaviour, ISaveManager
+   {
+       public static SaveManager Instance { get; private set; }
+
+       List<SaveDataID> saveFiles = new();
+
+       void Start()
+       {
+           InitializeData();
+
+           if (Instance == null) Instance = this; else Destroy(gameObject);
+       }
+
+       public void Save()
+       {
+           SaveSystemManager.SaveGame(saveFiles);
+       }
+  
+       public void Load()
+       {
+           SaveSystemManager.LoadGame(saveFiles);
+       }
+   
+       public void InitializeData()
+       {
+           // Data string variables
+           string uniqueID = "GameData";
+           string fileName = "game_save.json";
+           
+           // Register a PlayerData
+           SaveDataID playerData = SaveDataRegistry.Register<PlayerData>(uniqueID, fileName);
+
+		// Add it into the saveFiles list
+           saveFiles.Add(playerData);
+       }
    }
 
-Loading/Saving data:
------------------
+(Actually loading and saving data into script)
+Player:
 
-Binary Save System:
-
-.. code:: csharp
-   
+   using TMPro;
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
-   
-   public class Player
+
+   public class SaveTesting : MonoBehaviour, ISaveableData
    {
-   	public float health;
-   	public float level;
-   	
-   	string fileName = "player";
-   	
-   	public void Save()
-   	{
-   	   // Creates a file 
-   	   BinarySaveSystem.Save<PlayerSaveData, Player>(this, fileName, input => new Player(input));
-   	}
-   	
-   	public void Load()
-   	{
-   	   PlayerSaveData data = BinarySaveSystem.Load<PlayerSaveData>(fileName);
-   	   
-   	   health = data.health;
-   	   level = data.level;
-   	}
+       public int health = 2;
+       public string name = "John";
+
+       public void SaveData<T>(T data) where T : ISaveData
+       {
+           if (data is PlayerData save)
+           {
+               save.health = health;
+               save.name = name;
+           }
+       }
+
+       public void LoadData<T>(T data) where T : ISaveData
+       {
+           if (data is PlayerData save)
+           {
+               health = save.health;
+               name = save.name;
+           }
+       }
    }

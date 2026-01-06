@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['testingvalue_0',['testingValue',['../class_testing_script1.html#af4b9b63029e9a28a5274888ff028ddf0',1,'TestingScript1']]],
-  ['testingvector3_1',['testingVector3',['../class_testing_script1.html#a52ec93d5765f7f19cc26810b9716d7b6',1,'TestingScript1']]]
+  ['save_5ffile_5fcreated_5fmessage_0',['SAVE_FILE_CREATED_MESSAGE',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#ab12ab4c43c64944e4c5eb405cadb2a75',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils']]],
+  ['save_5ffile_5floaded_5fmessage_1',['SAVE_FILE_LOADED_MESSAGE',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a6b85adcd747dfe307696710bbdbea9a0',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils']]],
+  ['save_5ffile_5fnot_5ffound_5ferror_2',['SAVE_FILE_NOT_FOUND_ERROR',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a7a5121a35481691448fb488f9b8a067e',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils']]],
+  ['scenemode_3',['sceneMode',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#a9dcb2d6e71e03b1d547bfae6bb6ccc82',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]],
+  ['scenename_4',['sceneName',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#aa4465098921687070fb22d5d33c28389',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]],
+  ['sizeanimationseconds_5',['sizeAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a88c3046734a3645154c58778039f6c65',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.sizeAnimationSeconds'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#a89424366b7a0b4d78b7b0182c06bc15f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.sizeAnimationSeconds']]],
+  ['sizingcurve_6',['SizingCurve',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#ae5b8ba3814d39b73fe09caf2f28cfeb2',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a006c0dd78261c3866dbb0e173bb9447f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve']]],
+  ['special_5fsave_5ffile_5fextension_7',['SPECIAL_SAVE_FILE_EXTENSION',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#ae82e13ad8d6974d658f8d03d1b6999d6',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils']]]
 ];

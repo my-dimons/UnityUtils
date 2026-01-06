@@ -1,6 +1,6 @@
 var class_save_system_manager =
 [
     [ "FindAllDataPersistanceObjects", "class_save_system_manager.html#a0436251e2367ac89645c23847aac566b", null ],
-    [ "LoadGame", "class_save_system_manager.html#ac5a48c8d85d915e4d9fd9de0e9b96dc6", null ],
-    [ "SaveGame", "class_save_system_manager.html#a406952eba21df756e0e41a7e85eeb16b", null ]
+    [ "LoadGame", "class_save_system_manager.html#af174743ffaf82d601ba6353455159e13", null ],
+    [ "SaveGame", "class_save_system_manager.html#ad5f1f2df55daa8f1d6d81d0a785dd4ca", null ]
 ];

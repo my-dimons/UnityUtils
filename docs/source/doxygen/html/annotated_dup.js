@@ -25,8 +25,9 @@ var annotated_dup =
         ] ],
         [ "SaveSystem", "namespace_unity_utils_1_1_script_utils_1_1_save_system.html", [
           [ "ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" ],
-          [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" ],
+          [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
           [ "ISaveManager", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager" ],
+          [ "SaveDataID", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" ],
           [ "SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" ]
         ] ],
         [ "ScriptableObjects", "namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html", [

@@ -3,38 +3,26 @@
   <compounddef id="class_json_save_system" kind="class" language="C#" prot="public">
     <compoundname>JsonSaveSystem</compoundname>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_json_save_system_1a330a224cae82d611d68a3964a5848c03" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_json_save_system_1a3c5597e390c10b09fdae60ce8737ca0e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void JsonSaveSystem.Save</definition>
-        <argsstring>(ISaveData data, string fileName)</argsstring>
+        <argsstring>(SaveDataID saveDataID)</argsstring>
         <name>Save</name>
         <qualifiedname>JsonSaveSystem.Save</qualifiedname>
         <param>
-          <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
-          <declname>data</declname>
-        </param>
-        <param>
-          <type>string</type>
-          <declname>fileName</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
+          <declname>saveDataID</declname>
         </param>
         <briefdescription>
-<para>Loads the inputted <emphasis>data</emphasis>  into the file with <emphasis>fileName</emphasis> . </para>
+<para>Loads the inputted <emphasis>saveDataID</emphasis>  into its respective file. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>data</parametername>
+<parametername>saveDataID</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Data to load into the provided file</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>fileName</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>File to load the data into</para>
+<para>saveDataID of the file to be saved</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -42,17 +30,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="16" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="16" bodyend="36"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="15" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="15" bodyend="35"/>
       </memberdef>
-      <memberdef kind="function" id="class_json_save_system_1aa08d0c2f69094d4e72d8186e2a862695" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_json_save_system_1a655292aaead3c8a9cee0973191423c81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt;</type>
         <definition>static List&lt; ISaveData &gt; JsonSaveSystem.Load</definition>
-        <argsstring>(Dictionary&lt; string, string &gt; saveFiles)</argsstring>
+        <argsstring>(List&lt; SaveDataID &gt; saveDataIDs)</argsstring>
         <name>Load</name>
         <qualifiedname>JsonSaveSystem.Load</qualifiedname>
         <param>
-          <type>Dictionary&lt; string, string &gt;</type>
-          <declname>saveFiles</declname>
+          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
+          <declname>saveDataIDs</declname>
         </param>
         <briefdescription>
 <para>Loads json file data from the inputted files. </para>
@@ -60,10 +48,10 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>saveFiles</parametername>
+<parametername>saveDataIDs</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A list of <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> IDs and File Names</para>
+<para>A list of saveDataIDs to load the <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> of</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -73,21 +61,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="43" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="43" bodyend="67"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="42" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="42" bodyend="61"/>
       </memberdef>
-      <memberdef kind="function" id="class_json_save_system_1ae8b8c094c87b87053e274ca77e5b30bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_json_save_system_1abca0d693ca2b98f1ea69b45a17acb410" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
         <definition>static ISaveData JsonSaveSystem.LoadSingleSaveFile</definition>
-        <argsstring>(string fileName, Type type)</argsstring>
+        <argsstring>(SaveDataID saveDataID)</argsstring>
         <name>LoadSingleSaveFile</name>
         <qualifiedname>JsonSaveSystem.LoadSingleSaveFile</qualifiedname>
         <param>
-          <type>string</type>
-          <declname>fileName</declname>
-        </param>
-        <param>
-          <type>Type</type>
-          <declname>type</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
+          <declname>saveDataID</declname>
         </param>
         <briefdescription>
 <para>Loads a single save file from the files using a <emphasis>fileName</emphasis>  and <emphasis>type</emphasis> . </para>
@@ -116,18 +100,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="75" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="75" bodyend="99"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="69" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="69" bodyend="93"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="9" column="15" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="10" bodyend="100"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="9" column="15" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="10" bodyend="94"/>
     <listofallmembers>
-      <member refid="class_json_save_system_1aa08d0c2f69094d4e72d8186e2a862695" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>Load</name></member>
-      <member refid="class_json_save_system_1ae8b8c094c87b87053e274ca77e5b30bf" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>LoadSingleSaveFile</name></member>
-      <member refid="class_json_save_system_1a330a224cae82d611d68a3964a5848c03" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>Save</name></member>
+      <member refid="class_json_save_system_1a655292aaead3c8a9cee0973191423c81" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>Load</name></member>
+      <member refid="class_json_save_system_1abca0d693ca2b98f1ea69b45a17acb410" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>LoadSingleSaveFile</name></member>
+      <member refid="class_json_save_system_1a3c5597e390c10b09fdae60ce8737ca0e" prot="public" virt="non-virtual"><scope>JsonSaveSystem</scope><name>Save</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

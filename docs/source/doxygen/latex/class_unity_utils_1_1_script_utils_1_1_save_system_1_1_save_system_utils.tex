@@ -4,7 +4,9 @@
 \begin{DoxyCompactItemize}
 \item 
 static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334}{Get\+Save\+File\+Path}} (string file\+Name, string extension)
-\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name and sequence number (For multi-\/save possibilities). \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name and extension. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c}{Get\+Save\+File\+Path}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abe5777c132d484cf0a40ad3508f9e30a}{Log\+Save\+File\+Not\+Found}} (string path)
 \begin{DoxyCompactList}\small\item\em Logs an error message indicating that a save file was not found at the specified path. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc}{Log\+Save\+File\+Created}} (string path)
@@ -29,15 +31,15 @@ const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
 \index{GetSaveFilePath@{GetSaveFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334} 
-string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{string}]{extension}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Generates the full file path for a save file using the specified file name and sequence number (For multi-\/save possibilities). 
+Generates the full file path for a save file using the specified file name. 
 
 The returned path is located within the application\textquotesingle{}s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-\/appropriate location.
 
@@ -45,7 +47,27 @@ The returned path is located within the application\textquotesingle{}s persisten
 \begin{DoxyParams}{Parameters}
 {\em file\+Name} & The base name of the save file\\
 \hline
-{\em sequence} & The sequence number to append to the file name. Defaults to 0 if not specified\\
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the absolute path to the save file
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
+\index{GetSaveFilePath@{GetSaveFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{string}]{extension}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates the full file path for a save file using the specified file name and extension. 
+
+The returned path is located within the application\textquotesingle{}s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-\/appropriate location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The base name of the save file\\
+\hline
+{\em extension} & The "{}."{} extension to add to the file (Ex. "{}.\+json"{})\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

@@ -94,98 +94,24 @@ $(function(){initNavTree('class_save_data_registry.html','','class_save_data_reg
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5129e6c5c1988c0c8c28d75cf0e42691" id="r_a5129e6c5c1988c0c8c28d75cf0e42691"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5129e6c5c1988c0c8c28d75cf0e42691">Register&lt; T &gt;</a> ()</td></tr>
-<tr class="memdesc:a5129e6c5c1988c0c8c28d75cf0e42691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new class to all the registry dictionaries to be referenced later.  <br /></td></tr>
-<tr class="memitem:a0d71ba49ad14c8c432726c338e75342a" id="r_a0d71ba49ad14c8c432726c338e75342a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d71ba49ad14c8c432726c338e75342a">Create</a> (string dataID)</td></tr>
-<tr class="memdesc:a0d71ba49ad14c8c432726c338e75342a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>.  <br /></td></tr>
-<tr class="memitem:a3b151e1330ef82d7b2278c90166400c2" id="r_a3b151e1330ef82d7b2278c90166400c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b151e1330ef82d7b2278c90166400c2">CreateAndRegister&lt; T &gt;</a> ()</td></tr>
-<tr class="memdesc:a3b151e1330ef82d7b2278c90166400c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a new <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> into the registry.  <br /></td></tr>
+<tr class="memitem:ad6cef2c9a8fa4ae7ea04ff0a39a1cda0" id="r_ad6cef2c9a8fa4ae7ea04ff0a39a1cda0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6cef2c9a8fa4ae7ea04ff0a39a1cda0">Register&lt; T &gt;</a> (string uniqueID, string fileName)</td></tr>
+<tr class="memdesc:ad6cef2c9a8fa4ae7ea04ff0a39a1cda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to the registry to be referenced later.  <br /></td></tr>
 <tr class="memitem:a5e6babd0ca71129d5186b1e5831d9152" id="r_a5e6babd0ca71129d5186b1e5831d9152"><td class="memItemLeft" align="right" valign="top">static Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e6babd0ca71129d5186b1e5831d9152">GetClass</a> (string dataID)</td></tr>
 <tr class="memdesc:a5e6babd0ca71129d5186b1e5831d9152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataClasses for the matching <em>dataID</em> , if found it will return the Type of class.  <br /></td></tr>
 <tr class="memitem:aa2e81137dca5bd4e0d3dd7cf80c778d7" id="r_aa2e81137dca5bd4e0d3dd7cf80c778d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2e81137dca5bd4e0d3dd7cf80c778d7">GetInstance</a> (string dataID)</td></tr>
 <tr class="memdesc:aa2e81137dca5bd4e0d3dd7cf80c778d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataInstances for the provided <em>dataID</em> , if found it will return its matching ID.  <br /></td></tr>
+<tr class="memitem:a753b28ef73933dddb515176f59e163de" id="r_a753b28ef73933dddb515176f59e163de"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a753b28ef73933dddb515176f59e163de">GetFileName</a> (string dataID)</td></tr>
+<tr class="memdesc:a753b28ef73933dddb515176f59e163de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataFileNames for the provided <em>dataID</em> , if found it will return its matching file name.  <br /></td></tr>
+<tr class="memitem:a7c9662f307d583aceb65033d3a90b0af" id="r_a7c9662f307d583aceb65033d3a90b0af"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c9662f307d583aceb65033d3a90b0af">GetFileName</a> (<a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> saveData)</td></tr>
+<tr class="memdesc:a7c9662f307d583aceb65033d3a90b0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataFileNames for the provided <em>saveData</em> , if found it will return its matching file name.  <br /></td></tr>
 <tr class="memitem:a6fb2fd5e9f0816b7b1db5dfac0c5d03d" id="r_a6fb2fd5e9f0816b7b1db5dfac0c5d03d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fb2fd5e9f0816b7b1db5dfac0c5d03d">GetID</a> (<a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> saveData)</td></tr>
 <tr class="memdesc:a6fb2fd5e9f0816b7b1db5dfac0c5d03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataIDs for <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>, if found it will return its matching ID.  <br /></td></tr>
+<tr class="memitem:aeff9c02cbce23e73993a26fd489f97a6" id="r_aeff9c02cbce23e73993a26fd489f97a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff9c02cbce23e73993a26fd489f97a6">GetSaveDataIDFromID</a> (string id)</td></tr>
+<tr class="memdesc:aeff9c02cbce23e73993a26fd489f97a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> from the provided <em>id</em> .  <br /></td></tr>
+<tr class="memitem:af31a9725b1d7bd712693403dae885535" id="r_af31a9725b1d7bd712693403dae885535"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af31a9725b1d7bd712693403dae885535">GetIDFromISaveData</a> (<a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> saveData)</td></tr>
+<tr class="memdesc:af31a9725b1d7bd712693403dae885535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> from the provided <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a0d71ba49ad14c8c432726c338e75342a" name="a0d71ba49ad14c8c432726c338e75342a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d71ba49ad14c8c432726c338e75342a">&#9670;&#160;</a></span>Create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> SaveDataRegistry.Create </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dataID</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>. </p>
-<p>Call Register&lt;T&gt; then this function, or call CreateAndRegister&lt;T&gt; for more simplicity</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dataID</td><td>ID of <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> to create</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Created <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a></dd></dl>
-
-</div>
-</div>
-<a id="a3b151e1330ef82d7b2278c90166400c2" name="a3b151e1330ef82d7b2278c90166400c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b151e1330ef82d7b2278c90166400c2">&#9670;&#160;</a></span>CreateAndRegister&lt; T &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> SaveDataRegistry.CreateAndRegister&lt; T &gt; </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates and registers a new <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> into the registry. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Class to add into the registry</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Registered <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a></dd></dl>
-<div class="typeconstraint">
-<dl><dt><b>Type Constraints</b></dt><dd>
-<table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></em></td><td>&#160;</td></tr>
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>new()</em></td><td>&#160;</td></tr>
-</table>
-</dd>
-</dl>
-</div>
-
-</div>
-</div>
 <a id="a5e6babd0ca71129d5186b1e5831d9152" name="a5e6babd0ca71129d5186b1e5831d9152"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e6babd0ca71129d5186b1e5831d9152">&#9670;&#160;</a></span>GetClass()</h2>
 
@@ -217,6 +143,74 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Type of class</dd></dl>
+
+</div>
+</div>
+<a id="a7c9662f307d583aceb65033d3a90b0af" name="a7c9662f307d583aceb65033d3a90b0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c9662f307d583aceb65033d3a90b0af">&#9670;&#160;</a></span>GetFileName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SaveDataRegistry.GetFileName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></td>          <td class="paramname"><span class="paramname"><em>saveData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches saveDataFileNames for the provided <em>saveData</em> , if found it will return its matching file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveData</td><td>ID to search for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>file name from <em>saveData</em> </dd></dl>
+
+</div>
+</div>
+<a id="a753b28ef73933dddb515176f59e163de" name="a753b28ef73933dddb515176f59e163de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753b28ef73933dddb515176f59e163de">&#9670;&#160;</a></span>GetFileName() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SaveDataRegistry.GetFileName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dataID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches saveDataFileNames for the provided <em>dataID</em> , if found it will return its matching file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataID</td><td>ID to search for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>file name from <em>dataID</em> </dd></dl>
 
 </div>
 </div>
@@ -254,6 +248,40 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af31a9725b1d7bd712693403dae885535" name="af31a9725b1d7bd712693403dae885535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31a9725b1d7bd712693403dae885535">&#9670;&#160;</a></span>GetIDFromISaveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> SaveDataRegistry.GetIDFromISaveData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></td>          <td class="paramname"><span class="paramname"><em>saveData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> from the provided <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveData</td><td><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> of the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> of the found <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>, returns null if nothing is found</dd></dl>
+
+</div>
+</div>
 <a id="aa2e81137dca5bd4e0d3dd7cf80c778d7" name="aa2e81137dca5bd4e0d3dd7cf80c778d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2e81137dca5bd4e0d3dd7cf80c778d7">&#9670;&#160;</a></span>GetInstance()</h2>
 
@@ -284,12 +312,12 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> from dataID</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> from <em>dataID</em> </dd></dl>
 
 </div>
 </div>
-<a id="a5129e6c5c1988c0c8c28d75cf0e42691" name="a5129e6c5c1988c0c8c28d75cf0e42691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5129e6c5c1988c0c8c28d75cf0e42691">&#9670;&#160;</a></span>Register&lt; T &gt;()</h2>
+<a id="aeff9c02cbce23e73993a26fd489f97a6" name="aeff9c02cbce23e73993a26fd489f97a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff9c02cbce23e73993a26fd489f97a6">&#9670;&#160;</a></span>GetSaveDataIDFromID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,9 +326,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SaveDataRegistry.Register&lt; T &gt; </td>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> SaveDataRegistry.GetSaveDataIDFromID </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -311,14 +339,59 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a new class to all the registry dictionaries to be referenced later. </p>
-<p>Call <a class="el" href="#a0d71ba49ad14c8c432726c338e75342a" title="Creates a new ISaveData.">Create(string)</a> after this function, or call CreateAndRegister&lt;T&gt; for more simplicity</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Class to register</td></tr>
+<p>Gets a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> from the provided <em>id</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID of the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> of the found ID, returns null if nothing is found</dd></dl>
+
+</div>
+</div>
+<a id="ad6cef2c9a8fa4ae7ea04ff0a39a1cda0" name="ad6cef2c9a8fa4ae7ea04ff0a39a1cda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cef2c9a8fa4ae7ea04ff0a39a1cda0">&#9670;&#160;</a></span>Register&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> SaveDataRegistry.Register&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>uniqueID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to the registry to be referenced later. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uniqueID</td><td>The unique ID of the new object</td></tr>
+    <tr><td class="paramname">fileName</td><td>The file name of the save object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> with its filled in parameteres</dd></dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">

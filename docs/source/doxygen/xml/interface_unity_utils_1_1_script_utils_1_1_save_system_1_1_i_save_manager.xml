@@ -10,12 +10,13 @@
         <name>Save</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Save</qualifiedname>
         <briefdescription>
+<para>Save data function. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="8" column="21"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="9" column="21"/>
       </memberdef>
       <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1a3fffb9e45ac9414a350c994f7ec3b616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -24,12 +25,13 @@
         <name>Load</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Load</qualifiedname>
         <briefdescription>
+<para>Load data function. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="10" column="21"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="12" column="21"/>
       </memberdef>
       <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1abfb5d0805e84c733242e4c7209b2ac3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -43,14 +45,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="12" column="21"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="15" column="21"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" bodystart="7" bodyend="13"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveManager.cs" bodystart="7" bodyend="16"/>
     <listofallmembers>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1abfb5d0805e84c733242e4c7209b2ac3a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveManager</scope><name>InitializeData</name></member>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1a3fffb9e45ac9414a350c994f7ec3b616" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveManager</scope><name>Load</name></member>

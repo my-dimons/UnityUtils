@@ -17,8 +17,7 @@ Example Usage
    {
        public static SaveManager Instance { get; private set; }
 
-       /// A list with save file IDs and file names
-       Dictionary<string, string> saveFiles = new();
+       List<SaveDataID> saveFiles = new();
 
        void Start()
        {
@@ -39,9 +38,14 @@ Example Usage
    
        public void InitializeData()
        {
-           ISaveData gameData = SaveDataRegistry.CreateAndRegister<GameData>();
-           string id = SaveDataRegistry.GetID(gameData);
-           string fileName = "game_save"
-           saveFiles.Add(id, fileName);
+           // Data string variables
+           string uniqueID = "GameData";
+           string fileName = "game_save.json";
+           
+           // Register a GameData (example class inheriting ISaveData)
+           SaveDataID gameData = SaveDataRegistry.Register<GameData>(uniqueID, fileName);
+
+		// Add it into the saveFiles list
+           saveFiles.Add(gameData);
        }
    }

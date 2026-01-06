@@ -3,9 +3,9 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_save_system_manager_a406952eba21df756e0e41a7e85eeb16b}{Save\+Game}} (Dictionary$<$ string, string $>$ save\+Files)
+static void \mbox{\hyperlink{class_save_system_manager_ad5f1f2df55daa8f1d6d81d0a785dd4ca}{Save\+Game}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ data\+IDs)
 \begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on every script with an \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} inherited. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_save_system_manager_ac5a48c8d85d915e4d9fd9de0e9b96dc6}{Load\+Game}} (Dictionary$<$ string, string $>$ save\+Files)
+static void \mbox{\hyperlink{class_save_system_manager_af174743ffaf82d601ba6353455159e13}{Load\+Game}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ data\+IDs)
 \begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script with an \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} inherited. \end{DoxyCompactList}\item 
 static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ \mbox{\hyperlink{class_save_system_manager_a0436251e2367ac89645c23847aac566b}{Find\+All\+Data\+Persistance\+Objects}} ()
 \begin{DoxyCompactList}\small\item\em Grab all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} to call functions on. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -27,11 +27,11 @@ Grab all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_
 \begin{DoxyReturn}{Returns}
 List of all objects with \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} attached
 \end{DoxyReturn}
-\Hypertarget{class_save_system_manager_ac5a48c8d85d915e4d9fd9de0e9b96dc6}\index{SaveSystemManager@{SaveSystemManager}!LoadGame@{LoadGame}}
+\Hypertarget{class_save_system_manager_af174743ffaf82d601ba6353455159e13}\index{SaveSystemManager@{SaveSystemManager}!LoadGame@{LoadGame}}
 \index{LoadGame@{LoadGame}!SaveSystemManager@{SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{LoadGame()}{LoadGame()}}
-{\footnotesize\ttfamily \label{class_save_system_manager_ac5a48c8d85d915e4d9fd9de0e9b96dc6} 
-void Save\+System\+Manager.\+Load\+Game (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{save\+Files}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_save_system_manager_af174743ffaf82d601ba6353455159e13} 
+void Save\+System\+Manager.\+Load\+Game (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$}]{data\+IDs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -39,14 +39,14 @@ Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script with an \doxyli
 
 
 \begin{DoxyParams}{Parameters}
-{\em save\+Files} & Dictionary with the save\+Files ID and name to load with\\
+{\em data\+IDs} & ID\textquotesingle{}s to laod\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_save_system_manager_a406952eba21df756e0e41a7e85eeb16b}\index{SaveSystemManager@{SaveSystemManager}!SaveGame@{SaveGame}}
+\Hypertarget{class_save_system_manager_ad5f1f2df55daa8f1d6d81d0a785dd4ca}\index{SaveSystemManager@{SaveSystemManager}!SaveGame@{SaveGame}}
 \index{SaveGame@{SaveGame}!SaveSystemManager@{SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}
-{\footnotesize\ttfamily \label{class_save_system_manager_a406952eba21df756e0e41a7e85eeb16b} 
-void Save\+System\+Manager.\+Save\+Game (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{save\+Files}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_save_system_manager_ad5f1f2df55daa8f1d6d81d0a785dd4ca} 
+void Save\+System\+Manager.\+Save\+Game (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$}]{data\+IDs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -54,7 +54,7 @@ Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on every script with an \doxyli
 
 
 \begin{DoxyParams}{Parameters}
-{\em save\+Files} & Dictionary with the save\+Files ID and name to save with\\
+{\em data\+IDs} & Dictionary with the data\+IDs ID and name to save with\\
 \hline
 \end{DoxyParams}
 
