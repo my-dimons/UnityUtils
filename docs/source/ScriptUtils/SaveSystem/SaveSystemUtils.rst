@@ -25,5 +25,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils
+.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils
    :members:

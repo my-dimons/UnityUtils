@@ -29,6 +29,8 @@ suppress_warnings = ["breathe.*"]
 
 breathe_default_project = "UnityUtils"
 
+breathe_default_members = ("members",)
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
