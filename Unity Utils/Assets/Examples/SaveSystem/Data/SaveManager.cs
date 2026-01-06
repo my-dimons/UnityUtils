@@ -8,23 +8,25 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
 
-    Dictionary<ISaveData, string> saveData = new Dictionary<ISaveData, string>();
+    /// 
+    Dictionary<string, string> saveFiles = new();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        saveData.Add(SaveDataRegistry.CreateAndRegister<GameData>(), "game_save");
+        ISaveData gameData = SaveDataRegistry.CreateAndRegister<GameData>();
+        saveFiles.Add(SaveDataRegistry.GetID(gameData), "game_save");
 
         if (Instance == null) Instance = this; else Destroy(gameObject);
     }
 
     public void Save()
     {
-        SaveSystemManager.Instance.SaveGame(saveData, SaveSystemManager.Instance.FindAllDataPersistanceObjects());
+        SaveSystemManager.SaveGame(saveFiles);
     }
 
     public void Load()
     {
-        SaveSystemManager.Instance.LoadGame(saveData, SaveSystemManager.Instance.FindAllDataPersistanceObjects());
+        SaveSystemManager.LoadGame(saveFiles);
     }
 }
