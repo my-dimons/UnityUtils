@@ -23,6 +23,8 @@ PlayerData:
 (Handles saving, loading, and creating the data)
 SaveManager:
 
+.. code:: csharp
+
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
 
@@ -65,6 +67,7 @@ SaveManager:
 
 (Actually loading and saving data into script)
 Player:
+.. code:: csharp
 
    using TMPro;
    using UnityEngine;

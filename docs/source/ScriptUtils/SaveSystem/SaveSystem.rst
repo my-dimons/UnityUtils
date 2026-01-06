@@ -16,7 +16,7 @@ Scripts
    
    SaveSystemRegistry
    SaveSystemUtils
-   SaveSystemExample
    JsonSaveSystem
    SaveSystemManager
+   SaveSystemExample
    Interfaces/SaveSystemInterfaces
