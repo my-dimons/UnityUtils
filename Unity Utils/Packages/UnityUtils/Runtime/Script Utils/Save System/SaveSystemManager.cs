@@ -9,7 +9,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     public static class SaveSystemManager
     {
         /// <summary>
-        /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
+        /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="dataIDs">Dictionary with the dataIDs ID and name to save with</param>
         public static void SaveGame(List<SaveDataID> dataIDs)
@@ -32,7 +32,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
+        /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="dataIDs">ID's to laod</param>
         public static void LoadGame(List<SaveDataID> dataIDs)
@@ -54,7 +54,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Grab all <see cref="ISaveableData"/> to call functions on
+        /// Gets all <see cref="ISaveableData"/> to call functions on
         /// </summary>
         /// <returns>List of all objects with <see cref="ISaveableData"/> attached</returns>
         public static List<ISaveableData> FindAllDataPersistanceObjects() =>

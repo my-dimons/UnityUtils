@@ -5,6 +5,7 @@ Example of a Save System
 -------------
 
 (Holds data to be stored across sessions)
+
 PlayerData:
 
 .. code:: csharp
@@ -21,6 +22,7 @@ PlayerData:
    }
    
 (Handles saving, loading, and creating the data)
+
 SaveManager:
 
 .. code:: csharp
@@ -66,9 +68,11 @@ SaveManager:
    }
 
 (Actually loading and saving data into script)
-Player:
-.. code:: csharp
 
+Player:
+
+.. code:: csharp
+  
    using TMPro;
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;

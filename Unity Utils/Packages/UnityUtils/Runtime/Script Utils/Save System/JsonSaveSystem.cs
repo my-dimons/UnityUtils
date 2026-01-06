@@ -11,7 +11,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     public static class JsonSaveSystem
     {
         /// <summary>
-        /// Loads the inputted <paramref name="saveDataID"/> into its respective file
+        /// Serializes the inputted <paramref name="saveDataID"/> into <see cref="SaveDataID.fileName"/> in a json format
         /// </summary>
         /// <param name="saveDataID">saveDataID of the file to be saved</param>
         public static void Save(SaveDataID saveDataID)
@@ -37,7 +37,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Loads json file data from the inputted files
+        /// Deserializes a list of <see cref="ISaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
         /// </summary>
         /// <param name="saveDataIDs">A list of saveDataIDs to load the <see cref="ISaveData"/> of</param>
         /// <returns>List of all the loaded save datas</returns>
@@ -63,10 +63,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Loads a single save file from the files using a <paramref name="fileName"/> and <paramref name="type"/>
+        /// Deserializes a single <see cref="ISaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
         /// </summary>
-        /// <param name="fileName">Name of the file to grab</param>
-        /// <param name="type"><see cref="Type"/> of file to grab</param>
+        /// <param name="saveDataID"><see cref="SaveDataID"/> to deserialize</param>
         /// <returns><see cref="ISaveData"/> with the loaded data from the file</returns>
         public static ISaveData LoadSingleSaveFile(SaveDataID saveDataID)
         {
