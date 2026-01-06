@@ -1,4 +1,4 @@
 var _json_save_system_8cs =
 [
-    [ "JsonSaveSystem", "class_json_save_system.html", "class_json_save_system" ]
+    [ "UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" ]
 ];

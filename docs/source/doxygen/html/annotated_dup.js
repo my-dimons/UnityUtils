@@ -27,7 +27,10 @@ var annotated_dup =
           [ "ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" ],
           [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
           [ "ISaveManager", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager" ],
+          [ "JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" ],
           [ "SaveDataID", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" ],
+          [ "SaveDataRegistry", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" ],
+          [ "SaveSystemManager", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" ],
           [ "SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" ]
         ] ],
         [ "ScriptableObjects", "namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html", [
@@ -47,8 +50,5 @@ var annotated_dup =
         [ "CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper" ]
       ] ]
     ] ],
-    [ "JsonSaveSystem", "class_json_save_system.html", "class_json_save_system" ],
-    [ "SaveDataRegistry", "class_save_data_registry.html", "class_save_data_registry" ],
-    [ "SaveSystemManager", "class_save_system_manager.html", "class_save_system_manager" ],
     [ "TestingScript1", "class_testing_script1.html", "class_testing_script1" ]
 ];

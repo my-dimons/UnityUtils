@@ -1,0 +1,6 @@
+var class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system =
+[
+    [ "Load", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#ad0f2c14782d3ad4b0328af5a4c65692a", null ],
+    [ "LoadSingleSaveFile", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a00f2cde002f6de93df22b4d7eaa861f9", null ],
+    [ "Save", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a6fc3b7821cac2aee8f6aa076a8d7316c", null ]
+];

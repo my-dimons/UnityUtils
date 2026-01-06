@@ -63,10 +63,10 @@
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1a3fffb9e45ac9414a350c994f7ec3b616" kind="function"><name>Load</name></member>
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager_1abfb5d0805e84c733242e4c7209b2ac3a" kind="function"><name>InitializeData</name></member>
   </compound>
-  <compound refid="class_json_save_system" kind="class"><name>JsonSaveSystem</name>
-    <member refid="class_json_save_system_1a3c5597e390c10b09fdae60ce8737ca0e" kind="function"><name>Save</name></member>
-    <member refid="class_json_save_system_1a655292aaead3c8a9cee0973191423c81" kind="function"><name>Load</name></member>
-    <member refid="class_json_save_system_1abca0d693ca2b98f1ea69b45a17acb410" kind="function"><name>LoadSingleSaveFile</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6fc3b7821cac2aee8f6aa076a8d7316c" kind="function"><name>Save</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ad0f2c14782d3ad4b0328af5a4c65692a" kind="function"><name>Load</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a00f2cde002f6de93df22b4d7eaa861f9" kind="function"><name>LoadSingleSaveFile</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" kind="variable"><name>defaultAnimationCurve</name></member>
@@ -143,26 +143,26 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a460830851c7fa731a6c904db09fe6f98" kind="variable"><name>classType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a473f0baf7b3f5da84df9c46abeb2cdc2" kind="function"><name>SaveDataID</name></member>
   </compound>
-  <compound refid="class_save_data_registry" kind="class"><name>SaveDataRegistry</name>
-    <member refid="class_save_data_registry_1aae87856af243ccb178a1ab0119355308" kind="variable"><name>saveDataTypes</name></member>
-    <member refid="class_save_data_registry_1aaf9bd908bee4db900eb332dd1ff658c7" kind="variable"><name>saveDataIDss</name></member>
-    <member refid="class_save_data_registry_1ae0d0cc7799e7f12f3964f613c72802b4" kind="variable"><name>saveDataInstances</name></member>
-    <member refid="class_save_data_registry_1a6b2976a5944db42af137b78eaed61d11" kind="variable"><name>saveDataClasses</name></member>
-    <member refid="class_save_data_registry_1abe06ad6739f246430c96c9c4eea0351c" kind="variable"><name>saveDataFileNames</name></member>
-    <member refid="class_save_data_registry_1a514a83f9cd73338a15cf02a4fd9d6f59" kind="variable"><name>saveDataIDs</name></member>
-    <member refid="class_save_data_registry_1ad6cef2c9a8fa4ae7ea04ff0a39a1cda0" kind="function"><name>Register&lt; T &gt;</name></member>
-    <member refid="class_save_data_registry_1a5e6babd0ca71129d5186b1e5831d9152" kind="function"><name>GetClass</name></member>
-    <member refid="class_save_data_registry_1aa2e81137dca5bd4e0d3dd7cf80c778d7" kind="function"><name>GetInstance</name></member>
-    <member refid="class_save_data_registry_1a753b28ef73933dddb515176f59e163de" kind="function"><name>GetFileName</name></member>
-    <member refid="class_save_data_registry_1a7c9662f307d583aceb65033d3a90b0af" kind="function"><name>GetFileName</name></member>
-    <member refid="class_save_data_registry_1a6fb2fd5e9f0816b7b1db5dfac0c5d03d" kind="function"><name>GetID</name></member>
-    <member refid="class_save_data_registry_1aeff9c02cbce23e73993a26fd489f97a6" kind="function"><name>GetSaveDataIDFromID</name></member>
-    <member refid="class_save_data_registry_1af31a9725b1d7bd712693403dae885535" kind="function"><name>GetIDFromISaveData</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a25183eb17737b87107050b1aa4962b12" kind="variable"><name>saveDataTypes</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a648a78da854b1378d203b6781547411d" kind="variable"><name>saveDataIDss</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1af07104a04c5e810bee82f59fc5da9fc3" kind="variable"><name>saveDataInstances</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1abca46d758c7f25e2086651420be4d104" kind="variable"><name>saveDataClasses</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a189074e06da86342fc17bce9034fa459" kind="variable"><name>saveDataFileNames</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a40515356390d6db40ecc1ff898fc7b65" kind="variable"><name>saveDataIDs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a8443c656679b5710c5c0521236a58e07" kind="function"><name>Register&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a3ca25b20ac7c2fb7d59492e2317259ca" kind="function"><name>GetClass</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a535a66d09e37ba0e421584c6f7aaf47d" kind="function"><name>GetInstance</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a4f4fa6807c479aab3e193e8d4e692ed1" kind="function"><name>GetFileName</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aaf28d166a3a65c9c07a662d07b0892be" kind="function"><name>GetFileName</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aedd66b5b32939d68dc5ad82f80ce5364" kind="function"><name>GetID</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1accafa1e454866fc6a8ce9a5b7c67b95c" kind="function"><name>GetSaveDataIDFromID</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1ad9ad8f24a143592534bcf431487dfb3e" kind="function"><name>GetIDFromISaveData</name></member>
   </compound>
-  <compound refid="class_save_system_manager" kind="class"><name>SaveSystemManager</name>
-    <member refid="class_save_system_manager_1ad5f1f2df55daa8f1d6d81d0a785dd4ca" kind="function"><name>SaveGame</name></member>
-    <member refid="class_save_system_manager_1af174743ffaf82d601ba6353455159e13" kind="function"><name>LoadGame</name></member>
-    <member refid="class_save_system_manager_1a0436251e2367ac89645c23847aac566b" kind="function"><name>FindAllDataPersistanceObjects</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" kind="function"><name>SaveGame</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" kind="function"><name>LoadGame</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" kind="function"><name>FindAllDataPersistanceObjects</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ae82e13ad8d6974d658f8d03d1b6999d6" kind="variable"><name>SPECIAL_SAVE_FILE_EXTENSION</name></member>

@@ -14,7 +14,7 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   SaveSystemRegistry
+   SaveDataRegistry
    SaveSystemUtils
    JsonSaveSystem
    SaveSystemManager

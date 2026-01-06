@@ -1,0 +1,74 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system}{}\label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6fc3b7821cac2aee8f6aa076a8d7316c}{Save}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
+\begin{DoxyCompactList}\small\item\em Loads the inputted {\itshape save\+Data\+ID}  into its respective file. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a}{Load}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ save\+Data\+IDs)
+\begin{DoxyCompactList}\small\item\em Loads json file data from the inputted files. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a00f2cde002f6de93df22b4d7eaa861f9}{Load\+Single\+Save\+File}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
+\begin{DoxyCompactList}\small\item\em Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!Load@{Load}}
+\index{Load@{Load}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a} 
+List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Load (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$}]{save\+Data\+IDs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads json file data from the inputted files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Data\+IDs} & A list of save\+Data\+IDs to load the \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} of\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all the loaded save datas
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a00f2cde002f6de93df22b4d7eaa861f9}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!LoadSingleSaveFile@{LoadSingleSaveFile}}
+\index{LoadSingleSaveFile@{LoadSingleSaveFile}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{LoadSingleSaveFile()}{LoadSingleSaveFile()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a00f2cde002f6de93df22b4d7eaa861f9} 
+\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Load\+Single\+Save\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}}}]{save\+Data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads a single save file from the files using a {\itshape file\+Name}  and {\itshape type} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of the file to grab\\
+\hline
+{\em type} & Type of file to grab\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} with the loaded data from the file
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6fc3b7821cac2aee8f6aa076a8d7316c}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!Save@{Save}}
+\index{Save@{Save}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6fc3b7821cac2aee8f6aa076a8d7316c} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}}}]{save\+Data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the inputted {\itshape save\+Data\+ID}  into its respective file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Data\+ID} & save\+Data\+ID of the file to be saved\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\mbox{\hyperlink{_json_save_system_8cs}{Json\+Save\+System.\+cs}}\end{DoxyCompactItemize}

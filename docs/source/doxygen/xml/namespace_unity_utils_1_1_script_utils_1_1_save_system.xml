@@ -5,7 +5,10 @@
     <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveableData</innerclass>
     <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveData</innerclass>
     <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveManager</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" prot="public">UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveDataID</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</innerclass>
     <briefdescription>
     </briefdescription>

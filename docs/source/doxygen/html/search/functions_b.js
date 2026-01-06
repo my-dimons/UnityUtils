@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['save_0',['Save',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html#a1ac58a312a3e0e3c347a210bf2872ff4',1,'UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Save()'],['../class_json_save_system.html#a3c5597e390c10b09fdae60ce8737ca0e',1,'JsonSaveSystem.Save()']]],
+  ['save_0',['Save',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html#a1ac58a312a3e0e3c347a210bf2872ff4',1,'UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Save()'],['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a6fc3b7821cac2aee8f6aa076a8d7316c',1,'UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Save()']]],
   ['savedata_3c_20t_20_3e_1',['SaveData&lt; T &gt;',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#a542b6c1d9a8f9fcb3b1fd19171f131d6',1,'UnityUtils::ScriptUtils::SaveSystem::ISaveableData']]],
   ['savedataid_2',['SaveDataID',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a473f0baf7b3f5da84df9c46abeb2cdc2',1,'UnityUtils::ScriptUtils::SaveSystem::SaveDataID']]],
-  ['savegame_3',['SaveGame',['../class_save_system_manager.html#ad5f1f2df55daa8f1d6d81d0a785dd4ca',1,'SaveSystemManager']]],
+  ['savegame_3',['SaveGame',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#ae8c76c78fd1dd53d0894fdb58dc8d31a',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
   ['screenshake_4',['Screenshake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html#a315ce8d6cfc7c18cef165dc4eed951fc',1,'UnityUtils::ScriptUtils::Cameras::CameraShake']]],
   ['setparticlesystemcolor_5',['SetParticleSystemColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html#a155e3f459a42c8f0cb65a89591e9ab25',1,'UnityUtils::ScriptUtils::Particles::ParticleModifier']]],
   ['setparticlesystemgradientcolor_6',['SetParticleSystemGradientColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html#a992658b1efb0ea7b30b5366a887beafa',1,'UnityUtils::ScriptUtils::Particles::ParticleModifier']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['load_0',['Load',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html#a3fffb9e45ac9414a350c994f7ec3b616',1,'UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Load()'],['../class_json_save_system.html#a655292aaead3c8a9cee0973191423c81',1,'JsonSaveSystem.Load()']]],
+  ['load_0',['Load',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html#a3fffb9e45ac9414a350c994f7ec3b616',1,'UnityUtils.ScriptUtils.SaveSystem.ISaveManager.Load()'],['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#ad0f2c14782d3ad4b0328af5a4c65692a',1,'UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load()']]],
   ['loaddata_3c_20t_20_3e_1',['LoadData&lt; T &gt;',['../interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html#abfde40bcc5250e53a4a52fa16024ef18',1,'UnityUtils::ScriptUtils::SaveSystem::ISaveableData']]],
-  ['loadgame_2',['LoadGame',['../class_save_system_manager.html#af174743ffaf82d601ba6353455159e13',1,'SaveSystemManager']]],
-  ['loadsinglesavefile_3',['LoadSingleSaveFile',['../class_json_save_system.html#abca0d693ca2b98f1ea69b45a17acb410',1,'JsonSaveSystem']]],
+  ['loadgame_2',['LoadGame',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a96d5514a09fda359e9ab0fcf1cd02120',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
+  ['loadsinglesavefile_3',['LoadSingleSaveFile',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a00f2cde002f6de93df22b4d7eaa861f9',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
   ['logclick_4',['logClick',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html#a5686eadf415147cb7c0013c714ff114e',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugLogs']]],
   ['logemptysfx_5',['logEmptySfx',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae89df3943971c8847f19010c49257a02',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
   ['logexit_6',['logExit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html#a927670f69f3fc61b3a6a67c1dbb14402',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugLogs']]],

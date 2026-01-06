@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.SaveGame</definition>
+        <argsstring>(List&lt; SaveDataID &gt; dataIDs)</argsstring>
+        <name>SaveGame</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.SaveGame</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
+          <declname>dataIDs</declname>
+        </param>
+        <briefdescription>
+<para>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script with an <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> inherited. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataIDs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dictionary with the dataIDs ID and name to save with</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="15" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="15" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadGame</definition>
+        <argsstring>(List&lt; SaveDataID &gt; dataIDs)</argsstring>
+        <name>LoadGame</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadGame</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
+          <declname>dataIDs</declname>
+        </param>
+        <briefdescription>
+<para>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script with an <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> inherited. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataIDs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID&apos;s to laod</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="38" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="38" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> &gt;</type>
+        <definition>static List&lt; ISaveableData &gt; UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.FindAllDataPersistanceObjects</definition>
+        <argsstring>()</argsstring>
+        <name>FindAllDataPersistanceObjects</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.FindAllDataPersistanceObjects</qualifiedname>
+        <briefdescription>
+<para>Grab all <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> to call functions on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of all objects with <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> attached</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="60" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="9" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="10" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>FindAllDataPersistanceObjects</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>LoadGame</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>SaveGame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
