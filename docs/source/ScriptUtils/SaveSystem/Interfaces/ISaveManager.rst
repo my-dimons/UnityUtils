@@ -45,10 +45,3 @@ Example Usage
            saveFiles.Add(id, fileName);
        }
    }
-   
-Functions
----------
-
-.. doxygenclass:: ISaveManager
-   :namespace: UnityUtils::ScriptUtils::SaveSystem
-   :members:

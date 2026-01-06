@@ -46,10 +46,3 @@ Example Usage
            nameText.text = "Name: " + name;
        }
    }   
-
-Functions
----------
-
-.. doxygenclass:: ISaveableData
-   :namespace: UnityUtils::ScriptUtils::SaveSystem
-   :members:

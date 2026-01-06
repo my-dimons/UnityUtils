@@ -9,46 +9,46 @@ public static class SaveSystemManager
     /// <summary>
     /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
     /// </summary>
-    /// <param name="saveFiles">Dictionary with the saveFiles ID and name to save with</param>
-    public static void SaveGame(Dictionary<string, string> saveFiles)
+    /// <param name="dataIDs">Dictionary with the dataIDs ID and name to save with</param>
+    public static void SaveGame(List<string> dataIDs)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-        // Save data for each save data type
-        foreach (var dataID in saveFiles.Keys)
+        // Save dataID for each save dataID type
+        foreach (string dataID in dataIDs)
         {
             ISaveData data = SaveDataRegistry.GetInstance(dataID);
 
-            // Put data from files to ISaveData's
+            // Put dataID from files to ISaveData's
             foreach (ISaveableData saveable in saveableData)
             {
                 saveable.SaveData(data);
             }
 
-            JsonSaveSystem.Save(data, saveFiles[dataID]);
+            JsonSaveSystem.Save(dataID);
 
-            SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveFiles[dataID], SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
+            SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
         }
     }
 
     /// <summary>
     /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script with an <see cref="ISaveableData"/> inherited.
     /// </summary>
-    /// <param name="saveFiles">Dictionary with the saveFiles ID and name to load with</param>
-    public static void LoadGame(Dictionary<string, string> saveFiles)
+    /// <param name="dataIDs">ID's to laod</param>
+    public static void LoadGame(List<string> dataIDs)
     {
         List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-        // Inject save data into saveable files
-        foreach (var data in saveFiles)
+        // Inject save dataID into saveable files
+        foreach (string dataID in dataIDs)
         {
-            ISaveData saveData = JsonSaveSystem.LoadSingleSaveFile(data.Value, SaveDataRegistry.GetClass(data.Key));
+            ISaveData saveData = JsonSaveSystem.LoadSingleSaveFile(dataID);
 
             foreach (ISaveableData saveable in saveableData)
             {
                 saveable.LoadData(saveData);
 
-                SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(data.Value, SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
+                SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(SaveDataRegistry.GetFileName(dataID), SaveSystemUtils.JSON_SAVE_FILE_EXTENSION));
             }
         }
     }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 
@@ -10,7 +9,7 @@ public class SaveTesting : MonoBehaviour, ISaveableData
 
     public TextMeshProUGUI intText;
     public TextMeshProUGUI stringText;
-     
+
     public void SaveData<T>(T data) where T : ISaveData
     {
         if (data is GameData save)
@@ -21,7 +20,7 @@ public class SaveTesting : MonoBehaviour, ISaveableData
     }
 
     public void LoadData<T>(T data) where T : ISaveData
-    { 
+    {
         if (data is GameData save)
         {
             val1 = save.intValue;

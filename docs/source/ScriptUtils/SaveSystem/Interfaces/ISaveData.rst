@@ -26,10 +26,3 @@ Example Usage
    	public float health;
    	public string name;
    }
-   
-Functions
----------
-
-.. doxygenclass:: ISaveData
-   :namespace: UnityUtils::ScriptUtils::SaveSystem
-   :members:
