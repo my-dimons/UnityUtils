@@ -46,5 +46,6 @@ Example Usage
        }
    }
    
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::ISaveManager
+.. doxygenclass:: ISaveManager
+   :namespace: UnityUtils::ScriptUtils::SaveSystem::ISaveManager
    :members:
