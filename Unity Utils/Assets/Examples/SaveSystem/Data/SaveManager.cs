@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -12,7 +13,8 @@ public class SaveManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        saveData.Add(new GameData(), "game_save");
+        saveData.Add(SaveDataRegistry.CreateAndRegister<GameData>(), "game_save");
+
         if (Instance == null) Instance = this; else Destroy(gameObject);
     }
 

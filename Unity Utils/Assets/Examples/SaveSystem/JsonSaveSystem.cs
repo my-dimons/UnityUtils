@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 
@@ -30,22 +31,22 @@ public static class JsonSaveSystem
         }
     }
 
-    public static List<ISaveData> Load(string[] fileNames)
+    public static List<ISaveData> Load(Dictionary<ISaveData, string> saveDataDictionary)
     {
         List<ISaveData> loadedData = new List<ISaveData>();
 
-        foreach (string file in fileNames)
+        foreach (var file in saveDataDictionary)
         {
-            ISaveData data = LoadSingleSaveFile(file);
+            ISaveData data = LoadSingleSaveFile<ISaveData>(file.Value);
             loadedData.Add(data);
         }
 
         return loadedData;
     }
 
-    public static ISaveData LoadSingleSaveFile(string fileName)
+    public static T LoadSingleSaveFile<T>(string fileName) where T : ISaveData
     {
-        ISaveData loadedData = null;
+        T loadedData = default;
 
         string fullPath = SaveSystemUtils.GetSaveFilePath(fileName, SaveSystemConfig.JSON_SAVE_FILE_EXTENSION);
 
@@ -53,18 +54,10 @@ public static class JsonSaveSystem
         {
             try
             {
-                string dataToLoad = "";
-
-                using (FileStream stream = new FileStream(fullPath, FileMode.Open))
-                {
-                    using (StreamReader reader = new StreamReader(stream))
-                    {
-                        dataToLoad = reader.ReadToEnd();
-                    }
-                }
+                string json = File.ReadAllText(fullPath);
 
                 // Deserialize the data from Json back into the object
-                loadedData = JsonUtility.FromJson<ISaveData>(dataToLoad);
+                loadedData = JsonUtility.FromJson<T>(json);
             }
             catch (IOException e)
             {

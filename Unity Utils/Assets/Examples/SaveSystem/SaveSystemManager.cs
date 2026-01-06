@@ -41,7 +41,7 @@ public class SaveSystemManager : MonoBehaviour
 
     public void LoadGame(Dictionary<ISaveData, string> saveDataDictionary, List<ISaveableData> saveableData)
     {
-        List<ISaveData> saveData = JsonSaveSystem.Load(saveDataDictionary.Values.ToArray<string>());
+        List<ISaveData> saveData = JsonSaveSystem.Load(saveDataDictionary);
 
         // Load data for each save data type
         foreach (ISaveData data in saveData)
@@ -49,8 +49,6 @@ public class SaveSystemManager : MonoBehaviour
             foreach (ISaveableData saveable in saveableData)
             {
                 saveable.LoadData(data);
-
-                SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(saveDataDictionary[data], SaveSystemConfig.JSON_SAVE_FILE_EXTENSION));
             }
         }
     }

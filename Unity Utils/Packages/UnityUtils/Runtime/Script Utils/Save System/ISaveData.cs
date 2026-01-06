@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
     /// <summary>
-    /// Implimenting this interface means you must have "[System.Serializable]" above your class name
+    /// Implimenting this class means you must have "[System.Serializable]" above your class name
     /// </summary>
-    public interface ISaveData { }
+    public interface ISaveData
+    {
+        string DataID { get; }
+    }
 }
