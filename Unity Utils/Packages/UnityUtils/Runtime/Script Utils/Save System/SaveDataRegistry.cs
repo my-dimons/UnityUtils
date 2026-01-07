@@ -18,10 +18,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The file name of the save object</param>
         /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
-        public static SaveDataID Register<T>(string uniqueID, string fileName, bool useEncryption) where T : ISaveData, new()
+        public static SaveDataID Register<T>(string uniqueID, string fileName, bool useEncryption) where T : SaveData, new()
         {
             // TODO: ADD CHECKS (if it already exists)
-            ISaveData saveDataInstance = new T();
+            SaveData saveDataInstance = new T();
             SaveDataID saveDataID = new SaveDataID(uniqueID, fileName, saveDataInstance, typeof(T), useEncryption);
 
             saveDataIDs.Add(saveDataID);
@@ -36,6 +36,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The file name of the save object, gets used as the ID</param>
         /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
-        public static SaveDataID Register<T>(string fileName, bool useEncryption) where T : ISaveData, new() => Register<T>(fileName, fileName, useEncryption);
+        public static SaveDataID Register<T>(string fileName, bool useEncryption) where T : SaveData, new() => Register<T>(fileName, fileName, useEncryption);
     }
 }

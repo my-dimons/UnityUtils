@@ -33,7 +33,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// <summary>
         /// Creates a new <see cref="ObjectModifierData"/> with the specified <see cref="ModifierType"/> and value and adds it to <see cref="Modifiers"/>
         /// </summary>
-        /// <param name="modifierType">The type of modifier to add</param>
+        /// <param name="modifierType">The classType of modifier to add</param>
         /// <param name="modifierValue">The value associated with the modifier</param>
         public void AddModifier(ModifierType modifierType, float modifierValue) { Modifiers.Add(new ObjectModifierData(modifierType, modifierValue)); }
 
@@ -122,7 +122,7 @@ namespace UnityUtils.ScriptUtils.Objects
         }
 
         /// <summary>
-        /// Prints the type and value of each <see cref="Modifiers"/> to the debug log.
+        /// Prints the classType and value of each <see cref="Modifiers"/> to the debug log.
         /// </summary>
         public void PrintModifiers()
         {

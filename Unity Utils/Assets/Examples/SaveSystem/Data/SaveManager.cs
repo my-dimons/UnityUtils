@@ -8,7 +8,7 @@ public class SaveManager : MonoBehaviour
     public static SaveManager Instance { get; private set; }
 
     // A list with save file IDs
-    List<SaveDataID> saveFiles = new();
+    List<SaveData> saveFiles = new();
 
     public string activeSaveSlot;
 
@@ -42,7 +42,7 @@ public class SaveManager : MonoBehaviour
         Debug.Log(saveSlot);
 
         string path = Path.Combine("saves", saveSlot, "game_save.json");
-        SaveDataID gameData = SaveSystemManager.CreateSaveDataID<GameData>(path, false);
+        SaveData gameData = SaveSystemManager.CreateSaveData<GameData>(path, false);
 
         saveFiles.Add(gameData);
     }

@@ -9,10 +9,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// The slot id
         public readonly string id;
 
-        /// Instances of the <see cref="ISaveData"/> linked to this object
-        public readonly List<ISaveData> dataInstances;
+        /// Instances of the <see cref="SaveData"/> linked to this object
+        public readonly List<SaveData> dataInstances;
 
-        public SaveSlotID(string id, List<ISaveData> dataInstances)
+        public SaveSlotID(string id, List<SaveData> dataInstances)
         {
             this.id = id;
             this.dataInstances = dataInstances;
@@ -22,7 +22,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Adds a data instance to <see cref="dataInstances"/>
         /// </summary>
         /// <param name="dataInstance">instance to add</param>
-        public void AddDataInstance(ISaveData dataInstance)
+        public void AddDataInstance(SaveData dataInstance)
         {
             dataInstances.Add(dataInstance);
         }

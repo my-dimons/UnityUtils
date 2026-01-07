@@ -15,27 +15,24 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         private static string encryptionKey = "Key";
 
         /// <summary>
-        /// Serializes the inputted <paramref name="saveDataID"/> into <see cref="SaveDataID.fileName"/> in a json format
+        /// Serializes the inputted <paramref name="saveData"/> into <see cref="SaveDataID.fileName"/> in a json format
         /// </summary>
-        /// <param name="saveDataID">saveDataID of the file to be saved</param>
-        public static void Save(SaveDataID saveDataID, string saveSlotID)
+        /// <param name="saveData">saveData of the file to be saved</param>
+        public static void Save(SaveData saveData, string saveSlotID)
         {
-            string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveDataID.fileName));
+            string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveData.saveFileName));
 
             try
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
-                // Serialize saveDataID to SaveData
-                saveDataID.dataInstance.saveDataID = JsonConvert.SerializeObject(saveDataID);
-
                 // Serialize data into json
-                string dataToStore = JsonUtility.ToJson(saveDataID.dataInstance, !saveDataID.useEncryption);
+                string dataToStore = JsonUtility.ToJson(saveData, !saveData.useEncryption);
 
-                if (saveDataID.useEncryption)
+                if (saveData.useEncryption)
                 {
                     dataToStore = EncryptDecrypt(dataToStore);
-                    SaveSystemUtils.LogSaveFileEncrypted(SaveSystemUtils.GetSaveFilePath(saveDataID.fileName));
+                    SaveSystemUtils.LogSaveFileEncrypted(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
                 }
 
                 // Write data into files
@@ -50,22 +47,22 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Deserializes a list of <see cref="ISaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
+        /// Deserializes a list of <see cref="SaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
         /// </summary>
-        /// <param name="saveDataIDs">A list of saveDataIDs to load the <see cref="ISaveData"/> of</param>
+        /// <param name="saveDatas">A list of saveDatas to load the <see cref="SaveData"/> of</param>
         /// <returns>List of all the loaded save datas</returns>
-        public static List<ISaveData> Load(List<SaveDataID> saveDataIDs, string saveSlotID)
+        public static List<SaveData> Load(List<SaveData> saveDatas, string saveSlotID)
         {
-            List<ISaveData> loadedData = new();
+            List<SaveData> loadedData = new();
 
             // Load data into list
-            foreach (SaveDataID dataID in saveDataIDs)
+            foreach (SaveData saveData in saveDatas)
             {
-                Type type = dataID.classType;
+                Type type = saveData.GetClassType();
 
                 if (type != null)
                 {
-                    ISaveData data = LoadSingleSaveFile(dataID, saveSlotID);
+                    SaveData data = LoadSingleSaveFile(saveData, saveSlotID);
 
                     if (data != null)
                         loadedData.Add(data);
@@ -76,15 +73,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
-        /// Deserializes a single <see cref="ISaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
+        /// Deserializes a single <see cref="SaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
         /// </summary>
-        /// <param name="saveDataID"><see cref="SaveDataID"/> to deserialize</param>
-        /// <returns><see cref="ISaveData"/> with the loaded data from the file</returns>
-        public static ISaveData LoadSingleSaveFile(SaveDataID saveDataID, string saveSlotID)
+        /// <param name="saveData"><see cref="SaveDataID"/> to deserialize</param>
+        /// <returns><see cref="SaveData"/> with the loaded data from the file</returns>
+        public static SaveData LoadSingleSaveFile(SaveData saveData, string saveSlotID)
         {
             object loadedData = default;
 
-            string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveDataID.fileName));
+            string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveData.saveFileName));
 
             // Get single file
             if (File.Exists(fullPath))
@@ -95,13 +92,16 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                     string json = File.ReadAllText(fullPath);
 
                     // Data decryption
-                    if (saveDataID.useEncryption)
+                    if (saveData.useEncryption)
                     {
                         json = EncryptDecrypt(json);
                     }
 
+                    // Deserialize Savedata temporarily to get the class type
+                    SaveData tempJson = JsonUtility.FromJson<SaveData>(json);
+                    
                     // Deserialize the data from json back into the object
-                    loadedData = JsonUtility.FromJson(json, saveDataID.classType);
+                    loadedData = JsonUtility.FromJson(json, tempJson.GetClassType());
                 }
                 catch (IOException e)
                 {
@@ -109,16 +109,16 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 }
             }
 
-            return loadedData as ISaveData;
+            return loadedData as SaveData;
         }
 
-        public static SaveDataID DeserializeSaveDataID(ISaveData data) => JsonConvert.DeserializeObject<SaveDataID>(data.saveDataID);
+        public static SaveDataID DeserializeSaveDataID(SaveData data) => JsonConvert.DeserializeObject<SaveDataID>(data.saveDataID);
         public static SaveDataID DeserializeSaveDataID(string path)
         {
             string json = File.ReadAllText(path);
             JObject obj = JObject.Parse(json);
 
-            string saveDataIDString = obj[nameof(ISaveData.saveDataID)]?.ToString();
+            string saveDataIDString = obj[nameof(SaveData.saveDataID)]?.ToString();
 
             SaveDataID data = JsonConvert.DeserializeObject<SaveDataID>(saveDataIDString);
 

@@ -10,7 +10,7 @@ public class SaveTesting : MonoBehaviour, ISaveableData
     public TextMeshProUGUI intText;
     public TextMeshProUGUI stringText;
 
-    public void SaveData<T>(T data) where T : ISaveData
+    public void SaveData<T>(T data) where T : SaveData
     {
         if (data is GameData save)
         {
@@ -19,7 +19,7 @@ public class SaveTesting : MonoBehaviour, ISaveableData
         }
     }
 
-    public void LoadData<T>(T data) where T : ISaveData
+    public void LoadData<T>(T data) where T : SaveData
     {
         if (data is GameData save)
         {

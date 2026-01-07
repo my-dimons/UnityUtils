@@ -13,22 +13,22 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="dataIDs">Dictionary with the dataIDs ID and name to save with</param>
-        public static void SaveGame(List<SaveDataID> dataIDs, string saveSlotID)
+        public static void SaveGame(List<SaveData> dataIDs, string saveSlotID)
         {
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-            // Save saveID for each save saveID type
-            foreach (SaveDataID saveID in dataIDs)
+            // Save saveData for each save saveData classType
+            foreach (SaveData saveData in dataIDs)
             {
-                // Put saveID from files to ISaveData's
+                // Put saveData from files to SaveData's
                 foreach (ISaveableData saveable in saveableData)
                 {
-                    saveable.SaveData(saveID.dataInstance);
+                    saveable.SaveData(saveData);
                 }
 
-                JsonSaveSystem.Save(saveID, saveSlotID);
+                JsonSaveSystem.Save(saveData, saveSlotID);
 
-                SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveID.fileName));
+                SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
             }
         }
 
@@ -36,20 +36,20 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="dataIDs">ID's to laod</param>
-        public static void LoadGame(List<SaveDataID> dataIDs, string saveSlotID)
+        public static void LoadGame(List<SaveData> dataIDs, string saveSlotID)
         {
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
-            // Inject save saveID into saveable files
-            foreach (SaveDataID dataID in dataIDs)
+            // Inject save saveData into saveable files
+            foreach (SaveData saveData in dataIDs)
             {
-                ISaveData saveData = JsonSaveSystem.LoadSingleSaveFile(dataID, saveSlotID);
+                SaveData data = JsonSaveSystem.LoadSingleSaveFile(saveData, saveSlotID);
 
                 foreach (ISaveableData saveable in saveableData)
                 {
-                    saveable.LoadData(saveData);
+                    saveable.LoadData(data);
 
-                    SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(dataID.fileName));
+                    SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(data.saveFileName));
                 }
             }
         }
@@ -107,12 +107,12 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The file name of the save object</param>
         /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
-        public static SaveDataID CreateSaveDataID<T>(string uniqueID, string fileName, bool useEncryption) where T : ISaveData, new()
+        public static SaveData CreateSaveData<T>(string uniqueID, string fileName, bool useEncryption) where T : SaveData, new()
         {
-            ISaveData saveDataInstance = new T();
-            SaveDataID saveDataID = new SaveDataID(uniqueID, fileName, saveDataInstance, typeof(T), useEncryption);
+            T saveData = new T();
+            saveData.SetData(uniqueID, fileName, useEncryption);
 
-            return saveDataID;
+            return saveData;
         }
 
         /// <summary>
@@ -122,6 +122,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The file name of the save object, gets used as the ID</param>
         /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
-        public static SaveDataID CreateSaveDataID<T>(string fileName, bool useEncryption) where T : ISaveData, new() => CreateSaveDataID<T>(fileName, fileName, useEncryption);
+        public static SaveData CreateSaveData<T>(string fileName, bool useEncryption) where T : SaveData, new() => CreateSaveData<T>(fileName, fileName, useEncryption);
     }
 }

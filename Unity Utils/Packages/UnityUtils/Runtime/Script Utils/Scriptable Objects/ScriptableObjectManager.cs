@@ -8,7 +8,7 @@ namespace UnityUtils.ScriptUtils.ScriptableObjects
         /// Gets an array of <see cref="ScriptableObject"/> found in [Resources/'path']. Make sure you have a 'Resources' folder created
         /// </summary>
         /// <param name="path">file path to where <see cref="ScriptableObject"/> are held (found in [Resources/'path']</param>
-        /// <returns>Array of specified scriptable object type</returns>
+        /// <returns>Array of specified scriptable object classType</returns>
         public static T[] GetScriptableObjects<T>(string path) where T : ScriptableObject
         {
             T[] loadedObjects = Resources.LoadAll<T>(path);
