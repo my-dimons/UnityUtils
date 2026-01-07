@@ -64,12 +64,12 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 .OfType<ISaveableData>()
                 .ToList();
 
-        public static Dictionary<string, SaveSlot> LoadAllSaveSlots()
+        public static Dictionary<string, SaveSlot> LoadAllSaveSlots(bool useEncryption)
         {
             Dictionary<string, SaveSlot> saveSlotDictionary = new();
             IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(SaveSystemUtils.GetSaveSlotRootPath()).EnumerateDirectories();
 
-            // Loop through each directory
+            // Loop through each save directory
             foreach (DirectoryInfo dirInfo in dirInfos)
             {
                 string saveSlotName = dirInfo.Name;
@@ -83,29 +83,32 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 {
                     string fullPath = Path.Combine(partialPath, file.Name);
 
+                    // Skip if no data
                     if (!File.Exists(fullPath))
                     {
                         Debug.LogWarning("Skipping directory when loading all profiles because it does not contain data: " + saveSlotName);
                         continue;
                     }
 
-                    // manually load data here since we don't have the SaveData instances to pass in
-                    SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(fullPath));
+                    // Get provided json file and decrypt if needed
+                    string json = useEncryption ? JsonSaveSystem.EncryptDecrypt(File.ReadAllText(fullPath)) : File.ReadAllText(fullPath);
+
+                    // Deserialize Savedata temporarily to get the class type
+                    SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
                     Type type = saveData.GetClassType();
 
+                    // Skip if no type
                     if (type == null)
                     {
                         Debug.LogWarning("Skipping save file when loading all profiles because its type could not be determined: " + fullPath);
                         continue;
                     }
 
-                    object fullSaveData = JsonUtility.FromJson(File.ReadAllText(fullPath), saveData.GetClassType());
+                    // Deserialize the data from json back into the object
+                    object fullSaveData = JsonUtility.FromJson(json, saveData.GetClassType());
 
                     saveDatas.Add(fullSaveData as SaveData);
-                    //
-                    //if (saveData != null)
-                    //    saveFiles.Add(saveData);
                 }
 
                 saveFiles = new SaveSlot(saveSlotName, saveDatas);

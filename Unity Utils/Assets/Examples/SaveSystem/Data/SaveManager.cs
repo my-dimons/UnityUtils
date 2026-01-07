@@ -8,21 +8,17 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
 
-    Dictionary<string, SaveSlot> saveSlots = new();
+    public Dictionary<string, SaveSlot> saveSlots = new();
 
     public string activeSaveSlot;
+
+    private readonly bool useEncryption = true;
 
     void Start()
     {
         InitializeData();
 
-        saveSlots = SaveSystemManager.LoadAllSaveSlots();
-        Debug.Log(saveSlots.Count + " save slots found.");
-
-        foreach (var save in saveSlots)
-        {
-            Debug.Log($"SaveSlot: FileName: {save.Key}");
-        }
+        saveSlots = GetAllSaveSlots();
 
         CreateSaveSlot("0");
         CreateSaveSlot("test_slot");
@@ -57,7 +53,7 @@ public class SaveManager : MonoBehaviour
         List<SaveData> data = new();
 
         string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
-        data.Add(SaveSystemManager.CreateSaveData<GameData>(path, false));
+        data.Add(SaveSystemManager.CreateSaveData<GameData>(path, useEncryption));
 
         saveSlots.Add(saveSlot, new SaveSlot(saveSlot, data));
     }
@@ -65,11 +61,21 @@ public class SaveManager : MonoBehaviour
     public void SetSaveSlot(string saveSlot)
     {
         if (saveSlots[saveSlot] != null)
-        {
             activeSaveSlot = saveSlot;
-        } else
-        {
+        else
             Debug.LogWarning("The save slot \"" + saveSlot + "\" is unavailable");
+    }
+
+    public Dictionary<string, SaveSlot> GetAllSaveSlots()
+    {
+        Dictionary<string, SaveSlot> loadedSaveSlots = SaveSystemManager.LoadAllSaveSlots(useEncryption);
+        Debug.Log(loadedSaveSlots.Count + " save slots found.");
+
+        foreach (var save in loadedSaveSlots)
+        {
+            Debug.Log($"SaveSlot: FileName: {save.Key}");
         }
+
+        return loadedSaveSlots;
     }
 }
