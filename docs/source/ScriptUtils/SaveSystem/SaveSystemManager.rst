@@ -15,8 +15,8 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	// A list with save file IDs and file names
-   	Dictionary<SaveDataID> saveFiles = new();
+   	// Create a save slot with the example type "GameData", without encrpytion
+   	SaveSlot saveFiles = new SaveSlot("save", SaveSystemManager.CreateSaveData<GameData>(SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json"), useEncryption)
    	
    	void Start()
    	{

@@ -46,3 +46,9 @@ Example Usage
            nameText.text = "Name: " + name;
        }
    }   
+   
+Functions
+--------
+
+.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::ISaveableData
+   :members:

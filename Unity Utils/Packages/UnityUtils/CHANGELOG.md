@@ -9,8 +9,8 @@
 - Save System
     - ISaveData
     - ISaveableData
-    - SaveDataID
-    - SaveDataRegistry
+     - SaveData
+     - SaveSlot
     - SaveSystemManager
     - SaveSystemUtils
     - JsonSaveSystem

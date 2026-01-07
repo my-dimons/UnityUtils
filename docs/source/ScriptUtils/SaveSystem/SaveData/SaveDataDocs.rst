@@ -1,4 +1,4 @@
-Save System Interfaces
+Save Data
 =========
 
 **NAMESPACE:**
@@ -10,5 +10,6 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   ISaveData
+   SaveData
+    SaveSlot
    ISaveableData

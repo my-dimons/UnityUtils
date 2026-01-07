@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 
@@ -70,6 +68,7 @@ public class SaveManager : MonoBehaviour
     public Dictionary<string, SaveSlot> GetAllSaveSlots()
     {
         Dictionary<string, SaveSlot> loadedSaveSlots = SaveSystemManager.LoadAllSaveSlots(useEncryption);
+
         Debug.Log(loadedSaveSlots.Count + " save slots found.");
 
         foreach (var save in loadedSaveSlots)

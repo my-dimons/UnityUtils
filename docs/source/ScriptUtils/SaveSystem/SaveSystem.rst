@@ -15,9 +15,7 @@ Scripts
    :maxdepth: 1
    
    SaveDataRegistry
-   SaveSystemUtils
    JsonSaveSystem
    SaveSystemManager
-   SaveDataID
    SaveSystemExample
-   Interfaces/SaveSystemInterfaces
+   SaveData/SaveDataDocs

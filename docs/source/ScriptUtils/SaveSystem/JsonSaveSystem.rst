@@ -24,21 +24,21 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	List<SaveDataID> saveDataIDs = new();
+   	List<SaveSlot> saveData's = new();
    	
    	void Start()
    	{
    	   // Set encryption key for encrypting data (DO NOT SHARE THIS KEY ANYWHERE)
    	   JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
    	   
-   	   // Serializes all the save files
-   	   for (SaveDataID dataID in saveDataID)
+   	   // Serializes all the save slots
+   	   for (SaveSlot dataID in saveDataID)
    	   {
    	      JsonSaveSystem.Save(dataID);
    	   }
    	   
-   	   // Deserializes all the save files back into their ISaveData counterparts
-   	   List<ISaveData> loadedData = JsonSaveSystem.Load(saveDataIDs);
+   	   // Deserializes all the save files back into their SaveSlot counterparts
+   	   List<SaveSlot> loadedData = JsonSaveSystem.Load(saveDataIDs);
    	}
    }
    

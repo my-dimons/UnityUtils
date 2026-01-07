@@ -6,16 +6,16 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public class SaveSlot
     {
-        /// The slot id
+        /// The save slot id
         public readonly string saveSlotName;
 
         /// Instances of the <see cref="SaveData"/> linked to this object
         public readonly List<SaveData> saveDatas;
 
-        public SaveSlot(string saveSlotName, List<SaveData> saveData)
+        public SaveSlot(string saveSlotName, List<SaveData> saveDatas)
         {
             this.saveSlotName = saveSlotName;
-            this.saveDatas = saveData;
+            this.saveDatas = saveDatas;
         }
 
         /// <summary>

@@ -17,8 +17,11 @@ Example Usage
    {   	
    	void Start()
    	{
-   	   // Gets the global path to the save file "filename.save"
-   	   string path = SaveSystemUtils.GetSaveFilePath("filename.json");
+   	   // Gets the global path to the save file "filename.save" in the save slot "0"
+   	   string path = SaveSystemUtils.GetSaveSlotFilePath("0", "filename.json");
+   	   
+   	   // Gets the save slot root folder
+   	   string saveSlotRoot = SaveSystemUtils.GetSaveSlotRootPath();
    	}
    }
 
