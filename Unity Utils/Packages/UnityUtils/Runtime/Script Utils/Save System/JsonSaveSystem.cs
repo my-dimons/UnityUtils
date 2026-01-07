@@ -18,7 +18,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Serializes the inputted <paramref name="saveData"/> into <see cref="SaveDataID.fileName"/> in a json format
         /// </summary>
         /// <param name="saveData">saveData of the file to be saved</param>
-        public static void Save(SaveData saveData, string saveSlotID)
+        public static void Save(SaveData saveData)
         {
             string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveData.saveFileName));
 
@@ -51,7 +51,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// </summary>
         /// <param name="saveDatas">A list of saveDatas to load the <see cref="SaveData"/> of</param>
         /// <returns>List of all the loaded save datas</returns>
-        public static List<SaveData> Load(List<SaveData> saveDatas, string saveSlotID)
+        public static List<SaveData> Load(List<SaveData> saveDatas)
         {
             List<SaveData> loadedData = new();
 
@@ -62,7 +62,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
                 if (type != null)
                 {
-                    SaveData data = LoadSingleSaveFile(saveData, saveSlotID);
+                    SaveData data = LoadSingleSaveFile(saveData);
 
                     if (data != null)
                         loadedData.Add(data);
@@ -77,11 +77,11 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// </summary>
         /// <param name="saveData"><see cref="SaveDataID"/> to deserialize</param>
         /// <returns><see cref="SaveData"/> with the loaded data from the file</returns>
-        public static SaveData LoadSingleSaveFile(SaveData saveData, string saveSlotID)
+        public static SaveData LoadSingleSaveFile(SaveData saveData)
         {
             object loadedData = default;
 
-            string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveData.saveFileName));
+            string fullPath = SaveSystemUtils.GetSaveFilePath(saveData.saveFileName);
 
             // Get single file
             if (File.Exists(fullPath))
@@ -110,25 +110,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
 
             return loadedData as SaveData;
-        }
-
-        public static SaveDataID DeserializeSaveDataID(SaveData data) => JsonConvert.DeserializeObject<SaveDataID>(data.saveDataID);
-        public static SaveDataID DeserializeSaveDataID(string path)
-        {
-            string json = File.ReadAllText(path);
-            JObject obj = JObject.Parse(json);
-
-            string saveDataIDString = obj[nameof(SaveData.saveDataID)]?.ToString();
-
-            SaveDataID data = JsonConvert.DeserializeObject<SaveDataID>(saveDataIDString);
-
-            if (data != null)
-            {
-                return data;
-            }
-
-            Debug.Log("SaveDataID not found in: " + path);
-            return null;
         }
 
         /// <summary>

@@ -703,6 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2e388581c98e44dbf3ba7cdeae139f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveManager
+  activeSaveSlot: 0
 --- !u!1 &1125921650
 GameObject:
   m_ObjectHideFlags: 0

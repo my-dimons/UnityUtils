@@ -10,17 +10,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     [Serializable]
     public class SaveData
     {
-        public string saveDataID;
         public string saveFileName;
         public string classTypeName;
         public bool useEncryption;
 
-        public void SetData(string saveDataID, string saveFileName, bool useEncryption)
+        public void SetData(string saveFileName, bool useEncryption, Type classType)
         {
-            this.saveDataID = saveDataID;
             this.saveFileName = saveFileName;
             this.useEncryption = useEncryption;
-            this.classTypeName = this.GetType().AssemblyQualifiedName;
+            this.classTypeName = classType.AssemblyQualifiedName;
         }
 
         public Type GetClassType()

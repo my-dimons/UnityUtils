@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -7,27 +8,37 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
 
-    // A list with save file IDs
-    List<SaveData> saveFiles = new();
+    Dictionary<string, SaveSlot> saveSlots = new();
 
     public string activeSaveSlot;
 
     void Start()
     {
         InitializeData();
-        SaveSlot("0");
+
+        saveSlots = SaveSystemManager.LoadAllSaveSlots();
+        Debug.Log(saveSlots.Count + " save slots found.");
+
+        foreach (var save in saveSlots)
+        {
+            Debug.Log($"SaveSlot: FileName: {save.Key}");
+        }
+
+        CreateSaveSlot("0");
+        CreateSaveSlot("test_slot");
+        CreateSaveSlot("1234");
 
         if (Instance == null) Instance = this; else Destroy(gameObject);
     }
 
     public void Save()
     {
-        SaveSystemManager.SaveGame(saveFiles, activeSaveSlot);
+        SaveSystemManager.SaveGame(saveSlots[activeSaveSlot].saveDatas);
     }
 
     public void Load()
     {
-        SaveSystemManager.LoadGame(saveFiles, activeSaveSlot);
+        SaveSystemManager.LoadGame(saveSlots[activeSaveSlot].saveDatas);
     }
 
     public void InitializeData()
@@ -35,15 +46,30 @@ public class SaveManager : MonoBehaviour
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
     }
 
-    public void SaveSlot(string saveSlot)
+    public void CreateSaveSlot(string saveSlot)
     {
-        activeSaveSlot = saveSlot;
+        if (saveSlots.ContainsKey(saveSlot))
+        {
+            Debug.LogWarning("The save slot \"" + saveSlot + "\" already exists");
+            return;
+        }
 
-        Debug.Log(saveSlot);
+        List<SaveData> data = new();
 
-        string path = Path.Combine("saves", saveSlot, "game_save.json");
-        SaveData gameData = SaveSystemManager.CreateSaveData<GameData>(path, false);
+        string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
+        data.Add(SaveSystemManager.CreateSaveData<GameData>(path, false));
 
-        saveFiles.Add(gameData);
+        saveSlots.Add(saveSlot, new SaveSlot(saveSlot, data));
+    }
+
+    public void SetSaveSlot(string saveSlot)
+    {
+        if (saveSlots[saveSlot] != null)
+        {
+            activeSaveSlot = saveSlot;
+        } else
+        {
+            Debug.LogWarning("The save slot \"" + saveSlot + "\" is unavailable");
+        }
     }
 }

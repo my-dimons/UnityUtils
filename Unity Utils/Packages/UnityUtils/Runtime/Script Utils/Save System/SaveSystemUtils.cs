@@ -17,27 +17,37 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// .json file extension
         public const string JSON_SAVE_FILE_EXTENSION = ".json";
 
+        /// What to name the save files
+        public const string SAVE_FILES_NAME = "saves";
+
         /// The default save slot ID, use when not using multiple save slots
         public const string DEFAULT_SAVE_SLOT_ID = "0";
 
+
+
         /// <summary>
-        /// Generates the full file path for a save file using the specified file name and extension.
+        /// The full root path for save files, usually Application.persistentDataPath/saves
         /// </summary>
-        /// <remarks>The returned path is located within the application's persistent data directory. Use
-        /// this method to ensure save files are stored in a consistent and platform-appropriate location.</remarks>
-        /// <param name="fileName">The base name of the save file</param>
-        /// <param name="extension">The "." extension to add to the file (Ex. ".json")</param>
-        /// <returns>A string containing the absolute path to the save file</returns>
-        public static string GetSaveFilePath(string fileName, string extension) => Path.Combine(Application.persistentDataPath, fileName + extension);
+        public static string GetSaveSlotRootPath() => Path.Combine(Application.persistentDataPath, SAVE_FILES_NAME);
 
         /// <summary>
         /// Generates the full file path for a save file using the specified file name.
         /// </summary>
-        /// <remarks>The returned path is located within the application's persistent data directory. Use
-        /// this method to ensure save files are stored in a consistent and platform-appropriate location.</remarks>
         /// <param name="fileName">The base name of the save file</param>
-        /// <returns>A string containing the absolute path to the save file</returns>
         public static string GetSaveFilePath(string fileName) => Path.Combine(Application.persistentDataPath, fileName);
+
+        /// <summary>
+        /// Generates the full file path for a save file using the specified file name and in the save slot.
+        /// </summary>
+        /// <param name="fileName">The base name of the save file</param>
+        /// <param name="saveSlot">The save slot to check</param>
+        public static string GetSaveSlotFilePath(string saveSlot, string fileName) => Path.Combine(GetSaveSlotPath(saveSlot), fileName);
+        
+        /// <summary>
+        /// Generates the full file path for a saveSlot
+        /// </summary>
+        /// <param name="saveSlot">The save slot to check</param>
+        public static string GetSaveSlotPath(string saveSlot) => Path.Combine(GetSaveSlotRootPath(), saveSlot);
 
         /// <summary>
         /// Logs an error message indicating that a save file was not found at the specified path.
