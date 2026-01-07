@@ -64,16 +64,29 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 .OfType<ISaveableData>()
                 .ToList();
 
+        /// <summary>
+        /// Loads all save slots from the save directory, if none exists one is created.
+        /// </summary>
+        /// <param name="useEncryption">If true, will treat all save files as though they are encryped (Make sure you consistently encrypt/decrypt files)</param>
+        /// <returns>Dictionary of the save slot name and the <see cref="SaveSlot"/></returns>
         public static Dictionary<string, SaveSlot> LoadAllSaveSlots(bool useEncryption)
         {
             Dictionary<string, SaveSlot> saveSlotDictionary = new();
+
+            // create save directory if it does not exist
+            if (!Directory.Exists(SaveSystemUtils.GetSaveSlotRootPath()))
+            {
+                Directory.CreateDirectory(SaveSystemUtils.GetSaveSlotRootPath());
+                return saveSlotDictionary;
+            }
+
             IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(SaveSystemUtils.GetSaveSlotRootPath()).EnumerateDirectories();
 
             // Loop through each save directory
             foreach (DirectoryInfo dirInfo in dirInfos)
             {
                 string saveSlotName = dirInfo.Name;
-                SaveSlot saveFiles;
+                SaveSlot saveSlot;
                 List<SaveData> saveDatas = new();
 
                 string partialPath = SaveSystemUtils.GetSaveSlotPath(saveSlotName);
@@ -111,9 +124,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                     saveDatas.Add(fullSaveData as SaveData);
                 }
 
-                saveFiles = new SaveSlot(saveSlotName, saveDatas);
+                saveSlot = new SaveSlot(saveSlotName, saveDatas);
 
-                saveSlotDictionary.Add(saveSlotName, saveFiles);
+                saveSlotDictionary.Add(saveSlot.saveSlotName, saveSlot);
             }
 
             return saveSlotDictionary;

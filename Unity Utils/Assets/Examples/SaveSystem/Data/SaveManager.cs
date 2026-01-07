@@ -12,7 +12,7 @@ public class SaveManager : MonoBehaviour
 
     public string activeSaveSlot;
 
-    private readonly bool useEncryption = true;
+    private readonly bool useEncryption = false;
 
     void Start()
     {
@@ -20,9 +20,9 @@ public class SaveManager : MonoBehaviour
 
         saveSlots = GetAllSaveSlots();
 
-        CreateSaveSlot("0");
-        CreateSaveSlot("test_slot");
-        CreateSaveSlot("1234");
+        CreateSaveSlot("save_0");
+        CreateSaveSlot("save_1");
+        CreateSaveSlot("save_2");
 
         if (Instance == null) Instance = this; else Destroy(gameObject);
     }
@@ -44,7 +44,8 @@ public class SaveManager : MonoBehaviour
 
     public void CreateSaveSlot(string saveSlot)
     {
-        if (saveSlots.ContainsKey(saveSlot))
+        // Check if save slot already exists
+        if (SaveSlotExists(saveSlot))
         {
             Debug.LogWarning("The save slot \"" + saveSlot + "\" already exists");
             return;
@@ -52,9 +53,9 @@ public class SaveManager : MonoBehaviour
 
         List<SaveData> data = new();
 
+        // add save data to save slot
         string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
         data.Add(SaveSystemManager.CreateSaveData<GameData>(path, useEncryption));
-
         saveSlots.Add(saveSlot, new SaveSlot(saveSlot, data));
     }
 
@@ -77,5 +78,10 @@ public class SaveManager : MonoBehaviour
         }
 
         return loadedSaveSlots;
+    }
+
+    public bool SaveSlotExists(string saveSlot)
+    {
+        return saveSlots.ContainsKey(saveSlot);
     }
 }
