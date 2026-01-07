@@ -37,7 +37,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The base name of the save file</param>
         /// <param name="extension">The "." extension to add to the file (Ex. ".json")</param>
         /// <returns>A string containing the absolute path to the save file</returns>
-        public static string GetSaveFilePath(string fileName, string extension) => Application.persistentDataPath + "/" + fileName + extension;
+        public static string GetSaveFilePath(string fileName, string extension) => Path.Combine(Application.persistentDataPath, fileName + extension);
 
         /// <summary>
         /// Generates the full file path for a save file using the specified file name.
@@ -46,7 +46,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// this method to ensure save files are stored in a consistent and platform-appropriate location.</remarks>
         /// <param name="fileName">The base name of the save file</param>
         /// <returns>A string containing the absolute path to the save file</returns>
-        public static string GetSaveFilePath(string fileName) => Application.persistentDataPath + "/" + fileName;
+        public static string GetSaveFilePath(string fileName) => Path.Combine(Application.persistentDataPath, fileName);
 
         /// <summary>
         /// Logs an error message indicating that a save file was not found at the specified path.

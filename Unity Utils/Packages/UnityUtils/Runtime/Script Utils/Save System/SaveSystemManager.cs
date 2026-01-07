@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 using System.Linq;
+using System.IO;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -61,5 +62,21 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
                 .OfType<ISaveableData>()
                 .ToList();
+
+        public static Dictionary<string, List<SaveDataID>> LoadAllSaveSlots()
+        {
+            Dictionary<string, List<SaveDataID>> saveSlotDictionary = new();
+
+            IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(Application.persistentDataPath).EnumerateDirectories();
+
+            foreach (DirectoryInfo dirInfo in dirInfos)
+            {
+                string saveSlotID = dirInfo.Name;
+
+                string fullPath = Path.Combine(Application.persistentDataPath, saveSlotID);
+            }
+
+            return saveSlotDictionary;
+        }
     }
 }

@@ -4,12 +4,12 @@ Save System Example
 Example of a Save System
 -------------
 
+PlayerData
+~~~~~~~~~~
 :doc:`Interfaces/ISaveData`
 
 Create a Serializable script that inherits :doc:`Interfaces/ISaveData`, and will be used to hold data across sessions. 
 We will create instances of this script and serialize it to .json files.
-
-PlayerData:
 
 .. code:: csharp
    
@@ -24,7 +24,8 @@ PlayerData:
    	public float name;
    }
    
-
+SaveManager
+~~~~~~~~~~~
 :doc:`JsonSaveSystem`
 
 :doc:`SaveDataID`
@@ -35,9 +36,7 @@ Create a script that will save and load data, and will initialize our data's to 
 If we're going to use encryption (Makes it harder to edit save data), make sure to set the encryption key.
 
 Create an instance of PlayerData and give it a file name and a bool, with an optional ID (Will default to the file name if not provided).
-Lastly, add the returned :doc:`SaveDataID`and save it to a List<:doc:`SaveDataID`> and pass that list into :doc:`SaveSystemManager`.SaveGame() and :doc:`SaveSystemManager`.LoadGame().
-
-SaveManager:
+Lastly, add the returned :doc:`SaveDataID`and save it to a List of :doc:`SaveDataID`'s and pass that list into :doc:`SaveSystemManager`.SaveGame() and :doc:`SaveSystemManager`.LoadGame().
 
 .. code:: csharp
    
@@ -87,14 +86,14 @@ SaveManager:
        }
    }
 
+Player
+~~~~~~
 :doc:`Interfaces/ISaveableData`
 
 To load and save the PlayerData, make a script that inherits :doc:`Interfaces/ISaveableData`.
 In this script create a SaveData<T>(T) and LoadData<T>(T) function, these functions will be called by :doc:`SaveSystemManager` when loading and saving data.
 
 In the Save/Load function make sure to check if the given data is the proper data you need to receive, then set all the needed variables.
-
-Player:
 
 .. code:: csharp
   

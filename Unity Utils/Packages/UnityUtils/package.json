@@ -7,5 +7,9 @@
   "author": {
     "name": "mydimons"
   },
-  "documentationUrl": "https://unityutils.readthedocs.io/en/latest/index.html"
+  "documentationUrl": "https://mydimons-unity-utils.readthedocs.io/en/latest/",
+  "dependencies": {
+    "com.coffee.ui-particle": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
 }
