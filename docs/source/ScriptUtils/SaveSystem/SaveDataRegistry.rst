@@ -17,12 +17,11 @@ Example Usage
    {   	
    	void Start()
    	{
-   	   string uniqueID = "GameData";
    	   string fileName = "game_data.json";
    	   bool useEncryption = true;
    	   
    	   // Create a new GameData (example data class) and register it to the registry
-   	   SaveDataID saveDataID = SaveDataRegistry.Register<GameData>(uniqueID, filename, useEncryption);
+   	   SaveDataID saveDataID = SaveDataRegistry.Register<GameData>(filename, useEncryption);
    	   
    	   // Get the ID
    	   string id = saveDataID.id;

@@ -29,6 +29,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         }
 
         /// <summary>
+        /// Registers a new <see cref="SaveDataID"/> to the registry to be referenced later
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="fileName">The file name of the save object, gets used as the ID</param>
+        /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
+        /// <returns>The <see cref="SaveDataID"/> with its filled in parameteres</returns>
+        public static SaveDataID Register<T>(string fileName, bool useEncryption) where T : ISaveData, new() => Register<T>(fileName, fileName, useEncryption);
+
+        /// <summary>
         /// Searches <see cref="saveDataIDs"/> for <see cref="ISaveData"/>, if found it will return its matching ID 
         /// </summary>
         /// <param name="saveData">Save data to get ID from</param>

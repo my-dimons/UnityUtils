@@ -75,7 +75,7 @@ SaveManager:
            JsonSaveSystem.SetEncryptionKey(encryptionKey);
            
            // Register a PlayerData into the registry
-           SaveDataID playerData = SaveDataRegistry.Register<PlayerData>(uniqueID, fileName, useEncryption);
+           SaveDataID playerData = SaveDataRegistry.Register<PlayerData>(fileName, useEncryption);
 
 		// Add it into the saveFiles list
            saveFiles.Add(playerData);

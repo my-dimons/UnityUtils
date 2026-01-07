@@ -30,7 +30,7 @@ public class SaveManager : MonoBehaviour
     {
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
 
-        SaveDataID gameData = SaveDataRegistry.Register<GameData>("GameData", "game_save.json", true);
+        SaveDataID gameData = SaveDataRegistry.Register<GameData>("game_save.json", true);
         saveFiles.Add(gameData);
     }
 }
