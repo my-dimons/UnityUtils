@@ -6,19 +6,19 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     public class SaveDataID
     {
         /// The ID that this object is linked to
-        public string id;
+        public readonly string id;
 
         /// The file name that this object is linked to
-        public string fileName;
+        public readonly string fileName;
 
         /// Instance of the <see cref="ISaveData"/> linked to this object
-        public ISaveData dataInstance;
+        public readonly ISaveData dataInstance;
 
         /// The parent class type
-        public Type classType;
+        public readonly Type classType;
 
         /// Wether or not this save data should be encrypted
-        public bool useEncryption;
+        public readonly bool useEncryption;
 
         public SaveDataID(string id, string fileName, ISaveData dataInstance, Type classType, bool useEncryption)
         {

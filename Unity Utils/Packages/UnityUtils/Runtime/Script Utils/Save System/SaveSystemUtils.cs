@@ -26,6 +26,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// The message displayed when a save file is created
         public const string SAVE_FILE_CREATED_MESSAGE = "Save file created in: ";
 
+        /// The message displayed when a save file is encryped
+        public const string SAVE_FILE_ENCRYPTED_MESSAGE = "Save file encryped in: ";
+
         /// <summary>
         /// Generates the full file path for a save file using the specified file name and extension.
         /// </summary>
@@ -70,6 +73,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         public static void LogSaveFileLoaded(string path)
         {
             Debug.Log(SAVE_FILE_LOADED_MESSAGE + path);
+        }
+
+        /// <summary>
+        /// Logs a message indicating that a save file has been encrypted at the specified path.
+        /// </summary>
+        /// <param name="path">The file system path of the loaded save file</param>
+        public static void LogSaveFileEncrypted(string path)
+        {
+            Debug.Log(SAVE_FILE_ENCRYPTED_MESSAGE + path);
         }
     }
 }

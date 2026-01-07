@@ -3,16 +3,8 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a8443c656679b5710c5c0521236a58e07}{Register$<$ T $>$}} (string unique\+ID, string file\+Name)
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7}{Register$<$ T $>$}} (string unique\+ID, string file\+Name, bool use\+Encryption)
 \begin{DoxyCompactList}\small\item\em Registers a new \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} to the registry to be referenced later. \end{DoxyCompactList}\item 
-static Type \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a3ca25b20ac7c2fb7d59492e2317259ca}{Get\+Class}} (string data\+ID)
-\begin{DoxyCompactList}\small\item\em Searches save\+Data\+Classes for the matching {\itshape data\+ID} , if found it will return the Type of class. \end{DoxyCompactList}\item 
-static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a535a66d09e37ba0e421584c6f7aaf47d}{Get\+Instance}} (string data\+ID)
-\begin{DoxyCompactList}\small\item\em Searches save\+Data\+Instances for the provided {\itshape data\+ID} , if found it will return its matching ID. \end{DoxyCompactList}\item 
-static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a4f4fa6807c479aab3e193e8d4e692ed1}{Get\+File\+Name}} (string data\+ID)
-\begin{DoxyCompactList}\small\item\em Searches save\+Data\+File\+Names for the provided {\itshape data\+ID} , if found it will return its matching file name. \end{DoxyCompactList}\item 
-static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aaf28d166a3a65c9c07a662d07b0892be}{Get\+File\+Name}} (\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} save\+Data)
-\begin{DoxyCompactList}\small\item\em Searches save\+Data\+File\+Names for the provided {\itshape save\+Data} , if found it will return its matching file name. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aedd66b5b32939d68dc5ad82f80ce5364}{Get\+ID}} (\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} save\+Data)
 \begin{DoxyCompactList}\small\item\em Searches save\+Data\+IDs for \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}, if found it will return its matching ID. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_accafa1e454866fc6a8ce9a5b7c67b95c}{Get\+Save\+Data\+IDFrom\+ID}} (string id)
@@ -24,60 +16,6 @@ static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_s
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a3ca25b20ac7c2fb7d59492e2317259ca}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetClass@{GetClass}}
-\index{GetClass@{GetClass}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
-\doxysubsubsection{\texorpdfstring{GetClass()}{GetClass()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a3ca25b20ac7c2fb7d59492e2317259ca} 
-Type Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Get\+Class (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Searches save\+Data\+Classes for the matching {\itshape data\+ID} , if found it will return the Type of class. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em data\+ID} & ID to search for\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Type of class
-\end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aaf28d166a3a65c9c07a662d07b0892be}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetFileName@{GetFileName}}
-\index{GetFileName@{GetFileName}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
-\doxysubsubsection{\texorpdfstring{GetFileName()}{GetFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aaf28d166a3a65c9c07a662d07b0892be} 
-string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]{save\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Searches save\+Data\+File\+Names for the provided {\itshape save\+Data} , if found it will return its matching file name. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em save\+Data} & ID to search for\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-file name from {\itshape save\+Data} 
-\end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a4f4fa6807c479aab3e193e8d4e692ed1}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetFileName@{GetFileName}}
-\index{GetFileName@{GetFileName}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
-\doxysubsubsection{\texorpdfstring{GetFileName()}{GetFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a4f4fa6807c479aab3e193e8d4e692ed1} 
-string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Searches save\+Data\+File\+Names for the provided {\itshape data\+ID} , if found it will return its matching file name. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em data\+ID} & ID to search for\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-file name from {\itshape data\+ID} 
-\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aedd66b5b32939d68dc5ad82f80ce5364}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetID@{GetID}}
 \index{GetID@{GetID}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
 \doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
@@ -114,24 +52,6 @@ Gets a \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_dat
 \begin{DoxyReturn}{Returns}
 \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} of the found \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}, returns null if nothing is found
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a535a66d09e37ba0e421584c6f7aaf47d}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetInstance@{GetInstance}}
-\index{GetInstance@{GetInstance}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
-\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a535a66d09e37ba0e421584c6f7aaf47d} 
-\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Get\+Instance (\begin{DoxyParamCaption}\item[{string}]{data\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Searches save\+Data\+Instances for the provided {\itshape data\+ID} , if found it will return its matching ID. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em data\+ID} & ID to search for\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-\doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} from {\itshape data\+ID} 
-\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_accafa1e454866fc6a8ce9a5b7c67b95c}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!GetSaveDataIDFromID@{GetSaveDataIDFromID}}
 \index{GetSaveDataIDFromID@{GetSaveDataIDFromID}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
 \doxysubsubsection{\texorpdfstring{GetSaveDataIDFromID()}{GetSaveDataIDFromID()}}
@@ -150,11 +70,11 @@ Gets a \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_dat
 \begin{DoxyReturn}{Returns}
 \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} of the found ID, returns null if nothing is found
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a8443c656679b5710c5c0521236a58e07}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!Register$<$ T $>$@{Register$<$ T $>$}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!Register$<$ T $>$@{Register$<$ T $>$}}
 \index{Register$<$ T $>$@{Register$<$ T $>$}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
 \doxysubsubsection{\texorpdfstring{Register$<$ T $>$()}{Register< T >()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a8443c656679b5710c5c0521236a58e07} 
-\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Register$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{unique\+ID}{, }\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Register$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{unique\+ID}{, }\item[{string}]{file\+Name}{, }\item[{bool}]{use\+Encryption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -170,6 +90,8 @@ Registers a new \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 {\em unique\+ID} & The unique ID of the new object\\
 \hline
 {\em file\+Name} & The file name of the save object\\
+\hline
+{\em use\+Encryption} & Wether or not to use encryption on this save data\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

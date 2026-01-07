@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -49,7 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cs.html",
-"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html",
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a00f2cde002f6de93df22b4d7eaa861f9",
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#aef812175219aab8f83291c06aa4b3816"
 ];
 

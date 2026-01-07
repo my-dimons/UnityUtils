@@ -5,7 +5,7 @@ Example of a Save System
 -------------
 
 (Holds data to be stored across sessions)
-
+:doc:`ISaveData`
 PlayerData:
 
 .. code:: csharp
@@ -22,7 +22,9 @@ PlayerData:
    }
    
 (Handles saving, loading, and creating the data)
-
+:doc:`JsonSaveSystem`
+:doc:`SaveDataID`
+:doc:`SaveDataRegistry`
 SaveManager:
 
 .. code:: csharp
@@ -30,7 +32,7 @@ SaveManager:
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
 
-   public class SaveManager : MonoBehaviour, ISaveManager
+   public class SaveManager : MonoBehaviour
    {
        public static SaveManager Instance { get; private set; }
 
@@ -55,12 +57,19 @@ SaveManager:
    
        public void InitializeData()
        {
-           // Data string variables
+           // Data variables
            string uniqueID = "GameData";
            string fileName = "game_save.json";
+           bool useEncryption = true;
            
-           // Register a PlayerData
-           SaveDataID playerData = SaveDataRegistry.Register<PlayerData>(uniqueID, fileName);
+           // For the encryptionKey, look at the JsonSaveSystem docs for more information
+           string encryptionKey = "EncryptionKeyHere";
+           
+           // If you're using encryption, make sure to set the key like so:
+           JsonSaveSystem.SetEncryptionKey(encryptionKey);
+           
+           // Register a PlayerData into the registry
+           SaveDataID playerData = SaveDataRegistry.Register<PlayerData>(uniqueID, fileName, useEncryption);
 
 		// Add it into the saveFiles list
            saveFiles.Add(playerData);
@@ -68,7 +77,7 @@ SaveManager:
    }
 
 (Actually loading and saving data into script)
-
+:doc:`ISaveableData`
 Player:
 
 .. code:: csharp
@@ -84,6 +93,7 @@ Player:
 
        public void SaveData<T>(T data) where T : ISaveData
        {
+           // Check if the data is the correct type
            if (data is PlayerData save)
            {
                save.health = health;
@@ -93,6 +103,7 @@ Player:
 
        public void LoadData<T>(T data) where T : ISaveData
        {
+           // Check if the data is the correct type
            if (data is PlayerData save)
            {
                health = save.health;

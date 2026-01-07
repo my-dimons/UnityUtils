@@ -6,7 +6,6 @@ var NAVTREEINDEX0 =
 "_camera_shake_8cs.html":[2,0,0,0,0,0,1,1],
 "_coroutine_helper_8cs.html":[2,0,0,0,0,0,7],
 "_i_save_data_8cs.html":[2,0,0,0,0,0,4,0,1],
-"_i_save_manager_8cs.html":[2,0,0,0,0,0,4,0,2],
 "_i_saveable_data_8cs.html":[2,0,0,0,0,0,4,0,0],
 "_json_save_system_8cs.html":[2,0,0,0,0,0,4,1],
 "_object_animations_8cs.html":[2,0,0,0,0,0,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html":[1,0,0,0,3,1],
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html#afe2dd4b725744f9986d1559c98c1eeaa":[0,0,0,0,3,1,0],
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html#afe2dd4b725744f9986d1559c98c1eeaa":[1,0,0,0,3,1,0],
-"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[0,0,0,0,4,3]
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[0,0,0,0,4,2],
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[1,0,0,0,4,2]
 };

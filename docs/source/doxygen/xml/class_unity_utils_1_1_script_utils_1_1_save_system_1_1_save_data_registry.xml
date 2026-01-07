@@ -3,83 +3,6 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</compoundname>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a25183eb17737b87107050b1aa4962b12" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; string, Func&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt; &gt;</type>
-        <definition>readonly Dictionary&lt;string, Func&lt;ISaveData&gt; &gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataTypes</definition>
-        <argsstring></argsstring>
-        <name>saveDataTypes</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataTypes</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="11" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="11" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a648a78da854b1378d203b6781547411d" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref>, string &gt;</type>
-        <definition>readonly Dictionary&lt;ISaveData, string&gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataIDss</definition>
-        <argsstring></argsstring>
-        <name>saveDataIDss</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataIDss</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="14" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="14" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1af07104a04c5e810bee82f59fc5da9fc3" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; string, <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt;</type>
-        <definition>readonly Dictionary&lt;string, ISaveData&gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataInstances</definition>
-        <argsstring></argsstring>
-        <name>saveDataInstances</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataInstances</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="17" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1abca46d758c7f25e2086651420be4d104" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; string, Type &gt;</type>
-        <definition>readonly Dictionary&lt;string, Type&gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataClasses</definition>
-        <argsstring></argsstring>
-        <name>saveDataClasses</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataClasses</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-<para>Dictionary mapping string ID -&gt; Type of the object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="20" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="20" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a189074e06da86342fc17bce9034fa459" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; string, string &gt;</type>
-        <definition>readonly Dictionary&lt;string, string&gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataFileNames</definition>
-        <argsstring></argsstring>
-        <name>saveDataFileNames</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataFileNames</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-<para>Dictionary mapping string ID -&gt; string file name of the object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="23" column="44" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="23" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a40515356390d6db40ecc1ff898fc7b65" prot="private" static="yes" mutable="no">
         <type>readonly List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
         <definition>readonly List&lt;SaveDataID&gt; UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.saveDataIDs</definition>
@@ -93,14 +16,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="25" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="25" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="10" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a8443c656679b5710c5c0521236a58e07" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a71d35619ad612d3d471f98b3ce271af7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
         <definition>static SaveDataID UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.Register&lt; T &gt;</definition>
-        <argsstring>(string uniqueID, string fileName)</argsstring>
+        <argsstring>(string uniqueID, string fileName, bool useEncryption)</argsstring>
         <name>Register&lt; T &gt;</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.Register&lt; T &gt;</qualifiedname>
         <param>
@@ -110,6 +33,10 @@
         <param>
           <type>string</type>
           <declname>fileName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useEncryption</declname>
         </param>
         <briefdescription>
 <para>Registers a new <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> to the registry to be referenced later. </para>
@@ -139,6 +66,14 @@
 <para>The file name of the save object</para>
 </parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useEncryption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wether or not to use encryption on this save data</para>
+</parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>The <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> with its filled in parameteres</para>
 </simplesect>
@@ -146,131 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="34" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="34" bodyend="43"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a3ca25b20ac7c2fb7d59492e2317259ca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>Type</type>
-        <definition>static Type UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetClass</definition>
-        <argsstring>(string dataID)</argsstring>
-        <name>GetClass</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetClass</qualifiedname>
-        <param>
-          <type>string</type>
-          <declname>dataID</declname>
-        </param>
-        <briefdescription>
-<para>Searches saveDataClasses for the matching <emphasis>dataID</emphasis> , if found it will return the Type of class. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataID</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>ID to search for</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Type of class</para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="50" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="50" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a535a66d09e37ba0e421584c6f7aaf47d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
-        <definition>static ISaveData UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetInstance</definition>
-        <argsstring>(string dataID)</argsstring>
-        <name>GetInstance</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetInstance</qualifiedname>
-        <param>
-          <type>string</type>
-          <declname>dataID</declname>
-        </param>
-        <briefdescription>
-<para>Searches saveDataInstances for the provided <emphasis>dataID</emphasis> , if found it will return its matching ID. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataID</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>ID to search for</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> from <emphasis>dataID</emphasis> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="65" column="33" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="65" bodyend="73"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a4f4fa6807c479aab3e193e8d4e692ed1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>string</type>
-        <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetFileName</definition>
-        <argsstring>(string dataID)</argsstring>
-        <name>GetFileName</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetFileName</qualifiedname>
-        <param>
-          <type>string</type>
-          <declname>dataID</declname>
-        </param>
-        <briefdescription>
-<para>Searches saveDataFileNames for the provided <emphasis>dataID</emphasis> , if found it will return its matching file name. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataID</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>ID to search for</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>file name from <emphasis>dataID</emphasis> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="80" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="80" bodyend="88"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aaf28d166a3a65c9c07a662d07b0892be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>string</type>
-        <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetFileName</definition>
-        <argsstring>(ISaveData saveData)</argsstring>
-        <name>GetFileName</name>
-        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.GetFileName</qualifiedname>
-        <param>
-          <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
-          <declname>saveData</declname>
-        </param>
-        <briefdescription>
-<para>Searches saveDataFileNames for the provided <emphasis>saveData</emphasis> , if found it will return its matching file name. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>saveData</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>ID to search for</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>file name from <emphasis>saveData</emphasis> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="95" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="95" bodyend="103"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="20" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="20" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aedd66b5b32939d68dc5ad82f80ce5364" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -301,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="110" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="110" bodyend="118"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="36" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="36" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1accafa1e454866fc6a8ce9a5b7c67b95c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
@@ -332,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="125" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="125" bodyend="132"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="51" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="51" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1ad9ad8f24a143592534bcf431487dfb3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
@@ -363,29 +174,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="139" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="139" bodyend="146"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="65" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="65" bodyend="72"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="8" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="9" bodyend="147"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" line="8" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataRegistry.cs" bodystart="9" bodyend="73"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a3ca25b20ac7c2fb7d59492e2317259ca" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetClass</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a4f4fa6807c479aab3e193e8d4e692ed1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetFileName</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aaf28d166a3a65c9c07a662d07b0892be" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetFileName</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aedd66b5b32939d68dc5ad82f80ce5364" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetID</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1ad9ad8f24a143592534bcf431487dfb3e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetIDFromISaveData</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a535a66d09e37ba0e421584c6f7aaf47d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetInstance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1accafa1e454866fc6a8ce9a5b7c67b95c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>GetSaveDataIDFromID</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a8443c656679b5710c5c0521236a58e07" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>Register&lt; T &gt;</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1abca46d758c7f25e2086651420be4d104" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataClasses</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a189074e06da86342fc17bce9034fa459" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataFileNames</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a71d35619ad612d3d471f98b3ce271af7" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>Register&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a40515356390d6db40ecc1ff898fc7b65" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataIDs</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a648a78da854b1378d203b6781547411d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataIDss</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1af07104a04c5e810bee82f59fc5da9fc3" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataInstances</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a25183eb17737b87107050b1aa4962b12" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</scope><name>saveDataTypes</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

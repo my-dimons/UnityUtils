@@ -9,7 +9,6 @@
 - Save System
     - ISaveData
     - ISaveableData
-    - ISaveManager
     - SaveDataID
     - SaveDataRegistry
     - SaveSystemManager

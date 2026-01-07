@@ -4,7 +4,6 @@
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces</compoundname>
     <innerfile refid="_i_saveable_data_8cs">ISaveableData.cs</innerfile>
     <innerfile refid="_i_save_data_8cs">ISaveData.cs</innerfile>
-    <innerfile refid="_i_save_manager_8cs">ISaveManager.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

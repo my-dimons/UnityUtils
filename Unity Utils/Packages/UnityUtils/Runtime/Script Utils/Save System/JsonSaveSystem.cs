@@ -28,7 +28,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 string dataToStore = JsonUtility.ToJson(saveDataID.dataInstance, !saveDataID.useEncryption);
 
                 if (saveDataID.useEncryption)
+                {
                     dataToStore = EncryptDecrypt(dataToStore);
+                    SaveSystemUtils.LogSaveFileEncrypted(SaveSystemUtils.GetSaveFilePath(saveDataID.fileName));
+                }
 
                 // Write data into files
                 using FileStream stream = new(fullPath, FileMode.Create);
@@ -105,11 +108,20 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             return loadedData as ISaveData;
         }
 
+        /// <summary>
+        /// Sets the encryption key for file encryption
+        /// </summary>
+        /// <param name="key">Key to set to</param>
         public static void SetEncryptionKey(string key)
         {
             encryptionKey = key;
         }
 
+        /// <summary>
+        /// Encrypts data via an XOR shift of <paramref name="data"/> using the <see cref="encryptionKey"/>
+        /// </summary>
+        /// <param name="data">Data to encrypt</param>
+        /// <returns>Encrypted data</returns>
         public static string EncryptDecrypt(string data)
         {
             string modifiedData = string.Empty;

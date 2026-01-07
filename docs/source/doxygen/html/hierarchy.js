@@ -32,7 +32,6 @@ var hierarchy =
     ] ],
     [ "UnityUtils.ScriptUtils.SaveSystem.ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.ISaveManager", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_manager.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", null ],
     [ "MonoBehaviour", null, [
       [ "TestingScript1", "class_testing_script1.html", null ],

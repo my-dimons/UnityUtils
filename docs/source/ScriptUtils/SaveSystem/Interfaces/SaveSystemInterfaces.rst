@@ -14,4 +14,3 @@ Scripts
    
    ISaveData
    ISaveableData
-   ISaveManager

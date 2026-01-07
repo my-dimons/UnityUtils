@@ -4,16 +4,38 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6fc3b7821cac2aee8f6aa076a8d7316c}{Save}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
-\begin{DoxyCompactList}\small\item\em Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a624e1538dbe1a48fab03eae36b0d2db3}{Save\+Data\+ID.\+file\+Name} in a json format. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a43276cf9fbe31499c0f1e84f212c0fbe}{Save\+Data\+ID.\+file\+Name} in a json format. \end{DoxyCompactList}\item 
 static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a}{Load}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ save\+Data\+IDs)
-\begin{DoxyCompactList}\small\item\em Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a8758baa73b532c2db3461caab3cdcd53}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a00f2cde002f6de93df22b4d7eaa861f9}{Load\+Single\+Save\+File}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} save\+Data\+ID)
-\begin{DoxyCompactList}\small\item\em Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a8758baa73b532c2db3461caab3cdcd53}{Save\+Data\+ID.\+data\+Instance}) from a json format file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a274e9f22b04d7b140aa68789f562d8cb}{Set\+Encryption\+Key}} (string key)
+\begin{DoxyCompactList}\small\item\em Sets the encryption key for file encryption. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a95d2a058b8834f394cb587a2c5076b92}{Encrypt\+Decrypt}} (string data)
+\begin{DoxyCompactList}\small\item\em Encrypts data via an XOR shift of {\itshape data}  using the encryption\+Key. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a95d2a058b8834f394cb587a2c5076b92}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!EncryptDecrypt@{EncryptDecrypt}}
+\index{EncryptDecrypt@{EncryptDecrypt}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{EncryptDecrypt()}{EncryptDecrypt()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a95d2a058b8834f394cb587a2c5076b92} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Encrypt\+Decrypt (\begin{DoxyParamCaption}\item[{string}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encrypts data via an XOR shift of {\itshape data}  using the encryption\+Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to encrypt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encrypted data
+\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_ad0f2c14782d3ad4b0328af5a4c65692a}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!Load@{Load}}
 \index{Load@{Load}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
 \doxysubsubsection{\texorpdfstring{Load()}{Load()}}
@@ -22,7 +44,7 @@ List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_
 
 
 
-Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
+Deserializes a list of \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a8758baa73b532c2db3461caab3cdcd53}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -40,7 +62,7 @@ List of all the loaded save datas
 
 
 
-Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a971b0e2bf3ba683aabfe331c7304276f}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
+Deserializes a single \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data} (Gotten via \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a8758baa73b532c2db3461caab3cdcd53}{Save\+Data\+ID.\+data\+Instance}) from a json format file. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -58,11 +80,26 @@ void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Save (\b
 
 
 
-Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a624e1538dbe1a48fab03eae36b0d2db3}{Save\+Data\+ID.\+file\+Name} in a json format. 
+Serializes the inputted {\itshape save\+Data\+ID}  into \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_a43276cf9fbe31499c0f1e84f212c0fbe}{Save\+Data\+ID.\+file\+Name} in a json format. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em save\+Data\+ID} & save\+Data\+ID of the file to be saved\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a274e9f22b04d7b140aa68789f562d8cb}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!SetEncryptionKey@{SetEncryptionKey}}
+\index{SetEncryptionKey@{SetEncryptionKey}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{SetEncryptionKey()}{SetEncryptionKey()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a274e9f22b04d7b140aa68789f562d8cb} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Set\+Encryption\+Key (\begin{DoxyParamCaption}\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the encryption key for file encryption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to set to\\
 \hline
 \end{DoxyParams}
 

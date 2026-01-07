@@ -3,9 +3,9 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</compoundname>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1af9bebbea091fa753a46f7a03ef628ae2" prot="public" static="no" mutable="no">
-        <type>string</type>
-        <definition>string UnityUtils.ScriptUtils.SaveSystem.SaveDataID.id</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a73292316ccdc16d6445cb331a2278ccf" prot="public" static="no" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string UnityUtils.ScriptUtils.SaveSystem.SaveDataID.id</definition>
         <argsstring></argsstring>
         <name>id</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.id</qualifiedname>
@@ -16,11 +16,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="9" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="9" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="9" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a624e1538dbe1a48fab03eae36b0d2db3" prot="public" static="no" mutable="no">
-        <type>string</type>
-        <definition>string UnityUtils.ScriptUtils.SaveSystem.SaveDataID.fileName</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a43276cf9fbe31499c0f1e84f212c0fbe" prot="public" static="no" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string UnityUtils.ScriptUtils.SaveSystem.SaveDataID.fileName</definition>
         <argsstring></argsstring>
         <name>fileName</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.fileName</qualifiedname>
@@ -31,11 +31,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="12" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="12" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a971b0e2bf3ba683aabfe331c7304276f" prot="public" static="no" mutable="no">
-        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
-        <definition>ISaveData UnityUtils.ScriptUtils.SaveSystem.SaveDataID.dataInstance</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a8758baa73b532c2db3461caab3cdcd53" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
+        <definition>readonly ISaveData UnityUtils.ScriptUtils.SaveSystem.SaveDataID.dataInstance</definition>
         <argsstring></argsstring>
         <name>dataInstance</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.dataInstance</qualifiedname>
@@ -46,11 +46,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="15" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="15" column="35" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a460830851c7fa731a6c904db09fe6f98" prot="public" static="no" mutable="no">
-        <type>Type</type>
-        <definition>Type UnityUtils.ScriptUtils.SaveSystem.SaveDataID.classType</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1ad62d72e020c697fbcdf578b193466064" prot="public" static="no" mutable="no">
+        <type>readonly Type</type>
+        <definition>readonly Type UnityUtils.ScriptUtils.SaveSystem.SaveDataID.classType</definition>
         <argsstring></argsstring>
         <name>classType</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.classType</qualifiedname>
@@ -61,14 +61,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="18" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="18" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a05c3e72d075207b9650b9b5aa3dd3a51" prot="public" static="no" mutable="no">
+        <type>readonly bool</type>
+        <definition>readonly bool UnityUtils.ScriptUtils.SaveSystem.SaveDataID.useEncryption</definition>
+        <argsstring></argsstring>
+        <name>useEncryption</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.useEncryption</qualifiedname>
+        <briefdescription>
+<para>Wether or not this save data should be encrypted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="21" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a473f0baf7b3f5da84df9c46abeb2cdc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a1c1fe00037331ca92e0adaa06f57397c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.SaveDataID</definition>
-        <argsstring>(string id, string fileName, ISaveData dataInstance, Type classType)</argsstring>
+        <argsstring>(string id, string fileName, ISaveData dataInstance, Type classType, bool useEncryption)</argsstring>
         <name>SaveDataID</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveDataID.SaveDataID</qualifiedname>
         <param>
@@ -87,13 +102,17 @@
           <type>Type</type>
           <declname>classType</declname>
         </param>
+        <param>
+          <type>bool</type>
+          <declname>useEncryption</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="20" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="20" bodyend="26"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="23" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="23" bodyend="30"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -113,13 +132,14 @@
         <link refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="7" bodyend="27"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveDataID.cs" bodystart="7" bodyend="31"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a460830851c7fa731a6c904db09fe6f98" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>classType</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a971b0e2bf3ba683aabfe331c7304276f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>dataInstance</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a624e1538dbe1a48fab03eae36b0d2db3" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>fileName</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1af9bebbea091fa753a46f7a03ef628ae2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>id</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a473f0baf7b3f5da84df9c46abeb2cdc2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>SaveDataID</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1ad62d72e020c697fbcdf578b193466064" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>classType</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a8758baa73b532c2db3461caab3cdcd53" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>dataInstance</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a43276cf9fbe31499c0f1e84f212c0fbe" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>fileName</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a73292316ccdc16d6445cb331a2278ccf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>id</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a1c1fe00037331ca92e0adaa06f57397c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>SaveDataID</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a05c3e72d075207b9650b9b5aa3dd3a51" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</scope><name>useEncryption</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

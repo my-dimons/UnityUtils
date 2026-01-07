@@ -104,6 +104,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a22c2f625f701aeeb416b1d4f48a53abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message indicating that a save file has been created at the specified path.  <br /></td></tr>
 <tr class="memitem:ab0f485ace295fb7d57dc33f8c322b5b4" id="r_ab0f485ace295fb7d57dc33f8c322b5b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f485ace295fb7d57dc33f8c322b5b4">LogSaveFileLoaded</a> (string path)</td></tr>
 <tr class="memdesc:ab0f485ace295fb7d57dc33f8c322b5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message indicating that a save file has been loaded at the specified path.  <br /></td></tr>
+<tr class="memitem:a08faeabad851f3fa5ab668cfdd85ced2" id="r_a08faeabad851f3fa5ab668cfdd85ced2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08faeabad851f3fa5ab668cfdd85ced2">LogSaveFileEncrypted</a> (string path)</td></tr>
+<tr class="memdesc:a08faeabad851f3fa5ab668cfdd85ced2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message indicating that a save file has been encrypted at the specified path.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -117,6 +119,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a6b85adcd747dfe307696710bbdbea9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message used to when a save file has been loaded.  <br /></td></tr>
 <tr class="memitem:ab12ab4c43c64944e4c5eb405cadb2a75" id="r_ab12ab4c43c64944e4c5eb405cadb2a75"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12ab4c43c64944e4c5eb405cadb2a75">SAVE_FILE_CREATED_MESSAGE</a> = &quot;Save file created in: &quot;</td></tr>
 <tr class="memdesc:ab12ab4c43c64944e4c5eb405cadb2a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is created.  <br /></td></tr>
+<tr class="memitem:adb193bafe5677ca9e44b52aafca43738" id="r_adb193bafe5677ca9e44b52aafca43738"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb193bafe5677ca9e44b52aafca43738">SAVE_FILE_ENCRYPTED_MESSAGE</a> = &quot;Save file encryped in: &quot;</td></tr>
+<tr class="memdesc:adb193bafe5677ca9e44b52aafca43738"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is encryped.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="abab8c6849773bb4bfa36392ccaadbf7c" name="abab8c6849773bb4bfa36392ccaadbf7c"></a>
@@ -221,6 +225,39 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The full file system path where the save file was created</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08faeabad851f3fa5ab668cfdd85ced2" name="a08faeabad851f3fa5ab668cfdd85ced2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08faeabad851f3fa5ab668cfdd85ced2">&#9670;&#160;</a></span>LogSaveFileEncrypted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileEncrypted </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs a message indicating that a save file has been encrypted at the specified path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file system path of the loaded save file</td></tr>
   </table>
   </dd>
 </dl>
@@ -339,6 +376,30 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The message displayed when a save file is created. </p>
+
+</div>
+</div>
+<a id="adb193bafe5677ca9e44b52aafca43738" name="adb193bafe5677ca9e44b52aafca43738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb193bafe5677ca9e44b52aafca43738">&#9670;&#160;</a></span>SAVE_FILE_ENCRYPTED_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_ENCRYPTED_MESSAGE = &quot;Save file encryped in: &quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The message displayed when a save file is encryped. </p>
 
 </div>
 </div>
