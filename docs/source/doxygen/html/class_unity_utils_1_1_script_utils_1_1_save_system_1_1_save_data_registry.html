@@ -96,6 +96,8 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a71d35619ad612d3d471f98b3ce271af7" id="r_a71d35619ad612d3d471f98b3ce271af7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71d35619ad612d3d471f98b3ce271af7">Register&lt; T &gt;</a> (string uniqueID, string fileName, bool useEncryption)</td></tr>
 <tr class="memdesc:a71d35619ad612d3d471f98b3ce271af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to the registry to be referenced later.  <br /></td></tr>
+<tr class="memitem:a93943fae07393731c786d88ea98130a6" id="r_a93943fae07393731c786d88ea98130a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93943fae07393731c786d88ea98130a6">Register&lt; T &gt;</a> (string fileName, bool useEncryption)</td></tr>
+<tr class="memdesc:a93943fae07393731c786d88ea98130a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to the registry to be referenced later.  <br /></td></tr>
 <tr class="memitem:aedd66b5b32939d68dc5ad82f80ce5364" id="r_aedd66b5b32939d68dc5ad82f80ce5364"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd66b5b32939d68dc5ad82f80ce5364">GetID</a> (<a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> saveData)</td></tr>
 <tr class="memdesc:aedd66b5b32939d68dc5ad82f80ce5364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches saveDataIDs for <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a>, if found it will return its matching ID.  <br /></td></tr>
 <tr class="memitem:accafa1e454866fc6a8ce9a5b7c67b95c" id="r_accafa1e454866fc6a8ce9a5b7c67b95c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accafa1e454866fc6a8ce9a5b7c67b95c">GetSaveDataIDFromID</a> (string id)</td></tr>
@@ -206,8 +208,62 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a93943fae07393731c786d88ea98130a6" name="a93943fae07393731c786d88ea98130a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93943fae07393731c786d88ea98130a6">&#9670;&#160;</a></span>Register&lt; T &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry.Register&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useEncryption</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to the registry to be referenced later. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The file name of the save object, gets used as the ID</td></tr>
+    <tr><td class="paramname">useEncryption</td><td>Wether or not to use encryption on this save data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> with its filled in parameteres</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>new()</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
 <a id="a71d35619ad612d3d471f98b3ce271af7" name="a71d35619ad612d3d471f98b3ce271af7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71d35619ad612d3d471f98b3ce271af7">&#9670;&#160;</a></span>Register&lt; T &gt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d35619ad612d3d471f98b3ce271af7">&#9670;&#160;</a></span>Register&lt; T &gt;() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

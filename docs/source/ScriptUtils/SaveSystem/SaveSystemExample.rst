@@ -4,9 +4,12 @@ Save System Example
 Example of a Save System
 -------------
 
-(Holds data to be stored across sessions)
+Quick Links:
 
 :doc:`Interfaces/ISaveData`
+
+Create a Serializable script that inherits :doc:`Interfaces/ISaveData`, and will be used to hold data across sessions. 
+We will create instances of this script and serialize it to .json files.
 
 PlayerData:
 
@@ -23,13 +26,20 @@ PlayerData:
    	public float name;
    }
    
-(Handles saving, loading, and creating the data)
+
+Quick Links:
 
 :doc:`JsonSaveSystem`
 
 :doc:`SaveDataID`
 
 :doc:`SaveDataRegistry`
+
+Create a script that will save and load data, and will initialize our data's to save to.
+If we're going to use encryption (Makes it harder to edit save data), make sure to set the encryption key.
+
+Create an instance of PlayerData and give it a file name and a bool, with an optional ID (Will default to the file name if not provided).
+Lastly, add the returned :doc:`SaveDataID`and save it to a List<:doc:`SaveDataID`> and pass that list into :doc:`SaveSystemManager`.SaveGame() and :doc:`SaveSystemManager`.LoadGame().
 
 SaveManager:
 
@@ -64,7 +74,6 @@ SaveManager:
        public void InitializeData()
        {
            // Data variables
-           string uniqueID = "GameData";
            string fileName = "game_save.json";
            bool useEncryption = true;
            
@@ -83,8 +92,14 @@ SaveManager:
    }
 
 (Actually loading and saving data into script)
+Quick Links:
 
 :doc:`Interfaces/ISaveableData`
+
+To load and save the PlayerData, make a script that inherits :doc:`Interfaces/ISaveableData`.
+In this script create a SaveData<T>(T) and LoadData<T>(T) function, these functions will be called by :doc:`SaveSystemManager` when loading and saving data.
+
+In the Save/Load function make sure to check if the given data is the proper data you need to receive, then set all the needed variables.
 
 Player:
 
@@ -119,3 +134,9 @@ Player:
            }
        }
    }
+   
+   
+SaveManager with Save Slots
+--------------------------
+
+[WIP]

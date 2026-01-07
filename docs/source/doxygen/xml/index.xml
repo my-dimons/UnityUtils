@@ -145,6 +145,7 @@
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a40515356390d6db40ecc1ff898fc7b65" kind="variable"><name>saveDataIDs</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a71d35619ad612d3d471f98b3ce271af7" kind="function"><name>Register&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a93943fae07393731c786d88ea98130a6" kind="function"><name>Register&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aedd66b5b32939d68dc5ad82f80ce5364" kind="function"><name>GetID</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1accafa1e454866fc6a8ce9a5b7c67b95c" kind="function"><name>GetSaveDataIDFromID</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1ad9ad8f24a143592534bcf431487dfb3e" kind="function"><name>GetIDFromISaveData</name></member>

@@ -5,6 +5,8 @@
 \item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7}{Register$<$ T $>$}} (string unique\+ID, string file\+Name, bool use\+Encryption)
 \begin{DoxyCompactList}\small\item\em Registers a new \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} to the registry to be referenced later. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a93943fae07393731c786d88ea98130a6}{Register$<$ T $>$}} (string file\+Name, bool use\+Encryption)
+\begin{DoxyCompactList}\small\item\em Registers a new \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} to the registry to be referenced later. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_aedd66b5b32939d68dc5ad82f80ce5364}{Get\+ID}} (\mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}} save\+Data)
 \begin{DoxyCompactList}\small\item\em Searches save\+Data\+IDs for \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}, if found it will return its matching ID. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_accafa1e454866fc6a8ce9a5b7c67b95c}{Get\+Save\+Data\+IDFrom\+ID}} (string id)
@@ -70,9 +72,38 @@ Gets a \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_dat
 \begin{DoxyReturn}{Returns}
 \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} of the found ID, returns null if nothing is found
 \end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a93943fae07393731c786d88ea98130a6}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!Register$<$ T $>$@{Register$<$ T $>$}}
+\index{Register$<$ T $>$@{Register$<$ T $>$}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
+\doxysubsubsection{\texorpdfstring{Register$<$ T $>$()}{Register< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a93943fae07393731c786d88ea98130a6} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Register$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{bool}]{use\+Encryption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} to the registry to be referenced later. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The file name of the save object, gets used as the ID\\
+\hline
+{\em use\+Encryption} & Wether or not to use encryption on this save data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID} with its filled in parameteres
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data}{ISave\+Data}}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7}\index{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}!Register$<$ T $>$@{Register$<$ T $>$}}
 \index{Register$<$ T $>$@{Register$<$ T $>$}!UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry@{UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry}}
-\doxysubsubsection{\texorpdfstring{Register$<$ T $>$()}{Register< T >()}}
+\doxysubsubsection{\texorpdfstring{Register$<$ T $>$()}{Register< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_a71d35619ad612d3d471f98b3ce271af7} 
 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+Registry.\+Register$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{unique\+ID}{, }\item[{string}]{file\+Name}{, }\item[{bool}]{use\+Encryption}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
