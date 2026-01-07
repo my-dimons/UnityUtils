@@ -4,8 +4,6 @@ Save System Example
 Example of a Save System
 -------------
 
-Quick Links:
-
 :doc:`Interfaces/ISaveData`
 
 Create a Serializable script that inherits :doc:`Interfaces/ISaveData`, and will be used to hold data across sessions. 
@@ -26,8 +24,6 @@ PlayerData:
    	public float name;
    }
    
-
-Quick Links:
 
 :doc:`JsonSaveSystem`
 
@@ -90,9 +86,6 @@ SaveManager:
            saveFiles.Add(playerData);
        }
    }
-
-(Actually loading and saving data into script)
-Quick Links:
 
 :doc:`Interfaces/ISaveableData`
 
