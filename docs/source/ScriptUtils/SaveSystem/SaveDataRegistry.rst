@@ -1,4 +1,4 @@
-SaveSystemRegistry
+SaveDataRegistry
 ================
 
 **NAMESPACE:**
@@ -32,5 +32,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::SaveSystemRegistry
+.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry
    :members:
