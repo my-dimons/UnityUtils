@@ -16,6 +16,7 @@
     - JsonSaveSystem
 
 ### Changes
+- Fixed ObjectDelays useRealtime (Wasn't waiting in realtime)
 - Fixed camera shake from ending in an improper position
 
 ## v1.2.0
