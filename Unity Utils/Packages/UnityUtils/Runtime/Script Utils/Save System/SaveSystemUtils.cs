@@ -17,17 +17,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// .json file extension
         public const string JSON_SAVE_FILE_EXTENSION = ".json";
 
-        /// The error message used when a save file cannot be found at the specified location
-        public const string SAVE_FILE_NOT_FOUND_ERROR = "Save file not found in: ";
-
-        /// The message used to when a save file has been loaded
-        public const string SAVE_FILE_LOADED_MESSAGE = "Save file loaded from: ";
-
-        /// The message displayed when a save file is created
-        public const string SAVE_FILE_CREATED_MESSAGE = "Save file created in: ";
-
-        /// The message displayed when a save file is encryped
-        public const string SAVE_FILE_ENCRYPTED_MESSAGE = "Save file encryped in: ";
+        /// The default save slot ID, use when not using multiple save slots
+        public const string DEFAULT_SAVE_SLOT_ID = "0";
 
         /// <summary>
         /// Generates the full file path for a save file using the specified file name and extension.
@@ -54,7 +45,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="path">The full file system path of the save file that could not be located</param>
         public static void LogSaveFileNotFound(string path)
         {
-            Debug.Log(SAVE_FILE_NOT_FOUND_ERROR + path);
+            Debug.Log("Save file not found in: " + path);
         }
 
         /// <summary>
@@ -63,7 +54,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="path">The full file system path where the save file was created</param>
         public static void LogSaveFileCreated(string path)
         {
-            Debug.Log(SAVE_FILE_CREATED_MESSAGE + path);
+            Debug.Log("Save file created in: " + path);
         }
 
         /// <summary>
@@ -72,7 +63,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="path">The file system path of the loaded save file</param>
         public static void LogSaveFileLoaded(string path)
         {
-            Debug.Log(SAVE_FILE_LOADED_MESSAGE + path);
+            Debug.Log("Save file loaded from: " + path);
         }
 
         /// <summary>
@@ -81,7 +72,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="path">The file system path of the loaded save file</param>
         public static void LogSaveFileEncrypted(string path)
         {
-            Debug.Log(SAVE_FILE_ENCRYPTED_MESSAGE + path);
+            Debug.Log("Save file encryped in: " + path);
         }
     }
 }

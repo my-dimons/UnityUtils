@@ -13,7 +13,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
         /// Instance of the <see cref="ISaveData"/> linked to this object
         public readonly ISaveData dataInstance;
-
+        
         /// The parent class type
         public readonly Type classType;
 

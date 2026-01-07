@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityUtils.ScriptUtils.SaveSystem;
 
@@ -7,28 +8,26 @@ public class SaveManager : MonoBehaviour
     public static SaveManager Instance { get; private set; }
 
     // A list with save file IDs
-    Dictionary<string, List<SaveDataID>> saveFiles = new();
+    List<SaveDataID> saveFiles = new();
 
     public string activeSaveSlot;
 
     void Start()
     {
         InitializeData();
-        SaveSlot("save0");
-        SaveSlot("save1");
-        SaveSlot("save2");
+        SaveSlot("0");
 
         if (Instance == null) Instance = this; else Destroy(gameObject);
     }
 
     public void Save()
     {
-        SaveSystemManager.SaveGame(saveFiles[activeSaveSlot]);
+        SaveSystemManager.SaveGame(saveFiles, activeSaveSlot);
     }
 
     public void Load()
     {
-        SaveSystemManager.LoadGame(saveFiles[activeSaveSlot]);
+        SaveSystemManager.LoadGame(saveFiles, activeSaveSlot);
     }
 
     public void InitializeData()
@@ -38,10 +37,13 @@ public class SaveManager : MonoBehaviour
 
     public void SaveSlot(string saveSlot)
     {
-        saveFiles.Add(saveSlot, new());
         activeSaveSlot = saveSlot;
+
         Debug.Log(saveSlot);
-        SaveDataID gameData = SaveDataRegistry.Register<GameData>("saves/" + saveSlot + "/game_save.json", false);
-        saveFiles[saveSlot].Add(gameData);
+
+        string path = Path.Combine("saves", saveSlot, "game_save.json");
+        SaveDataID gameData = SaveSystemManager.CreateSaveDataID<GameData>(path, false);
+
+        saveFiles.Add(gameData);
     }
 }
