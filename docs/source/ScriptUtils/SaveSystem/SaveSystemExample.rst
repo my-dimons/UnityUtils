@@ -6,7 +6,7 @@ Example of a Save System
 
 (Holds data to be stored across sessions)
 
-:doc:`ISaveData`
+:doc:`Interfaces/ISaveData`
 
 PlayerData:
 
@@ -84,7 +84,7 @@ SaveManager:
 
 (Actually loading and saving data into script)
 
-:doc:`ISaveableData`
+:doc:`Interfaces/ISaveableData`
 
 Player:
 
