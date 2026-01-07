@@ -5,7 +5,9 @@ Example of a Save System
 -------------
 
 (Holds data to be stored across sessions)
+
 :doc:`ISaveData`
+
 PlayerData:
 
 .. code:: csharp
@@ -22,9 +24,13 @@ PlayerData:
    }
    
 (Handles saving, loading, and creating the data)
+
 :doc:`JsonSaveSystem`
+
 :doc:`SaveDataID`
+
 :doc:`SaveDataRegistry`
+
 SaveManager:
 
 .. code:: csharp
@@ -77,7 +83,9 @@ SaveManager:
    }
 
 (Actually loading and saving data into script)
+
 :doc:`ISaveableData`
+
 Player:
 
 .. code:: csharp
@@ -86,7 +94,7 @@ Player:
    using UnityEngine;
    using UnityUtils.ScriptUtils.SaveSystem;
 
-   public class Player : MonoBehaviour, ISaveableData
+   public class Player : MonoBehaviour, :doc:ISaveableData`
    {
        public int health = 2;
        public string name = "John";

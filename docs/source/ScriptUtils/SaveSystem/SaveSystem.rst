@@ -18,5 +18,6 @@ Scripts
    SaveSystemUtils
    JsonSaveSystem
    SaveSystemManager
+   SaveDataID
    SaveSystemExample
    Interfaces/SaveSystemInterfaces
