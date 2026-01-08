@@ -9,8 +9,8 @@
 - Save System
     - ISaveData
     - ISaveableData
-     - SaveData
-     - SaveSlot
+    - SaveData
+    - SaveSlot
     - SaveSystemManager
     - SaveSystemUtils
     - JsonSaveSystem
@@ -18,6 +18,8 @@
 ### Changes
 - Fixed ObjectDelays useRealtime (Wasn't waiting in realtime)
 - Fixed camera shake from ending in an improper position
+- Changed Company name from "DefaultCompany" -> "mydimons"
+- Changed Player Settings project name from "Examples" -> "UnityUtils"
 
 ## v1.2.0
 
