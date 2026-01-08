@@ -10,8 +10,6 @@ public class SaveManager : MonoBehaviour
 
     public string activeSaveSlot;
 
-    private readonly bool useEncryption = false;
-
     void Start()
     {
         InitializeData();
@@ -38,6 +36,7 @@ public class SaveManager : MonoBehaviour
     public void InitializeData()
     {
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
+        JsonSaveSystem.SetUseEncryption(false);
     }
 
     public void CreateSaveSlot(string saveSlot)
@@ -53,7 +52,7 @@ public class SaveManager : MonoBehaviour
 
         // add save data to save slot
         string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
-        data.Add(SaveSystemManager.CreateSaveData<GameData>(path, useEncryption));
+        data.Add(SaveSystemManager.CreateSaveData<GameData>(path));
         saveSlots.Add(saveSlot, new SaveSlot(saveSlot, data));
     }
 
@@ -67,7 +66,7 @@ public class SaveManager : MonoBehaviour
 
     public Dictionary<string, SaveSlot> GetAllSaveSlots()
     {
-        Dictionary<string, SaveSlot> loadedSaveSlots = SaveSystemManager.LoadAllSaveSlots(useEncryption);
+        Dictionary<string, SaveSlot> loadedSaveSlots = SaveSystemManager.LoadAllSaveSlots();
 
         Debug.Log(loadedSaveSlots.Count + " save slots found.");
 

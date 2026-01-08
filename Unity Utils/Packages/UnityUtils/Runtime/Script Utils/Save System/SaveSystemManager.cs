@@ -5,6 +5,7 @@ using UnityUtils.ScriptUtils.SaveSystem;
 using System.Linq;
 using System;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -85,9 +86,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Loads all save slots from the save directory, if none exists one is created.
         /// </summary>
-        /// <param name="useEncryption">If true, will treat all save files as though they are encryped (Make sure you consistently encrypt/decrypt files)</param>
         /// <returns>Dictionary of the save slot name and the <see cref="SaveSlot"/></returns>
-        public static Dictionary<string, SaveSlot> LoadAllSaveSlots(bool useEncryption)
+        public static Dictionary<string, SaveSlot> LoadAllSaveSlots()
         {
             Dictionary<string, SaveSlot> saveSlotDictionary = new();
 
@@ -122,24 +122,13 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                     }
 
                     // Get provided json file and decrypt if needed
-                    string json = useEncryption ? JsonSaveSystem.EncryptDecrypt(File.ReadAllText(fullPath)) : File.ReadAllText(fullPath);
-
-                    // Deserialize Savedata temporarily to get the class type
-                    SaveData saveData = JsonUtility.FromJson<SaveData>(json);
-
-                    Type type = saveData.GetClassType();
-
-                    // Skip if no type
-                    if (type == null)
-                    {
-                        Debug.LogWarning("Skipping save file when loading all profiles because its type could not be determined: " + fullPath);
-                        continue;
-                    }
+                    string json = JsonSaveSystem.useEncryption ? JsonSaveSystem.EncryptDecrypt(File.ReadAllText(fullPath)) : File.ReadAllText(fullPath);
 
                     // Deserialize the data from json back into the object
-                    object fullSaveData = JsonUtility.FromJson(json, saveData.GetClassType());
+                    SaveData saveData = JsonConvert.DeserializeObject<SaveData>(json,
+                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 
-                    saveDatas.Add(fullSaveData as SaveData);
+                    saveDatas.Add(saveData);
                 }
 
                 saveSlot = new SaveSlot(saveSlotName, saveDatas);
@@ -157,10 +146,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="fileName">The file name of the save object</param>
         /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
-        public static SaveData CreateSaveData<T>(string fileName, bool useEncryption) where T : SaveData, new()
+        public static SaveData CreateSaveData<T>(string fileName) where T : SaveData, new()
         {
             T saveData = new();
-            saveData.SetData(fileName, useEncryption, typeof(T));
+            saveData.SetData(fileName);
 
             return saveData;
         }

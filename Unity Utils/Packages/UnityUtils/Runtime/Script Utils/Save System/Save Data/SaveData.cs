@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Newtonsoft.Json;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -13,11 +14,19 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Save file name to write files to
         public string saveFileName;
 
-        /// Used to get the type of inherited class to serialize/deserialize
-        public string classTypeName;
+        /// The last time this script was saved
+        public long lastTimeSavedTicks;
 
-        /// If true, will encrypt/decrypt the save file when saving/loading
-        public bool useEncryption;
+        /// The last time this script was loaded
+        public long lastTimeLoadedTicks;
+
+        [NonSerialized]
+        /// The last <see cref="DateTime"/> the object was saved at
+        public DateTime lastTimeSaved;
+        
+        [NonSerialized]
+        /// The last <see cref="DateTime"/> the object was loaded at
+        public DateTime lastTimeLoaded;
 
         /// <summary>
         /// Set data variables for the save data
@@ -25,19 +34,25 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="saveFileName">File name to set to</param>
         /// <param name="useEncryption">If true, will use encryption</param>
         /// <param name="classType">Class inheriting this class</param>
-        public void SetData(string saveFileName, bool useEncryption, Type classType)
+        public void SetData(string saveFileName)
         {
             this.saveFileName = saveFileName;
-            this.useEncryption = useEncryption;
-            this.classTypeName = classType.AssemblyQualifiedName;
         }
 
         /// <summary>
-        /// Gets the type of the inherited class
+        /// Any actions to preform when saving
         /// </summary>
-        public Type GetClassType()
+        public void Save()
         {
-            return Type.GetType(classTypeName);
+            lastTimeSaved = DateTime.Now;
+        }
+
+        /// <summary>
+        /// Any actions to preform when loading
+        /// </summary>
+        public void Load()
+        {
+            lastTimeLoaded = DateTime.Now;
         }
     }
 }

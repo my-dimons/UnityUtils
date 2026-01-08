@@ -7,6 +7,7 @@ using UnityUtils.ScriptUtils.SaveSystem;
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Runtime.CompilerServices;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -14,6 +15,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     {
         /// If true will output Debug.Log()'s on Save/Load
         public static bool outputLogs = true;
+
+        /// If true will use encryption
+        public static bool useEncryption;
+
         private static string encryptionKey = "Key";
 
         /// <summary>
@@ -24,14 +29,17 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         {
             string fullPath = SaveSystemUtils.GetSaveFilePath(Path.Combine(saveData.saveFileName));
 
+            saveData.Save();
+
             try
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
                 // Serialize data into json
-                string dataToStore = JsonUtility.ToJson(saveData, !saveData.useEncryption);
+                string dataToStore = JsonConvert.SerializeObject(saveData, Formatting.Indented, 
+                    new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto }); 
 
-                if (saveData.useEncryption)
+                if (useEncryption)
                 {
                     dataToStore = EncryptDecrypt(dataToStore);
 
@@ -62,15 +70,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             // Load data into list
             foreach (SaveData saveData in saveDatas)
             {
-                Type type = saveData.GetClassType();
+                SaveData data = LoadSingleSaveFile(saveData);
 
-                if (type != null)
-                {
-                    SaveData data = LoadSingleSaveFile(saveData);
-
-                    if (data != null)
-                        loadedData.Add(data);
-                }
+                if (data != null)
+                    loadedData.Add(data);
             }
 
             return loadedData;
@@ -83,7 +86,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <returns><see cref="SaveData"/> with the loaded data from the file</returns>
         public static SaveData LoadSingleSaveFile(SaveData saveData)
         {
-            object loadedData = default;
+            SaveData loadedData = default;
 
             string fullPath = SaveSystemUtils.GetSaveFilePath(saveData.saveFileName);
 
@@ -96,16 +99,16 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                     string json = File.ReadAllText(fullPath);
 
                     // Data decryption
-                    if (saveData.useEncryption)
+                    if (useEncryption)
                     {
                         json = EncryptDecrypt(json);
-                    }
+                    }   
 
-                    // Deserialize Savedata temporarily to get the class type
-                    SaveData tempJson = JsonUtility.FromJson<SaveData>(json);
-                    
                     // Deserialize the data from json back into the object
-                    loadedData = JsonUtility.FromJson(json, tempJson.GetClassType());
+                    loadedData = JsonConvert.DeserializeObject<SaveData>(json,
+                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+
+                    loadedData.Load();
                 }
                 catch (IOException e)
                 {
@@ -113,7 +116,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 }
             }
 
-            return loadedData as SaveData;
+            return loadedData;
         }
 
         /// <summary>
@@ -123,6 +126,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         public static void SetEncryptionKey(string key)
         {
             encryptionKey = key;
+        }
+
+        /// <summary>
+        /// Sets the encryption bool
+        /// </summary>
+        /// <param name="encryption">Bool to set <see cref="useEncryption"/> to</param>
+        public static void SetUseEncryption(bool encryption)
+        {
+            useEncryption = encryption;
         }
 
         /// <summary>
