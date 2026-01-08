@@ -12,6 +12,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public static class JsonSaveSystem
     {
+        /// If true will output Debug.Log()'s on Save/Load
+        public static bool outputLogs = true;
         private static string encryptionKey = "Key";
 
         /// <summary>
@@ -32,7 +34,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 if (saveData.useEncryption)
                 {
                     dataToStore = EncryptDecrypt(dataToStore);
-                    SaveSystemUtils.LogSaveFileEncrypted(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
+
+                    if (outputLogs)
+                        SaveSystemUtils.LogSaveFileEncrypted(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
                 }
 
                 // Write data into files

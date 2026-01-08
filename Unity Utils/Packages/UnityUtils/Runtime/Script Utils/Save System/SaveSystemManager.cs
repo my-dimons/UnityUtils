@@ -10,12 +10,17 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public static class SaveSystemManager
     {
+        /// If true will output Debug.Log()'s on Save/Load
+        public static bool outputLogs = true;
+
         /// <summary>
         /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="saveDatas">Dictionary with the dataIDs ID and name to save with</param>
         public static void SaveGame(List<SaveData> saveDatas)
         {
+            long startTime = DateTime.Now.Ticks;
+
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Save saveData for each save saveData classType
@@ -29,8 +34,14 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
                 JsonSaveSystem.Save(saveData);
 
-                SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
+                if (outputLogs)
+                    SaveSystemUtils.LogSaveFileCreated(SaveSystemUtils.GetSaveFilePath(saveData.saveFileName));
             }
+
+            long endTime = DateTime.Now.Ticks - startTime;
+
+            if (outputLogs)
+                Debug.Log($"Saved game data, took: {(endTime / TimeSpan.TicksPerMillisecond):N4}ms");
         }
 
         /// <summary>
@@ -39,6 +50,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <param name="saveDatas">ID's to laod</param>
         public static void LoadGame(List<SaveData> saveDatas)
         {
+            long startTime = DateTime.Now.Ticks;
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Inject save saveData into saveable files
@@ -50,9 +62,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 {
                     saveable.LoadData(data);
 
-                    SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(data.saveFileName));
+                    if (outputLogs)
+                        SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(data.saveFileName));
                 }
             }
+
+            long endTime = DateTime.Now.Ticks - startTime;
+
+            if (outputLogs)
+                Debug.Log($"Loaded game data, took: {(endTime / TimeSpan.TicksPerMillisecond):N4}ms");
         }
 
         /// <summary>
