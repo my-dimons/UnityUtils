@@ -48,19 +48,13 @@ namespace UnityUtils.ScriptUtils.Objects
 
         private static IEnumerator CallFunctionAfterTimeCoroutine(Action function, float time, bool useRealtime)
         {
-            if (useRealtime)
-                yield return new WaitForSecondsRealtime(time);
-            else
-                yield return new WaitForSeconds(time);
+            yield return useRealtime ? new WaitForSecondsRealtime(time) : new WaitForSeconds(time);
             function?.Invoke();
         }
 
         private static IEnumerator ChangeValueAfterTimeCoroutine<T>(Action<T> onValueChange, T updatedValue, float time, bool useRealtime)
         {
-            if (useRealtime)
-                yield return new WaitForSecondsRealtime(time);
-            else
-                yield return new WaitForSeconds(time);
+            yield return useRealtime ? new WaitForSecondsRealtime(time) : new WaitForSeconds(time);
             onValueChange?.Invoke(updatedValue);
         }
     }

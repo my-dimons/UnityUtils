@@ -17,3 +17,4 @@ Scripts
    ObjectColorFlash
    ObjectModifiers
    ObjectModifierData
+    ModifierType

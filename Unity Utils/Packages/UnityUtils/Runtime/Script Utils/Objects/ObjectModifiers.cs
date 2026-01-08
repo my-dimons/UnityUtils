@@ -1,41 +1,36 @@
-﻿using System.Collections;
+﻿using PlasticPipe.PlasticProtocol.Messages;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Numerics;
 using UnityUtils.ScriptUtils;
+using UnityEngine.Assertions.Comparers;
 
 namespace UnityUtils.ScriptUtils.Objects
 {
-    public class ObjectModifiers
+    public class ObjectModifiers<T>
     {
-        /// Types of modifiers (Flat = '-/+', Multiplier = '*', Division = '/')
-        public enum ModifierType
-        {
-            Flat,
-            Multiplier,
-            Division
-        }
-
         /// The default modifier order
-        public static readonly ModifierType[] DEFAULT_MODIFIER_ORDER = new ModifierType[] { ModifierType.Flat, ModifierType.Multiplier, ModifierType.Division };
+        public static readonly ModifierType[] DEFAULT_MODIFIER_ORDER = new ModifierType[] { ModifierType.Flat, ModifierType.Multiply, ModifierType.Divide };
 
         /// The applied modifier order
         public ModifierType[] ModifierOrder = DEFAULT_MODIFIER_ORDER;
 
         /// Modifiers to be applied when calculating modifiers, must be modified via <see cref="AddModifier(ObjectModifierData)"/>, or temporarily modified via <see cref="AddTemporaryModifier(ObjectModifierData, float, bool)"/>
-        public List<ObjectModifierData> Modifiers = new();
+        public List<ObjectModifierData<T>> Modifiers = new();
 
         /// <summary>
         /// Adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>
         /// </summary>
         /// <param name="modifier">The modifier to add to the object</param>
-        public void AddModifier(ObjectModifierData modifier) { Modifiers.Add(modifier); }
+        public void AddModifier(ObjectModifierData<T> modifier) { Modifiers.Add(modifier); }
 
         /// <summary>
         /// Creates a new <see cref="ObjectModifierData"/> with the specified <see cref="ModifierType"/> and value and adds it to <see cref="Modifiers"/>
         /// </summary>
         /// <param name="modifierType">The classType of modifier to add</param>
         /// <param name="modifierValue">The value associated with the modifier</param>
-        public void AddModifier(ModifierType modifierType, float modifierValue) { Modifiers.Add(new ObjectModifierData(modifierType, modifierValue)); }
+        public void AddModifier(ModifierType modifierType, T modifierValue) { Modifiers.Add(new ObjectModifierData<T>(modifierType, modifierValue)); }
 
         /// <summary>
         /// Temporarily adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>. Once the time is over, it will remove the <see cref="ObjectModifierData"/> from <see cref="Modifiers"/>
@@ -43,12 +38,12 @@ namespace UnityUtils.ScriptUtils.Objects
         /// <param name="modifier">The modifier to apply to the object.</param>
         /// <param name="time">(In seconds) how long the <see cref="ObjectModifierData"/> stays in <see cref="Modifiers"/> for</param>
         /// <param name="useRealtime">Indicates whether the duration should be measured using real time instead of game time</param>
-        public void AddTemporaryModifier(ObjectModifierData modifier, float time, bool useRealtime = false)
+        public void AddTemporaryModifier(ObjectModifierData<T> modifier, float time, bool useRealtime = false)
         {
             CoroutineHelper.Starter.StartCoroutine(AddTemporaryModifierCoroutine(modifier, time, useRealtime));
         }
 
-        private IEnumerator AddTemporaryModifierCoroutine(ObjectModifierData modifier, float time, bool useRealtime)
+        private IEnumerator AddTemporaryModifierCoroutine(ObjectModifierData<T> modifier, float time, bool useRealtime)
         {
             AddModifier(modifier);
             yield return useRealtime ? new WaitForSecondsRealtime(time) : new WaitForSeconds(time);
@@ -59,7 +54,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// Removes the specified modifier from <see cref="Modifiers"/>
         /// </summary>
         /// <param name="modifierType">The modifier to remove from the object</param>
-        public void RemoveModifier(ObjectModifierData modifierType) { Modifiers.Remove(modifierType); }
+        public void RemoveModifier(ObjectModifierData<T> modifierType) { Modifiers.Remove(modifierType); }
 
         /// <summary>
         /// Calculates the result of applying all <see cref="Modifiers"/> to the input value.
@@ -67,24 +62,25 @@ namespace UnityUtils.ScriptUtils.Objects
         /// <param name="inputValue">The initial value to which modifiers will be applied.</param>
         /// <param name="sortModifiers">true to sort the modifiers before applying them based on <see cref="ModifierOrder"/>; otherwise, false</param>
         /// <returns>Value calculated based on the <see cref="Modifiers"/></returns>
-        public float CalculateModifiers(float inputValue, bool sortModifiers = true)
+        public T CalculateModifiers(T inputValue, bool sortModifiers = true)
         {
             if (sortModifiers)
                 SortModifiers();
 
-            float finalValue = inputValue;
+            dynamic finalValue = inputValue;
 
-            foreach (ObjectModifierData modifier in Modifiers)
+            foreach (ObjectModifierData<T> modifier in Modifiers)
             {
+
                 switch (modifier.modifierType)
                 {
                     case ModifierType.Flat:
                         finalValue += modifier.modifierValue;
                         break;
-                    case ModifierType.Multiplier:
+                    case ModifierType.Multiply:
                         finalValue *= modifier.modifierValue;
                         break;
-                    case ModifierType.Division:
+                    case ModifierType.Divide:
                         finalValue /= modifier.modifierValue;
                         break;
                 }
@@ -100,7 +96,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// of types in this array.</param>
         public void SortModifiers(ModifierType[] sort)
         {
-            List<ObjectModifierData> SortedModifiers = Modifiers;
+            List<ObjectModifierData<T>> SortedModifiers = Modifiers;
 
             SortedModifiers.Sort((a, b) =>
             {
@@ -128,7 +124,7 @@ namespace UnityUtils.ScriptUtils.Objects
         {
             string printOutput = "";
 
-            foreach (ObjectModifierData modifier in Modifiers)
+            foreach (ObjectModifierData<T> modifier in Modifiers)
             {
                 string modifierType = "Modifier Type: " + modifier.modifierType.ToString();
                 string modifierValue = "Modifier Value: " + modifier.modifierValue.ToString();

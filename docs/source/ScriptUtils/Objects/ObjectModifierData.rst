@@ -15,12 +15,12 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-	private ObjectModifierData data;
+	private ObjectModifierData<float> data;
 	
    	void Start()
    	{
    	   // Creates a new ObjectModifierData object
-   	   data = new ObjectModifierData(ObjectModifiers.ModifierType.Division, 3))
+   	   data = new ObjectModifierData<float>(ModifierType.Divide, 3))
    	}
    }
   
