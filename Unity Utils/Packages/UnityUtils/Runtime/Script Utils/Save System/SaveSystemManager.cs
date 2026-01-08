@@ -18,14 +18,14 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="saveDatas">Dictionary with the dataIDs ID and name to save with</param>
-        public static void SaveGame(List<SaveData> saveDatas)
+        public static void SaveGame(SaveSlot saveSlot)
         {
             long startTime = DateTime.Now.Ticks;
 
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Save saveData for each save saveData classType
-            foreach (SaveData saveData in saveDatas)
+            foreach (SaveData saveData in saveSlot.GetSaveDatas())
             {
                 // Put saveData from files to SaveData's
                 foreach (ISaveableData saveable in saveableData)
@@ -49,15 +49,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
         /// <param name="saveDatas">ID's to laod</param>
-        public static void LoadGame(List<SaveData> saveDatas)
+        public static void LoadGame(SaveSlot saveSlot)
         {
             long startTime = DateTime.Now.Ticks;
             List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Inject save saveData into saveable files
-            foreach (SaveData saveData in saveDatas)
+            foreach (SaveData saveData in saveSlot.GetSaveDatas())
             {
-                SaveData data = JsonSaveSystem.LoadSingleSaveFile(saveData);
+                SaveData data = JsonSaveSystem.LoadSingleSaveFile(saveData, saveSlot);
 
                 foreach (ISaveableData saveable in saveableData)
                 {
@@ -131,7 +131,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                     saveDatas.Add(saveData);
                 }
 
-                saveSlot = new SaveSlot(saveSlotName, saveDatas);
+                saveSlot = new SaveSlot(saveSlotName);
+                saveSlot.SetSaveDataSlotList(saveDatas);
+                saveSlot.SaveDataList(saveDatas);
 
                 saveSlotDictionary.Add(saveSlot.saveSlotName, saveSlot);
             }

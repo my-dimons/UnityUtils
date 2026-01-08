@@ -9,13 +9,14 @@ namespace UnityUtils.ScriptUtils.SaveSystem
     /// Implimenting this class means you must have "[System.Serializable]" above your class name
     /// </summary>
     [Serializable]
-    public class SaveData
+    public abstract class SaveData
     {
         /// Save file name to write files to
         public string saveFileName;
 
-        /// The last <see cref="DateTime"/> the object was saved at
-        public DateTime lastTimeSaved;
+        /// The save slot this data belongs to
+        [JsonIgnore]
+        public SaveSlot saveSlot;
 
         /// <summary>
         /// Set data variables for the save data
@@ -28,19 +29,24 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             this.saveFileName = saveFileName;
         }
 
+        public void SetSaveSlot(SaveSlot saveSlot)
+        {
+            this.saveSlot = saveSlot;
+        }
+
         /// <summary>
         /// Any actions to preform when saving
         /// </summary>
-        public void Save()
+        public virtual void Save()
         {
-            lastTimeSaved = DateTime.Now;
+
         }
 
         /// <summary>
         /// Any actions to preform when loading
         /// </summary>
         /// <remarks>Unless data is written, this will not end up saving the data</remarks>
-        public void Load()
+        public virtual void Load()
         {
             
         }

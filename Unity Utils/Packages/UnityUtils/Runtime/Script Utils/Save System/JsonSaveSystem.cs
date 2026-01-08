@@ -37,7 +37,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
                 // Serialize data into json
                 string dataToStore = JsonConvert.SerializeObject(saveData, Formatting.Indented, 
-                    new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto }); 
+                    new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All }); 
 
                 if (useEncryption)
                 {
@@ -58,33 +58,19 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
         }
 
-        /// <summary>
-        /// Deserializes a list of <see cref="SaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
-        /// </summary>
-        /// <param name="saveDatas">A list of saveDatas to load the <see cref="SaveData"/> of</param>
-        /// <returns>List of all the loaded save datas</returns>
-        public static List<SaveData> Load(List<SaveData> saveDatas)
+        public static SaveSlot Load(SaveSlot saveSlot)
         {
-            List<SaveData> loadedData = new();
+            SaveSlot tempSaveSlot = new(saveSlot.saveSlotName);
 
             // Load data into list
-            foreach (SaveData saveData in saveDatas)
+            foreach (SaveData saveData in saveSlot.GetSaveDatas())
             {
-                SaveData data = LoadSingleSaveFile(saveData);
-
-                if (data != null)
-                    loadedData.Add(data);
+                tempSaveSlot.AddSaveData(LoadSingleSaveFile(saveData, tempSaveSlot));
             }
 
-            return loadedData;
+            return tempSaveSlot;
         }
-
-        /// <summary>
-        /// Deserializes a single <see cref="SaveData"/> (Gotten via <see cref="SaveDataID.dataInstance"/>) from a json format file
-        /// </summary>
-        /// <param name="saveData"><see cref="SaveDataID"/> to deserialize</param>
-        /// <returns><see cref="SaveData"/> with the loaded data from the file</returns>
-        public static SaveData LoadSingleSaveFile(SaveData saveData)
+        public static SaveData LoadSingleSaveFile(SaveData saveData, SaveSlot saveSlot)
         {
             SaveData loadedData = default;
 
@@ -106,10 +92,11 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
                     // Deserialize the data from json back into the object
                     loadedData = JsonConvert.DeserializeObject<SaveData>(json,
-                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+
+                    loadedData.SetSaveSlot(saveSlot);
 
                     loadedData.Load();
-                    JsonConvert.SerializeObject(loadedData);
                 }
                 catch (IOException e)
                 {

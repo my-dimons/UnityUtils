@@ -25,12 +25,12 @@ public class SaveManager : MonoBehaviour
 
     public void Save()
     {
-        SaveSystemManager.SaveGame(saveSlots[activeSaveSlot].saveDatas);
+        SaveSystemManager.SaveGame(saveSlots[activeSaveSlot]);
     }
 
     public void Load()
     {
-        SaveSystemManager.LoadGame(saveSlots[activeSaveSlot].saveDatas);
+        SaveSystemManager.LoadGame(saveSlots[activeSaveSlot]);
     }
 
     public void InitializeData()
@@ -48,12 +48,13 @@ public class SaveManager : MonoBehaviour
             return;
         }
 
-        List<SaveData> data = new();
+        SaveSlot saveSlotObj = new SaveSlot(saveSlot);
 
         // add save data to save slot
         string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
-        data.Add(SaveSystemManager.CreateSaveData<GameData>(path));
-        saveSlots.Add(saveSlot, new SaveSlot(saveSlot, data));
+        saveSlotObj.AddSaveData(SaveSystemManager.CreateSaveData<GameData>(path));
+
+        saveSlots.Add(saveSlot, saveSlotObj);
     }
 
     public void SetSaveSlot(string saveSlot)
