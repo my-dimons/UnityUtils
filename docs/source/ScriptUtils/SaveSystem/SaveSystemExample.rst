@@ -212,7 +212,7 @@ In the Save/Load function make sure to check if the given data is the proper dat
        public int health = 2;
        public string name = "John";
 
-       public void SaveData<T>(T data) where T : ISaveData
+       public void SaveData<T>(T data) where T : SaveData
        {
            // Check if the data is the correct type
            if (data is PlayerData save)
@@ -222,7 +222,7 @@ In the Save/Load function make sure to check if the given data is the proper dat
            }
        }
 
-       public void LoadData<T>(T data) where T : ISaveData
+       public void LoadData<T>(T data) where T : SaveData
        {
            // Check if the data is the correct type
            if (data is PlayerData save)

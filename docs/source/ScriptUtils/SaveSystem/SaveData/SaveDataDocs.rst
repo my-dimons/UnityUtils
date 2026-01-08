@@ -11,5 +11,5 @@ Scripts
    :maxdepth: 1
    
    SaveData
-    SaveSlot
+   SaveSlot
    ISaveableData

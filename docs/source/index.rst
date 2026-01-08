@@ -7,10 +7,7 @@ Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
 View the GitHub repo here: https://github.com/my-dimons/Unity-Utils
-
-.. note::
-
-   This project is under heavy and (semi) rapid development. 
+View the Testing UnityUtils docs here: https://unityutils-testing.readthedocs.io/en/latest/ (This is just where I test new updates, usually doesn't work)
    
 .. tip::
 
