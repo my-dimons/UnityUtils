@@ -109,6 +109,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                         new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 
                     loadedData.Load();
+                    JsonConvert.SerializeObject(loadedData);
                 }
                 catch (IOException e)
                 {

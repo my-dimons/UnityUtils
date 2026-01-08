@@ -14,19 +14,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Save file name to write files to
         public string saveFileName;
 
-        /// The last time this script was saved
-        public long lastTimeSavedTicks;
-
-        /// The last time this script was loaded
-        public long lastTimeLoadedTicks;
-
-        [NonSerialized]
         /// The last <see cref="DateTime"/> the object was saved at
         public DateTime lastTimeSaved;
-        
-        [NonSerialized]
-        /// The last <see cref="DateTime"/> the object was loaded at
-        public DateTime lastTimeLoaded;
 
         /// <summary>
         /// Set data variables for the save data
@@ -50,9 +39,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Any actions to preform when loading
         /// </summary>
+        /// <remarks>Unless data is written, this will not end up saving the data</remarks>
         public void Load()
         {
-            lastTimeLoaded = DateTime.Now;
+            
         }
     }
 }
