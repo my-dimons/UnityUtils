@@ -18,7 +18,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
         public override void Load()
         {
-            Debug.Log("Loaded SaveSlotSaveData: " + lastTimeSaved);
             saveSlot.lastTimeSaved = lastTimeSaved;
         }
     }
