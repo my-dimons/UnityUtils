@@ -58,28 +58,12 @@
 <para>File name to set to</para>
 </parameterdescription>
 </parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>useEncryption</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If true, will use encryption</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>classType</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Class inheriting this class</para>
-</parameterdescription>
-</parameteritem>
 </parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="27" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="27" bodyend="30"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="25" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="25" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -97,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="32" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="32" bodyend="35"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="30" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -113,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="40" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="40" bodyend="43"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="38" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -126,11 +110,10 @@
 <para>Any actions to preform when loading. </para>
         </briefdescription>
         <detaileddescription>
-<para>Unless data is written, this will not end up saving the data</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="49" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="49" bodyend="52"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="46" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="46" bodyend="49"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -163,7 +146,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="12" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="13" bodyend="53"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="12" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="13" bodyend="50"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" prot="public" virt="virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>Load</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" prot="public" virt="virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>Save</name></member>

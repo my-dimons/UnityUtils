@@ -22,8 +22,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Set data variables for the save data
         /// </summary>
         /// <param name="saveFileName">File name to set to</param>
-        /// <param name="useEncryption">If true, will use encryption</param>
-        /// <param name="classType">Class inheriting this class</param>
         public void SetData(string saveFileName)
         {
             this.saveFileName = saveFileName;
@@ -45,7 +43,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Any actions to preform when loading
         /// </summary>
-        /// <remarks>Unless data is written, this will not end up saving the data</remarks>
         public virtual void Load()
         {
             

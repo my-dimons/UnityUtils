@@ -16,5 +16,10 @@ Scripts
    
    JsonSaveSystem
    SaveSystemManager
+
+   SaveData
+   SaveSlot
+   ISaveableData
+   SaveSlotSaveData
+   
    SaveSystemExample
-   SaveData/SaveDataDocs

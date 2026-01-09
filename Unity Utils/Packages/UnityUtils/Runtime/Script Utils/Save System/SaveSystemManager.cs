@@ -136,7 +136,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="fileName">The file name of the save object</param>
-        /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
         public static SaveData CreateSaveData<T>(string fileName) where T : SaveData, new()
         {

@@ -48,7 +48,6 @@
 <para>Any actions to preform when loading. </para>
         </briefdescription>
         <detaileddescription>
-<para>Unless data is written, this will not end up saving the data</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

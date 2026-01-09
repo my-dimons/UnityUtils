@@ -10,7 +10,3 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   SaveData
-   SaveSlot
-   ISaveableData
-   SaveSlotSaveData
