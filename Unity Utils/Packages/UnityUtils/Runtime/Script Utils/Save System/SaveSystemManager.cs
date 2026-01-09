@@ -92,11 +92,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             Dictionary<string, SaveSlot> saveSlotDictionary = new();
 
             // create save directory if it does not exist
-            if (!Directory.Exists(SaveSystemUtils.GetSaveSlotRootPath()))
-            {
-                Directory.CreateDirectory(SaveSystemUtils.GetSaveSlotRootPath());
-                return saveSlotDictionary;
-            }
+            JsonSaveSystem.CreateRootSaveDataIfNotExisting();
 
             IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(SaveSystemUtils.GetSaveSlotRootPath()).EnumerateDirectories();
 
@@ -121,19 +117,13 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                         continue;
                     }
 
-                    // Get provided json file and decrypt if needed
-                    string json = JsonSaveSystem.useEncryption ? JsonSaveSystem.EncryptDecrypt(File.ReadAllText(fullPath)) : File.ReadAllText(fullPath);
-
-                    // Deserialize the data from json back into the object
-                    SaveData saveData = JsonConvert.DeserializeObject<SaveData>(json,
-                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-
-                    saveDatas.Add(saveData);
+                    saveDatas.Add(JsonSaveSystem.GetSaveData(JsonSaveSystem.GetJsonStringData(fullPath)));
                 }
 
                 saveSlot = new SaveSlot(saveSlotName);
-                saveSlot.SetSaveDataSlotList(saveDatas);
-                saveSlot.SaveDataList(saveDatas);
+                saveSlot.SetSaveDataSlot(saveDatas);
+                saveSlot.AddSaveData(saveDatas);
+                saveSlot.LoadAllSaveDatas();
 
                 saveSlotDictionary.Add(saveSlot.saveSlotName, saveSlot);
             }
@@ -146,7 +136,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="fileName">The file name of the save object</param>
-        /// <param name="useEncryption">Wether or not to use encryption on this save data</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
         public static SaveData CreateSaveData<T>(string fileName) where T : SaveData, new()
         {
@@ -154,6 +143,18 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             saveData.SetData(fileName);
 
             return saveData;
+        }
+
+        /// <summary>
+        /// Grabs the most recent save in a list of <see cref="SaveSlot"/>
+        /// </summary>
+        /// <param name="saveSlots">Save slots to sort through</param>
+        /// <returns>Most recently saved slot</returns>
+        public static SaveSlot GetMostRecentSave(List<SaveSlot> saveSlots)
+        {
+            return saveSlots
+                .OrderByDescending(d => d.lastTimeSaved)
+                .First();
         }
     }
 }

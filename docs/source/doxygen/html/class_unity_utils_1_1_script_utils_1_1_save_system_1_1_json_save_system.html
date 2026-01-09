@@ -94,18 +94,60 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fc3b7821cac2aee8f6aa076a8d7316c" id="r_a6fc3b7821cac2aee8f6aa076a8d7316c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc3b7821cac2aee8f6aa076a8d7316c">Save</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> saveDataID)</td></tr>
-<tr class="memdesc:a6fc3b7821cac2aee8f6aa076a8d7316c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the inputted <em>saveDataID</em>  into <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a43276cf9fbe31499c0f1e84f212c0fbe" title="The file name that this object is linked to.">SaveDataID.fileName</a> in a json format.  <br /></td></tr>
-<tr class="memitem:ad0f2c14782d3ad4b0328af5a4c65692a" id="r_ad0f2c14782d3ad4b0328af5a4c65692a"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0f2c14782d3ad4b0328af5a4c65692a">Load</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; saveDataIDs)</td></tr>
-<tr class="memdesc:ad0f2c14782d3ad4b0328af5a4c65692a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a list of <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a8758baa73b532c2db3461caab3cdcd53" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file.  <br /></td></tr>
-<tr class="memitem:a00f2cde002f6de93df22b4d7eaa861f9" id="r_a00f2cde002f6de93df22b4d7eaa861f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f2cde002f6de93df22b4d7eaa861f9">LoadSingleSaveFile</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> saveDataID)</td></tr>
-<tr class="memdesc:a00f2cde002f6de93df22b4d7eaa861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a single <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a8758baa73b532c2db3461caab3cdcd53" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file.  <br /></td></tr>
+<tr class="memitem:abe6fd5fd70e54532a45986ff967e244a" id="r_abe6fd5fd70e54532a45986ff967e244a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe6fd5fd70e54532a45986ff967e244a">Save</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> saveData)</td></tr>
+<tr class="memdesc:abe6fd5fd70e54532a45986ff967e244a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the inputted <em>saveData</em>  into SaveDataID.fileName in a json format.  <br /></td></tr>
+<tr class="memitem:adeb02be1194c87aae409ad59d945068c" id="r_adeb02be1194c87aae409ad59d945068c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb02be1194c87aae409ad59d945068c">Load</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memitem:a8c94fba4c9ef83044b82d9519a64345b" id="r_a8c94fba4c9ef83044b82d9519a64345b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c94fba4c9ef83044b82d9519a64345b">LoadSingleSaveFile</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> saveData, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
 <tr class="memitem:a274e9f22b04d7b140aa68789f562d8cb" id="r_a274e9f22b04d7b140aa68789f562d8cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274e9f22b04d7b140aa68789f562d8cb">SetEncryptionKey</a> (string key)</td></tr>
 <tr class="memdesc:a274e9f22b04d7b140aa68789f562d8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the encryption key for file encryption.  <br /></td></tr>
+<tr class="memitem:a0cc8b7f0ed2293a8168abca71e6bebca" id="r_a0cc8b7f0ed2293a8168abca71e6bebca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc8b7f0ed2293a8168abca71e6bebca">UseEncryption</a> (bool encryption)</td></tr>
+<tr class="memdesc:a0cc8b7f0ed2293a8168abca71e6bebca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the encryption bool.  <br /></td></tr>
 <tr class="memitem:a95d2a058b8834f394cb587a2c5076b92" id="r_a95d2a058b8834f394cb587a2c5076b92"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95d2a058b8834f394cb587a2c5076b92">EncryptDecrypt</a> (string data)</td></tr>
 <tr class="memdesc:a95d2a058b8834f394cb587a2c5076b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts data via an XOR shift of <em>data</em>  using the encryptionKey.  <br /></td></tr>
+<tr class="memitem:a3f94af3fd6f834d5d44c40863edea27f" id="r_a3f94af3fd6f834d5d44c40863edea27f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f94af3fd6f834d5d44c40863edea27f">GetJsonStringData</a> (string path)</td></tr>
+<tr class="memdesc:a3f94af3fd6f834d5d44c40863edea27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the string of data inside a json file via a path.  <br /></td></tr>
+<tr class="memitem:a9847f5f7caf9b3f4942f172bf56ca78d" id="r_a9847f5f7caf9b3f4942f172bf56ca78d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9847f5f7caf9b3f4942f172bf56ca78d">GetSaveData</a> (string json)</td></tr>
+<tr class="memdesc:a9847f5f7caf9b3f4942f172bf56ca78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a json string file.  <br /></td></tr>
+<tr class="memitem:ab68f1fb463b82e6dee277d5a7b3d6c0d" id="r_ab68f1fb463b82e6dee277d5a7b3d6c0d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab68f1fb463b82e6dee277d5a7b3d6c0d">SaveSaveData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> saveData)</td></tr>
+<tr class="memdesc:ab68f1fb463b82e6dee277d5a7b3d6c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">SaveData</a> and return the string of serialized data.  <br /></td></tr>
+<tr class="memitem:aadc15994db95278bff0740c64f1d85b8" id="r_aadc15994db95278bff0740c64f1d85b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc15994db95278bff0740c64f1d85b8">CreateRootSaveDataIfNotExisting</a> ()</td></tr>
+<tr class="memdesc:aadc15994db95278bff0740c64f1d85b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will create <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a8d55c8b79b9f1557e2a6cfd55186df43" title="The full root path for save files, usually Application.persistentDataPath/saves.">SaveSystemUtils.GetSaveSlotRootPath()</a> if it does not exist.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4294b75b656767310a607835f29ddc02" id="r_a4294b75b656767310a607835f29ddc02"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4294b75b656767310a607835f29ddc02">outputLogs</a> = true</td></tr>
+<tr class="memdesc:a4294b75b656767310a607835f29ddc02"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will output Debug.Log()'s on Save/Load.  <br /></td></tr>
+<tr class="memitem:a72d5b25588aaa1e6a3464ade65f5ed71" id="r_a72d5b25588aaa1e6a3464ade65f5ed71"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72d5b25588aaa1e6a3464ade65f5ed71">useEncryption</a></td></tr>
+<tr class="memdesc:a72d5b25588aaa1e6a3464ade65f5ed71"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will use encryption.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="aadc15994db95278bff0740c64f1d85b8" name="aadc15994db95278bff0740c64f1d85b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc15994db95278bff0740c64f1d85b8">&#9670;&#160;</a></span>CreateRootSaveDataIfNotExisting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.CreateRootSaveDataIfNotExisting </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Will create <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a8d55c8b79b9f1557e2a6cfd55186df43" title="The full root path for save files, usually Application.persistentDataPath/saves.">SaveSystemUtils.GetSaveSlotRootPath()</a> if it does not exist. </p>
+
+</div>
+</div>
 <a id="a95d2a058b8834f394cb587a2c5076b92" name="a95d2a058b8834f394cb587a2c5076b92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95d2a058b8834f394cb587a2c5076b92">&#9670;&#160;</a></span>EncryptDecrypt()</h2>
 
@@ -130,6 +172,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Encrypts data via an XOR shift of <em>data</em>  using the encryptionKey. </p>
+<p>Make sure you <a class="el" href="#a274e9f22b04d7b140aa68789f562d8cb" title="Sets the encryption key for file encryption.">SetEncryptionKey(string)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to encrypt</td></tr>
@@ -140,8 +183,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0f2c14782d3ad4b0328af5a4c65692a" name="ad0f2c14782d3ad4b0328af5a4c65692a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0f2c14782d3ad4b0328af5a4c65692a">&#9670;&#160;</a></span>Load()</h2>
+<a id="a3f94af3fd6f834d5d44c40863edea27f" name="a3f94af3fd6f834d5d44c40863edea27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f94af3fd6f834d5d44c40863edea27f">&#9670;&#160;</a></span>GetJsonStringData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,9 +193,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> &gt; UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load </td>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetJsonStringData </td>
           <td>(</td>
-          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>saveDataIDs</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -163,19 +206,19 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deserializes a list of <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a8758baa73b532c2db3461caab3cdcd53" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file. </p>
+<p>Grabs the string of data inside a json file via a path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveDataIDs</td><td>A list of saveDataIDs to load the <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> of</td></tr>
+    <tr><td class="paramname">path</td><td>Full path to the save file</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>List of all the loaded save datas</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string of all the data in the json</dd></dl>
 
 </div>
 </div>
-<a id="a00f2cde002f6de93df22b4d7eaa861f9" name="a00f2cde002f6de93df22b4d7eaa861f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00f2cde002f6de93df22b4d7eaa861f9">&#9670;&#160;</a></span>LoadSingleSaveFile()</h2>
+<a id="a9847f5f7caf9b3f4942f172bf56ca78d" name="a9847f5f7caf9b3f4942f172bf56ca78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9847f5f7caf9b3f4942f172bf56ca78d">&#9670;&#160;</a></span>GetSaveData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,9 +227,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a> UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.LoadSingleSaveFile </td>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetSaveData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a></td>          <td class="paramname"><span class="paramname"><em>saveDataID</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>json</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,19 +240,74 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deserializes a single <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> (Gotten via <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a8758baa73b532c2db3461caab3cdcd53" title="Instance of the ISaveData linked to this object.">SaveDataID.dataInstance</a>) from a json format file. </p>
+<p>Deserializes a json string file. </p>
+<p>Use <a class="el" href="#a3f94af3fd6f834d5d44c40863edea27f" title="Grabs the string of data inside a json file via a path.">GetJsonStringData(string)</a> to get a json string from a path</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveDataID</td><td><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> to deserialize</td></tr>
+    <tr><td class="paramname">json</td><td>Json to deserialize</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">ISaveData</a> with the loaded data from the file</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Deserialized save data</dd></dl>
 
 </div>
 </div>
-<a id="a6fc3b7821cac2aee8f6aa076a8d7316c" name="a6fc3b7821cac2aee8f6aa076a8d7316c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc3b7821cac2aee8f6aa076a8d7316c">&#9670;&#160;</a></span>Save()</h2>
+<a id="adeb02be1194c87aae409ad59d945068c" name="adeb02be1194c87aae409ad59d945068c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb02be1194c87aae409ad59d945068c">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c94fba4c9ef83044b82d9519a64345b" name="a8c94fba4c9ef83044b82d9519a64345b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c94fba4c9ef83044b82d9519a64345b">&#9670;&#160;</a></span>LoadSingleSaveFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.LoadSingleSaveFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>saveData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe6fd5fd70e54532a45986ff967e244a" name="abe6fd5fd70e54532a45986ff967e244a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6fd5fd70e54532a45986ff967e244a">&#9670;&#160;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +318,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Save </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a></td>          <td class="paramname"><span class="paramname"><em>saveDataID</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>saveData</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -231,13 +329,47 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serializes the inputted <em>saveDataID</em>  into <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html#a43276cf9fbe31499c0f1e84f212c0fbe" title="The file name that this object is linked to.">SaveDataID.fileName</a> in a json format. </p>
+<p>Serializes the inputted <em>saveData</em>  into SaveDataID.fileName in a json format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveDataID</td><td>saveDataID of the file to be saved</td></tr>
+    <tr><td class="paramname">saveData</td><td>saveData of the file to be saved</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab68f1fb463b82e6dee277d5a7b3d6c0d" name="ab68f1fb463b82e6dee277d5a7b3d6c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68f1fb463b82e6dee277d5a7b3d6c0d">&#9670;&#160;</a></span>SaveSaveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.SaveSaveData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>saveData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serializes a <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html" title="Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name.">SaveData</a> and return the string of serialized data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveData</td><td>Data to serialize</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String of serialized data</dd></dl>
 
 </div>
 </div>
@@ -271,6 +403,88 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0cc8b7f0ed2293a8168abca71e6bebca" name="a0cc8b7f0ed2293a8168abca71e6bebca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc8b7f0ed2293a8168abca71e6bebca">&#9670;&#160;</a></span>UseEncryption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.UseEncryption </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>encryption</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the encryption bool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>Bool to set <a class="el" href="#a72d5b25588aaa1e6a3464ade65f5ed71" title="If true will use encryption.">useEncryption</a> to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a4294b75b656767310a607835f29ddc02" name="a4294b75b656767310a607835f29ddc02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4294b75b656767310a607835f29ddc02">&#9670;&#160;</a></span>outputLogs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.outputLogs = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If true will output Debug.Log()'s on Save/Load. </p>
+
+</div>
+</div>
+<a id="a72d5b25588aaa1e6a3464ade65f5ed71" name="a72d5b25588aaa1e6a3464ade65f5ed71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d5b25588aaa1e6a3464ade65f5ed71">&#9670;&#160;</a></span>useEncryption</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.useEncryption</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If true will use encryption. </p>
 
 </div>
 </div>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_b84c5aa1a57d8952b5cf6c1363e2a821" kind="dir">
+    <compoundname>Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data</compoundname>
+    <innerfile refid="_i_saveable_data_8cs">ISaveableData.cs</innerfile>
+    <innerfile refid="_save_data_8cs">SaveData.cs</innerfile>
+    <innerfile refid="_save_slot_8cs">SaveSlot.cs</innerfile>
+    <innerfile refid="_save_slot_save_data_8cs">SaveSlotSaveData.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{}\label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+
+
+Implimenting this class means you must have "{}\mbox{[}\+System.\+Serializable\mbox{]}"{} above your class name.  
+
+
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aaca32d9a8aefffd77c6b9ee88e640bf9}{Set\+Data}} (string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aa1c3d0709733b6297bd4bd51d8af5ede}{save\+File\+Name}})
+\begin{DoxyCompactList}\small\item\em Set data variables for the save data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a376fe79174b33a74aad58545eb674de5}{Set\+Save\+Slot}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac3a3d36783fe3fc107de7b0cc737784e}{save\+Slot}})
+\item 
+virtual void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac84c70a10959c096b95ce0a43a1a4bac}{Save}} ()
+\begin{DoxyCompactList}\small\item\em Any actions to preform when saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a2d70d20aa810600511f621e63b04cfcc}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Any actions to preform when loading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aa1c3d0709733b6297bd4bd51d8af5ede}{save\+File\+Name}}
+\begin{DoxyCompactList}\small\item\em Save file name to write files to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac3a3d36783fe3fc107de7b0cc737784e}{save\+Slot}}
+\begin{DoxyCompactList}\small\item\em The save slot this data belongs to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implimenting this class means you must have "{}\mbox{[}\+System.\+Serializable\mbox{]}"{} above your class name. 
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a2d70d20aa810600511f621e63b04cfcc}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!Load@{Load}}
+\index{Load@{Load}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a2d70d20aa810600511f621e63b04cfcc} 
+virtual void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Any actions to preform when loading. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_aa19bfe5ce97a4c75ec4d5a53922b5601}{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Slot\+Save\+Data}}.
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac84c70a10959c096b95ce0a43a1a4bac}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!Save@{Save}}
+\index{Save@{Save}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac84c70a10959c096b95ce0a43a1a4bac} 
+virtual void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+Save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Any actions to preform when saving. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_ad37261a2537cf3b257dea649a8627751}{Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Slot\+Save\+Data}}.
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aaca32d9a8aefffd77c6b9ee88e640bf9}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!SetData@{SetData}}
+\index{SetData@{SetData}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aaca32d9a8aefffd77c6b9ee88e640bf9} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+Set\+Data (\begin{DoxyParamCaption}\item[{string}]{save\+File\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Set data variables for the save data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+File\+Name} & File name to set to\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a376fe79174b33a74aad58545eb674de5}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!SetSaveSlot@{SetSaveSlot}}
+\index{SetSaveSlot@{SetSaveSlot}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{SetSaveSlot()}{SetSaveSlot()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_a376fe79174b33a74aad58545eb674de5} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+Set\+Save\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aa1c3d0709733b6297bd4bd51d8af5ede}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!saveFileName@{saveFileName}}
+\index{saveFileName@{saveFileName}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{saveFileName}{saveFileName}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_aa1c3d0709733b6297bd4bd51d8af5ede} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+save\+File\+Name}
+
+
+
+Save file name to write files to. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac3a3d36783fe3fc107de7b0cc737784e}\index{UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}!saveSlot@{saveSlot}}
+\index{saveSlot@{saveSlot}!UnityUtils.ScriptUtils.SaveSystem.SaveData@{UnityUtils.ScriptUtils.SaveSystem.SaveData}}
+\doxysubsubsection{\texorpdfstring{saveSlot}{saveSlot}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_ac3a3d36783fe3fc107de7b0cc737784e} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+Data.\+save\+Slot}
+
+
+
+The save slot this data belongs to. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Save System/\+Save Data/\mbox{\hyperlink{_save_data_8cs}{Save\+Data.\+cs}}\end{DoxyCompactItemize}

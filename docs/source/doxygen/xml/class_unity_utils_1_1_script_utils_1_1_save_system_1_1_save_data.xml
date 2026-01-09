@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveData</compoundname>
+    <derivedcompoundref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" prot="public" virt="non-virtual">UnityUtils.ScriptUtils.SaveSystem.SaveSlotSaveData</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aa1c3d0709733b6297bd4bd51d8af5ede" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityUtils.ScriptUtils.SaveSystem.SaveData.saveFileName</definition>
+        <argsstring></argsstring>
+        <name>saveFileName</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.saveFileName</qualifiedname>
+        <briefdescription>
+<para>Save file name to write files to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="15" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac3a3d36783fe3fc107de7b0cc737784e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+        <definition>SaveSlot UnityUtils.ScriptUtils.SaveSystem.SaveData.saveSlot</definition>
+        <argsstring></argsstring>
+        <name>saveSlot</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.saveSlot</qualifiedname>
+        <briefdescription>
+<para>The save slot this data belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="19" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aaca32d9a8aefffd77c6b9ee88e640bf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.SaveSystem.SaveData.SetData</definition>
+        <argsstring>(string saveFileName)</argsstring>
+        <name>SetData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.SetData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>saveFileName</declname>
+        </param>
+        <briefdescription>
+<para>Set data variables for the save data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name to set to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="25" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.SaveSystem.SaveData.SetSaveSlot</definition>
+        <argsstring>(SaveSlot saveSlot)</argsstring>
+        <name>SetSaveSlot</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.SetSaveSlot</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+          <declname>saveSlot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="30" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void UnityUtils.ScriptUtils.SaveSystem.SaveData.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.Save</qualifiedname>
+        <reimplementedby refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1ad37261a2537cf3b257dea649a8627751">Save</reimplementedby>
+        <briefdescription>
+<para>Any actions to preform when saving. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="38" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void UnityUtils.ScriptUtils.SaveSystem.SaveData.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveData.Load</qualifiedname>
+        <reimplementedby refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1aa19bfe5ce97a4c75ec4d5a53922b5601">Load</reimplementedby>
+        <briefdescription>
+<para>Any actions to preform when loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="46" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Implimenting this class means you must have &quot;[System.Serializable]&quot; above your class name. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.SaveSystem.SaveData</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data"/>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.SaveSystem.SaveSlotSaveData</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.SaveSystem.SaveData</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>saveSlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.SaveSystem.SaveSlot</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot"/>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" line="12" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveData.cs" bodystart="13" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" prot="public" virt="virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>Load</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" prot="public" virt="virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>Save</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aa1c3d0709733b6297bd4bd51d8af5ede" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>saveFileName</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac3a3d36783fe3fc107de7b0cc737784e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>saveSlot</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aaca32d9a8aefffd77c6b9ee88e640bf9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>SetData</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveData</scope><name>SetSaveSlot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -14,8 +14,11 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   SaveDataRegistry
    JsonSaveSystem
    SaveSystemManager
+   SaveData
+   SaveSlot
+   ISaveableData
+   SaveSlotSaveData
+  
    SaveSystemExample
-   SaveData/SaveDataDocs

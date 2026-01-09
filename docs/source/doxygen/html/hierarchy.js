@@ -31,7 +31,6 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.UI.UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", null ]
     ] ],
     [ "UnityUtils.ScriptUtils.SaveSystem.ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", null ],
     [ "MonoBehaviour", null, [
       [ "TestingScript1", "class_testing_script1.html", null ],
@@ -56,8 +55,10 @@ var hierarchy =
     [ "UnityUtils.ScriptUtils.Objects.ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveDataID", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveDataRegistry", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry.html", null ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.SaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html", [
+      [ "UnityUtils.ScriptUtils.SaveSystem.SaveSlotSaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data.html", null ]
+    ] ],
+    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSlot", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", null ],
     [ "UnityUtils.ScriptUtils.ScriptableObjects.ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", null ],

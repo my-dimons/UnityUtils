@@ -14,12 +14,32 @@
           <declname>data</declname>
         </param>
         <briefdescription>
+<para>Called on <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1abd0a87d01781d044748bdf7823bb0719" kindref="member">SaveSystemManager.SaveGame(SaveSlot)</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of data passed through</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data passed through</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="7" column="9"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="13" column="9"/>
       </memberdef>
       <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -32,19 +52,39 @@
           <declname>data</declname>
         </param>
         <briefdescription>
+<para>Called on <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1471f8bb409c5171dd856c1527253d43" kindref="member">SaveSystemManager.LoadGame(SaveSlot)</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of data passed through</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data passed through</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="9" column="9"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="20" column="9"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="5" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" bodystart="6" bodyend="10"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" bodystart="7" bodyend="21"/>
     <listofallmembers>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>LoadData&lt; T &gt;</name></member>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>SaveData&lt; T &gt;</name></member>

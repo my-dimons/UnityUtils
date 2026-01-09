@@ -3,17 +3,55 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae8c76c78fd1dd53d0894fdb58dc8d31a}{Save\+Game}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ data\+IDs)
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_abd0a87d01781d044748bdf7823bb0719}{Save\+Game}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} save\+Slot)
 \begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on every script inheriting \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a96d5514a09fda359e9ab0fcf1cd02120}{Load\+Game}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$ data\+IDs)
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1471f8bb409c5171dd856c1527253d43}{Load\+Game}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} save\+Slot)
 \begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script inheriting \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}. \end{DoxyCompactList}\item 
 static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects}} ()
-\begin{DoxyCompactList}\small\item\em Gets all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} to call functions on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} to call functions on. \end{DoxyCompactList}\item 
+static Dictionary$<$ string, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a9d94ff58264b0f404cc1c2f54c14c1aa}{Load\+All\+Save\+Slots}} ()
+\begin{DoxyCompactList}\small\item\em Loads all save slots from the save directory, if none exists one is created. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a8022a7df159fcaae1f5515938b8c7e1b}{Create\+Save\+Data$<$ T $>$}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Registers a new Save\+Data\+ID to the registry to be referenced later. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1dc3203e46e8017422f4d5a16265b625}{Get\+Most\+Recent\+Save}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ save\+Slots)
+\begin{DoxyCompactList}\small\item\em Grabs the most recent save in a list of \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a05a97f1c28174cc3e9f32450c3651d1c}{output\+Logs}} = true
+\begin{DoxyCompactList}\small\item\em If true will output Debug.\+Log()\textquotesingle{}s on Save/\+Load. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a8022a7df159fcaae1f5515938b8c7e1b}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!CreateSaveData$<$ T $>$@{CreateSaveData$<$ T $>$}}
+\index{CreateSaveData$<$ T $>$@{CreateSaveData$<$ T $>$}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
+\doxysubsubsection{\texorpdfstring{CreateSaveData$<$ T $>$()}{CreateSaveData< T >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a8022a7df159fcaae1f5515938b8c7e1b} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Create\+Save\+Data$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new Save\+Data\+ID to the registry to be referenced later. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The file name of the save object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Save\+Data\+ID with its filled in parameters
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!FindAllDataPersistanceObjects@{FindAllDataPersistanceObjects}}
 \index{FindAllDataPersistanceObjects@{FindAllDataPersistanceObjects}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{FindAllDataPersistanceObjects()}{FindAllDataPersistanceObjects()}}
@@ -27,11 +65,42 @@ Gets all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_
 \begin{DoxyReturn}{Returns}
 List of all objects with \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} attached
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a96d5514a09fda359e9ab0fcf1cd02120}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadGame@{LoadGame}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1dc3203e46e8017422f4d5a16265b625}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!GetMostRecentSave@{GetMostRecentSave}}
+\index{GetMostRecentSave@{GetMostRecentSave}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
+\doxysubsubsection{\texorpdfstring{GetMostRecentSave()}{GetMostRecentSave()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1dc3203e46e8017422f4d5a16265b625} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Get\+Most\+Recent\+Save (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$}]{save\+Slots}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Grabs the most recent save in a list of \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Slots} & Save slots to sort through\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Most recently saved slot
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a9d94ff58264b0f404cc1c2f54c14c1aa}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveSlots@{LoadAllSaveSlots}}
+\index{LoadAllSaveSlots@{LoadAllSaveSlots}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
+\doxysubsubsection{\texorpdfstring{LoadAllSaveSlots()}{LoadAllSaveSlots()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a9d94ff58264b0f404cc1c2f54c14c1aa} 
+Dictionary$<$ string, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+All\+Save\+Slots (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all save slots from the save directory, if none exists one is created. 
+
+\begin{DoxyReturn}{Returns}
+Dictionary of the save slot name and the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1471f8bb409c5171dd856c1527253d43}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadGame@{LoadGame}}
 \index{LoadGame@{LoadGame}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{LoadGame()}{LoadGame()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a96d5514a09fda359e9ab0fcf1cd02120} 
-void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+Game (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$}]{data\+IDs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1471f8bb409c5171dd856c1527253d43} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -39,14 +108,14 @@ Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script inheriting \dox
 
 
 \begin{DoxyParams}{Parameters}
-{\em data\+IDs} & ID\textquotesingle{}s to laod\\
+{\em save\+Datas} & ID\textquotesingle{}s to laod\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae8c76c78fd1dd53d0894fdb58dc8d31a}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!SaveGame@{SaveGame}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_abd0a87d01781d044748bdf7823bb0719}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!SaveGame@{SaveGame}}
 \index{SaveGame@{SaveGame}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae8c76c78fd1dd53d0894fdb58dc8d31a} 
-void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Save\+Game (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d}{Save\+Data\+ID}} $>$}]{data\+IDs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_abd0a87d01781d044748bdf7823bb0719} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Save\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -54,9 +123,24 @@ Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on every script inheriting \dox
 
 
 \begin{DoxyParams}{Parameters}
-{\em data\+IDs} & Dictionary with the data\+IDs ID and name to save with\\
+{\em save\+Datas} & Dictionary with the data\+IDs ID and name to save with\\
 \hline
 \end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a05a97f1c28174cc3e9f32450c3651d1c}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!outputLogs@{outputLogs}}
+\index{outputLogs@{outputLogs}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
+\doxysubsubsection{\texorpdfstring{outputLogs}{outputLogs}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a05a97f1c28174cc3e9f32450c3651d1c} 
+bool Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+output\+Logs = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If true will output Debug.\+Log()\textquotesingle{}s on Save/\+Load. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

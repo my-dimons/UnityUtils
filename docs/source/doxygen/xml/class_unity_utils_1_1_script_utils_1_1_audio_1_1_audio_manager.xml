@@ -138,10 +138,10 @@
           <declname>volumeType</declname>
         </param>
         <briefdescription>
-<para>Gets the current volume level for the specified audio type. </para>
+<para>Gets the current volume level for the specified audio classType. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The volume level for the specified audio type.</para>
+<para><simplesect kind="return"><para>The volume level for the specified audio classType.</para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -164,7 +164,7 @@
           <declname>volume</declname>
         </param>
         <briefdescription>
-<para>Adjusts the volume for the specified audio type by adding the given value to its current volume. </para>
+<para>Adjusts the volume for the specified audio classType by adding the given value to its current volume. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -187,7 +187,7 @@
           <declname>volume</declname>
         </param>
         <briefdescription>
-<para>Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a951691ccb7f9df99c9c0b0f4bb0c8cca" kindref="member">MIN_AUDIO_VOLUME</ref>, <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">MAX_AUDIO_VOLUME</ref>). </para>
+<para>Sets the volume level for the specified audio classType to the new volume. Auto clamps to the min/max audio volume (<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a951691ccb7f9df99c9c0b0f4bb0c8cca" kindref="member">MIN_AUDIO_VOLUME</ref>, <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">MAX_AUDIO_VOLUME</ref>). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -210,10 +210,10 @@
           <declname>volumeType</declname>
         </param>
         <briefdescription>
-<para>Returns the final volume after applying both the type volume and the global volume (unless volumeType is <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kindref="member">VolumeType.Global</ref>). </para>
+<para>Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kindref="member">VolumeType.Global</ref>). </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Proper volume level based on audio type. </para>
+<para><simplesect kind="return"><para>Proper volume level based on audio classType. </para>
 </simplesect>
 </para>
         </detaileddescription>

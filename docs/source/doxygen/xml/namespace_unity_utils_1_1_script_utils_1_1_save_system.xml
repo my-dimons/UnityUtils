@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_save_system" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem</compoundname>
-    <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveableData</innerclass>
-    <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveData</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" prot="public">UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</innerclass>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveDataID</innerclass>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</innerclass>
+    <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveableData</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveData</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSlot</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSlotSaveData</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/ISaveableData.cs" line="3" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="12" column="1"/>
   </compounddef>
 </doxygen>

@@ -24,11 +24,11 @@ var annotated_dup =
           [ "ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" ]
         ] ],
         [ "SaveSystem", "namespace_unity_utils_1_1_script_utils_1_1_save_system.html", [
-          [ "ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" ],
-          [ "ISaveData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html", null ],
           [ "JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" ],
-          [ "SaveDataID", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" ],
-          [ "SaveDataRegistry", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" ],
+          [ "ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" ],
+          [ "SaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" ],
+          [ "SaveSlot", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" ],
+          [ "SaveSlotSaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" ],
           [ "SaveSystemManager", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" ],
           [ "SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" ]
         ] ],

@@ -2,16 +2,34 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a05a97f1c28174cc3e9f32450c3651d1c" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.outputLogs</definition>
+        <argsstring></argsstring>
+        <name>outputLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.outputLogs</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true will output Debug.Log()&apos;s on Save/Load. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="15" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1abd0a87d01781d044748bdf7823bb0719" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.SaveGame</definition>
-        <argsstring>(List&lt; SaveDataID &gt; dataIDs)</argsstring>
+        <argsstring>(SaveSlot saveSlot)</argsstring>
         <name>SaveGame</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.SaveGame</qualifiedname>
         <param>
-          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
-          <declname>dataIDs</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+          <declname>saveSlot</declname>
         </param>
         <briefdescription>
 <para>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref>. </para>
@@ -19,7 +37,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>dataIDs</parametername>
+<parametername>saveDatas</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Dictionary with the dataIDs ID and name to save with</para>
@@ -30,17 +48,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="15" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="15" bodyend="32"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="21" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="21" bodyend="46"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1471f8bb409c5171dd856c1527253d43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadGame</definition>
-        <argsstring>(List&lt; SaveDataID &gt; dataIDs)</argsstring>
+        <argsstring>(SaveSlot saveSlot)</argsstring>
         <name>LoadGame</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadGame</qualifiedname>
         <param>
-          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
-          <declname>dataIDs</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+          <declname>saveSlot</declname>
         </param>
         <briefdescription>
 <para>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref>. </para>
@@ -48,7 +66,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>dataIDs</parametername>
+<parametername>saveDatas</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>ID&apos;s to laod</para>
@@ -59,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="38" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="38" bodyend="54"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="52" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="52" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> &gt;</type>
@@ -77,18 +95,110 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="60" column="28"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="81" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a9d94ff58264b0f404cc1c2f54c14c1aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref> &gt;</type>
+        <definition>static Dictionary&lt; string, SaveSlot &gt; UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadAllSaveSlots</definition>
+        <argsstring>()</argsstring>
+        <name>LoadAllSaveSlots</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadAllSaveSlots</qualifiedname>
+        <briefdescription>
+<para>Loads all save slots from the save directory, if none exists one is created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Dictionary of the save slot name and the <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="90" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="90" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a8022a7df159fcaae1f5515938b8c7e1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+        <definition>static SaveData UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.CreateSaveData&lt; T &gt;</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>CreateSaveData&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.CreateSaveData&lt; T &gt;</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new SaveDataID to the registry to be referenced later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file name of the save object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The SaveDataID with its filled in parameters</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="140" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1dc3203e46e8017422f4d5a16265b625" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+        <definition>static SaveSlot UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.GetMostRecentSave</definition>
+        <argsstring>(List&lt; SaveSlot &gt; saveSlots)</argsstring>
+        <name>GetMostRecentSave</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.GetMostRecentSave</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref> &gt;</type>
+          <declname>saveSlots</declname>
+        </param>
+        <briefdescription>
+<para>Grabs the most recent save in a list of <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveSlots</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Save slots to sort through</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Most recently saved slot</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="153" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="153" bodyend="158"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="9" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="10" bodyend="64"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="13" bodyend="159"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a8022a7df159fcaae1f5515938b8c7e1b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>CreateSaveData&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>FindAllDataPersistanceObjects</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>LoadGame</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>SaveGame</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1dc3203e46e8017422f4d5a16265b625" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>GetMostRecentSave</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a9d94ff58264b0f404cc1c2f54c14c1aa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>LoadAllSaveSlots</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1471f8bb409c5171dd856c1527253d43" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>LoadGame</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a05a97f1c28174cc3e9f32450c3651d1c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>outputLogs</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1abd0a87d01781d044748bdf7823bb0719" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>SaveGame</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

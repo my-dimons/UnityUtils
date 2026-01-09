@@ -10,12 +10,18 @@ public class SaveTesting : MonoBehaviour, ISaveableData
     public TextMeshProUGUI intText;
     public TextMeshProUGUI stringText;
 
+    public GameObject objectTest;
+
     public void SaveData<T>(T data) where T : SaveData
     {
         if (data is GameData save)
         {
             save.intValue = val1;
             save.stringValue = val2;
+
+            save.positionValue[0] = objectTest.transform.position.x;
+            save.positionValue[1] = objectTest.transform.position.y;
+            save.positionValue[2] = objectTest.transform.position.z;
         }
     }
 
@@ -25,6 +31,8 @@ public class SaveTesting : MonoBehaviour, ISaveableData
         {
             val1 = save.intValue;
             val2 = save.stringValue;
+
+            objectTest.transform.position = new Vector3(save.positionValue[0], save.positionValue[1], save.positionValue[2]);
         }
     }
 

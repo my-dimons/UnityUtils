@@ -56,15 +56,20 @@
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" kind="function"><name>SaveData&lt; T &gt;</name></member>
     <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" kind="function"><name>LoadData&lt; T &gt;</name></member>
   </compound>
-  <compound refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kind="interface"><name>UnityUtils::ScriptUtils::SaveSystem::ISaveData</name>
-  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a4294b75b656767310a607835f29ddc02" kind="variable"><name>outputLogs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" kind="variable"><name>useEncryption</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0be010612d5456d3218bd89cead75f3e" kind="variable"><name>encryptionKey</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6fc3b7821cac2aee8f6aa076a8d7316c" kind="function"><name>Save</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ad0f2c14782d3ad4b0328af5a4c65692a" kind="function"><name>Load</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a00f2cde002f6de93df22b4d7eaa861f9" kind="function"><name>LoadSingleSaveFile</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1abe6fd5fd70e54532a45986ff967e244a" kind="function"><name>Save</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1adeb02be1194c87aae409ad59d945068c" kind="function"><name>Load</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a8c94fba4c9ef83044b82d9519a64345b" kind="function"><name>LoadSingleSaveFile</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" kind="function"><name>SetEncryptionKey</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0cc8b7f0ed2293a8168abca71e6bebca" kind="function"><name>UseEncryption</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a95d2a058b8834f394cb587a2c5076b92" kind="function"><name>EncryptDecrypt</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a3f94af3fd6f834d5d44c40863edea27f" kind="function"><name>GetJsonStringData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a9847f5f7caf9b3f4942f172bf56ca78d" kind="function"><name>GetSaveData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" kind="function"><name>SaveSaveData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" kind="function"><name>CreateRootSaveDataIfNotExisting</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" kind="variable"><name>defaultAnimationCurve</name></member>
@@ -134,36 +139,50 @@
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleSpawner</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" kind="function"><name>SpawnBurstParticle</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveDataID</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a73292316ccdc16d6445cb331a2278ccf" kind="variable"><name>id</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a43276cf9fbe31499c0f1e84f212c0fbe" kind="variable"><name>fileName</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a8758baa73b532c2db3461caab3cdcd53" kind="variable"><name>dataInstance</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1ad62d72e020c697fbcdf578b193466064" kind="variable"><name>classType</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a05c3e72d075207b9650b9b5aa3dd3a51" kind="variable"><name>useEncryption</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a1c1fe00037331ca92e0adaa06f57397c" kind="function"><name>SaveDataID</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveData</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aa1c3d0709733b6297bd4bd51d8af5ede" kind="variable"><name>saveFileName</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac3a3d36783fe3fc107de7b0cc737784e" kind="variable"><name>saveSlot</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1aaca32d9a8aefffd77c6b9ee88e640bf9" kind="function"><name>SetData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" kind="function"><name>SetSaveSlot</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" kind="function"><name>Save</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" kind="function"><name>Load</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveDataRegistry</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a40515356390d6db40ecc1ff898fc7b65" kind="variable"><name>saveDataIDs</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a71d35619ad612d3d471f98b3ce271af7" kind="function"><name>Register&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1a93943fae07393731c786d88ea98130a6" kind="function"><name>Register&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1aedd66b5b32939d68dc5ad82f80ce5364" kind="function"><name>GetID</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1accafa1e454866fc6a8ce9a5b7c67b95c" kind="function"><name>GetSaveDataIDFromID</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_registry_1ad9ad8f24a143592534bcf431487dfb3e" kind="function"><name>GetIDFromISaveData</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSlot</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a27ae305d1907d2b9dfdfa2c8dcc1b70c" kind="variable"><name>saveSlotName</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a149d51b76b6dc0c3427097a1c95ede42" kind="variable"><name>lastTimeSaved</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a9df2a85acd59e1e50cf6cbbb6424cef0" kind="variable"><name>saveDatas</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a4eef9e892b490381dd64777cd36d1879" kind="function"><name>SaveSlot</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" kind="function"><name>AddSaveData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a06ced52c56cceeb7646bce6a59ef6711" kind="function"><name>AddSaveData</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a7456a2e533b25aa502a73dfcc8cd7a07" kind="function"><name>SetSaveDataSlot</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a21246f590971b82b21cfe8cc634d614a" kind="function"><name>GetSaveDatas</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1abcd274c09f226cb8bb3831f03fb25f3b" kind="function"><name>SaveAllSaveDatas</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a9bd3dd5594a0795eaaac02758c207ce4" kind="function"><name>LoadAllSaveDatas</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSlotSaveData</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1ac84a12967583e49ae6d3f7206d8695fe" kind="variable"><name>lastTimeSaved</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1ad37261a2537cf3b257dea649a8627751" kind="function"><name>Save</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1aa19bfe5ce97a4c75ec4d5a53922b5601" kind="function"><name>Load</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae8c76c78fd1dd53d0894fdb58dc8d31a" kind="function"><name>SaveGame</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a96d5514a09fda359e9ab0fcf1cd02120" kind="function"><name>LoadGame</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a05a97f1c28174cc3e9f32450c3651d1c" kind="variable"><name>outputLogs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1abd0a87d01781d044748bdf7823bb0719" kind="function"><name>SaveGame</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1471f8bb409c5171dd856c1527253d43" kind="function"><name>LoadGame</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" kind="function"><name>FindAllDataPersistanceObjects</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a9d94ff58264b0f404cc1c2f54c14c1aa" kind="function"><name>LoadAllSaveSlots</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a8022a7df159fcaae1f5515938b8c7e1b" kind="function"><name>CreateSaveData&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1dc3203e46e8017422f4d5a16265b625" kind="function"><name>GetMostRecentSave</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class"><name>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ae82e13ad8d6974d658f8d03d1b6999d6" kind="variable"><name>SPECIAL_SAVE_FILE_EXTENSION</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a1d4c639a005c4e74afa106f605c0b01d" kind="variable"><name>JSON_SAVE_FILE_EXTENSION</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a7a5121a35481691448fb488f9b8a067e" kind="variable"><name>SAVE_FILE_NOT_FOUND_ERROR</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a6b85adcd747dfe307696710bbdbea9a0" kind="variable"><name>SAVE_FILE_LOADED_MESSAGE</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab12ab4c43c64944e4c5eb405cadb2a75" kind="variable"><name>SAVE_FILE_CREATED_MESSAGE</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1adb193bafe5677ca9e44b52aafca43738" kind="variable"><name>SAVE_FILE_ENCRYPTED_MESSAGE</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1aa49ee94cfe14136eaddb96c8f8aa9334" kind="function"><name>GetSaveFilePath</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a4898abb41588ddc9f1154114ee4331a1" kind="variable"><name>SAVE_FILES_NAME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08be212e1da58776f460392ae8ecea5f" kind="variable"><name>DEFAULT_SAVE_SLOT_ID</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1add17f685c3fa0834335a2ee06c7a6893" kind="variable"><name>SAVE_SLOT_SAVE_FILE_NAME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a8d55c8b79b9f1557e2a6cfd55186df43" kind="function"><name>GetSaveSlotRootPath</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" kind="function"><name>GetSaveFilePath</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a0e3c85e438e3e3a8b1c569d3f20c14e8" kind="function"><name>GetSaveSlotFilePath</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a4c6e86d5c528189b5e23d153d3eadf35" kind="function"><name>GetSaveSlotPath</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" kind="function"><name>LogSaveFileNotFound</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" kind="function"><name>LogSaveFileCreated</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" kind="function"><name>LogSaveFileLoaded</name></member>
@@ -346,6 +365,10 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kind="function"><name>OnPointerClick</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" kind="function"><name>ToggleObjects</name></member>
   </compound>
+  <compound refid="namespace_newtonsoft_1_1_json" kind="namespace"><name>Newtonsoft::Json</name>
+  </compound>
+  <compound refid="namespace_newtonsoft_1_1_json_1_1_linq" kind="namespace"><name>Newtonsoft::Json::Linq</name>
+  </compound>
   <compound refid="namespace_n_unit_1_1_framework" kind="namespace"><name>NUnit::Framework</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
@@ -360,6 +383,8 @@
   </compound>
   <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
   <compound refid="namespace_system_1_1_transactions" kind="namespace"><name>System::Transactions</name>
   </compound>
   <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
@@ -367,6 +392,8 @@
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_rendering" kind="namespace"><name>UnityEngine::Rendering</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
   </compound>
@@ -420,15 +447,15 @@
   </compound>
   <compound refid="_particle_spawner_8cs" kind="file"><name>ParticleSpawner.cs</name>
   </compound>
-  <compound refid="_i_saveable_data_8cs" kind="file"><name>ISaveableData.cs</name>
-  </compound>
-  <compound refid="_i_save_data_8cs" kind="file"><name>ISaveData.cs</name>
-  </compound>
   <compound refid="_json_save_system_8cs" kind="file"><name>JsonSaveSystem.cs</name>
   </compound>
-  <compound refid="_save_data_i_d_8cs" kind="file"><name>SaveDataID.cs</name>
+  <compound refid="_i_saveable_data_8cs" kind="file"><name>ISaveableData.cs</name>
   </compound>
-  <compound refid="_save_data_registry_8cs" kind="file"><name>SaveDataRegistry.cs</name>
+  <compound refid="_save_data_8cs" kind="file"><name>SaveData.cs</name>
+  </compound>
+  <compound refid="_save_slot_8cs" kind="file"><name>SaveSlot.cs</name>
+  </compound>
+  <compound refid="_save_slot_save_data_8cs" kind="file"><name>SaveSlotSaveData.cs</name>
   </compound>
   <compound refid="_save_system_manager_8cs" kind="file"><name>SaveSystemManager.cs</name>
   </compound>
@@ -458,8 +485,6 @@
   </compound>
   <compound refid="dir_05061702fb7c106d220e1128a079bddb" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Camera</name>
   </compound>
-  <compound refid="dir_01763d216a89254562e1888e62894c4c" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces</name>
-  </compound>
   <compound refid="dir_facf1fad18e8f724169afb99e1e301eb" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Objects</name>
   </compound>
   <compound refid="dir_395bafe2adc24fcfed5d14b8ce406a4f" kind="dir"><name>Packages</name>
@@ -467,6 +492,8 @@
   <compound refid="dir_bfcc3fef8087e40b6de73f7c3da76010" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Particles</name>
   </compound>
   <compound refid="dir_0ba32af4da6183558d3f8099c65e298d" kind="dir"><name>Packages/UnityUtils/Runtime</name>
+  </compound>
+  <compound refid="dir_b84c5aa1a57d8952b5cf6c1363e2a821" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data</name>
   </compound>
   <compound refid="dir_6530f09e37d2f8cd332a364b57f93297" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Save System</name>
   </compound>

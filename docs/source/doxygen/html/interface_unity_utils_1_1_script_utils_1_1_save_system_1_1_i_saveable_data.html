@@ -95,7 +95,9 @@ $(function(){initNavTree('interface_unity_utils_1_1_script_utils_1_1_save_system
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a542b6c1d9a8f9fcb3b1fd19171f131d6" id="r_a542b6c1d9a8f9fcb3b1fd19171f131d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a542b6c1d9a8f9fcb3b1fd19171f131d6">SaveData&lt; T &gt;</a> (T data)</td></tr>
+<tr class="memdesc:a542b6c1d9a8f9fcb3b1fd19171f131d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#abd0a87d01781d044748bdf7823bb0719" title="Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting ISaveableData.">SaveSystemManager.SaveGame(SaveSlot)</a>.  <br /></td></tr>
 <tr class="memitem:abfde40bcc5250e53a4a52fa16024ef18" id="r_abfde40bcc5250e53a4a52fa16024ef18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfde40bcc5250e53a4a52fa16024ef18">LoadData&lt; T &gt;</a> (T data)</td></tr>
+<tr class="memdesc:abfde40bcc5250e53a4a52fa16024ef18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a1471f8bb409c5171dd856c1527253d43" title="Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting ISaveableData.">SaveSystemManager.LoadGame(SaveSlot)</a>.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="abfde40bcc5250e53a4a52fa16024ef18" name="abfde40bcc5250e53a4a52fa16024ef18"></a>
@@ -112,10 +114,24 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Called on <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a1471f8bb409c5171dd856c1527253d43" title="Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting ISaveableData.">SaveSystemManager.LoadGame(SaveSlot)</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of data passed through</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data passed through</td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></em></td><td>&#160;</td></tr>
 </table>
 </dd>
 </dl>
@@ -137,10 +153,24 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Called on <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#abd0a87d01781d044748bdf7823bb0719" title="Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting ISaveableData.">SaveSystemManager.SaveGame(SaveSlot)</a>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of data passed through</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data passed through</td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data.html">ISaveData</a></em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></em></td><td>&#160;</td></tr>
 </table>
 </dd>
 </dl>
@@ -149,7 +179,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>Packages/UnityUtils/Runtime/Script Utils/Save System/Interfaces/<a class="el" href="_i_saveable_data_8cs.html">ISaveableData.cs</a></li>
+<li>Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/<a class="el" href="_i_saveable_data_8cs.html">ISaveableData.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

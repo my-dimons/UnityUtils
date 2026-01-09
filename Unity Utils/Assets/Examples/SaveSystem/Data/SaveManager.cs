@@ -31,12 +31,21 @@ public class SaveManager : MonoBehaviour
     public void Load()
     {
         SaveSystemManager.LoadGame(saveSlots[activeSaveSlot]);
+
+        List<SaveSlot> saves = new();
+        foreach (var slot in saveSlots.Values)
+            saves.Add(slot);
+
+        Debug.Log("Most recently saved file: " + SaveSystemManager.GetMostRecentSave(saves).saveSlotName);
     }
 
     public void InitializeData()
     {
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
-        JsonSaveSystem.SetUseEncryption(false);
+        JsonSaveSystem.UseEncryption(false);
+
+        JsonSaveSystem.outputLogs = true;
+        SaveSystemManager.outputLogs = true;
     }
 
     public void CreateSaveSlot(string saveSlot)
@@ -48,7 +57,7 @@ public class SaveManager : MonoBehaviour
             return;
         }
 
-        SaveSlot saveSlotObj = new SaveSlot(saveSlot);
+        SaveSlot saveSlotObj = new(saveSlot);
 
         // add save data to save slot
         string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json");
