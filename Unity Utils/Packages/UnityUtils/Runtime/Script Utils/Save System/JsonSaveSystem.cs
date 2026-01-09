@@ -82,20 +82,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 // Get provided json file
                 try
                 {
-                    string json = File.ReadAllText(fullPath);
-
-                    // Data decryption
-                    if (useEncryption)
-                    {
-                        json = EncryptDecrypt(json);
-                    }   
-
-                    // Deserialize the data from json back into the object
-                    loadedData = JsonConvert.DeserializeObject<SaveData>(json,
-                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+                    loadedData = GetSaveData(GetJsonStringData(fullPath));
 
                     loadedData.SetSaveSlot(saveSlot);
-
                     loadedData.Load();
                 }
                 catch (IOException e)
@@ -140,6 +129,17 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
 
             return modifiedData;
+        }
+
+        public static string GetJsonStringData(string path)
+        {
+            return useEncryption ? EncryptDecrypt(File.ReadAllText(path)) : File.ReadAllText(path);
+        }
+
+        public static SaveData GetSaveData(string json)
+        {
+            return JsonConvert.DeserializeObject<SaveData>(json,
+                new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
         }
     }
 }

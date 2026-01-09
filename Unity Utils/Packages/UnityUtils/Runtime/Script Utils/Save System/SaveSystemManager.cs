@@ -121,19 +121,13 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                         continue;
                     }
 
-                    // Get provided json file and decrypt if needed
-                    string json = JsonSaveSystem.useEncryption ? JsonSaveSystem.EncryptDecrypt(File.ReadAllText(fullPath)) : File.ReadAllText(fullPath);
-
-                    // Deserialize the data from json back into the object
-                    SaveData saveData = JsonConvert.DeserializeObject<SaveData>(json,
-                        new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-
-                    saveDatas.Add(saveData);
+                    saveDatas.Add(JsonSaveSystem.GetSaveData(JsonSaveSystem.GetJsonStringData(fullPath)));
                 }
 
                 saveSlot = new SaveSlot(saveSlotName);
-                saveSlot.SetSaveDataSlotList(saveDatas);
-                saveSlot.SaveDataList(saveDatas);
+                saveSlot.SetSaveDataSlot(saveDatas);
+                saveSlot.AddSaveData(saveDatas);
+                saveSlot.LoadAllSaveDatas();
 
                 saveSlotDictionary.Add(saveSlot.saveSlotName, saveSlot);
             }
@@ -154,6 +148,13 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             saveData.SetData(fileName);
 
             return saveData;
+        }
+
+        public static SaveSlot GetMostRecentSave(List<SaveSlot> saveSlots)
+        {
+            return saveSlots
+                .OrderByDescending(d => d.lastTimeSaved)
+                .First();
         }
     }
 }

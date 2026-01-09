@@ -21,8 +21,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
             // Create save slot save data
             string path = SaveSystemUtils.GetSaveSlotFilePath(saveSlotName, SaveSystemUtils.SAVE_SLOT_SAVE_FILE_NAME);
-            SaveData saveSlotSaveData = SaveSystemManager.CreateSaveData<SaveSlotSaveData>(path);
-            AddSaveData(saveSlotSaveData);
+            AddSaveData(SaveSystemManager.CreateSaveData<SaveSlotSaveData>(path));
         }
 
         /// <summary>
@@ -35,12 +34,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             dataInstance.SetSaveSlot(this);
         }
 
-        public List<SaveData> GetSaveDatas()
-        {
-            return saveDatas;
-        }
 
-        public void SaveDataList(List<SaveData> saveDataList)
+        public void AddSaveData(List<SaveData> saveDataList)
         {
             foreach (SaveData saveData in saveDataList)
             {
@@ -48,12 +43,29 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
         }
 
-        public void SetSaveDataSlotList(List<SaveData> saveDataList)
+        public void SetSaveDataSlot(List<SaveData> saveDataList)
         {
             foreach (SaveData saveData in saveDataList)
             {
                 saveData.SetSaveSlot(this);
             }
+        }
+
+        public List<SaveData> GetSaveDatas()
+        {
+            return saveDatas;
+        }
+
+        public void SaveAllSaveDatas()
+        {
+            foreach (SaveData saveData in saveDatas)
+                saveData.Save();
+        }
+
+        public void LoadAllSaveDatas()
+        {
+            foreach (SaveData saveData in saveDatas)
+                saveData.Load();
         }
     }
 }
