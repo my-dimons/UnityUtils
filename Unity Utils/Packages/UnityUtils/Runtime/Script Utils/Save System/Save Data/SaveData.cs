@@ -35,17 +35,11 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Any actions to preform when saving
         /// </summary>
-        public virtual void Save()
-        {
-
-        }
+        public virtual void Save() { }
 
         /// <summary>
         /// Any actions to preform when loading
         /// </summary>
-        public virtual void Load()
-        {
-            
-        }
+        public virtual void Load() { }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Numerics;
 using UnityUtils.ScriptUtils;
 using UnityEngine.Assertions.Comparers;
+using System;
 
 namespace UnityUtils.ScriptUtils.Objects
 {
@@ -67,26 +68,31 @@ namespace UnityUtils.ScriptUtils.Objects
             if (sortModifiers)
                 SortModifiers();
 
-            dynamic finalValue = inputValue;
+            // convert values to double (get changed back later)
+            double finalValue = Convert.ToDouble(inputValue);
 
             foreach (ObjectModifierData<T> modifier in Modifiers)
             {
+                double modifierValue = Convert.ToDouble(modifier.modifierValue);
+
 
                 switch (modifier.modifierType)
                 {
                     case ModifierType.Flat:
-                        finalValue += modifier.modifierValue;
+                        finalValue += modifierValue;
                         break;
                     case ModifierType.Multiply:
-                        finalValue *= modifier.modifierValue;
+                        finalValue *= modifierValue;
                         break;
                     case ModifierType.Divide:
-                        finalValue /= modifier.modifierValue;
+                        if (modifierValue == 0)
+                            throw new DivideByZeroException();
+                        finalValue /= modifierValue;
                         break;
                 }
             }
 
-            return finalValue;
+            return (T)Convert.ChangeType(finalValue, typeof(T));
         }
 
         /// <summary>
