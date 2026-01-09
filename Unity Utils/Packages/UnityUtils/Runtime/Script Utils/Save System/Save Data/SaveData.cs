@@ -40,10 +40,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Any actions to preform when loading
         /// </summary>
-<<<<<<< Updated upstream
-=======
-        /// <remarks>Unless data is written, this will not end up saving the data</remarks>
->>>>>>> Stashed changes
         public virtual void Load() { }
     }
 }
