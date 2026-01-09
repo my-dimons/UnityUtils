@@ -36,8 +36,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
                 // Serialize data into json
-                string dataToStore = JsonConvert.SerializeObject(saveData, Formatting.Indented, 
-                    new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All }); 
+                string dataToStore = SaveSaveData(saveData); 
 
                 if (useEncryption)
                 {
@@ -79,7 +78,6 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             // Get single file
             if (File.Exists(fullPath))
             {
-                // Get provided json file
                 try
                 {
                     loadedData = GetSaveData(GetJsonStringData(fullPath));
@@ -109,7 +107,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// Sets the encryption bool
         /// </summary>
         /// <param name="encryption">Bool to set <see cref="useEncryption"/> to</param>
-        public static void SetUseEncryption(bool encryption)
+        public static void UseEncryption(bool encryption)
         {
             useEncryption = encryption;
         }
@@ -117,6 +115,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Encrypts data via an XOR shift of <paramref name="data"/> using the <see cref="encryptionKey"/>
         /// </summary>
+        /// <remarks>Make sure you <see cref="SetEncryptionKey(string)"/></remarks>
         /// <param name="data">Data to encrypt</param>
         /// <returns>Encrypted data</returns>
         public static string EncryptDecrypt(string data)
@@ -131,15 +130,48 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             return modifiedData;
         }
 
+        /// <summary>
+        /// Grabs the string of data inside a json file via a path
+        /// </summary>
+        /// <param name="path">Full path to the save file</param>
+        /// <returns>A string of all the data in the json</returns>
         public static string GetJsonStringData(string path)
         {
             return useEncryption ? EncryptDecrypt(File.ReadAllText(path)) : File.ReadAllText(path);
         }
 
+        /// <summary>
+        /// Deserializes a json string file
+        /// </summary>
+        /// <remarks>Use <see cref="GetJsonStringData(string)"/> to get a json string from a path</remarks>
+        /// <param name="json">Json to deserialize</param>
+        /// <returns>Deserialized save data</returns>
         public static SaveData GetSaveData(string json)
         {
             return JsonConvert.DeserializeObject<SaveData>(json,
                 new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+        }
+
+        /// <summary>
+        /// Serializes a <see cref="SaveData"/> and return the string of serialized data
+        /// </summary>
+        /// <param name="saveData">Data to serialize</param>
+        /// <returns>String of serialized data</returns>
+        public static string SaveSaveData(SaveData saveData)
+        {
+            return JsonConvert.SerializeObject(saveData, Formatting.Indented,
+                new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+        }
+
+        /// <summary>
+        /// Will create <see cref="SaveSystemUtils.GetSaveSlotRootPath()"/> if it does not exist
+        /// </summary>
+        public static void CreateRootSaveDataIfNotExisting()
+        {
+            if (!Directory.Exists(SaveSystemUtils.GetSaveSlotRootPath()))
+            {
+                Directory.CreateDirectory(SaveSystemUtils.GetSaveSlotRootPath());
+            }
         }
     }
 }

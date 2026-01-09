@@ -92,11 +92,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             Dictionary<string, SaveSlot> saveSlotDictionary = new();
 
             // create save directory if it does not exist
-            if (!Directory.Exists(SaveSystemUtils.GetSaveSlotRootPath()))
-            {
-                Directory.CreateDirectory(SaveSystemUtils.GetSaveSlotRootPath());
-                return saveSlotDictionary;
-            }
+            JsonSaveSystem.CreateRootSaveDataIfNotExisting();
 
             IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(SaveSystemUtils.GetSaveSlotRootPath()).EnumerateDirectories();
 
@@ -150,6 +146,11 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             return saveData;
         }
 
+        /// <summary>
+        /// Grabs the most recent save in a list of <see cref="SaveSlot"/>
+        /// </summary>
+        /// <param name="saveSlots">Save slots to sort through</param>
+        /// <returns>Most recently saved slot</returns>
         public static SaveSlot GetMostRecentSave(List<SaveSlot> saveSlots)
         {
             return saveSlots

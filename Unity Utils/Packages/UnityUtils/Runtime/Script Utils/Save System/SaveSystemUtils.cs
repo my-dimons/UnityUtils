@@ -23,6 +23,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// The default save slot ID, use when not using multiple save slots
         public const string DEFAULT_SAVE_SLOT_ID = "0";
 
+        /// Save slot save file name
         public const string SAVE_SLOT_SAVE_FILE_NAME = "save_slot_data.json";
 
         /// <summary>

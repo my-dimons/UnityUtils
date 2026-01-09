@@ -13,3 +13,4 @@ Scripts
    SaveData
    SaveSlot
    ISaveableData
+   SaveSlotSaveData

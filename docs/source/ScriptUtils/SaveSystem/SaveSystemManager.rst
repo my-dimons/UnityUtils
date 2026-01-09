@@ -4,7 +4,7 @@ SaveSystemManager
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.SaveSystem`
      
-The **SaveSystemManager** script is used in turn with other save systems to assist with save systems. This script is used to call the Save() and Load() functions in all scripts inheriting :doc:`ISaveableData`
+The **SaveSystemManager** script is used in turn with other save systems to assist with save systems. This script is used to call the Save() and Load() functions in all scripts inheriting :doc:`ISaveableData`. Also includes some functions that help with getting SaveSlots and SaveDatas
 
 Example Usage
 -------------
@@ -15,8 +15,8 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	// Create a save slot with the example type "GameData", without encrpytion
-   	SaveSlot saveFiles = new SaveSlot("save", SaveSystemManager.CreateSaveData<GameData>(SaveSystemUtils.GetSaveSlotFilePath(saveSlot, "game_save.json"), useEncryption)
+   	// Create a save slot with the example type "GameData"
+   	SaveSlot saveFiles = new SaveSlot("save", SaveSystemManager.CreateSaveData<GameData>(path))
    	
    	void Start()
    	{
@@ -27,6 +27,8 @@ Example Usage
    	   SaveSystemManager.LoadGame(saveFiles);
    	}
    }
+   
+   
    
 Functions
 ---------

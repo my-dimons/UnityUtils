@@ -42,7 +42,10 @@ public class SaveManager : MonoBehaviour
     public void InitializeData()
     {
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
-        JsonSaveSystem.SetUseEncryption(false);
+        JsonSaveSystem.UseEncryption(false);
+
+        JsonSaveSystem.outputLogs = true;
+        SaveSystemManager.outputLogs = true;
     }
 
     public void CreateSaveSlot(string saveSlot)
