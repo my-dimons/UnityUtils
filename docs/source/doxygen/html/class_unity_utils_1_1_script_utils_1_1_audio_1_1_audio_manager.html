@@ -111,13 +111,13 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a36656b98992ea5778e3ca6f2b1316516" id="r_a36656b98992ea5778e3ca6f2b1316516"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36656b98992ea5778e3ca6f2b1316516">GetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
-<tr class="memdesc:a36656b98992ea5778e3ca6f2b1316516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current volume level for the specified audio type.  <br /></td></tr>
+<tr class="memdesc:a36656b98992ea5778e3ca6f2b1316516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current volume level for the specified audio classType.  <br /></td></tr>
 <tr class="memitem:a938dc9ab15c02a784ecb8921812f88f4" id="r_a938dc9ab15c02a784ecb8921812f88f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a938dc9ab15c02a784ecb8921812f88f4">ModifyVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
-<tr class="memdesc:a938dc9ab15c02a784ecb8921812f88f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the volume for the specified audio type by adding the given value to its current volume.  <br /></td></tr>
+<tr class="memdesc:a938dc9ab15c02a784ecb8921812f88f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the volume for the specified audio classType by adding the given value to its current volume.  <br /></td></tr>
 <tr class="memitem:a096134c5684b1ef0d8f46d9c0cf9a6a6" id="r_a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096134c5684b1ef0d8f46d9c0cf9a6a6">SetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
-<tr class="memdesc:a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (<a class="el" href="#a951691ccb7f9df99c9c0b0f4bb0c8cca" title="Minimum audio volume.">MIN_AUDIO_VOLUME</a>, <a class="el" href="#a3d858e08e9ebddb2664c8c09373f76b1" title="Maximum audio volume.">MAX_AUDIO_VOLUME</a>).  <br /></td></tr>
+<tr class="memdesc:a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume level for the specified audio classType to the new volume. Auto clamps to the min/max audio volume (<a class="el" href="#a951691ccb7f9df99c9c0b0f4bb0c8cca" title="Minimum audio volume.">MIN_AUDIO_VOLUME</a>, <a class="el" href="#a3d858e08e9ebddb2664c8c09373f76b1" title="Maximum audio volume.">MAX_AUDIO_VOLUME</a>).  <br /></td></tr>
 <tr class="memitem:a6842171f65007a880eac46610f5676b5" id="r_a6842171f65007a880eac46610f5676b5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6842171f65007a880eac46610f5676b5">CalculateVolumeBasedOnType</a> (float volume, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
-<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the final volume after applying both the type volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>).  <br /></td></tr>
+<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>).  <br /></td></tr>
 <tr class="memitem:a0b0a5e413f1f381a80658aaae7256203" id="r_a0b0a5e413f1f381a80658aaae7256203"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b0a5e413f1f381a80658aaae7256203">MultiplyByGlobalVolume</a> (float volume)</td></tr>
 <tr class="memdesc:a0b0a5e413f1f381a80658aaae7256203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the specified volume by the current global volume level.  <br /></td></tr>
 <tr class="memitem:a0498ca8ec7582e9aa3607f534a7dc5f0" id="r_a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0498ca8ec7582e9aa3607f534a7dc5f0">CalculateClipLength</a> (float clipLength, float pitch)</td></tr>
@@ -282,8 +282,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the final volume after applying both the type volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>). </p>
-<dl class="section return"><dt>Returns</dt><dd>Proper volume level based on audio type. </dd></dl>
+<p>Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>). </p>
+<dl class="section return"><dt>Returns</dt><dd>Proper volume level based on audio classType. </dd></dl>
 
 </div>
 </div>
@@ -310,8 +310,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the current volume level for the specified audio type. </p>
-<dl class="section return"><dt>Returns</dt><dd>The volume level for the specified audio type.</dd></dl>
+<p>Gets the current volume level for the specified audio classType. </p>
+<dl class="section return"><dt>Returns</dt><dd>The volume level for the specified audio classType.</dd></dl>
 
 </div>
 </div>
@@ -342,7 +342,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adjusts the volume for the specified audio type by adding the given value to its current volume. </p>
+<p>Adjusts the volume for the specified audio classType by adding the given value to its current volume. </p>
 
 </div>
 </div>
@@ -400,7 +400,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (<a class="el" href="#a951691ccb7f9df99c9c0b0f4bb0c8cca" title="Minimum audio volume.">MIN_AUDIO_VOLUME</a>, <a class="el" href="#a3d858e08e9ebddb2664c8c09373f76b1" title="Maximum audio volume.">MAX_AUDIO_VOLUME</a>). </p>
+<p>Sets the volume level for the specified audio classType to the new volume. Auto clamps to the min/max audio volume (<a class="el" href="#a951691ccb7f9df99c9c0b0f4bb0c8cca" title="Minimum audio volume.">MIN_AUDIO_VOLUME</a>, <a class="el" href="#a3d858e08e9ebddb2664c8c09373f76b1" title="Maximum audio volume.">MAX_AUDIO_VOLUME</a>). </p>
 
 </div>
 </div>

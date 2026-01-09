@@ -10,7 +10,7 @@
         <name>modifierType</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData.modifierType</qualifiedname>
         <briefdescription>
-<para>Specifies the type of modifier applied to the object. </para>
+<para>Specifies the classType of modifier applied to the object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -58,7 +58,7 @@
 <parametername>modifierType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The type of modifier</para>
+<para>The classType of modifier</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>

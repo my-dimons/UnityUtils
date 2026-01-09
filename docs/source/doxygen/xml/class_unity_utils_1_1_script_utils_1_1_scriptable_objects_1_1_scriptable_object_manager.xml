@@ -26,7 +26,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Array of specified scriptable object type</para>
+<simplesect kind="return"><para>Array of specified scriptable object classType</para>
 </simplesect>
 </para>
         </detaileddescription>

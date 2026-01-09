@@ -2,6 +2,39 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a4294b75b656767310a607835f29ddc02" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.outputLogs</definition>
+        <argsstring></argsstring>
+        <name>outputLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.outputLogs</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true will output Debug.Log()&apos;s on Save/Load. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="17" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.useEncryption</definition>
+        <argsstring></argsstring>
+        <name>useEncryption</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.useEncryption</qualifiedname>
+        <briefdescription>
+<para>If true will use encryption. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="20" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0be010612d5456d3218bd89cead75f3e" prot="private" static="yes" mutable="no">
         <type>string</type>
@@ -16,30 +49,30 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="13" column="31" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="13" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="22" column="31" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6fc3b7821cac2aee8f6aa076a8d7316c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1abe6fd5fd70e54532a45986ff967e244a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Save</definition>
-        <argsstring>(SaveDataID saveDataID)</argsstring>
+        <argsstring>(SaveData saveData)</argsstring>
         <name>Save</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Save</qualifiedname>
         <param>
-          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
-          <declname>saveDataID</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+          <declname>saveData</declname>
         </param>
         <briefdescription>
-<para>Serializes the inputted <emphasis>saveDataID</emphasis>  into <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a43276cf9fbe31499c0f1e84f212c0fbe" kindref="member">SaveDataID.fileName</ref> in a json format. </para>
+<para>Serializes the inputted <emphasis>saveData</emphasis>  into SaveDataID.fileName in a json format. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>saveDataID</parametername>
+<parametername>saveData</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>saveDataID of the file to be saved</para>
+<para>saveData of the file to be saved</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -47,69 +80,47 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="19" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="19" bodyend="45"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="28" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="28" bodyend="58"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ad0f2c14782d3ad4b0328af5a4c65692a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> &gt;</type>
-        <definition>static List&lt; ISaveData &gt; UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load</definition>
-        <argsstring>(List&lt; SaveDataID &gt; saveDataIDs)</argsstring>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1adeb02be1194c87aae409ad59d945068c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+        <definition>static SaveSlot UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load</definition>
+        <argsstring>(SaveSlot saveSlot)</argsstring>
         <name>Load</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Load</qualifiedname>
         <param>
-          <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> &gt;</type>
-          <declname>saveDataIDs</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+          <declname>saveSlot</declname>
         </param>
         <briefdescription>
-<para>Deserializes a list of <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> (Gotten via <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a8758baa73b532c2db3461caab3cdcd53" kindref="member">SaveDataID.dataInstance</ref>) from a json format file. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>saveDataIDs</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A list of saveDataIDs to load the <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> of</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>List of all the loaded save datas</para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="52" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="52" bodyend="72"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="60" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="60" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a00f2cde002f6de93df22b4d7eaa861f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref></type>
-        <definition>static ISaveData UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.LoadSingleSaveFile</definition>
-        <argsstring>(SaveDataID saveDataID)</argsstring>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a8c94fba4c9ef83044b82d9519a64345b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+        <definition>static SaveData UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.LoadSingleSaveFile</definition>
+        <argsstring>(SaveData saveData, SaveSlot saveSlot)</argsstring>
         <name>LoadSingleSaveFile</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.LoadSingleSaveFile</qualifiedname>
         <param>
-          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref></type>
-          <declname>saveDataID</declname>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+          <declname>saveData</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
+          <declname>saveSlot</declname>
         </param>
         <briefdescription>
-<para>Deserializes a single <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> (Gotten via <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d_1a8758baa73b532c2db3461caab3cdcd53" kindref="member">SaveDataID.dataInstance</ref>) from a json format file. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>saveDataID</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d" kindref="compound">SaveDataID</ref> to deserialize</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_save_data" kindref="compound">ISaveData</ref> with the loaded data from the file</para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="79" column="33" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="79" bodyend="109"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="72" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="72" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -138,7 +149,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="115" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="115" bodyend="118"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="101" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0cc8b7f0ed2293a8168abca71e6bebca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.UseEncryption</definition>
+        <argsstring>(bool encryption)</argsstring>
+        <name>UseEncryption</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.UseEncryption</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>encryption</declname>
+        </param>
+        <briefdescription>
+<para>Sets the encryption bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encryption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool to set <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" kindref="member">useEncryption</ref> to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="110" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="110" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a95d2a058b8834f394cb587a2c5076b92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -154,6 +194,7 @@
 <para>Encrypts data via an XOR shift of <emphasis>data</emphasis>  using the encryptionKey. </para>
         </briefdescription>
         <detaileddescription>
+<para>Make sure you <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" kindref="member">SetEncryptionKey(string)</ref></para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>data</parametername>
@@ -169,21 +210,137 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="125" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="125" bodyend="135"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="121" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="121" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a3f94af3fd6f834d5d44c40863edea27f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetJsonStringData</definition>
+        <argsstring>(string path)</argsstring>
+        <name>GetJsonStringData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetJsonStringData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Grabs the string of data inside a json file via a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to the save file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string of all the data in the json</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="138" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a9847f5f7caf9b3f4942f172bf56ca78d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+        <definition>static SaveData UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetSaveData</definition>
+        <argsstring>(string json)</argsstring>
+        <name>GetSaveData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.GetSaveData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes a json string file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a3f94af3fd6f834d5d44c40863edea27f" kindref="member">GetJsonStringData(string)</ref> to get a json string from a path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Json to deserialize</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deserialized save data</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="149" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.SaveSaveData</definition>
+        <argsstring>(SaveData saveData)</argsstring>
+        <name>SaveSaveData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.SaveSaveData</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
+          <declname>saveData</declname>
+        </param>
+        <briefdescription>
+<para>Serializes a <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref> and return the string of serialized data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to serialize</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of serialized data</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="160" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="160" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.CreateRootSaveDataIfNotExisting</definition>
+        <argsstring>()</argsstring>
+        <name>CreateRootSaveDataIfNotExisting</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.CreateRootSaveDataIfNotExisting</qualifiedname>
+        <briefdescription>
+<para>Will create <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a8d55c8b79b9f1557e2a6cfd55186df43" kindref="member">SaveSystemUtils.GetSaveSlotRootPath()</ref> if it does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="169" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="169" bodyend="175"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="11" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="12" bodyend="136"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="14" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="15" bodyend="176"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>CreateRootSaveDataIfNotExisting</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a95d2a058b8834f394cb587a2c5076b92" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>EncryptDecrypt</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0be010612d5456d3218bd89cead75f3e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>encryptionKey</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ad0f2c14782d3ad4b0328af5a4c65692a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Load</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a00f2cde002f6de93df22b4d7eaa861f9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>LoadSingleSaveFile</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6fc3b7821cac2aee8f6aa076a8d7316c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Save</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a3f94af3fd6f834d5d44c40863edea27f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>GetJsonStringData</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a9847f5f7caf9b3f4942f172bf56ca78d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>GetSaveData</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1adeb02be1194c87aae409ad59d945068c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Load</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a8c94fba4c9ef83044b82d9519a64345b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>LoadSingleSaveFile</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a4294b75b656767310a607835f29ddc02" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>outputLogs</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1abe6fd5fd70e54532a45986ff967e244a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Save</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>SaveSaveData</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>SetEncryptionKey</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0cc8b7f0ed2293a8168abca71e6bebca" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>UseEncryption</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>useEncryption</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

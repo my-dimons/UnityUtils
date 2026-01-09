@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_save_slot_8cs" kind="file" language="C#">
+    <compoundname>SaveSlot.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" prot="public">UnityUtils::ScriptUtils::SaveSystem::SaveSlot</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_save_system">UnityUtils::ScriptUtils::SaveSystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a4eef9e892b490381dd64777cd36d1879" kindref="member">SaveSlot</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>readonly<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a27ae305d1907d2b9dfdfa2c8dcc1b70c" kindref="member">saveSlotName</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DateTime<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a149d51b76b6dc0c3427097a1c95ede42" kindref="member">lastTimeSaved</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>readonly<sp/>List&lt;SaveData&gt;<sp/>saveDatas<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a4eef9e892b490381dd64777cd36d1879" kindref="member">SaveSlot</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a27ae305d1907d2b9dfdfa2c8dcc1b70c" kindref="member">saveSlotName</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.saveSlotName<sp/>=<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a27ae305d1907d2b9dfdfa2c8dcc1b70c" kindref="member">saveSlotName</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>save<sp/>slot<sp/>save<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path<sp/>=<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kindref="compound">SaveSystemUtils</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a0e3c85e438e3e3a8b1c569d3f20c14e8" kindref="member">GetSaveSlotFilePath</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a27ae305d1907d2b9dfdfa2c8dcc1b70c" kindref="member">saveSlotName</ref>,<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kindref="compound">SaveSystemUtils</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1add17f685c3fa0834335a2ee06c7a6893" kindref="member">SAVE_SLOT_SAVE_FILE_NAME</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" kindref="member">AddSaveData</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kindref="compound">SaveSystemManager</ref>.CreateSaveData&lt;<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" kindref="compound">SaveSlotSaveData</ref>&gt;(path));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" kindref="member">AddSaveData</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref><sp/>dataInstance)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveDatas.Add(dataInstance);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataInstance.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" kindref="member">SetSaveSlot</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" kindref="member">AddSaveData</ref>(List&lt;SaveData&gt;<sp/>saveDataList)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref><sp/>saveData<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>saveDataList)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" kindref="member">AddSaveData</ref>(saveData);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a7456a2e533b25aa502a73dfcc8cd7a07" kindref="member">SetSaveDataSlot</ref>(List&lt;SaveData&gt;<sp/>saveDataList)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref><sp/>saveData<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>saveDataList)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveData.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a376fe79174b33a74aad58545eb674de5" kindref="member">SetSaveSlot</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;SaveData&gt;<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a21246f590971b82b21cfe8cc634d614a" kindref="member">GetSaveDatas</ref>()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>saveDatas;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1abcd274c09f226cb8bb3831f03fb25f3b" kindref="member">SaveAllSaveDatas</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref><sp/>saveData<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>saveDatas)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveData.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1ac84c70a10959c096b95ce0a43a1a4bac" kindref="member">Save</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a9bd3dd5594a0795eaaac02758c207ce4" kindref="member">LoadAllSaveDatas</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref><sp/>saveData<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>saveDatas)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveData.<ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_1a2d70d20aa810600511f621e63b04cfcc" kindref="member">Load</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs"/>
+  </compounddef>
+</doxygen>

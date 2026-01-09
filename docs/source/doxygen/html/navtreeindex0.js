@@ -5,7 +5,6 @@ var NAVTREEINDEX0 =
 "_camera_billboard_8cs.html":[2,0,0,0,0,0,1,0],
 "_camera_shake_8cs.html":[2,0,0,0,0,0,1,1],
 "_coroutine_helper_8cs.html":[2,0,0,0,0,0,7],
-"_i_save_data_8cs.html":[2,0,0,0,0,0,4,0,1],
 "_i_saveable_data_8cs.html":[2,0,0,0,0,0,4,0,0],
 "_json_save_system_8cs.html":[2,0,0,0,0,0,4,1],
 "_object_animations_8cs.html":[2,0,0,0,0,0,2,0],
@@ -16,10 +15,11 @@ var NAVTREEINDEX0 =
 "_particle_modifier_8cs.html":[2,0,0,0,0,0,3,0],
 "_particle_spawner_8cs.html":[2,0,0,0,0,0,3,1],
 "_s_f_x_manager_8cs.html":[2,0,0,0,0,0,0,2],
-"_save_data_i_d_8cs.html":[2,0,0,0,0,0,4,2],
-"_save_data_registry_8cs.html":[2,0,0,0,0,0,4,3],
-"_save_system_manager_8cs.html":[2,0,0,0,0,0,4,4],
-"_save_system_utils_8cs.html":[2,0,0,0,0,0,4,5],
+"_save_data_8cs.html":[2,0,0,0,0,0,4,0,1],
+"_save_slot_8cs.html":[2,0,0,0,0,0,4,0,2],
+"_save_slot_save_data_8cs.html":[2,0,0,0,0,0,4,0,3],
+"_save_system_manager_8cs.html":[2,0,0,0,0,0,4,2],
+"_save_system_utils_8cs.html":[2,0,0,0,0,0,4,3],
 "_scriptable_object_manager_8cs.html":[2,0,0,0,0,0,5,0],
 "_simple_background_music_8cs.html":[2,0,0,0,0,0,0,3],
 "_testing_script1_8cs.html":[2,0,0,0,0,0,1,2],
@@ -248,6 +248,6 @@ var NAVTREEINDEX0 =
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html":[1,0,0,0,3,1],
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html#afe2dd4b725744f9986d1559c98c1eeaa":[0,0,0,0,3,1,0],
 "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html#afe2dd4b725744f9986d1559c98c1eeaa":[1,0,0,0,3,1,0],
-"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[0,0,0,0,4,2],
-"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[1,0,0,0,4,2]
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[0,0,0,0,4,0],
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html":[1,0,0,0,4,0]
 };

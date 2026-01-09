@@ -3,10 +3,14 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334}{Get\+Save\+File\+Path}} (string file\+Name, string extension)
-\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name and extension. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a8d55c8b79b9f1557e2a6cfd55186df43}{Get\+Save\+Slot\+Root\+Path}} ()
+\begin{DoxyCompactList}\small\item\em The full root path for save files, usually Application.\+persistent\+Data\+Path/saves. \end{DoxyCompactList}\item 
 static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c}{Get\+Save\+File\+Path}} (string file\+Name)
 \begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a0e3c85e438e3e3a8b1c569d3f20c14e8}{Get\+Save\+Slot\+File\+Path}} (string save\+Slot, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Generates the full file path for a save file using the specified file name and in the save slot. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4c6e86d5c528189b5e23d153d3eadf35}{Get\+Save\+Slot\+Path}} (string save\+Slot)
+\begin{DoxyCompactList}\small\item\em Generates the full file path for a save\+Slot. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abe5777c132d484cf0a40ad3508f9e30a}{Log\+Save\+File\+Not\+Found}} (string path)
 \begin{DoxyCompactList}\small\item\em Logs an error message indicating that a save file was not found at the specified path. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc}{Log\+Save\+File\+Created}} (string path)
@@ -22,14 +26,12 @@ const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system
 \begin{DoxyCompactList}\small\item\em The default file extension used for save files not needing a specific extension. \end{DoxyCompactList}\item 
 const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a1d4c639a005c4e74afa106f605c0b01d}{JSON\+\_\+\+SAVE\+\_\+\+FILE\+\_\+\+EXTENSION}} = "{}.json"{}
 \begin{DoxyCompactList}\small\item\em .json file extension \end{DoxyCompactList}\item 
-const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a7a5121a35481691448fb488f9b8a067e}{SAVE\+\_\+\+FILE\+\_\+\+NOT\+\_\+\+FOUND\+\_\+\+ERROR}} = "{}Save file not found in\+: "{}
-\begin{DoxyCompactList}\small\item\em The error message used when a save file cannot be found at the specified location. \end{DoxyCompactList}\item 
-const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a6b85adcd747dfe307696710bbdbea9a0}{SAVE\+\_\+\+FILE\+\_\+\+LOADED\+\_\+\+MESSAGE}} = "{}Save file loaded from\+: "{}
-\begin{DoxyCompactList}\small\item\em The message used to when a save file has been loaded. \end{DoxyCompactList}\item 
-const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab12ab4c43c64944e4c5eb405cadb2a75}{SAVE\+\_\+\+FILE\+\_\+\+CREATED\+\_\+\+MESSAGE}} = "{}Save file created in\+: "{}
-\begin{DoxyCompactList}\small\item\em The message displayed when a save file is created. \end{DoxyCompactList}\item 
-const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_adb193bafe5677ca9e44b52aafca43738}{SAVE\+\_\+\+FILE\+\_\+\+ENCRYPTED\+\_\+\+MESSAGE}} = "{}Save file encryped in\+: "{}
-\begin{DoxyCompactList}\small\item\em The message displayed when a save file is encryped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4898abb41588ddc9f1154114ee4331a1}{SAVE\+\_\+\+FILES\+\_\+\+NAME}} = "{}saves"{}
+\begin{DoxyCompactList}\small\item\em What to name the save files. \end{DoxyCompactList}\item 
+const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a08be212e1da58776f460392ae8ecea5f}{DEFAULT\+\_\+\+SAVE\+\_\+\+SLOT\+\_\+\+ID}} = "{}0"{}
+\begin{DoxyCompactList}\small\item\em The default save slot ID, use when not using multiple save slots. \end{DoxyCompactList}\item 
+const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_add17f685c3fa0834335a2ee06c7a6893}{SAVE\+\_\+\+SLOT\+\_\+\+SAVE\+\_\+\+FILE\+\_\+\+NAME}} = "{}save\+\_\+slot\+\_\+data.\+json"{}
+\begin{DoxyCompactList}\small\item\em Save slot save file name. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -37,7 +39,7 @@ const string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
 \index{GetSaveFilePath@{GetSaveFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}}
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_abab8c6849773bb4bfa36392ccaadbf7c} 
 string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
@@ -45,38 +47,53 @@ string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+
 
 Generates the full file path for a save file using the specified file name. 
 
-The returned path is located within the application\textquotesingle{}s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-\/appropriate location.
-
 
 \begin{DoxyParams}{Parameters}
 {\em file\+Name} & The base name of the save file\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A string containing the absolute path to the save file
-\end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveFilePath@{GetSaveFilePath}}
-\index{GetSaveFilePath@{GetSaveFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{GetSaveFilePath()}{GetSaveFilePath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_aa49ee94cfe14136eaddb96c8f8aa9334} 
-string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{string}]{extension}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a0e3c85e438e3e3a8b1c569d3f20c14e8}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveSlotFilePath@{GetSaveSlotFilePath}}
+\index{GetSaveSlotFilePath@{GetSaveSlotFilePath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{GetSaveSlotFilePath()}{GetSaveSlotFilePath()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a0e3c85e438e3e3a8b1c569d3f20c14e8} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+Slot\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{save\+Slot}{, }\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Generates the full file path for a save file using the specified file name and extension. 
-
-The returned path is located within the application\textquotesingle{}s persistent data directory. Use this method to ensure save files are stored in a consistent and platform-\/appropriate location.
+Generates the full file path for a save file using the specified file name and in the save slot. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em file\+Name} & The base name of the save file\\
 \hline
-{\em extension} & The "{}."{} extension to add to the file (Ex. "{}.\+json"{})\\
+{\em save\+Slot} & The save slot to check\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A string containing the absolute path to the save file
-\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4c6e86d5c528189b5e23d153d3eadf35}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveSlotPath@{GetSaveSlotPath}}
+\index{GetSaveSlotPath@{GetSaveSlotPath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{GetSaveSlotPath()}{GetSaveSlotPath()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4c6e86d5c528189b5e23d153d3eadf35} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+Slot\+Path (\begin{DoxyParamCaption}\item[{string}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates the full file path for a save\+Slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Slot} & The save slot to check\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a8d55c8b79b9f1557e2a6cfd55186df43}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!GetSaveSlotRootPath@{GetSaveSlotRootPath}}
+\index{GetSaveSlotRootPath@{GetSaveSlotRootPath}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{GetSaveSlotRootPath()}{GetSaveSlotRootPath()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a8d55c8b79b9f1557e2a6cfd55186df43} 
+string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Get\+Save\+Slot\+Root\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The full root path for save files, usually Application.\+persistent\+Data\+Path/saves. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a22c2f625f701aeeb416b1d4f48a53abc}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileCreated@{LogSaveFileCreated}}
 \index{LogSaveFileCreated@{LogSaveFileCreated}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
 \doxysubsubsection{\texorpdfstring{LogSaveFileCreated()}{LogSaveFileCreated()}}
@@ -142,6 +159,16 @@ Logs an error message indicating that a save file was not found at the specified
 \label{doc-variable-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_doc-variable-members}
 \doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a08be212e1da58776f460392ae8ecea5f}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!DEFAULT\_SAVE\_SLOT\_ID@{DEFAULT\_SAVE\_SLOT\_ID}}
+\index{DEFAULT\_SAVE\_SLOT\_ID@{DEFAULT\_SAVE\_SLOT\_ID}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SAVE\_SLOT\_ID}{DEFAULT\_SAVE\_SLOT\_ID}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a08be212e1da58776f460392ae8ecea5f} 
+const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+DEFAULT\+\_\+\+SAVE\+\_\+\+SLOT\+\_\+\+ID = "{}0"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The default save slot ID, use when not using multiple save slots. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a1d4c639a005c4e74afa106f605c0b01d}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!JSON\_SAVE\_FILE\_EXTENSION@{JSON\_SAVE\_FILE\_EXTENSION}}
 \index{JSON\_SAVE\_FILE\_EXTENSION@{JSON\_SAVE\_FILE\_EXTENSION}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
 \doxysubsubsection{\texorpdfstring{JSON\_SAVE\_FILE\_EXTENSION}{JSON\_SAVE\_FILE\_EXTENSION}}
@@ -152,45 +179,25 @@ const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\
 
 .json file extension 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab12ab4c43c64944e4c5eb405cadb2a75}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_FILE\_CREATED\_MESSAGE@{SAVE\_FILE\_CREATED\_MESSAGE}}
-\index{SAVE\_FILE\_CREATED\_MESSAGE@{SAVE\_FILE\_CREATED\_MESSAGE}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{SAVE\_FILE\_CREATED\_MESSAGE}{SAVE\_FILE\_CREATED\_MESSAGE}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab12ab4c43c64944e4c5eb405cadb2a75} 
-const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+FILE\+\_\+\+CREATED\+\_\+\+MESSAGE = "{}Save file created in\+: "{}\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4898abb41588ddc9f1154114ee4331a1}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_FILES\_NAME@{SAVE\_FILES\_NAME}}
+\index{SAVE\_FILES\_NAME@{SAVE\_FILES\_NAME}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{SAVE\_FILES\_NAME}{SAVE\_FILES\_NAME}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4898abb41588ddc9f1154114ee4331a1} 
+const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+FILES\+\_\+\+NAME = "{}saves"{}\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-The message displayed when a save file is created. 
+What to name the save files. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_adb193bafe5677ca9e44b52aafca43738}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_FILE\_ENCRYPTED\_MESSAGE@{SAVE\_FILE\_ENCRYPTED\_MESSAGE}}
-\index{SAVE\_FILE\_ENCRYPTED\_MESSAGE@{SAVE\_FILE\_ENCRYPTED\_MESSAGE}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{SAVE\_FILE\_ENCRYPTED\_MESSAGE}{SAVE\_FILE\_ENCRYPTED\_MESSAGE}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_adb193bafe5677ca9e44b52aafca43738} 
-const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+FILE\+\_\+\+ENCRYPTED\+\_\+\+MESSAGE = "{}Save file encryped in\+: "{}\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The message displayed when a save file is encryped. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a6b85adcd747dfe307696710bbdbea9a0}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_FILE\_LOADED\_MESSAGE@{SAVE\_FILE\_LOADED\_MESSAGE}}
-\index{SAVE\_FILE\_LOADED\_MESSAGE@{SAVE\_FILE\_LOADED\_MESSAGE}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{SAVE\_FILE\_LOADED\_MESSAGE}{SAVE\_FILE\_LOADED\_MESSAGE}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a6b85adcd747dfe307696710bbdbea9a0} 
-const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+FILE\+\_\+\+LOADED\+\_\+\+MESSAGE = "{}Save file loaded from\+: "{}\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_add17f685c3fa0834335a2ee06c7a6893}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_SLOT\_SAVE\_FILE\_NAME@{SAVE\_SLOT\_SAVE\_FILE\_NAME}}
+\index{SAVE\_SLOT\_SAVE\_FILE\_NAME@{SAVE\_SLOT\_SAVE\_FILE\_NAME}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{SAVE\_SLOT\_SAVE\_FILE\_NAME}{SAVE\_SLOT\_SAVE\_FILE\_NAME}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_add17f685c3fa0834335a2ee06c7a6893} 
+const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+SLOT\+\_\+\+SAVE\+\_\+\+FILE\+\_\+\+NAME = "{}save\+\_\+slot\+\_\+data.\+json"{}\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-The message used to when a save file has been loaded. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a7a5121a35481691448fb488f9b8a067e}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SAVE\_FILE\_NOT\_FOUND\_ERROR@{SAVE\_FILE\_NOT\_FOUND\_ERROR}}
-\index{SAVE\_FILE\_NOT\_FOUND\_ERROR@{SAVE\_FILE\_NOT\_FOUND\_ERROR}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
-\doxysubsubsection{\texorpdfstring{SAVE\_FILE\_NOT\_FOUND\_ERROR}{SAVE\_FILE\_NOT\_FOUND\_ERROR}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a7a5121a35481691448fb488f9b8a067e} 
-const string Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+SAVE\+\_\+\+FILE\+\_\+\+NOT\+\_\+\+FOUND\+\_\+\+ERROR = "{}Save file not found in\+: "{}\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The error message used when a save file cannot be found at the specified location. 
+Save slot save file name. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ae82e13ad8d6974d658f8d03d1b6999d6}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!SPECIAL\_SAVE\_FILE\_EXTENSION@{SPECIAL\_SAVE\_FILE\_EXTENSION}}
 \index{SPECIAL\_SAVE\_FILE\_EXTENSION@{SPECIAL\_SAVE\_FILE\_EXTENSION}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}

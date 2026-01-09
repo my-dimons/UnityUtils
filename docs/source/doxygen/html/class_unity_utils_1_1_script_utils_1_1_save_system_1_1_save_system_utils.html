@@ -94,10 +94,14 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa49ee94cfe14136eaddb96c8f8aa9334" id="r_aa49ee94cfe14136eaddb96c8f8aa9334"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49ee94cfe14136eaddb96c8f8aa9334">GetSaveFilePath</a> (string fileName, string extension)</td></tr>
-<tr class="memdesc:aa49ee94cfe14136eaddb96c8f8aa9334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and extension.  <br /></td></tr>
+<tr class="memitem:a8d55c8b79b9f1557e2a6cfd55186df43" id="r_a8d55c8b79b9f1557e2a6cfd55186df43"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d55c8b79b9f1557e2a6cfd55186df43">GetSaveSlotRootPath</a> ()</td></tr>
+<tr class="memdesc:a8d55c8b79b9f1557e2a6cfd55186df43"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full root path for save files, usually Application.persistentDataPath/saves.  <br /></td></tr>
 <tr class="memitem:abab8c6849773bb4bfa36392ccaadbf7c" id="r_abab8c6849773bb4bfa36392ccaadbf7c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abab8c6849773bb4bfa36392ccaadbf7c">GetSaveFilePath</a> (string fileName)</td></tr>
 <tr class="memdesc:abab8c6849773bb4bfa36392ccaadbf7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name.  <br /></td></tr>
+<tr class="memitem:a0e3c85e438e3e3a8b1c569d3f20c14e8" id="r_a0e3c85e438e3e3a8b1c569d3f20c14e8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e3c85e438e3e3a8b1c569d3f20c14e8">GetSaveSlotFilePath</a> (string saveSlot, string fileName)</td></tr>
+<tr class="memdesc:a0e3c85e438e3e3a8b1c569d3f20c14e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a save file using the specified file name and in the save slot.  <br /></td></tr>
+<tr class="memitem:a4c6e86d5c528189b5e23d153d3eadf35" id="r_a4c6e86d5c528189b5e23d153d3eadf35"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c6e86d5c528189b5e23d153d3eadf35">GetSaveSlotPath</a> (string saveSlot)</td></tr>
+<tr class="memdesc:a4c6e86d5c528189b5e23d153d3eadf35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the full file path for a saveSlot.  <br /></td></tr>
 <tr class="memitem:abe5777c132d484cf0a40ad3508f9e30a" id="r_abe5777c132d484cf0a40ad3508f9e30a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe5777c132d484cf0a40ad3508f9e30a">LogSaveFileNotFound</a> (string path)</td></tr>
 <tr class="memdesc:abe5777c132d484cf0a40ad3508f9e30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error message indicating that a save file was not found at the specified path.  <br /></td></tr>
 <tr class="memitem:a22c2f625f701aeeb416b1d4f48a53abc" id="r_a22c2f625f701aeeb416b1d4f48a53abc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22c2f625f701aeeb416b1d4f48a53abc">LogSaveFileCreated</a> (string path)</td></tr>
@@ -113,18 +117,16 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:ae82e13ad8d6974d658f8d03d1b6999d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default file extension used for save files not needing a specific extension.  <br /></td></tr>
 <tr class="memitem:a1d4c639a005c4e74afa106f605c0b01d" id="r_a1d4c639a005c4e74afa106f605c0b01d"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d4c639a005c4e74afa106f605c0b01d">JSON_SAVE_FILE_EXTENSION</a> = &quot;.json&quot;</td></tr>
 <tr class="memdesc:a1d4c639a005c4e74afa106f605c0b01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">.json file extension  <br /></td></tr>
-<tr class="memitem:a7a5121a35481691448fb488f9b8a067e" id="r_a7a5121a35481691448fb488f9b8a067e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a5121a35481691448fb488f9b8a067e">SAVE_FILE_NOT_FOUND_ERROR</a> = &quot;Save file not found in: &quot;</td></tr>
-<tr class="memdesc:a7a5121a35481691448fb488f9b8a067e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The error message used when a save file cannot be found at the specified location.  <br /></td></tr>
-<tr class="memitem:a6b85adcd747dfe307696710bbdbea9a0" id="r_a6b85adcd747dfe307696710bbdbea9a0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b85adcd747dfe307696710bbdbea9a0">SAVE_FILE_LOADED_MESSAGE</a> = &quot;Save file loaded from: &quot;</td></tr>
-<tr class="memdesc:a6b85adcd747dfe307696710bbdbea9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message used to when a save file has been loaded.  <br /></td></tr>
-<tr class="memitem:ab12ab4c43c64944e4c5eb405cadb2a75" id="r_ab12ab4c43c64944e4c5eb405cadb2a75"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12ab4c43c64944e4c5eb405cadb2a75">SAVE_FILE_CREATED_MESSAGE</a> = &quot;Save file created in: &quot;</td></tr>
-<tr class="memdesc:ab12ab4c43c64944e4c5eb405cadb2a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is created.  <br /></td></tr>
-<tr class="memitem:adb193bafe5677ca9e44b52aafca43738" id="r_adb193bafe5677ca9e44b52aafca43738"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb193bafe5677ca9e44b52aafca43738">SAVE_FILE_ENCRYPTED_MESSAGE</a> = &quot;Save file encryped in: &quot;</td></tr>
-<tr class="memdesc:adb193bafe5677ca9e44b52aafca43738"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message displayed when a save file is encryped.  <br /></td></tr>
+<tr class="memitem:a4898abb41588ddc9f1154114ee4331a1" id="r_a4898abb41588ddc9f1154114ee4331a1"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4898abb41588ddc9f1154114ee4331a1">SAVE_FILES_NAME</a> = &quot;saves&quot;</td></tr>
+<tr class="memdesc:a4898abb41588ddc9f1154114ee4331a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">What to name the save files.  <br /></td></tr>
+<tr class="memitem:a08be212e1da58776f460392ae8ecea5f" id="r_a08be212e1da58776f460392ae8ecea5f"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08be212e1da58776f460392ae8ecea5f">DEFAULT_SAVE_SLOT_ID</a> = &quot;0&quot;</td></tr>
+<tr class="memdesc:a08be212e1da58776f460392ae8ecea5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default save slot ID, use when not using multiple save slots.  <br /></td></tr>
+<tr class="memitem:add17f685c3fa0834335a2ee06c7a6893" id="r_add17f685c3fa0834335a2ee06c7a6893"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add17f685c3fa0834335a2ee06c7a6893">SAVE_SLOT_SAVE_FILE_NAME</a> = &quot;save_slot_data.json&quot;</td></tr>
+<tr class="memdesc:add17f685c3fa0834335a2ee06c7a6893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save slot save file name.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="abab8c6849773bb4bfa36392ccaadbf7c" name="abab8c6849773bb4bfa36392ccaadbf7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abab8c6849773bb4bfa36392ccaadbf7c">&#9670;&#160;</a></span>GetSaveFilePath() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abab8c6849773bb4bfa36392ccaadbf7c">&#9670;&#160;</a></span>GetSaveFilePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,19 +149,17 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates the full file path for a save file using the specified file name. </p>
-<p>The returned path is located within the application's persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>The base name of the save file</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A string containing the absolute path to the save file</dd></dl>
 
 </div>
 </div>
-<a id="aa49ee94cfe14136eaddb96c8f8aa9334" name="aa49ee94cfe14136eaddb96c8f8aa9334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa49ee94cfe14136eaddb96c8f8aa9334">&#9670;&#160;</a></span>GetSaveFilePath() <span class="overload">[2/2]</span></h2>
+<a id="a0e3c85e438e3e3a8b1c569d3f20c14e8" name="a0e3c85e438e3e3a8b1c569d3f20c14e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3c85e438e3e3a8b1c569d3f20c14e8">&#9670;&#160;</a></span>GetSaveSlotFilePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,14 +168,14 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath </td>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotFilePath </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -185,16 +185,74 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the full file path for a save file using the specified file name and extension. </p>
-<p>The returned path is located within the application's persistent data directory. Use this method to ensure save files are stored in a consistent and platform-appropriate location.</p>
+<p>Generates the full file path for a save file using the specified file name and in the save slot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>The base name of the save file</td></tr>
-    <tr><td class="paramname">extension</td><td>The "." extension to add to the file (Ex. ".json")</td></tr>
+    <tr><td class="paramname">saveSlot</td><td>The save slot to check</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A string containing the absolute path to the save file</dd></dl>
+
+</div>
+</div>
+<a id="a4c6e86d5c528189b5e23d153d3eadf35" name="a4c6e86d5c528189b5e23d153d3eadf35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6e86d5c528189b5e23d153d3eadf35">&#9670;&#160;</a></span>GetSaveSlotPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotPath </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates the full file path for a saveSlot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveSlot</td><td>The save slot to check</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d55c8b79b9f1557e2a6cfd55186df43" name="a8d55c8b79b9f1557e2a6cfd55186df43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d55c8b79b9f1557e2a6cfd55186df43">&#9670;&#160;</a></span>GetSaveSlotRootPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotRootPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The full root path for save files, usually Application.persistentDataPath/saves. </p>
 
 </div>
 </div>
@@ -331,6 +389,30 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a08be212e1da58776f460392ae8ecea5f" name="a08be212e1da58776f460392ae8ecea5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08be212e1da58776f460392ae8ecea5f">&#9670;&#160;</a></span>DEFAULT_SAVE_SLOT_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.DEFAULT_SAVE_SLOT_ID = &quot;0&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The default save slot ID, use when not using multiple save slots. </p>
+
+</div>
+</div>
 <a id="a1d4c639a005c4e74afa106f605c0b01d" name="a1d4c639a005c4e74afa106f605c0b01d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d4c639a005c4e74afa106f605c0b01d">&#9670;&#160;</a></span>JSON_SAVE_FILE_EXTENSION</h2>
 
@@ -355,8 +437,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab12ab4c43c64944e4c5eb405cadb2a75" name="ab12ab4c43c64944e4c5eb405cadb2a75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab12ab4c43c64944e4c5eb405cadb2a75">&#9670;&#160;</a></span>SAVE_FILE_CREATED_MESSAGE</h2>
+<a id="a4898abb41588ddc9f1154114ee4331a1" name="a4898abb41588ddc9f1154114ee4331a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4898abb41588ddc9f1154114ee4331a1">&#9670;&#160;</a></span>SAVE_FILES_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +447,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_CREATED_MESSAGE = &quot;Save file created in: &quot;</td>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILES_NAME = &quot;saves&quot;</td>
         </tr>
       </table>
   </td>
@@ -375,12 +457,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The message displayed when a save file is created. </p>
+<p>What to name the save files. </p>
 
 </div>
 </div>
-<a id="adb193bafe5677ca9e44b52aafca43738" name="adb193bafe5677ca9e44b52aafca43738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb193bafe5677ca9e44b52aafca43738">&#9670;&#160;</a></span>SAVE_FILE_ENCRYPTED_MESSAGE</h2>
+<a id="add17f685c3fa0834335a2ee06c7a6893" name="add17f685c3fa0834335a2ee06c7a6893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add17f685c3fa0834335a2ee06c7a6893">&#9670;&#160;</a></span>SAVE_SLOT_SAVE_FILE_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +471,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_ENCRYPTED_MESSAGE = &quot;Save file encryped in: &quot;</td>
+          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_SLOT_SAVE_FILE_NAME = &quot;save_slot_data.json&quot;</td>
         </tr>
       </table>
   </td>
@@ -399,55 +481,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The message displayed when a save file is encryped. </p>
-
-</div>
-</div>
-<a id="a6b85adcd747dfe307696710bbdbea9a0" name="a6b85adcd747dfe307696710bbdbea9a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b85adcd747dfe307696710bbdbea9a0">&#9670;&#160;</a></span>SAVE_FILE_LOADED_MESSAGE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_LOADED_MESSAGE = &quot;Save file loaded from: &quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The message used to when a save file has been loaded. </p>
-
-</div>
-</div>
-<a id="a7a5121a35481691448fb488f9b8a067e" name="a7a5121a35481691448fb488f9b8a067e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a5121a35481691448fb488f9b8a067e">&#9670;&#160;</a></span>SAVE_FILE_NOT_FOUND_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.SAVE_FILE_NOT_FOUND_ERROR = &quot;Save file not found in: &quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The error message used when a save file cannot be found at the specified location. </p>
+<p>Save slot save file name. </p>
 
 </div>
 </div>

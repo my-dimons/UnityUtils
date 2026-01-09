@@ -94,14 +94,75 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_save_system_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8c76c78fd1dd53d0894fdb58dc8d31a" id="r_ae8c76c78fd1dd53d0894fdb58dc8d31a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8c76c78fd1dd53d0894fdb58dc8d31a">SaveGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
-<tr class="memdesc:ae8c76c78fd1dd53d0894fdb58dc8d31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
-<tr class="memitem:a96d5514a09fda359e9ab0fcf1cd02120" id="r_a96d5514a09fda359e9ab0fcf1cd02120"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d5514a09fda359e9ab0fcf1cd02120">LoadGame</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt; dataIDs)</td></tr>
-<tr class="memdesc:a96d5514a09fda359e9ab0fcf1cd02120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
+<tr class="memitem:abd0a87d01781d044748bdf7823bb0719" id="r_abd0a87d01781d044748bdf7823bb0719"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd0a87d01781d044748bdf7823bb0719">SaveGame</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memdesc:abd0a87d01781d044748bdf7823bb0719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
+<tr class="memitem:a1471f8bb409c5171dd856c1527253d43" id="r_a1471f8bb409c5171dd856c1527253d43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1471f8bb409c5171dd856c1527253d43">LoadGame</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memdesc:a1471f8bb409c5171dd856c1527253d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>.  <br /></td></tr>
 <tr class="memitem:a44ea94ab7d0fa6d624b639dc227be510" id="r_a44ea94ab7d0fa6d624b639dc227be510"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510">FindAllDataPersistanceObjects</a> ()</td></tr>
 <tr class="memdesc:a44ea94ab7d0fa6d624b639dc227be510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on.  <br /></td></tr>
+<tr class="memitem:a9d94ff58264b0f404cc1c2f54c14c1aa" id="r_a9d94ff58264b0f404cc1c2f54c14c1aa"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d94ff58264b0f404cc1c2f54c14c1aa">LoadAllSaveSlots</a> ()</td></tr>
+<tr class="memdesc:a9d94ff58264b0f404cc1c2f54c14c1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all save slots from the save directory, if none exists one is created.  <br /></td></tr>
+<tr class="memitem:a8022a7df159fcaae1f5515938b8c7e1b" id="r_a8022a7df159fcaae1f5515938b8c7e1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8022a7df159fcaae1f5515938b8c7e1b">CreateSaveData&lt; T &gt;</a> (string fileName)</td></tr>
+<tr class="memdesc:a8022a7df159fcaae1f5515938b8c7e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new SaveDataID to the registry to be referenced later.  <br /></td></tr>
+<tr class="memitem:a1dc3203e46e8017422f4d5a16265b625" id="r_a1dc3203e46e8017422f4d5a16265b625"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc3203e46e8017422f4d5a16265b625">GetMostRecentSave</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt; saveSlots)</td></tr>
+<tr class="memdesc:a1dc3203e46e8017422f4d5a16265b625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the most recent save in a list of <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a05a97f1c28174cc3e9f32450c3651d1c" id="r_a05a97f1c28174cc3e9f32450c3651d1c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05a97f1c28174cc3e9f32450c3651d1c">outputLogs</a> = true</td></tr>
+<tr class="memdesc:a05a97f1c28174cc3e9f32450c3651d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true will output Debug.Log()'s on Save/Load.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a8022a7df159fcaae1f5515938b8c7e1b" name="a8022a7df159fcaae1f5515938b8c7e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8022a7df159fcaae1f5515938b8c7e1b">&#9670;&#160;</a></span>CreateSaveData&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.CreateSaveData&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new SaveDataID to the registry to be referenced later. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The file name of the save object</td></tr>
+    <tr><td class="paramname">useEncryption</td><td>Wether or not to use encryption on this save data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The SaveDataID with its filled in parameters</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>new()</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
 <a id="a44ea94ab7d0fa6d624b639dc227be510" name="a44ea94ab7d0fa6d624b639dc227be510"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ea94ab7d0fa6d624b639dc227be510">&#9670;&#160;</a></span>FindAllDataPersistanceObjects()</h2>
 
@@ -130,8 +191,70 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a96d5514a09fda359e9ab0fcf1cd02120" name="a96d5514a09fda359e9ab0fcf1cd02120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d5514a09fda359e9ab0fcf1cd02120">&#9670;&#160;</a></span>LoadGame()</h2>
+<a id="a1dc3203e46e8017422f4d5a16265b625" name="a1dc3203e46e8017422f4d5a16265b625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc3203e46e8017422f4d5a16265b625">&#9670;&#160;</a></span>GetMostRecentSave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.GetMostRecentSave </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>saveSlots</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Grabs the most recent save in a list of <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveSlots</td><td>Save slots to sort through</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Most recently saved slot</dd></dl>
+
+</div>
+</div>
+<a id="a9d94ff58264b0f404cc1c2f54c14c1aa" name="a9d94ff58264b0f404cc1c2f54c14c1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d94ff58264b0f404cc1c2f54c14c1aa">&#9670;&#160;</a></span>LoadAllSaveSlots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt; string, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt; UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadAllSaveSlots </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads all save slots from the save directory, if none exists one is created. </p>
+<dl class="section return"><dt>Returns</dt><dd>Dictionary of the save slot name and the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></dd></dl>
+
+</div>
+</div>
+<a id="a1471f8bb409c5171dd856c1527253d43" name="a1471f8bb409c5171dd856c1527253d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1471f8bb409c5171dd856c1527253d43">&#9670;&#160;</a></span>LoadGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadGame </td>
           <td>(</td>
-          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>dataIDs</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,15 +279,15 @@ Static Public Member Functions</h2></td></tr>
 <p>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataIDs</td><td>ID's to laod</td></tr>
+    <tr><td class="paramname">saveDatas</td><td>ID's to laod</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae8c76c78fd1dd53d0894fdb58dc8d31a" name="ae8c76c78fd1dd53d0894fdb58dc8d31a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8c76c78fd1dd53d0894fdb58dc8d31a">&#9670;&#160;</a></span>SaveGame()</h2>
+<a id="abd0a87d01781d044748bdf7823bb0719" name="abd0a87d01781d044748bdf7823bb0719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0a87d01781d044748bdf7823bb0719">&#9670;&#160;</a></span>SaveGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +298,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.SaveGame </td>
           <td>(</td>
-          <td class="paramtype">List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data_i_d.html">SaveDataID</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>dataIDs</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -189,10 +312,35 @@ Static Public Member Functions</h2></td></tr>
 <p>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataIDs</td><td>Dictionary with the dataIDs ID and name to save with</td></tr>
+    <tr><td class="paramname">saveDatas</td><td>Dictionary with the dataIDs ID and name to save with</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a05a97f1c28174cc3e9f32450c3651d1c" name="a05a97f1c28174cc3e9f32450c3651d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a97f1c28174cc3e9f32450c3651d1c">&#9670;&#160;</a></span>outputLogs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.outputLogs = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If true will output Debug.Log()'s on Save/Load. </p>
 
 </div>
 </div>

@@ -21,13 +21,13 @@ enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_man
 \begin{DoxyCompactItemize}
 \item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a36656b98992ea5778e3ca6f2b1316516}{Get\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type)
-\begin{DoxyCompactList}\small\item\em Gets the current volume level for the specified audio type. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the current volume level for the specified audio class\+Type. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4}{Modify\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
-\begin{DoxyCompactList}\small\item\em Adjusts the volume for the specified audio type by adding the given value to its current volume. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adjusts the volume for the specified audio class\+Type by adding the given value to its current volume. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a096134c5684b1ef0d8f46d9c0cf9a6a6}{Set\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
-\begin{DoxyCompactList}\small\item\em Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (\doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a951691ccb7f9df99c9c0b0f4bb0c8cca}{MIN\+\_\+\+AUDIO\+\_\+\+VOLUME}, \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3d858e08e9ebddb2664c8c09373f76b1}{MAX\+\_\+\+AUDIO\+\_\+\+VOLUME}). \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets the volume level for the specified audio class\+Type to the new volume. Auto clamps to the min/max audio volume (\doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a951691ccb7f9df99c9c0b0f4bb0c8cca}{MIN\+\_\+\+AUDIO\+\_\+\+VOLUME}, \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3d858e08e9ebddb2664c8c09373f76b1}{MAX\+\_\+\+AUDIO\+\_\+\+VOLUME}). \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6842171f65007a880eac46610f5676b5}{Calculate\+Volume\+Based\+On\+Type}} (float volume, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type)
-\begin{DoxyCompactList}\small\item\em Returns the final volume after applying both the type volume and the global volume (unless volume\+Type is \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}{Volume\+Type.\+Global}). \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the final volume after applying both the class\+Type volume and the global volume (unless volume\+Type is \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}{Volume\+Type.\+Global}). \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0b0a5e413f1f381a80658aaae7256203}{Multiply\+By\+Global\+Volume}} (float volume)
 \begin{DoxyCompactList}\small\item\em Multiplies the specified volume by the current global volume level. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0498ca8ec7582e9aa3607f534a7dc5f0}{Calculate\+Clip\+Length}} (float clip\+Length, float pitch)
@@ -137,10 +137,10 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Volume\
 
 
 
-Returns the final volume after applying both the type volume and the global volume (unless volume\+Type is \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}{Volume\+Type.\+Global}). 
+Returns the final volume after applying both the class\+Type volume and the global volume (unless volume\+Type is \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}{Volume\+Type.\+Global}). 
 
 \begin{DoxyReturn}{Returns}
-Proper volume level based on audio type. 
+Proper volume level based on audio class\+Type. 
 \end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a36656b98992ea5778e3ca6f2b1316516}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!GetVolume@{GetVolume}}
 \index{GetVolume@{GetVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
@@ -150,10 +150,10 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Get\+Volume (\begi
 
 
 
-Gets the current volume level for the specified audio type. 
+Gets the current volume level for the specified audio class\+Type. 
 
 \begin{DoxyReturn}{Returns}
-The volume level for the specified audio type.
+The volume level for the specified audio class\+Type.
 \end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!ModifyVolume@{ModifyVolume}}
 \index{ModifyVolume@{ModifyVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
@@ -163,7 +163,7 @@ void Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Modify\+Volume (\be
 
 
 
-Adjusts the volume for the specified audio type by adding the given value to its current volume. 
+Adjusts the volume for the specified audio class\+Type by adding the given value to its current volume. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0b0a5e413f1f381a80658aaae7256203}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!MultiplyByGlobalVolume@{MultiplyByGlobalVolume}}
 \index{MultiplyByGlobalVolume@{MultiplyByGlobalVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
@@ -183,7 +183,7 @@ void Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Set\+Volume (\begin
 
 
 
-Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (\doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a951691ccb7f9df99c9c0b0f4bb0c8cca}{MIN\+\_\+\+AUDIO\+\_\+\+VOLUME}, \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3d858e08e9ebddb2664c8c09373f76b1}{MAX\+\_\+\+AUDIO\+\_\+\+VOLUME}). 
+Sets the volume level for the specified audio class\+Type to the new volume. Auto clamps to the min/max audio volume (\doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a951691ccb7f9df99c9c0b0f4bb0c8cca}{MIN\+\_\+\+AUDIO\+\_\+\+VOLUME}, \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3d858e08e9ebddb2664c8c09373f76b1}{MAX\+\_\+\+AUDIO\+\_\+\+VOLUME}). 
 
 
 

@@ -143,7 +143,7 @@
 <parametername>modifierType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The type of modifier to add</para>
+<para>The classType of modifier to add</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -339,7 +339,7 @@
         <name>PrintModifiers</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifiers.PrintModifiers</qualifiedname>
         <briefdescription>
-<para>Prints the type and value of each <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" kindref="member">Modifiers</ref> to the debug log. </para>
+<para>Prints the classType and value of each <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers_1a2bf48ff518da5104a863738bd3b2eb22" kindref="member">Modifiers</ref> to the debug log. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

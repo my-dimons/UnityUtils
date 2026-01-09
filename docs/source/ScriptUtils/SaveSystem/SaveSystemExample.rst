@@ -44,6 +44,7 @@ The script below is an example (with some helper functions) of a solid save syst
 If you don't want to use save slots, just use a singular slot name
 
 This is a simple example of a SaveManager, to see a more complicated version view the bottom of this script
+
 .. code:: csharp
    
    using System.Collections.Generic;
