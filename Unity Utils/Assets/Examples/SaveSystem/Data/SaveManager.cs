@@ -39,6 +39,12 @@ public class SaveManager : MonoBehaviour
         Debug.Log("Most recently saved file: " + SaveSystemManager.GetMostRecentSave(saves).saveSlotName);
     }
 
+    public void Delete()
+    {
+        SaveSystemManager.DeleteSaveSlot(saveSlots[activeSaveSlot]);
+        saveSlots.Remove(activeSaveSlot);
+    }
+
     public void InitializeData()
     {
         JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");

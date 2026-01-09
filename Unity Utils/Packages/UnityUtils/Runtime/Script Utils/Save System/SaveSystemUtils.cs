@@ -85,5 +85,14 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         {
             Debug.Log("Save file encryped in: " + path);
         }
+
+        /// <summary>
+        /// Logs a message indicating that a save file has been deleted at the specified path.
+        /// </summary>
+        /// <param name="path">The file system path of the deleted save path</param>
+        public static void LogSaveFileDeleted(string path)
+        {
+            Debug.Log("Save file deleted in: " + path);
+        }
     }
 }

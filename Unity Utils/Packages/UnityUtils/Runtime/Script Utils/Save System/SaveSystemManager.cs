@@ -6,6 +6,7 @@ using System.Linq;
 using System;
 using System.IO;
 using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
@@ -28,11 +29,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             foreach (SaveData saveData in saveSlot.GetSaveDatas())
             {
                 // Put saveData from files to SaveData's
-                foreach (ISaveableData saveable in saveableData)
-                {
-                    saveable.SaveData(saveData);
-                }
-
+                SaveAllSaveableData(saveData);
                 JsonSaveSystem.Save(saveData);
 
                 if (outputLogs)
@@ -59,13 +56,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             {
                 SaveData data = JsonSaveSystem.LoadSingleSaveFile(saveData, saveSlot);
 
-                foreach (ISaveableData saveable in saveableData)
-                {
-                    saveable.LoadData(data);
-
-                    if (outputLogs)
-                        SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(data.saveFileName));
-                }
+                LoadAllSaveableData(data);
             }
 
             long endTime = DateTime.Now.Ticks - startTime;
@@ -73,6 +64,15 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             if (outputLogs)
                 Debug.Log($"Loaded game data, took: {(endTime / TimeSpan.TicksPerMillisecond):N4}ms");
         }
+
+        /// <summary>
+        /// Delete a save slot
+        /// </summary>
+        /// <param name="saveSlot">Save slot to delete</param>
+        public static void DeleteSaveSlot(SaveSlot saveSlot)
+        {
+            JsonSaveSystem.Delete(saveSlot);
+        }   
 
         /// <summary>
         /// Gets all <see cref="ISaveableData"/> to call functions on
@@ -156,5 +156,35 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 .OrderByDescending(d => d.lastTimeSaved)
                 .First();
         }
+
+        public static void SaveAllSaveableData(SaveData dataToSave, List<ISaveableData> saveTo)
+        {
+            foreach (ISaveableData saveable in saveTo)
+            {
+                saveable.SaveData(dataToSave);
+            }
+        }
+
+        public static void SaveAllSaveableData(SaveData dataToSave)
+        {
+            SaveAllSaveableData(dataToSave, FindAllDataPersistanceObjects());
+        }
+
+        public static void LoadAllSaveableData(SaveData dataToSave, List<ISaveableData> saveTo)
+        {
+            foreach (ISaveableData saveable in saveTo)
+            {
+                saveable.LoadData(dataToSave);
+
+                if (outputLogs)
+                    SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(dataToSave.saveFileName));
+            }
+        }
+
+        public static void LoadAllSaveableData(SaveData dataToSave)
+        {
+            LoadAllSaveableData(dataToSave, FindAllDataPersistanceObjects());
+        }
+
     }
 }

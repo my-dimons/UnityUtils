@@ -57,6 +57,11 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
         }
 
+        /// <summary>
+        /// Loads all save files in a save slot
+        /// </summary>
+        /// <param name="saveSlot">Save slot to load</param>
+        /// <returns></returns>
         public static SaveSlot Load(SaveSlot saveSlot)
         {
             SaveSlot tempSaveSlot = new(saveSlot.saveSlotName);
@@ -69,6 +74,13 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 
             return tempSaveSlot;
         }
+
+        /// <summary>
+        /// Loads a single save slot file
+        /// </summary>
+        /// <param name="saveData">Save data to load</param>
+        /// <param name="saveSlot">Save slot to load it to</param>
+        /// <returns></returns>
         public static SaveData LoadSingleSaveFile(SaveData saveData, SaveSlot saveSlot)
         {
             SaveData loadedData = default;
@@ -92,6 +104,28 @@ namespace UnityUtils.ScriptUtils.SaveSystem
             }
 
             return loadedData;
+        }
+
+        /// <summary>
+        /// Deletes the inputted save slot's save files
+        /// </summary>
+        /// <param name="saveSlot"></param>
+        public static void Delete(SaveSlot saveSlot)
+        {
+            foreach (SaveData saveData in saveSlot.GetSaveDatas())
+            {
+                string fullPath = SaveSystemUtils.GetSaveFilePath(saveData.saveFileName);
+
+                if (File.Exists(fullPath))
+                {
+                    File.Delete(fullPath);
+
+                    if (outputLogs)
+                        SaveSystemUtils.LogSaveFileDeleted(fullPath);
+                }
+            }
+
+            Directory.Delete(SaveSystemUtils.GetSaveSlotPath(saveSlot.saveSlotName), true);
         }
 
         /// <summary>
