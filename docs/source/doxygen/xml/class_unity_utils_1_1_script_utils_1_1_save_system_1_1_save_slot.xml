@@ -10,7 +10,7 @@
         <name>saveSlotName</name>
         <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSlot.saveSlotName</qualifiedname>
         <briefdescription>
-<para>The save slot id. </para>
+<para>The save slot name. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

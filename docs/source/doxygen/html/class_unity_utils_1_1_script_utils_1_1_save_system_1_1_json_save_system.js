@@ -11,6 +11,5 @@ var class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system =
     [ "SaveSaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#ab68f1fb463b82e6dee277d5a7b3d6c0d", null ],
     [ "SetEncryptionKey", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a274e9f22b04d7b140aa68789f562d8cb", null ],
     [ "UseEncryption", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a0cc8b7f0ed2293a8168abca71e6bebca", null ],
-    [ "outputLogs", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a4294b75b656767310a607835f29ddc02", null ],
-    [ "useEncryption", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a72d5b25588aaa1e6a3464ade65f5ed71", null ]
+    [ "outputLogs", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a4294b75b656767310a607835f29ddc02", null ]
 ];

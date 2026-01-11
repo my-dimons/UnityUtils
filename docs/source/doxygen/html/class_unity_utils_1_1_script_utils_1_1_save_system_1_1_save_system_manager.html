@@ -103,7 +103,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a44ea94ab7d0fa6d624b639dc227be510" id="r_a44ea94ab7d0fa6d624b639dc227be510"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510">FindAllDataPersistanceObjects</a> ()</td></tr>
 <tr class="memdesc:a44ea94ab7d0fa6d624b639dc227be510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> to call functions on.  <br /></td></tr>
 <tr class="memitem:a9d94ff58264b0f404cc1c2f54c14c1aa" id="r_a9d94ff58264b0f404cc1c2f54c14c1aa"><td class="memItemLeft" align="right" valign="top">static Dictionary&lt; string, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d94ff58264b0f404cc1c2f54c14c1aa">LoadAllSaveSlots</a> ()</td></tr>
-<tr class="memdesc:a9d94ff58264b0f404cc1c2f54c14c1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all save slots from the save directory, if none exists one is created.  <br /></td></tr>
+<tr class="memdesc:a9d94ff58264b0f404cc1c2f54c14c1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all save slots from the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a4898abb41588ddc9f1154114ee4331a1" title="What to name the save files.">SaveSystemUtils.SAVE_FILES_NAME</a> directory, if none exist one is created.  <br /></td></tr>
 <tr class="memitem:a8022a7df159fcaae1f5515938b8c7e1b" id="r_a8022a7df159fcaae1f5515938b8c7e1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8022a7df159fcaae1f5515938b8c7e1b">CreateSaveData&lt; T &gt;</a> (string fileName)</td></tr>
 <tr class="memdesc:a8022a7df159fcaae1f5515938b8c7e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new SaveDataID to the registry to be referenced later.  <br /></td></tr>
 <tr class="memitem:a1dc3203e46e8017422f4d5a16265b625" id="r_a1dc3203e46e8017422f4d5a16265b625"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc3203e46e8017422f4d5a16265b625">GetMostRecentSave</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt; saveSlots)</td></tr>
@@ -340,8 +340,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads all save slots from the save directory, if none exists one is created. </p>
-<dl class="section return"><dt>Returns</dt><dd>Dictionary of the save slot name and the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></dd></dl>
+<p>Loads all save slots from the <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a4898abb41588ddc9f1154114ee4331a1" title="What to name the save files.">SaveSystemUtils.SAVE_FILES_NAME</a> directory, if none exist one is created. </p>
+<dl class="section return"><dt>Returns</dt><dd>Dictionary of the save slot name and <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></dd></dl>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Static Public Attributes</h2></td></tr>
 <p>Calls ISaveableData.LoadData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveDatas</td><td>ID's to laod</td></tr>
+    <tr><td class="paramname">saveSlot</td><td>Save slot to load data from all the <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
   </table>
   </dd>
 </dl>
@@ -458,7 +458,7 @@ Static Public Attributes</h2></td></tr>
 <p>Calls ISaveableData.SaveData&lt;T&gt;(T) on every script inheriting <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveDatas</td><td>Dictionary with the dataIDs ID and name to save with</td></tr>
+    <tr><td class="paramname">saveSlot</td><td>Save slot to save data from <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
   </table>
   </dd>
 </dl>

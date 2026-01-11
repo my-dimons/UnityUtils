@@ -19,7 +19,9 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="17" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="public" static="yes" mutable="no">
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="private" static="yes" mutable="no">
         <type>bool</type>
         <definition>bool UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.useEncryption</definition>
         <argsstring></argsstring>
@@ -32,10 +34,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="20" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="20" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0be010612d5456d3218bd89cead75f3e" prot="private" static="yes" mutable="no">
         <type>string</type>
         <definition>string UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.encryptionKey</definition>
@@ -232,7 +232,7 @@
 <parametername>encryption</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Bool to set <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" kindref="member">useEncryption</ref> to</para>
+<para>Bool to set useEncryption to</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -403,7 +403,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>SaveSaveData</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>SetEncryptionKey</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0cc8b7f0ed2293a8168abca71e6bebca" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>UseEncryption</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>useEncryption</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a72d5b25588aaa1e6a3464ade65f5ed71" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>useEncryption</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

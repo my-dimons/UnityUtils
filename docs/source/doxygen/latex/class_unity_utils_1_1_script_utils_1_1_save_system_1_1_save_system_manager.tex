@@ -12,7 +12,7 @@ static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_
 static List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects}} ()
 \begin{DoxyCompactList}\small\item\em Gets all \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} to call functions on. \end{DoxyCompactList}\item 
 static Dictionary$<$ string, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a9d94ff58264b0f404cc1c2f54c14c1aa}{Load\+All\+Save\+Slots}} ()
-\begin{DoxyCompactList}\small\item\em Loads all save slots from the save directory, if none exists one is created. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Loads all save slots from the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4898abb41588ddc9f1154114ee4331a1}{Save\+System\+Utils.\+SAVE\+\_\+\+FILES\+\_\+\+NAME} directory, if none exist one is created. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a8022a7df159fcaae1f5515938b8c7e1b}{Create\+Save\+Data$<$ T $>$}} (string file\+Name)
 \begin{DoxyCompactList}\small\item\em Registers a new Save\+Data\+ID to the registry to be referenced later. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1dc3203e46e8017422f4d5a16265b625}{Get\+Most\+Recent\+Save}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ save\+Slots)
@@ -128,10 +128,10 @@ Dictionary$<$ string, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_sa
 
 
 
-Loads all save slots from the save directory, if none exists one is created. 
+Loads all save slots from the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a4898abb41588ddc9f1154114ee4331a1}{Save\+System\+Utils.\+SAVE\+\_\+\+FILES\+\_\+\+NAME} directory, if none exist one is created. 
 
 \begin{DoxyReturn}{Returns}
-Dictionary of the save slot name and the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}
+Dictionary of the save slot name and \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}
 \end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1471f8bb409c5171dd856c1527253d43}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadGame@{LoadGame}}
 \index{LoadGame@{LoadGame}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
@@ -145,7 +145,7 @@ Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script inheriting \dox
 
 
 \begin{DoxyParams}{Parameters}
-{\em save\+Datas} & ID\textquotesingle{}s to laod\\
+{\em save\+Slot} & Save slot to load data from all the \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a4f6b03beaeb83add6b30a99605d7f2a2}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!SaveAllSaveableData@{SaveAllSaveableData}}
@@ -172,7 +172,7 @@ Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on every script inheriting \dox
 
 
 \begin{DoxyParams}{Parameters}
-{\em save\+Datas} & Dictionary with the data\+IDs ID and name to save with\\
+{\em save\+Slot} & Save slot to save data from \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
 \hline
 \end{DoxyParams}
 
