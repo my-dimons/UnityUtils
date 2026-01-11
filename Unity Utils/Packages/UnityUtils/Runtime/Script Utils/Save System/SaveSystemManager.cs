@@ -18,12 +18,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
-        /// <param name="saveDatas">Dictionary with the dataIDs ID and name to save with</param>
+        /// <param name="saveSlot">Save slot to save data from <see cref="ISaveableData"/>'s</param>
         public static void SaveGame(SaveSlot saveSlot)
         {
             long startTime = DateTime.Now.Ticks;
-
-            List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Save saveData for each save saveData classType
             foreach (SaveData saveData in saveSlot.GetSaveDatas())
@@ -45,11 +43,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on every script inheriting <see cref="ISaveableData"/>
         /// </summary>
-        /// <param name="saveDatas">ID's to laod</param>
+        /// <param name="saveSlot">Save slot to load data from all the <see cref="ISaveableData"/>'s</param>
         public static void LoadGame(SaveSlot saveSlot)
         {
             long startTime = DateTime.Now.Ticks;
-            List<ISaveableData> saveableData = FindAllDataPersistanceObjects();
 
             // Inject save saveData into saveable files
             foreach (SaveData saveData in saveSlot.GetSaveDatas())
@@ -84,9 +81,9 @@ namespace UnityUtils.ScriptUtils.SaveSystem
                 .ToList();
 
         /// <summary>
-        /// Loads all save slots from the save directory, if none exists one is created.
+        /// Loads all save slots from the <see cref="SaveSystemUtils.SAVE_FILES_NAME"/> directory, if none exist one is created.
         /// </summary>
-        /// <returns>Dictionary of the save slot name and the <see cref="SaveSlot"/></returns>
+        /// <returns>Dictionary of the save slot name and <see cref="SaveSlot"/></returns>
         public static Dictionary<string, SaveSlot> LoadAllSaveSlots()
         {
             Dictionary<string, SaveSlot> saveSlotDictionary = new();

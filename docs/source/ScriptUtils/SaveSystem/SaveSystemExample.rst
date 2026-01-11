@@ -8,8 +8,13 @@ PlayerData
 ~~~~~~~~~~
 :doc:`SaveData/SaveData`
 
-Create a Serializable script that inherits :doc:`SaveData/SaveData`, and will be used to hold data across sessions. 
-We will create instances of this script and serialize it to .json files.
+.. note::
+
+	Some data types cannot be stored. Instances of scripts CAN be saved, but may run into recursion errors depending on what the script is referencing. If you want to be safe, only use primitive types.
+	
+	
+Create a Serializable script that inherits :doc:`SaveData/SaveData`. This will be used to hold data across sessions. 
+We will create instances of this script and serialize it to .json files later.
 
 .. code:: csharp
    
@@ -22,7 +27,7 @@ We will create instances of this script and serialize it to .json files.
    {
    	public float health;
    	public float name;
-   	public float[3] playerPosition = new float[3];
+   	public float[3] playerPosition = new float[3]; // Vector3, using a normal "Vector3" will run into recursion errors
    }
    
 SaveManager (Simple)
@@ -35,12 +40,16 @@ SaveManager (Simple)
 
 :doc:`SaveData/SaveData`
 
-Create a script that will save and load data, and will initialize our data's to save to.
+Create a script that will save and load data, and will initialize our :doc:`SaveData/SaveSlot`'s to save to (Which hold a list of :doc:`SaveData/SaveData`'s).
 If we're going to use encryption (Makes it harder to edit save data), make sure to set the encryption key on the JsonSaveSystem.
 
-We need to make a Dictionary with a string for the save slot name, and a :doc:`SaveData/SaveSlot` which will hold our :doc`SaveData`.
+We will make a dictionary with a string for the save slot name, and a :doc:`SaveData/SaveSlot` which will hold our :doc:`SaveData`.
 The script below is an example (with some helper functions) of a solid save system with save slots. 
 
+.. note::
+
+	You do not need to use a dictionary to save the slots, but in this example it makes it easier to get the save slots.
+	
 If you don't want to use save slots, just use a singular slot name
 
 This is a simple example of a SaveManager, to see a more complicated version view the bottom of this script
@@ -81,14 +90,22 @@ This is a simple example of a SaveManager, to see a more complicated version vie
        {
            SaveSystemManager.LoadGame(saveSlots[activeSaveSlot]);
        }
+       
+       public void Delete()
+       {
+       	SaveSystemManager.DeleteSaveSlot(saveSlots[activeSaveSlot]);
+       	saveSlots.Remove(activeSaveSlot);
+       }
 
        public void InitializeData()
        {
+           // Encryption
            JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
            JsonSaveSystem.UseEncryption(false);
            
+           // Debug.Logs()
            JsonSaveSystem.outputLogs = false;
-        	SaveSystemManager.outputLogs = true;
+           SaveSystemManager.outputLogs = true;
        }
 
        public void CreateSaveSlot(string saveSlot)
@@ -112,9 +129,10 @@ This is a simple example of a SaveManager, to see a more complicated version vie
    
 Player
 ~~~~~~
-:doc:`Interfaces/ISaveableData`
 
-To load and save the PlayerData, make a script that inherits :doc:`Interfaces/ISaveableData`.
+:doc:`SaveData/ISaveableData`
+
+To load and save the PlayerData script we made, make a script that inherits :doc:`SaveData/ISaveableData`.
 In this script create a SaveData<T>(T) and LoadData<T>(T) function, these functions will be called by :doc:`SaveSystemManager` when loading and saving data.
 
 In the Save/Load function make sure to check if the given data is the proper data you need to receive, then set all the needed variables.
@@ -137,6 +155,8 @@ In the Save/Load function make sure to check if the given data is the proper dat
            {
                save.health = health;
                save.name = name;
+               
+               // (Will have a better way to do this soon, check the future plans on the main page)
                save.playerPosition[0] = transform.position.x;
                save.playerPosition[1] = transform.position.y;
                save.playerPosition[2] = transform.position.z;
@@ -197,19 +217,31 @@ A more complex version of the simple SaveManager from above. This SaveManager ha
 	    public void Load()
 	    {
 	        SaveSystemManager.LoadGame(saveSlots[activeSaveSlot]);
-	
+	        
+	        // Make a list of save slots to get the most recent save
 	        List<SaveSlot> saves = new();
 	        foreach (var slot in saveSlots.Values)
 	            saves.Add(slot);
 	
 	        Debug.Log("Most recently saved file: " + SaveSystemManager.GetMostRecentSave(saves).saveSlotName);
 	    }
+	    
+	    public void Delete()
+	    {
+ 		   if (SaveSlotExists(activeSaveSlot)
+ 		   {
+ 		       SaveSystemManager.DeleteSaveSlot(saveSlots[activeSaveSlot]);
+ 		       saveSlots.Remove(activeSaveSlot)
+ 		   }	  
+	    }
 	
 	    public void InitializeData()
 	    {
+	        // Encryption
 	        JsonSaveSystem.SetEncryptionKey("YourEncryptionKey");
 	        JsonSaveSystem.UseEncryption(false);
-	
+			
+	        // Debug.Logs()
 	        JsonSaveSystem.outputLogs = true;
 	        SaveSystemManager.outputLogs = true;
 	    }
@@ -231,7 +263,7 @@ A more complex version of the simple SaveManager from above. This SaveManager ha
 	
 	        saveSlots.Add(saveSlot, saveSlotObj);
 	    }
-	
+	    	
 	    public void SetSaveSlot(string saveSlot)
 	    {
 	        if (saveSlots[saveSlot] != null)

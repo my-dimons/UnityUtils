@@ -6,7 +6,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
 {
     public class SaveSlot
     {
-        /// The save slot id
+        /// The save slot name
         public readonly string saveSlotName;
 
         /// The last time this save slot was saved

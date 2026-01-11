@@ -4,7 +4,7 @@ ISaveableData
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.SaveSystem`
      
-The **ISaveableData** is used in turn with other save systems. **ISaveableData** Is inherited from files that will save and load data. LoadData() and SaveData() are called automatically via other scripts.
+The **ISaveableData** is used in turn with other save systems. **ISaveableData** Is inherited from files that will save and load data. LoadData() and SaveData() are called automatically via the :doc:`SaveSystemManager` when loading/saving.
    
 Example Usage
 -------------
@@ -50,5 +50,5 @@ Example Usage
 Functions
 --------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::SaveSystem::ISaveableData
+.. doxygeninterface:: UnityUtils::ScriptUtils::SaveSystem::ISaveableData
    :members:

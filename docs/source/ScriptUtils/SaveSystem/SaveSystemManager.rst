@@ -16,15 +16,18 @@ Example Usage
    public class ExampleScript : MonoBehaviour
    {
    	// Create a save slot with the example type "GameData"
-   	SaveSlot saveFiles = new SaveSlot("save", SaveSystemManager.CreateSaveData<GameData>(path))
+   	SaveSlot saveFile = new SaveSlot("save", SaveSystemManager.CreateSaveData<GameData>(path))
    	
    	void Start()
    	{
    	   // Calls all the ISaveableData objects and their Save() function
-   	   SaveSystemManager.SaveGame(saveFiles);
+   	   SaveSystemManager.SaveGame(saveFile);
    	   
    	   // Calls all the ISaveableData objects and their Load() function
-   	   SaveSystemManager.LoadGame(saveFiles);
+   	   SaveSystemManager.LoadGame(saveFile);
+   	   
+   	   // Deletes the save slot
+   	   SaveSystemManager.DeleteSaveFile(saveFile);
    	}
    }
    

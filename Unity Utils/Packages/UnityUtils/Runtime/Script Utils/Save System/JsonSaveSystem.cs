@@ -17,7 +17,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         public static bool outputLogs = true;
 
         /// If true will use encryption
-        public static bool useEncryption;
+        private static bool useEncryption;
 
         private static string encryptionKey = "Key";
 
