@@ -3,6 +3,11 @@ var namespace_unity_utils_1_1_script_utils_1_1_objects =
     [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" ],
     [ "ObjectColorFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" ],
     [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ],
-    [ "ObjectModifierData", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" ],
-    [ "ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" ]
+    [ "ObjectModifierData&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g" ],
+    [ "ObjectModifiers&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g" ],
+    [ "ModifierType", "namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07", [
+      [ "Flat", "namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d", null ],
+      [ "Multiply", "namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648", null ],
+      [ "Divide", "namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d", null ]
+    ] ]
 ];

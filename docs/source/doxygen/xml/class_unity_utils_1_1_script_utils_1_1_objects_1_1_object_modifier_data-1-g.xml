@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1a9746ed7a5f038d59d8c6a9808252f00a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07" kindref="member">ModifierType</ref></type>
+        <definition>ModifierType UnityUtils.ScriptUtils.Objects.ObjectModifierData&lt; T &gt;.modifierType</definition>
+        <argsstring></argsstring>
+        <name>modifierType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData-1-g.modifierType</qualifiedname>
+        <briefdescription>
+<para>Specifies the classType of modifier applied to the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="6" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1ae6af95bec48c345c3ea88330288b5cfd" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T UnityUtils.ScriptUtils.Objects.ObjectModifierData&lt; T &gt;.modifierValue</definition>
+        <argsstring></argsstring>
+        <name>modifierValue</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData-1-g.modifierValue</qualifiedname>
+        <briefdescription>
+<para>Value of the modifier applied to an operation or calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="9" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1a977dc32f30996d75b4dc8f5bcc94057f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityUtils.ScriptUtils.Objects.ObjectModifierData&lt; T &gt;.ObjectModifierData</definition>
+        <argsstring>(ModifierType modifierType, T modifierValue)</argsstring>
+        <name>ObjectModifierData</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectModifierData-1-g.ObjectModifierData</qualifiedname>
+        <param>
+          <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07" kindref="member">ModifierType</ref></type>
+          <declname>modifierType</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>modifierValue</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new Instance of the ObjectModifierData class with the ObjectModifiers.ModifierType and value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifierType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The classType of modifier</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modifierValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value associated with the modifier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="16" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" line="3" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectModifierData.cs" bodystart="4" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1a9746ed7a5f038d59d8c6a9808252f00a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</scope><name>modifierType</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1ae6af95bec48c345c3ea88330288b5cfd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</scope><name>modifierValue</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1a977dc32f30996d75b4dc8f5bcc94057f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</scope><name>ObjectModifierData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

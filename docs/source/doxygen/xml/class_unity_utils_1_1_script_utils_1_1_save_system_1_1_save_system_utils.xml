@@ -315,12 +315,41 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="84" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="84" bodyend="87"/>
       </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a861a4274318ccf3555246e76d302b1a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileDeleted</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LogSaveFileDeleted</name>
+        <qualifiedname>UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.LogSaveFileDeleted</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Logs a message indicating that a save file has been deleted at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file system path of the deleted save path</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="93" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="93" bodyend="96"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="88"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="97"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08be212e1da58776f460392ae8ecea5f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>DEFAULT_SAVE_SLOT_ID</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveFilePath</name></member>
@@ -329,6 +358,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a8d55c8b79b9f1557e2a6cfd55186df43" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveSlotRootPath</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a1d4c639a005c4e74afa106f605c0b01d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>JSON_SAVE_FILE_EXTENSION</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileCreated</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a861a4274318ccf3555246e76d302b1a2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileDeleted</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08faeabad851f3fa5ab668cfdd85ced2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileEncrypted</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileLoaded</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>LogSaveFileNotFound</name></member>

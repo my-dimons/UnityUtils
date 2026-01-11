@@ -1,6 +1,7 @@
 var class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system =
 [
     [ "CreateRootSaveDataIfNotExisting", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#aadc15994db95278bff0740c64f1d85b8", null ],
+    [ "Delete", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a6eb6158cba5c53a76ef184b6cc4dd6be", null ],
     [ "EncryptDecrypt", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a95d2a058b8834f394cb587a2c5076b92", null ],
     [ "GetJsonStringData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a3f94af3fd6f834d5d44c40863edea27f", null ],
     [ "GetSaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a9847f5f7caf9b3f4942f172bf56ca78d", null ],

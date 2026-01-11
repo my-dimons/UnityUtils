@@ -5,6 +5,7 @@ var class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils =
     [ "GetSaveSlotPath", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a4c6e86d5c528189b5e23d153d3eadf35", null ],
     [ "GetSaveSlotRootPath", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a8d55c8b79b9f1557e2a6cfd55186df43", null ],
     [ "LogSaveFileCreated", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a22c2f625f701aeeb416b1d4f48a53abc", null ],
+    [ "LogSaveFileDeleted", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a861a4274318ccf3555246e76d302b1a2", null ],
     [ "LogSaveFileEncrypted", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a08faeabad851f3fa5ab668cfdd85ced2", null ],
     [ "LogSaveFileLoaded", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#ab0f485ace295fb7d57dc33f8c322b5b4", null ],
     [ "LogSaveFileNotFound", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#abe5777c132d484cf0a40ad3508f9e30a", null ],

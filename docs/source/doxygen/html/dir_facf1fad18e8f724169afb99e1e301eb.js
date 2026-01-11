@@ -1,5 +1,6 @@
 var dir_facf1fad18e8f724169afb99e1e301eb =
 [
+    [ "ModifierType.cs", "_modifier_type_8cs.html", "_modifier_type_8cs" ],
     [ "ObjectAnimations.cs", "_object_animations_8cs.html", "_object_animations_8cs" ],
     [ "ObjectColorFlash.cs", "_object_color_flash_8cs.html", "_object_color_flash_8cs" ],
     [ "ObjectDelays.cs", "_object_delays_8cs.html", "_object_delays_8cs" ],

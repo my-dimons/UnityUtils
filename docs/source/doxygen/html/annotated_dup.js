@@ -16,8 +16,8 @@ var annotated_dup =
           [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" ],
           [ "ObjectColorFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" ],
           [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ],
-          [ "ObjectModifierData", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" ],
-          [ "ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" ]
+          [ "ObjectModifierData&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g" ],
+          [ "ObjectModifiers&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g" ]
         ] ],
         [ "Particles", "namespace_unity_utils_1_1_script_utils_1_1_particles.html", [
           [ "ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" ],

@@ -18,7 +18,9 @@ static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_ab0f485ace295fb7d57dc33f8c322b5b4}{Log\+Save\+File\+Loaded}} (string path)
 \begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been loaded at the specified path. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a08faeabad851f3fa5ab668cfdd85ced2}{Log\+Save\+File\+Encrypted}} (string path)
-\begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been encrypted at the specified path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been encrypted at the specified path. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a861a4274318ccf3555246e76d302b1a2}{Log\+Save\+File\+Deleted}} (string path)
+\begin{DoxyCompactList}\small\item\em Logs a message indicating that a save file has been deleted at the specified path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -107,6 +109,21 @@ Logs a message indicating that a save file has been created at the specified pat
 
 \begin{DoxyParams}{Parameters}
 {\em path} & The full file system path where the save file was created\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a861a4274318ccf3555246e76d302b1a2}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileDeleted@{LogSaveFileDeleted}}
+\index{LogSaveFileDeleted@{LogSaveFileDeleted}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}}
+\doxysubsubsection{\texorpdfstring{LogSaveFileDeleted()}{LogSaveFileDeleted()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a861a4274318ccf3555246e76d302b1a2} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Utils.\+Log\+Save\+File\+Deleted (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs a message indicating that a save file has been deleted at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file system path of the deleted save path\\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a08faeabad851f3fa5ab668cfdd85ced2}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils}!LogSaveFileEncrypted@{LogSaveFileEncrypted}}

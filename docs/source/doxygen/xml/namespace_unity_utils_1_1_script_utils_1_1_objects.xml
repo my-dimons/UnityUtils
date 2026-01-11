@@ -5,12 +5,51 @@
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" prot="public">UnityUtils::ScriptUtils::Objects::ObjectAnimations</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" prot="public">UnityUtils::ScriptUtils::Objects::ObjectColorFlash</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" prot="public">UnityUtils::ScriptUtils::Objects::ObjectDelays</innerclass>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifierData</innerclass>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifiers</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g" prot="public">UnityUtils::ScriptUtils::Objects::ObjectModifiers-1-g</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ModifierType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ModifierType</qualifiedname>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d" prot="public">
+          <name>Flat</name>
+          <briefdescription>
+<para>Addition/Subtraction modifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648" prot="public">
+          <name>Multiply</name>
+          <briefdescription>
+<para>Multiplication modifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d" prot="public">
+          <name>Divide</name>
+          <briefdescription>
+<para>Division modifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum with different modifier types that get used in <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g" kindref="compound">ObjectModifiers&lt;T&gt;</ref> when applying modifiers to an input value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="9" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" bodystart="10" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="8" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="4" column="1"/>
   </compounddef>
 </doxygen>

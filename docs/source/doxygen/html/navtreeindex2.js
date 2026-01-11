@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#adc89b9acd4f48169e335c470ea3214b0":[1,0,0,0,6,6,3],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2":[0,0,0,0,6,6,4],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2":[1,0,0,0,6,6,4],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae89df3943971c8847f19010c49257a02":[0,0,0,0,6,6,9],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae89df3943971c8847f19010c49257a02":[1,0,0,0,6,6,9],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae952e6b7f589bc3b221416e0d417c313":[0,0,0,0,6,6,5],
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae952e6b7f589bc3b221416e0d417c313":[1,0,0,0,6,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html":[0,0,0,0,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html":[1,0,0,0,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#a9dcb2d6e71e03b1d547bfae6bb6ccc82":[0,0,0,0,6,5,3],
@@ -95,10 +102,16 @@ var NAVTREEINDEX2 =
 "namespace_unity_utils_1_1_script_utils_1_1_audio.html":[0,0,0,0,0],
 "namespace_unity_utils_1_1_script_utils_1_1_cameras.html":[0,0,0,0,1],
 "namespace_unity_utils_1_1_script_utils_1_1_objects.html":[0,0,0,0,2],
+"namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07":[0,0,0,0,2,5],
+"namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d":[0,0,0,0,2,5,2],
+"namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d":[0,0,0,0,2,5,0],
+"namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648":[0,0,0,0,2,5,1],
 "namespace_unity_utils_1_1_script_utils_1_1_particles.html":[0,0,0,0,3],
 "namespace_unity_utils_1_1_script_utils_1_1_save_system.html":[0,0,0,0,4],
 "namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html":[0,0,0,0,5],
 "namespace_unity_utils_1_1_script_utils_1_1_u_i.html":[0,0,0,0,6],
+"namespacemembers.html":[0,1,0],
+"namespacemembers_enum.html":[0,1,1],
 "namespaces.html":[0,0],
 "pages.html":[]
 };

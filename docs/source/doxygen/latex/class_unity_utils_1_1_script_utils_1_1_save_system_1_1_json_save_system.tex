@@ -6,9 +6,11 @@
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_abe6fd5fd70e54532a45986ff967e244a}{Save}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} save\+Data)
 \begin{DoxyCompactList}\small\item\em Serializes the inputted {\itshape save\+Data}  into Save\+Data\+ID.\+file\+Name in a json format. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_adeb02be1194c87aae409ad59d945068c}{Load}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} save\+Slot)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads all save files in a save slot. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a8c94fba4c9ef83044b82d9519a64345b}{Load\+Single\+Save\+File}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} save\+Data, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} save\+Slot)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads a single save slot file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6eb6158cba5c53a76ef184b6cc4dd6be}{Delete}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} save\+Slot)
+\begin{DoxyCompactList}\small\item\em Deletes the inputted save slot\textquotesingle{}s save files. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a274e9f22b04d7b140aa68789f562d8cb}{Set\+Encryption\+Key}} (string key)
 \begin{DoxyCompactList}\small\item\em Sets the encryption key for file encryption. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a0cc8b7f0ed2293a8168abca71e6bebca}{Use\+Encryption}} (bool encryption)
@@ -45,6 +47,21 @@ void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Create\+
 
 Will create \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_a8d55c8b79b9f1557e2a6cfd55186df43}{Save\+System\+Utils.\+Get\+Save\+Slot\+Root\+Path()} if it does not exist. 
 
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6eb6158cba5c53a76ef184b6cc4dd6be}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!Delete@{Delete}}
+\index{Delete@{Delete}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a6eb6158cba5c53a76ef184b6cc4dd6be} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deletes the inputted save slot\textquotesingle{}s save files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Slot} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a95d2a058b8834f394cb587a2c5076b92}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!EncryptDecrypt@{EncryptDecrypt}}
 \index{EncryptDecrypt@{EncryptDecrypt}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
 \doxysubsubsection{\texorpdfstring{EncryptDecrypt()}{EncryptDecrypt()}}
@@ -109,12 +126,38 @@ Deserialized save data
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_adeb02be1194c87aae409ad59d945068c} 
 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Loads all save files in a save slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Slot} & Save slot to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a8c94fba4c9ef83044b82d9519a64345b}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!LoadSingleSaveFile@{LoadSingleSaveFile}}
 \index{LoadSingleSaveFile@{LoadSingleSaveFile}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
 \doxysubsubsection{\texorpdfstring{LoadSingleSaveFile()}{LoadSingleSaveFile()}}
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_a8c94fba4c9ef83044b82d9519a64345b} 
 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Json\+Save\+System.\+Load\+Single\+Save\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{save\+Data}{, }\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}}}]{save\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Loads a single save slot file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save\+Data} & Save data to load\\
+\hline
+{\em save\+Slot} & Save slot to load it to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_abe6fd5fd70e54532a45986ff967e244a}\index{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}!Save@{Save}}
 \index{Save@{Save}!UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem@{UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem}}
 \doxysubsubsection{\texorpdfstring{Save()}{Save()}}

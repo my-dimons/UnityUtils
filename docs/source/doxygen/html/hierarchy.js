@@ -51,8 +51,8 @@ var hierarchy =
     ] ],
     [ "UnityUtils.ScriptUtils.Objects.ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", null ],
     [ "UnityUtils.ScriptUtils.Objects.ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", null ],
-    [ "UnityUtils.ScriptUtils.Objects.ObjectModifierData", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data.html", null ],
-    [ "UnityUtils.ScriptUtils.Objects.ObjectModifiers", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers.html", null ],
+    [ "UnityUtils.ScriptUtils.Objects.ObjectModifierData&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g.html", null ],
+    [ "UnityUtils.ScriptUtils.Objects.ObjectModifiers&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.SaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html", [

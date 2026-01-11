@@ -97,7 +97,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abe6fd5fd70e54532a45986ff967e244a" id="r_abe6fd5fd70e54532a45986ff967e244a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe6fd5fd70e54532a45986ff967e244a">Save</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> saveData)</td></tr>
 <tr class="memdesc:abe6fd5fd70e54532a45986ff967e244a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the inputted <em>saveData</em>  into SaveDataID.fileName in a json format.  <br /></td></tr>
 <tr class="memitem:adeb02be1194c87aae409ad59d945068c" id="r_adeb02be1194c87aae409ad59d945068c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb02be1194c87aae409ad59d945068c">Load</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memdesc:adeb02be1194c87aae409ad59d945068c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all save files in a save slot.  <br /></td></tr>
 <tr class="memitem:a8c94fba4c9ef83044b82d9519a64345b" id="r_a8c94fba4c9ef83044b82d9519a64345b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c94fba4c9ef83044b82d9519a64345b">LoadSingleSaveFile</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> saveData, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memdesc:a8c94fba4c9ef83044b82d9519a64345b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a single save slot file.  <br /></td></tr>
+<tr class="memitem:a6eb6158cba5c53a76ef184b6cc4dd6be" id="r_a6eb6158cba5c53a76ef184b6cc4dd6be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb6158cba5c53a76ef184b6cc4dd6be">Delete</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> saveSlot)</td></tr>
+<tr class="memdesc:a6eb6158cba5c53a76ef184b6cc4dd6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the inputted save slot's save files.  <br /></td></tr>
 <tr class="memitem:a274e9f22b04d7b140aa68789f562d8cb" id="r_a274e9f22b04d7b140aa68789f562d8cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274e9f22b04d7b140aa68789f562d8cb">SetEncryptionKey</a> (string key)</td></tr>
 <tr class="memdesc:a274e9f22b04d7b140aa68789f562d8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the encryption key for file encryption.  <br /></td></tr>
 <tr class="memitem:a0cc8b7f0ed2293a8168abca71e6bebca" id="r_a0cc8b7f0ed2293a8168abca71e6bebca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc8b7f0ed2293a8168abca71e6bebca">UseEncryption</a> (bool encryption)</td></tr>
@@ -145,6 +149,39 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Will create <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#a8d55c8b79b9f1557e2a6cfd55186df43" title="The full root path for save files, usually Application.persistentDataPath/saves.">SaveSystemUtils.GetSaveSlotRootPath()</a> if it does not exist. </p>
+
+</div>
+</div>
+<a id="a6eb6158cba5c53a76ef184b6cc4dd6be" name="a6eb6158cba5c53a76ef184b6cc4dd6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb6158cba5c53a76ef184b6cc4dd6be">&#9670;&#160;</a></span>Delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.Delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a></td>          <td class="paramname"><span class="paramname"><em>saveSlot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the inputted save slot's save files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveSlot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -275,6 +312,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Loads all save files in a save slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveSlot</td><td>Save slot to load</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
 </div>
 </div>
 <a id="a8c94fba4c9ef83044b82d9519a64345b" name="a8c94fba4c9ef83044b82d9519a64345b"></a>
@@ -303,6 +349,16 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Loads a single save slot file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveData</td><td>Save data to load</td></tr>
+    <tr><td class="paramname">saveSlot</td><td>Save slot to load it to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
