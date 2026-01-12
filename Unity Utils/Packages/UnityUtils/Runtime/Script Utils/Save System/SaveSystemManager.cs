@@ -131,7 +131,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Registers a new <see cref="SaveDataID"/> to the registry to be referenced later
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">data type to encode, must inherit <see cref="SaveData"/></typeparam>
         /// <param name="fileName">The file name of the save object</param>
         /// <returns>The <see cref="SaveDataID"/> with its filled in parameters</returns>
         public static SaveData CreateSaveData<T>(string fileName) where T : SaveData, new()

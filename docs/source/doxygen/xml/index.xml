@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.0" xml:lang="en-US">
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kind="enum"><name>VolumeType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kind="enumvalue"><name>Global</name></member>
@@ -234,11 +234,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ad145c126937f1581efd02370b578e909" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a6911789bce490c25bee6e8a8e9b42ff8" kind="function"><name>GetRandomSong</name></member>
   </compound>
-  <compound refid="class_testing_script1" kind="class"><name>TestingScript1</name>
-    <member refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kind="variable"><name>testingValue</name></member>
-    <member refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kind="variable"><name>testingVector3</name></member>
-    <member refid="class_testing_script1_1a18a6b4c18f146bfcc9d56cd5275eef9a" kind="function"><name>Start</name></member>
-  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonDebugLogs</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a76ae6ab5a46c5baf88ee1d2e53799912" kind="variable"><name>logHover</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a927670f69f3fc61b3a6a67c1dbb14402" kind="variable"><name>logExit</name></member>
@@ -443,8 +438,6 @@
   <compound refid="_camera_billboard_8cs" kind="file"><name>CameraBillboard.cs</name>
   </compound>
   <compound refid="_camera_shake_8cs" kind="file"><name>CameraShake.cs</name>
-  </compound>
-  <compound refid="_testing_script1_8cs" kind="file"><name>TestingScript1.cs</name>
   </compound>
   <compound refid="_coroutine_helper_8cs" kind="file"><name>CoroutineHelper.cs</name>
   </compound>

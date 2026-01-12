@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</compoundname>
     <sectiondef kind="public-static-attrib">
@@ -108,7 +108,7 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="69" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="69" bodyend="72"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> &gt;</type>
         <definition>static List&lt; ISaveableData &gt; UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.FindAllDataPersistanceObjects</definition>
         <argsstring>()</argsstring>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="78" column="28"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="78" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="78" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a9d94ff58264b0f404cc1c2f54c14c1aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Dictionary&lt; string, <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref> &gt;</type>
@@ -163,6 +163,7 @@
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>data type to encode, must inherit <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

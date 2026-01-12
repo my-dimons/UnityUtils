@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
   <compounddef id="dir_37c679ec90a8a2763665e83cfd3c17f4" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils</compoundname>
     <innerdir refid="dir_db252fa7b789e7b0f2fe89d360a65912">Packages/UnityUtils/Runtime/Script Utils/Audio</innerdir>

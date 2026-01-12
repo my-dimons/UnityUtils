@@ -1,9 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2":[1,0,0,0,6,6,4],
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae89df3943971c8847f19010c49257a02":[0,0,0,0,6,6,9],
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae89df3943971c8847f19010c49257a02":[1,0,0,0,6,6,9],
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae952e6b7f589bc3b221416e0d417c313":[0,0,0,0,6,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae952e6b7f589bc3b221416e0d417c313":[1,0,0,0,6,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html":[0,0,0,0,6,5],
 "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html":[1,0,0,0,6,5],
@@ -83,9 +79,8 @@ var NAVTREEINDEX2 =
 "functions_prop.html":[1,3,4],
 "functions_r.html":[1,3,0,14],
 "functions_s.html":[1,3,0,15],
-"functions_t.html":[1,3,0,16],
-"functions_u.html":[1,3,0,17],
-"functions_v.html":[1,3,0,18],
+"functions_u.html":[1,3,0,16],
+"functions_v.html":[1,3,0,17],
 "functions_vars.html":[1,3,2],
 "hierarchy.html":[1,2],
 "index.html":[],

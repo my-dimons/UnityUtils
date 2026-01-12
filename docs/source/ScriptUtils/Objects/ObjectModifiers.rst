@@ -43,5 +43,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifiers
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifiers<T>
    :members:

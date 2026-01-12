@@ -48,6 +48,5 @@ var annotated_dup =
         ] ],
         [ "CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper" ]
       ] ]
-    ] ],
-    [ "TestingScript1", "class_testing_script1.html", "class_testing_script1" ]
+    ] ]
 ];
