@@ -4,3 +4,4 @@ breathe
 furo
 pydata-sphinx-theme
 sphinx-material
+sphinx-book-theme
