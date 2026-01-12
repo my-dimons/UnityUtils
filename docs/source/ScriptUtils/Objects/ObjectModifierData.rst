@@ -27,5 +27,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifierData<T>
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifierData`1
    :members:
