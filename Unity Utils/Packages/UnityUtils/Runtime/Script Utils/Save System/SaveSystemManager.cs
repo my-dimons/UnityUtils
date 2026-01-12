@@ -10,9 +10,6 @@ using System.Security.Cryptography;
 
 namespace UnityUtils.ScriptUtils.SaveSystem
 {
-    /// <summary>
-    /// Test description
-    /// </summary>
     public static class SaveSystemManager
     {
         /// If true will output Debug.Log()'s on Save/Load

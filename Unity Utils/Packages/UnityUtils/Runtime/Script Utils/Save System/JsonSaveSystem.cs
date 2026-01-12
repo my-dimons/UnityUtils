@@ -109,7 +109,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Deletes the inputted save slot's save files
         /// </summary>
-        /// <param name="saveSlot"></param>
+        /// <param name="saveSlot"><see cref="SaveSlot"/> to delete from the file system</param>
         public static void Delete(SaveSlot saveSlot)
         {
             foreach (SaveData saveData in saveSlot.GetSaveDatas())
@@ -131,7 +131,7 @@ namespace UnityUtils.ScriptUtils.SaveSystem
         /// <summary>
         /// Sets the encryption key for file encryption
         /// </summary>
-        /// <param name="key">Key to set to</param>
+        /// <param name="key">Key to set the <see cref="encryptionKey"/> to</param>
         public static void SetEncryptionKey(string key)
         {
             encryptionKey = key;
