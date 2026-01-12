@@ -7,7 +7,7 @@ project = 'Unity Utils'
 copyright = '2025, mydimons'
 author = 'mydimons'
 
-release = '1.0'
+release = '1.3.0'
 version = '1.3.0'
 
 # -- General configuration
@@ -41,7 +41,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'sphinx-material'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
