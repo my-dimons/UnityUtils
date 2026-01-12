@@ -17,7 +17,7 @@ View the GitHub repo here: https://github.com/my-dimons/Unity-Utils
 
 View the Testing UnityUtils docs here: https://unityutils-testing.readthedocs.io/en/latest/ (This is just where I test new updates, usually doesn't work)
 
-View the future plans for UnityUtils here: :doc:`plans`
+View the future plans for UnityUtils here: https://github.com/users/my-dimons/projects/2
    
 
 Contents

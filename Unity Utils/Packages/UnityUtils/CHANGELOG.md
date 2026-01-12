@@ -7,6 +7,7 @@
 - StopScreenshake(Transform camera) method to CameraShake.cs
 - IsScreenshaking(Transform camera) method to CameraShake.cs
 - Link to plans.rst on docs
+- TODO GitHub Kanban (https://github.com/users/my-dimons/projects/2)
 - Save System
     - ISaveableData
     - SaveData
