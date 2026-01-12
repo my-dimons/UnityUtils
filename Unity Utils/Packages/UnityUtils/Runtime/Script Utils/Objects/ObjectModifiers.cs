@@ -8,7 +8,7 @@ using UnityEngine.Assertions.Comparers;
 using System;
 
 namespace UnityUtils.ScriptUtils.Objects
-{
+{ 
     public class ObjectModifiers<T>
     {
         /// The default modifier order
