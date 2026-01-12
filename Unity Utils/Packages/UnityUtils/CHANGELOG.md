@@ -6,11 +6,12 @@
 - ObjectModifierData
 - StopScreenshake(Transform camera) method to CameraShake.cs
 - IsScreenshaking(Transform camera) method to CameraShake.cs
+- Link to plans.rst on docs
 - Save System
-    - ISaveData
     - ISaveableData
     - SaveData
     - SaveSlot
+    - SaveSlotSaveData
     - SaveSystemManager
     - SaveSystemUtils
     - JsonSaveSystem
@@ -19,6 +20,7 @@
 - Fixed ObjectDelays useRealtime (Wasn't waiting in realtime)
 - Fixed camera shake from ending in an improper position
 - Fixed package dependencies not properly getting recognized (I just forgot to make sure they were required)
+- Changed docs theme
 
 ### Changes
 - Changed Company name from "DefaultCompany" -> "mydimons"

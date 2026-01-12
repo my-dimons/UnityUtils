@@ -14,5 +14,5 @@ Future plans / TODO for Unity-Utils:
 8. Add more data types to :doc:`ScriptUtils/Objects/ModifierType`
 9. More particle stuffs to :doc:`ScriptUtils/Particles/ParticleModifier`
 10. Move camera shake function to :doc:`ScriptUtils/Objects/ObjectAnimations` and call that instead
-11. Test :doc:`ScriptUtils/Objects/ColorFlash` in a separate project (fix if any bugs), and add more flash options
+11. Test :doc:`ScriptUtils/Objects/ObjectColorFlash` in a separate project (fix if any bugs), and add more flash options
 12. :doc:`ScriptUtils/Objects/ObjectDelays` add function to call an Action/Event (I kinda forgot what they're called), after a certain time
