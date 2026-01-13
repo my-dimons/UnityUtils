@@ -21,11 +21,11 @@
 - Fixed ObjectDelays useRealtime (Wasn't waiting in realtime)
 - Fixed camera shake from ending in an improper position
 - Fixed package dependencies not properly getting recognized (I just forgot to make sure they were required)
-- Changed docs theme
 
 ### Changes
 - Changed Company name from "DefaultCompany" -> "mydimons"
 - Changed Player Settings project name from "Examples" -> "UnityUtils"
+- Changed docs theme
 
 ## v1.2.0
 
