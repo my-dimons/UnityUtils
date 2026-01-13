@@ -45,7 +45,7 @@ namespace UnityUtils.ScriptUtils.UI
 
             if (logToggle)
             {
-                Debug.Log("Spawned particle system: " + objects);
+                Debug.Log("Toggled objects: " + objects);
             }
         }
     }
