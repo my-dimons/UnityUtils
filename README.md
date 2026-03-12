@@ -7,4 +7,4 @@ Download instructions here: https://mydimons-unity-utils.readthedocs.io/en/lates
 Find the Unity Utils documentation here: https://mydimons-unity-utils.readthedocs.io/en/latest/
 
 # Contribution
-Feel free to use any of these scripts in any projects, and if you want to contribute to this project GO FOR IT!
+Feel free to use any of these scripts in any projects, and if you want to contribute to this project GO FOR IT and look at the contributing guide on how to contribute!
