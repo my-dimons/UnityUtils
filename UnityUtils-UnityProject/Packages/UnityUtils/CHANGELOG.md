@@ -1,10 +1,14 @@
 ## v1.3.1
 
 ### Additions
+- Contributing guide
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()
+
 ### Changes
+- Renamed the Unity Project from "Unity-Utils" to "UnityUtils-UnityProject"
+- Renamed the GitHub repo from "Unity-Utils" to "UnityUtils"
 
 ## v1.3.0
 
