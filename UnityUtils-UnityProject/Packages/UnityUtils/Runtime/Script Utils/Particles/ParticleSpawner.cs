@@ -24,7 +24,7 @@ namespace UnityUtils.ScriptUtils.Particles {
       ps.Play();
 
       float particleLife = ps.main.duration + ps.main.startLifetime.constantMax;
-      ObjectDelays.DestroyUnscaledTime(particleInstance, particleLife);
+      ObjectDelays.Delay(() => Object.Destroy(particleInstance), particleLife);
     }
   }
 }
