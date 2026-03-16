@@ -4,6 +4,7 @@
 - Contributing guide
 - ObjectColorFlash can now use materials while flashing
 - ObjectColorFlash has a static function to get either an unlit or lit material (prebuilt in)
+- ObjectColorFlash IsFlashing() function which returns a bool
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()

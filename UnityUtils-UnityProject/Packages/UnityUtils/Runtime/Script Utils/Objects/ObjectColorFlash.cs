@@ -30,7 +30,14 @@ namespace UnityUtils.ScriptUtils.Objects {
 
     void Start() {
       spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
+    /// <summary>
+    /// Determines whether a flashing operation is currently active.
+    /// </summary>
+    /// <returns>true if the object is flashing; otherwise, false.</returns>
+    public bool IsFlashing() {
+      return flashRoutine != null;
     }
 
     /// <summary>
@@ -120,8 +127,9 @@ namespace UnityUtils.ScriptUtils.Objects {
       flashRoutine = null;
     }
 
+
     /// <summary>
-    /// Retrieves the material associated with the specified flash material type.
+    /// Retrieves the material associated with the specified prebuilt flash material type.
     /// </summary>
     /// <param name="flashMaterial">The type of flash material to get</param>
     /// <returns>The material corresponding to the specified flash material type. Returns the lit material by default</returns>

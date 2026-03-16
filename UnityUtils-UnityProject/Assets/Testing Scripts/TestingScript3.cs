@@ -6,6 +6,8 @@ public class TestingScript3 : MonoBehaviour {
   public GameObject mat2;
   public GameObject mat3;
 
+  public bool mat2Flashing;
+
   public Color flashColor;
 
   private void Start() {
@@ -16,5 +18,9 @@ public class TestingScript3 : MonoBehaviour {
     mat1.GetComponent<ObjectColorFlash>().FlashWhite();
     mat2.GetComponent<ObjectColorFlash>().FlashColor(flashColor, 0.5f, ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit));
     mat3.GetComponent<ObjectColorFlash>().FlashColor(flashColor, ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit));
+  }
+
+  private void Update() {
+    mat2Flashing = mat2.GetComponent<ObjectColorFlash>().IsFlashing();
   }
 }
