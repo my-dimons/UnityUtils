@@ -2,6 +2,7 @@
 
 ### Additions
 - Contributing guide
+- ObjectColorFlash can now use unlit or lit materials
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()
@@ -9,6 +10,7 @@
 ### Changes
 - Renamed the Unity Project from "Unity-Utils" to "UnityUtils-UnityProject"
 - Renamed the GitHub repo from "Unity-Utils" to "UnityUtils"
+- Formatted all scripts to have 2 tab spaces instead of 4
 
 ## v1.3.0
 
