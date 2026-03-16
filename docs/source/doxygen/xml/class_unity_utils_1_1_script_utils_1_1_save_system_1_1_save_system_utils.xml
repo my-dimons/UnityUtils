@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</compoundname>
     <sectiondef kind="public-static-attrib">
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="15" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="7" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a1d4c639a005c4e74afa106f605c0b01d" prot="public" static="yes" mutable="no">
         <type>const string</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="18" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="10" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a4898abb41588ddc9f1154114ee4331a1" prot="public" static="yes" mutable="no">
         <type>const string</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="21" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="21" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="13" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08be212e1da58776f460392ae8ecea5f" prot="public" static="yes" mutable="no">
         <type>const string</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="24" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="24" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="16" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1add17f685c3fa0834335a2ee06c7a6893" prot="public" static="yes" mutable="no">
         <type>const string</type>
@@ -81,11 +81,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="27" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="27" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="19" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a8d55c8b79b9f1557e2a6cfd55186df43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a8d55c8b79b9f1557e2a6cfd55186df43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotRootPath</definition>
         <argsstring>()</argsstring>
@@ -98,9 +98,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="32" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="32" bodyend="32"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="24" column="26"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveFilePath</definition>
         <argsstring>(string fileName)</argsstring>
@@ -127,9 +127,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="38" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="38" bodyend="38"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="30" column="26"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a0e3c85e438e3e3a8b1c569d3f20c14e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a0e3c85e438e3e3a8b1c569d3f20c14e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotFilePath</definition>
         <argsstring>(string saveSlot, string fileName)</argsstring>
@@ -168,9 +168,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="45" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="45" bodyend="45"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="37" column="26"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a4c6e86d5c528189b5e23d153d3eadf35" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a4c6e86d5c528189b5e23d153d3eadf35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>static string UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils.GetSaveSlotPath</definition>
         <argsstring>(string saveSlot)</argsstring>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="51" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="51" bodyend="51"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="43" column="26"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abe5777c132d484cf0a40ad3508f9e30a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="57" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="57" bodyend="60"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="49" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="49" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a22c2f625f701aeeb416b1d4f48a53abc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="66" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="66" bodyend="69"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="57" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="57" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1ab0f485ace295fb7d57dc33f8c322b5b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="75" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="75" bodyend="78"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="65" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="65" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08faeabad851f3fa5ab668cfdd85ced2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="84" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="84" bodyend="87"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="73" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="73" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a861a4274318ccf3555246e76d302b1a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -342,14 +342,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="93" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="93" bodyend="96"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="81" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="81" bodyend="83"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="12" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="13" bodyend="97"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" line="5" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemUtils.cs" bodystart="5" bodyend="84"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1a08be212e1da58776f460392ae8ecea5f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>DEFAULT_SAVE_SLOT_ID</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils_1abab8c6849773bb4bfa36392ccaadbf7c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils</scope><name>GetSaveFilePath</name></member>

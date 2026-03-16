@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::SaveSlotSaveData</compoundname>
     <basecompoundref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" prot="public" virt="non-virtual">UnityUtils.ScriptUtils.SaveSystem.SaveData</basecompoundref>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="11" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="7" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="13" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="13" bodyend="17"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="9" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="9" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1aa19bfe5ce97a4c75ec4d5a53922b5601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="19" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="19" bodyend="22"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="14" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="14" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -89,7 +89,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="8" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="9" bodyend="23"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" line="5" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlotSaveData.cs" bodystart="5" bodyend="17"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1ac84a12967583e49ae6d3f7206d8695fe" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSlotSaveData</scope><name>lastTimeSaved</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data_1aa19bfe5ce97a4c75ec4d5a53922b5601" prot="public" virt="virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSlotSaveData</scope><name>Load</name></member>

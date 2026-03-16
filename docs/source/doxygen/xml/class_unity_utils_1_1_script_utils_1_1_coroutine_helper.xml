@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::CoroutineHelper</compoundname>
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="8" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="8" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="6" column="36" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="6" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="11" column="39" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="12" bodyend="24"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="9" column="35" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="9" bodyend="19"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="26" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="26" bodyend="38"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="21" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="21" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aac56e3500f50ff4820d8069056f6717a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="40" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="40" bodyend="43"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="33" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="33" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="45" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="45" bodyend="48"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="37" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="37" bodyend="39"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -110,7 +110,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="7" bodyend="49"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="5" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="5" bodyend="40"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ac170dc021183a309f21abea019eb6f7f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>Awake</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>OnDestroy</name></member>

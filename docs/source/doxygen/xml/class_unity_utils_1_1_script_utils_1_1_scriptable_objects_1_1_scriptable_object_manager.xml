@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</compoundname>
     <sectiondef kind="public-static-func">
@@ -32,14 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="12" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="12" bodyend="28"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="10" bodyend="23"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="5" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="6" bodyend="29"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="4" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="4" bodyend="24"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</scope><name>GetScriptableObjects&lt; T &gt;</name></member>
     </listofallmembers>

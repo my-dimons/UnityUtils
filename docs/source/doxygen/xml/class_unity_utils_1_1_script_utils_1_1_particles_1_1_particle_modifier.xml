@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Particles::ParticleModifier</compoundname>
     <sectiondef kind="public-static-func">
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="11" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="11" bodyend="15"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="8" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="8" bodyend="11"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a992658b1efb0ea7b30b5366a887beafa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="20" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="20" bodyend="24"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="16" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="16" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1acb4ae74b1d7e4eea8ac602a54f355dd5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ParticleSystem</type>
@@ -66,14 +66,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="29" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="29" bodyend="38"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="24" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="24" bodyend="31"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="6" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="7" bodyend="39"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="4" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" bodystart="4" bodyend="32"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1acb4ae74b1d7e4eea8ac602a54f355dd5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleModifier</scope><name>GetParticleSystem</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier_1a155e3f459a42c8f0cb65a89591e9ab25" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleModifier</scope><name>SetParticleSystemColor</name></member>

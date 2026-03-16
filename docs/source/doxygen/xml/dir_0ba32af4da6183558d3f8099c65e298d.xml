@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_0ba32af4da6183558d3f8099c65e298d" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime</compoundname>
     <innerdir refid="dir_37c679ec90a8a2763665e83cfd3c17f4">Packages/UnityUtils/Runtime/Script Utils</innerdir>

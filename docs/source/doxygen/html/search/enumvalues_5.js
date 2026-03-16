@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sfx_0',['Sfx',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['lit_0',['Lit',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html#ac1e73f6579f317f8d1d89ab6ac113e5fae5e556ecf935270736f5e46e73db06e4',1,'UnityUtils::ScriptUtils::Objects::ObjectColorFlash']]]
 ];

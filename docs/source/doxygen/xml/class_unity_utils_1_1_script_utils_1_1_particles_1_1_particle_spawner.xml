@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Particles::ParticleSpawner</compoundname>
     <sectiondef kind="public-static-func">
@@ -81,14 +81,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="18" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="18" bodyend="30"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="15" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="15" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="7" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="8" bodyend="31"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="5" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="5" bodyend="29"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleSpawner</scope><name>SpawnBurstParticle</name></member>
     </listofallmembers>

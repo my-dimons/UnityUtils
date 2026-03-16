@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Cameras::CameraShake</compoundname>
     <sectiondef kind="public-static-attrib">
@@ -9,11 +9,11 @@
         <argsstring></argsstring>
         <name>defaultScreenshakeCurve</name>
         <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.defaultScreenshakeCurve</qualifiedname>
-        <initializer>                                                     = new(
-    new Keyframe(0, 0),
-    new Keyframe(0.2f, 0.1f, -0.05f, -0.05f),
-    new Keyframe(1, 0)
-)</initializer>
+        <initializer>= new(
+        new Keyframe(0, 0),
+        new Keyframe(0.2f, 0.1f, -0.05f, -0.05f),
+        new Keyframe(1, 0)
+    )</initializer>
         <briefdescription>
 <para>Default curve used for screenshake. </para>
         </briefdescription>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="10" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="8" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" static="yes" mutable="no">
         <type>Dictionary&lt; Transform, Vector3 &gt;</type>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="17" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="17" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="15" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" static="yes" mutable="no">
         <type>Dictionary&lt; Transform, IEnumerator &gt;</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="20" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="18" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="31" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="31" bodyend="42"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="29" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="29" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a563dab7904805e9577ddb918c8aec831" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="68" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="68" bodyend="82"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="65" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="65" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1aac3539439afc70408a83173c0ae2e09a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="88" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="88" bodyend="94"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="83" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="83" bodyend="88"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -232,14 +232,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="43" column="36" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="43" bodyend="62"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="42" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="42" bodyend="59"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="7" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="8" bodyend="95"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="6" bodyend="89"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraBasePositions</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraCoroutines</name></member>

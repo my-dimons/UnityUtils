@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Cameras::CameraBillboard</compoundname>
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="10" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" prot="public" static="no" mutable="no">
         <type>Camera</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="15" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="11" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1acc4e01c9d65eff9a22e19b33c913494c" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="18" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="14" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="20" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="20" bodyend="24"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="16" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="16" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1aad9e27e594e19bce281e7adbacef1fd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="26" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="26" bodyend="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="21" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="21" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1a716c232454a0eabf180e19bf82e18bc1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="31" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="31" bodyend="36"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="25" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="25" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -121,7 +121,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="7" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="8" bodyend="37"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="4" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="4" bodyend="30"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraBillboard</scope><name>billboardCamera</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1acc4e01c9d65eff9a22e19b33c913494c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraBillboard</scope><name>extraAngleRotation</name></member>

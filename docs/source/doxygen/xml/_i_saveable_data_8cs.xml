@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="_i_saveable_data_8cs" kind="file" language="C#">
     <compoundname>ISaveableData.cs</compoundname>
     <innerclass refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" prot="public">UnityUtils::ScriptUtils::SaveSystem::ISaveableData</innerclass>
@@ -11,18 +11,13 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref>;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref></highlight></codeline>
-<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="6" refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" kindref="member">SaveData&lt;T&gt;</ref>(T<sp/>data)<sp/>where<sp/>T<sp/>:<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref>;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" kindref="member">LoadData&lt;T&gt;</ref>(T<sp/>data)<sp/>where<sp/>T<sp/>:<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref>;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kindref="compound">UnityUtils.ScriptUtils.SaveSystem</ref><sp/>{</highlight></codeline>
+<codeline lineno="2" refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" kindref="member">SaveData&lt;T&gt;</ref>(T<sp/>data)<sp/>where<sp/>T<sp/>:<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" kindref="member">LoadData&lt;T&gt;</ref>(T<sp/>data)<sp/>where<sp/>T<sp/>:<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs"/>
   </compounddef>

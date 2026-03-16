@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kind="interface" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</compoundname>
     <sectiondef kind="public-func">
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="13" column="9"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="8" column="5"/>
       </memberdef>
       <memberdef kind="function" id="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -77,14 +77,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="20" column="9"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="15" column="5"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="6" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" bodystart="7" bodyend="21"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" line="2" column="20" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/ISaveableData.cs" bodystart="2" bodyend="16"/>
     <listofallmembers>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1abfde40bcc5250e53a4a52fa16024ef18" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>LoadData&lt; T &gt;</name></member>
       <member refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data_1a542b6c1d9a8f9fcb3b1fd19171f131d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::ISaveableData</scope><name>SaveData&lt; T &gt;</name></member>

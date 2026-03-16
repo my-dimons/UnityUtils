@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_facf1fad18e8f724169afb99e1e301eb" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/Objects</compoundname>
     <innerfile refid="_modifier_type_8cs">ModifierType.cs</innerfile>

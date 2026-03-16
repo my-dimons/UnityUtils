@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_objects" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::Objects</compoundname>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" prot="public">UnityUtils::ScriptUtils::Objects::ObjectAnimations</innerclass>
@@ -31,7 +31,23 @@
         <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d" prot="public">
           <name>Divide</name>
           <briefdescription>
-<para>Division modifier. </para>
+<para>Division modifier, divides the input value by the modifier value. If value is 0, it will be ignored to avoid dividing by zero errors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07afa03eb688ad8aa1db593d33dabd89bad" prot="public">
+          <name>Root</name>
+          <briefdescription>
+<para>Root Modifier, gets the root of the input value based on the modifier value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07af5ccb8d51ca38e2f3329955fc0149cd4" prot="public">
+          <name>Exponent</name>
+          <briefdescription>
+<para>Exponent Modifier, raises the input value to the power of the modifier value. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -43,13 +59,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="9" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" bodystart="10" bodyend="17"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="5" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" bodystart="5" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="4" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="1" column="1"/>
   </compounddef>
 </doxygen>

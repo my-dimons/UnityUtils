@@ -3,82 +3,38 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \doxymbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a8bb3511fda789bb85a298deeb9b46ef1}{Flip\+Bool\+After\+Time}} (bool input\+Bool, float time, bool use\+Realtime=false)
-\begin{DoxyCompactList}\small\item\em Flips the input\+Bool after the specified amount of time. \end{DoxyCompactList}\item 
-static void \doxymbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a2031c63209d9ddc61ac870b31ff32c8c}{Destroy\+Unscaledtime}} (Game\+Object obj, float time)
-\begin{DoxyCompactList}\small\item\em Destroys an object after the given amount of time in unscaled time. \end{DoxyCompactList}\item 
-static void \doxymbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_acfbe6edd7b0f3ba8316c4a7954085709}{Call\+Function\+After\+Time}} (Action function, float time, bool use\+Realtime=true)
-\begin{DoxyCompactList}\small\item\em Invokes the specified function after waiting for the given amount of time. \end{DoxyCompactList}\item 
-static void \doxymbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a77ae2f4568d29d59ddce66b3626a2d16}{Change\+Value\+After\+Time$<$ T $>$}} (Action$<$ T $>$ on\+Value\+Change, T updated\+Value, float time, bool use\+Realtime)
-\begin{DoxyCompactList}\small\item\em Invokes the specified action with a new value after a delay, optionally using real time or game time for the delay calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a917eed31e4a4fd1d0466cefb26fee767}{Delay}} (Action action, float time, bool use\+Realtime=true)
+\begin{DoxyCompactList}\small\item\em Invokes the specified action after waiting for the given amount of time. \end{DoxyCompactList}\item 
+static Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff}{Delay\+Frame}} (Action action)
+\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_acfbe6edd7b0f3ba8316c4a7954085709}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!CallFunctionAfterTime@{CallFunctionAfterTime}}
-\index{CallFunctionAfterTime@{CallFunctionAfterTime}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
-\doxysubsubsection{\texorpdfstring{CallFunctionAfterTime()}{CallFunctionAfterTime()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_acfbe6edd7b0f3ba8316c4a7954085709} 
-void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Call\+Function\+After\+Time (\begin{DoxyParamCaption}\item[{Action}]{function}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a917eed31e4a4fd1d0466cefb26fee767}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!Delay@{Delay}}
+\index{Delay@{Delay}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
+\doxysubsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a917eed31e4a4fd1d0466cefb26fee767} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Delay (\begin{DoxyParamCaption}\item[{Action}]{action}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Invokes the specified function after waiting for the given amount of time. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em function} & The action to execute after the delay has elapsed. Cannot be null.\\
-\hline
-\end{DoxyParams}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a77ae2f4568d29d59ddce66b3626a2d16}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!ChangeValueAfterTime$<$ T $>$@{ChangeValueAfterTime$<$ T $>$}}
-\index{ChangeValueAfterTime$<$ T $>$@{ChangeValueAfterTime$<$ T $>$}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
-\doxysubsubsection{\texorpdfstring{ChangeValueAfterTime$<$ T $>$()}{ChangeValueAfterTime< T >()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a77ae2f4568d29d59ddce66b3626a2d16} 
-void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Change\+Value\+After\+Time$<$ T $>$ (\begin{DoxyParamCaption}\item[{Action$<$ T $>$}]{on\+Value\+Change}{, }\item[{T}]{updated\+Value}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Invokes the specified action with a new value after a delay, optionally using real time or game time for the delay calculation. 
+Invokes the specified action after waiting for the given amount of time. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em on\+Value\+Change} & The action to invoke with the updated value after the specified delay.\\
-\hline
-{\em updated\+Value} & The value to pass to the action when the delay has elapsed.\\
+{\em action} & The action to execute after the delay has elapsed. Cannot be null.\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a2031c63209d9ddc61ac870b31ff32c8c}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!DestroyUnscaledtime@{DestroyUnscaledtime}}
-\index{DestroyUnscaledtime@{DestroyUnscaledtime}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
-\doxysubsubsection{\texorpdfstring{DestroyUnscaledtime()}{DestroyUnscaledtime()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a2031c63209d9ddc61ac870b31ff32c8c} 
-void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Destroy\+Unscaledtime (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!DelayFrame@{DelayFrame}}
+\index{DelayFrame@{DelayFrame}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
+\doxysubsubsection{\texorpdfstring{DelayFrame()}{DelayFrame()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Delay\+Frame (\begin{DoxyParamCaption}\item[{Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Destroys an object after the given amount of time in unscaled time. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a8bb3511fda789bb85a298deeb9b46ef1}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!FlipBoolAfterTime@{FlipBoolAfterTime}}
-\index{FlipBoolAfterTime@{FlipBoolAfterTime}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
-\doxysubsubsection{\texorpdfstring{FlipBoolAfterTime()}{FlipBoolAfterTime()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a8bb3511fda789bb85a298deeb9b46ef1} 
-void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Flip\+Bool\+After\+Time (\begin{DoxyParamCaption}\item[{bool}]{input\+Bool}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Flips the input\+Bool after the specified amount of time. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em input\+Bool} & Bool to flip.\\
-\hline
-{\em time} & Time to wait.\\
-\hline
-{\em use\+Realtime} & true to use unscaled real time for the bool (ignoring time scale)\\
-\hline
-\end{DoxyParams}
-
-
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Packages/\+\+Unity\+Utils/\+\+Runtime/\+\+Script Utils/\+\+Objects/\+\doxymbox{\hyperlink{_object_delays_8cs}{Object\+Delays.\+cs}}\end{DoxyCompactItemize}
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Objects/\mbox{\hyperlink{_object_delays_8cs}{Object\+Delays.\+cs}}\end{DoxyCompactItemize}

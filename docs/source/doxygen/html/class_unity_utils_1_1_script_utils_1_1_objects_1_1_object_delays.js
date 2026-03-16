@@ -1,7 +1,5 @@
 var class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays =
 [
-    [ "CallFunctionAfterTime", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#acfbe6edd7b0f3ba8316c4a7954085709", null ],
-    [ "ChangeValueAfterTime< T >", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a77ae2f4568d29d59ddce66b3626a2d16", null ],
-    [ "DestroyUnscaledtime", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a2031c63209d9ddc61ac870b31ff32c8c", null ],
-    [ "FlipBoolAfterTime", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a8bb3511fda789bb85a298deeb9b46ef1", null ]
+    [ "Delay", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a917eed31e4a4fd1d0466cefb26fee767", null ],
+    [ "DelayFrame", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a0a46ec4bb430a513cb56dda6b8e671ff", null ]
 ];

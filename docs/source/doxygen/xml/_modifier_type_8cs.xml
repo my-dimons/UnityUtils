@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="_modifier_type_8cs" kind="file" language="C#">
     <compoundname>ModifierType.cs</compoundname>
     <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
@@ -10,18 +10,15 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="namespace_unity_utils_1_1_script_utils_1_1_objects" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kindref="compound">UnityUtils.ScriptUtils.Objects</ref></highlight></codeline>
-<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07" kindref="member">ModifierType</ref></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d" kindref="member">Flat</ref>,</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648" kindref="member">Multiply</ref>,</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d" kindref="member">Divide</ref></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1" refid="namespace_unity_utils_1_1_script_utils_1_1_objects" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kindref="compound">UnityUtils.ScriptUtils.Objects</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07" kindref="member">ModifierType</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d" kindref="member">Flat</ref>,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648" kindref="member">Multiply</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d" kindref="member">Divide</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07afa03eb688ad8aa1db593d33dabd89bad" kindref="member">Root</ref>,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07af5ccb8d51ca38e2f3329955fc0149cd4" kindref="member">Exponent</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs"/>
   </compounddef>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.0" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kind="enum"><name>VolumeType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kind="enumvalue"><name>Global</name></member>
@@ -87,26 +87,36 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a82149eff67d25cc96dca85c16be7a9fc" kind="variable"><name>logLoadMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" kind="enum"><name>ColorFlashMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5facfc126be5c3f5c76fb082aa773f24b3d" kind="enumvalue"><name>Unlit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5fae5e556ecf935270736f5e46e73db06e4" kind="enumvalue"><name>Lit</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" kind="variable"><name>logFlash</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a30c5be54746bff0d8a5ceac9f690d751" kind="variable"><name>flashMaterial</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1aa4f631c48875315841a8ee13084596cd" kind="variable"><name>originalMaterial</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" kind="variable"><name>spriteRenderer</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7b66d4817ea097f4cdab9060c7c968f3" kind="variable"><name>originalColor</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" kind="variable"><name>flashRoutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a730e7199608ceab0a95985911ddee866" kind="variable"><name>MATERIAL_PATH</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a37b3256ae1e7d2a83edbcbb41cd8cf47" kind="variable"><name>DEFAULT_FLASH_DURATION</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a81dddb0bd52375dff1232817874a57d7" kind="variable"><name>DEFAULT_FLASH_MATERIAL</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7c2e6d2a3e26938d0cb2eccfea864094" kind="variable"><name>UNLIT_MATERIAL_PATH</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a6b004ec906c53290cf6d1385083c1d64" kind="variable"><name>LIT_MATERIAL_PATH</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a62638592ab0f338a604d2cbd4056c110" kind="variable"><name>unlitFlashMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ae7f8642d81335bc5f4865b742bfc0fce" kind="variable"><name>litFlashMaterial</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32d41790e2ebaa471fba32f69d7bac37" kind="function"><name>Start</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a8cd72420f1e60c79a7b83e7bdf25a527" kind="function"><name>FlashRoutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a12b13abbbf0473fc7109c427bbe86195" kind="function"><name>FlashWhite</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a427a6aa6659ec7d651d4df39d091eaa4" kind="function"><name>FlashRoutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a441c884d75d143e9f4912a981cc91570" kind="function"><name>IsFlashing</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1add8eeee7f183a8d644b048c8a2081916" kind="function"><name>FlashWhite</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a5ec8d01fdc22e7bc1229f684e7c02fdd" kind="function"><name>FlashWhite</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a4d87a4039b5c0944a21308ffd4360e80" kind="function"><name>FlashWhite</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab795a512beae898beda706dbf34d3814" kind="function"><name>FlashColor</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" kind="function"><name>FlashColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a12d757cfb40f6b63785b600905f8758e" kind="function"><name>FlashColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab72e7376e4fbd173036f7c60afd09c35" kind="function"><name>FlashColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1afb07a5c2d8042beeb506323c369afde9" kind="function"><name>GetFlashMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7d3cf51320d13a68888ad697faadfa58" kind="function"><name>GetMaterialInstance</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectDelays</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8bb3511fda789bb85a298deeb9b46ef1" kind="function"><name>FlipBoolAfterTime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a2031c63209d9ddc61ac870b31ff32c8c" kind="function"><name>DestroyUnscaledtime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1acfbe6edd7b0f3ba8316c4a7954085709" kind="function"><name>CallFunctionAfterTime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a77ae2f4568d29d59ddce66b3626a2d16" kind="function"><name>ChangeValueAfterTime&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1afb3d737350e89f9c485de2000247ffad" kind="function"><name>CallFunctionAfterTimeCoroutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8b7c6a4479e236f90de1e3b6419dad65" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a917eed31e4a4fd1d0466cefb26fee767" kind="function"><name>Delay</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a0a46ec4bb430a513cb56dda6b8e671ff" kind="function"><name>DelayFrame</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a03f2fa1e0188438fd52efa1781606a9d" kind="function"><name>DelayCoroutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a7c2ab705e3dc1e73e4d865bed0c318e8" kind="function"><name>DelayFrameCoroutine</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectModifierData-1-g</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifier_data-1-g_1a9746ed7a5f038d59d8c6a9808252f00a" kind="variable"><name>modifierType</name></member>
@@ -365,37 +375,17 @@
   </compound>
   <compound refid="namespace_newtonsoft_1_1_json" kind="namespace"><name>Newtonsoft::Json</name>
   </compound>
-  <compound refid="namespace_newtonsoft_1_1_json_1_1_linq" kind="namespace"><name>Newtonsoft::Json::Linq</name>
-  </compound>
-  <compound refid="namespace_n_unit_1_1_framework" kind="namespace"><name>NUnit::Framework</name>
-  </compound>
-  <compound refid="namespace_plastic_pipe_1_1_plastic_protocol_1_1_messages" kind="namespace"><name>PlasticPipe::PlasticProtocol::Messages</name>
-  </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
   </compound>
   <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
   </compound>
-  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
-  </compound>
   <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
   </compound>
   <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
-  <compound refid="namespace_system_1_1_numerics" kind="namespace"><name>System::Numerics</name>
-  </compound>
-  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
-  </compound>
-  <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
-  </compound>
-  <compound refid="namespace_system_1_1_transactions" kind="namespace"><name>System::Transactions</name>
-  </compound>
-  <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
-  </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
-  </compound>
-  <compound refid="namespace_unity_engine_1_1_assertions_1_1_comparers" kind="namespace"><name>UnityEngine::Assertions::Comparers</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
   </compound>
@@ -418,6 +408,8 @@
     <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d" kind="enumvalue"><name>Flat</name></member>
     <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07ae257376d913f3b53cbb4a9b19d770648" kind="enumvalue"><name>Multiply</name></member>
     <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07a0b914e196182d02615487e9793ecff3d" kind="enumvalue"><name>Divide</name></member>
+    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07afa03eb688ad8aa1db593d33dabd89bad" kind="enumvalue"><name>Root</name></member>
+    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1a0fe45cbfcd159f24e5cedb36675c1e07af5ccb8d51ca38e2f3329955fc0149cd4" kind="enumvalue"><name>Exponent</name></member>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace"><name>UnityUtils::ScriptUtils::Particles</name>
   </compound>
