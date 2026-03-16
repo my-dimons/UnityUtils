@@ -19,7 +19,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     private const float DEFAULT_FLASH_DURATION = 0.1f;
 
     /// The default <see cref="ColorFlashMaterial"/> to use for flashing if no material is specified."/>
-    private const ColorFlashMaterial DEFAULT_FLASH_MATERIAL = ColorFlashMaterial.Lit;
+    private const ColorFlashMaterial DEFAULT_FLASH_MATERIAL = ColorFlashMaterial.Unlit;
 
     private const string UNLIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashUnlit";
     private const string LIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashLit";
