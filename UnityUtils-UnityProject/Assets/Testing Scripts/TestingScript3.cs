@@ -14,7 +14,7 @@ public class TestingScript3 : MonoBehaviour {
 
   private void FlashColors() {
     mat1.GetComponent<ObjectColorFlash>().FlashWhite();
-    mat2.GetComponent<ObjectColorFlash>().FlashColor(flashColor, 0.5f, ObjectColorFlash.ColorFlashMaterial.Unlit);
-    mat3.GetComponent<ObjectColorFlash>().FlashColor(flashColor, ObjectColorFlash.ColorFlashMaterial.Lit);
+    mat2.GetComponent<ObjectColorFlash>().FlashColor(flashColor, 0.5f, ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit));
+    mat3.GetComponent<ObjectColorFlash>().FlashColor(flashColor, ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit));
   }
 }

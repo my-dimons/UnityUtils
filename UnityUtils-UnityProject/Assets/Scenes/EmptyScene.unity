@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  logLoadMaterial: 1
   logFlash: 1
 --- !u!212 &19750658
 SpriteRenderer:
@@ -256,6 +255,7 @@ MonoBehaviour:
   mat1: {fileID: 1450440347}
   mat2: {fileID: 1534395238}
   mat3: {fileID: 19750656}
+  flashColor: {r: 1, g: 0.6509433, b: 0.6509433, a: 1}
 --- !u!4 &270719305
 Transform:
   m_ObjectHideFlags: 0
@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  logLoadMaterial: 1
   logFlash: 1
 --- !u!212 &1450440349
 SpriteRenderer:
@@ -543,7 +542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  logLoadMaterial: 1
   logFlash: 1
 --- !u!212 &1534395240
 SpriteRenderer:
