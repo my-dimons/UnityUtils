@@ -46,21 +46,21 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// <param name="duration">Time to flash white</param>
     /// <param name="flashMaterial">The material to use when flashing the color</param>
     public void FlashWhite(float duration, Material flashMaterial) {
-      FlashColor(Color.white, duration, flashMaterial);
+      FlashColor(Color.white, duration, GetMaterialInstance(flashMaterial));
     }
 
     /// <summary>
     /// Flashes the <see cref="SpriteRenderer"/> with a white color for 0.1s and with a specific material type.
     /// </summary>
     public void FlashWhite(Material flashMaterial) {
-      FlashWhite(DEFAULT_FLASH_DURATION, flashMaterial);
+      FlashWhite(DEFAULT_FLASH_DURATION, GetMaterialInstance(flashMaterial));
     }
 
     /// <summary>
     /// Flashes the <see cref="SpriteRenderer"/> with a white color for 0.1s and with a lit material type.
     /// </summary>
     public void FlashWhite() {
-      FlashWhite(DEFAULT_FLASH_DURATION, GetFlashMaterial(ColorFlashMaterial.Lit));
+      FlashWhite(DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
     }
 
     /// <summary>
@@ -72,11 +72,10 @@ namespace UnityUtils.ScriptUtils.Objects {
     public void FlashColor(Color color, float duration, Material flashMaterial) {
       if (flashRoutine != null) {
         Debug.LogWarning("Unable to start color flash coroutine");
-        //GetComponent<SpriteRenderer>().color = originalColor;
         StopCoroutine(flashRoutine);
       }
 
-      flashRoutine = StartCoroutine(FlashRoutine(color, duration, flashMaterial));
+      flashRoutine = StartCoroutine(FlashRoutine(color, duration, GetMaterialInstance(flashMaterial)));
     }
 
     /// <summary>
@@ -85,7 +84,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// <param name="color">Color to switch to</param>
     /// <param name="duration">Time to switch the color for in seconds</param>
     public void FlashColor(Color color, float duration) {
-      FlashColor(color, duration, GetFlashMaterial(ColorFlashMaterial.Lit));
+      FlashColor(color, duration, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
     }
 
     /// <summary>
@@ -93,7 +92,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// </summary>
     /// <param name="color">Color to switch to</param>
     public void FlashColor(Color color) {
-      FlashColor(color, DEFAULT_FLASH_DURATION, GetFlashMaterial(ColorFlashMaterial.Lit));
+      FlashColor(color, DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
     }
 
     /// <summary>
@@ -101,7 +100,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// </summary>
     /// <param name="color">Color to switch to</param>
     public void FlashColor(Color color, Material flashMaterial) {
-      FlashColor(color, DEFAULT_FLASH_DURATION, flashMaterial);
+      FlashColor(color, DEFAULT_FLASH_DURATION, GetMaterialInstance(flashMaterial));
     }
 
     private IEnumerator FlashRoutine(Color color, float duration, Material mat) {
@@ -133,16 +132,27 @@ namespace UnityUtils.ScriptUtils.Objects {
       unlitFlashMaterial = Resources.Load<Material>(UNLIT_MATERIAL_PATH);
       litFlashMaterial = Resources.Load<Material>(LIT_MATERIAL_PATH);
 
-      if (unlitFlashMaterial != null)
-        unlitFlashMaterial = new Material(unlitFlashMaterial);
-      if (litFlashMaterial != null)
-        litFlashMaterial = new Material(litFlashMaterial);
-
       return flashMaterial switch {
         ColorFlashMaterial.Lit => litFlashMaterial,
         ColorFlashMaterial.Unlit => unlitFlashMaterial,
         _ => litFlashMaterial,
       };
+    }
+
+    /// <summary>
+    /// Creates a new instance of the specified material, or returns null if the input is null.
+    /// </summary>
+    /// <remarks>A warning is logged if the input material is null. The returned material is a separate
+    /// instance and changes to it do not affect the original material.</remarks>
+    /// <param name="material">The material to duplicate</param>
+    /// <returns>A new instance of the specified material, or null if the input material is null.</returns>
+    private static Material GetMaterialInstance(Material material) {
+      if (material != null)
+        return new Material(material);
+      else {
+        Debug.LogWarning("Unable to get material instance");
+        return null;
+      }
     }
   }
 }
