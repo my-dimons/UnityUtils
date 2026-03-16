@@ -6,6 +6,10 @@ ObjectColorFlash
      
 Apply a **ObjectColorFlash** script to an object and call its functions to flash it a certain color for a certain time.
 
+.. warning::
+
+   Do not modify a objects color or material while flashing, as it may interfere with the flashing. 
+
 .. tip::
 
    Use ObjectColorFlash.FlashWhite(float duration) to easily apply damage flashes to objects!
@@ -19,13 +23,21 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
+   	public ObjectColorFlash object;
+   	
    	void Start()
    	{
    	   // Flashes the applied object white for 2 seconds.
-   	   ObjectColorFlash.FlashWhite(2);
+   	   object.FlashWhite(2);
    	   
    	   // Flashes the applied object blue for 2 seconds.
-   	   ObjectColorFlash.FlashColor(Color.blue, 2);
+   	   object.FlashColor(Color.blue, 2);
+   	   
+   	   // Get the prebuilt in Lit material
+   	   Material mat = ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit);
+   	   
+   	   // Check if the object is currently flashing
+   	   bool isFlashing = object.IsFlashing();
    	}
   }
   
