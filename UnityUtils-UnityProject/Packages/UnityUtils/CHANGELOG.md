@@ -7,6 +7,10 @@
 - ObjectColorFlash IsFlashing() function which returns a bool
 - ObjectColorFlash now only sets the changed material color and not both the material and the sprite renderers color
 - ObjectDelay now has a DelayFrame() function that calls an action after a frame
+- New Modifier Types
+	- Root
+	- Exponent
+- Divide modifier value of 0 is now ignored instead of giving an error
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()

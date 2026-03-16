@@ -68,16 +68,23 @@ namespace UnityUtils.ScriptUtils.Objects {
 
         switch (modifier.modifierType) {
           case ModifierType.Flat:
-          finalValue += modifierValue;
-          break;
+            finalValue += modifierValue;
+            break;
           case ModifierType.Multiply:
-          finalValue *= modifierValue;
-          break;
+            finalValue *= modifierValue;
+            break;
           case ModifierType.Divide:
-          if (modifierValue == 0)
-            throw new DivideByZeroException();
-          finalValue /= modifierValue;
-          break;
+            if (modifierValue != 0)
+              finalValue /= modifierValue;
+            else
+              Debug.LogWarning("Attempted to divide by zero in ObjectModifiers.CalculateModifiers. Modifier skipped.");
+            break;
+          case ModifierType.Root:
+            finalValue = Math.Pow(finalValue, 1 / modifierValue);
+            break;
+          case ModifierType.Exponent:
+            finalValue = Math.Pow(finalValue, modifierValue);
+            break;
         }
       }
 
