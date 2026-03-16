@@ -1,4 +1,4 @@
-## v1.3.1
+## v1.3.1 - General Cleanup Before v1.4.0
 
 ### Additions
 - Contributing guide
@@ -18,7 +18,7 @@
 - Removed many ObjectDelay functions, now substituted for ObjectDelay.Delay()
 - Renamed ObjectDelay's main delay function from "CallFunctionAfterTime" -> "Delay"
 
-## v1.3.0
+## v1.3.0 - Save System + Other
 
 ### Additions
 - UIButtonQuitGame
@@ -47,7 +47,7 @@
 - Changed Player Settings project name from "Examples" -> "UnityUtils"
 - Changed docs theme
 
-## v1.2.0
+## v1.2.0 - UI Buttons + Other
 
 ### Additions
 - ObjectDelays.cs
