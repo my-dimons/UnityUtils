@@ -4,19 +4,22 @@ using UnityEngine;
 namespace UnityUtils.ScriptUtils.Objects {
   [RequireComponent(typeof(SpriteRenderer))]
   public class ObjectColorFlash : MonoBehaviour {
+    [Header("Debug Logs")]
+
+    /// If true, will Debug.Log the color and duration when flashing.
+    [SerializeField] private bool logFlash;
+
     /// Specifies the material type used for color flash rendering effects.
     public enum ColorFlashMaterial {
       Unlit,
       Lit
     }
 
-    [Header("Debug Logs")]
-
-    /// If true, will Debug.Log the color and duration when flashing
-    [SerializeField] private bool logFlash;
-
     /// Represents the default duration, in seconds, for a flash.
     private const float DEFAULT_FLASH_DURATION = 0.1f;
+
+    /// The default <see cref="ColorFlashMaterial"/> to use for flashing if no material is specified."/>
+    private const ColorFlashMaterial DEFAULT_FLASH_MATERIAL = ColorFlashMaterial.Lit;
 
     private const string UNLIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashUnlit";
     private const string LIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashLit";
@@ -60,7 +63,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// Flashes the <see cref="SpriteRenderer"/> with a white color for 0.1s and with a lit material type.
     /// </summary>
     public void FlashWhite() {
-      FlashWhite(DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
+      FlashWhite(DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(DEFAULT_FLASH_MATERIAL)));
     }
 
     /// <summary>
@@ -79,24 +82,24 @@ namespace UnityUtils.ScriptUtils.Objects {
     }
 
     /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time. Uses a lit flash material by default.
+    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time. Uses the default flash material.
     /// </summary>
     /// <param name="color">Color to switch to</param>
     /// <param name="duration">Time to switch the color for in seconds</param>
     public void FlashColor(Color color, float duration) {
-      FlashColor(color, duration, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
+      FlashColor(color, duration, GetMaterialInstance(GetFlashMaterial(DEFAULT_FLASH_MATERIAL)));
     }
 
     /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for 0.1s. Uses a lit flash material by default.
+    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for 0.1s. Uses the default flash material.
     /// </summary>
     /// <param name="color">Color to switch to</param>
     public void FlashColor(Color color) {
-      FlashColor(color, DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(ColorFlashMaterial.Lit)));
+      FlashColor(color, DEFAULT_FLASH_DURATION, GetMaterialInstance(GetFlashMaterial(DEFAULT_FLASH_MATERIAL)));
     }
 
     /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for 0.1s. Uses a lit flash material by default.
+    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for 0.1s.
     /// </summary>
     /// <param name="color">Color to switch to</param>
     public void FlashColor(Color color, Material flashMaterial) {
@@ -121,7 +124,6 @@ namespace UnityUtils.ScriptUtils.Objects {
 
       flashRoutine = null;
     }
-
 
     /// <summary>
     /// Retrieves the material associated with the specified prebuilt flash material type.
