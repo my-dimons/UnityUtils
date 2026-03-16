@@ -6,6 +6,7 @@
 - ObjectColorFlash has a static function to get either an unlit or lit material (prebuilt in)
 - ObjectColorFlash IsFlashing() function which returns a bool
 - ObjectColorFlash now only sets the changed material color and not both the material and the sprite renderers color
+- ObjectDelay now has a DelayFrame() function that calls an action after a frame
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()
@@ -14,6 +15,8 @@
 - Renamed the Unity Project from "Unity-Utils" to "UnityUtils-UnityProject"
 - Renamed the GitHub repo from "Unity-Utils" to "UnityUtils"
 - Formatted all scripts to have 2 tab spaces instead of 4
+- Removed many ObjectDelay functions, now substituted for ObjectDelay.Delay()
+- Renamed ObjectDelay's main delay function from "CallFunctionAfterTime" -> "Delay"
 
 ## v1.3.0
 
