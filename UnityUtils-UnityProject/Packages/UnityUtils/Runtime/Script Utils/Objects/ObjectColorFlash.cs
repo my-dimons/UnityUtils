@@ -105,13 +105,10 @@ namespace UnityUtils.ScriptUtils.Objects {
     }
 
     private IEnumerator FlashRoutine(Color color, float duration, Material mat) {
-      Color originalColor = GetComponent<SpriteRenderer>().color;
       Material originalMaterial = spriteRenderer.material;
 
       spriteRenderer.material = mat;
       mat.color = color;
-
-      GetComponent<SpriteRenderer>().color = color;
 
       if (logFlash)
         Debug.Log("Flashing object \n color: " + color + "\n duration: " + duration + "\n material: " + mat);
@@ -122,7 +119,6 @@ namespace UnityUtils.ScriptUtils.Objects {
         Debug.Log("Finished flashing object");
 
       spriteRenderer.material = originalMaterial;
-      GetComponent<SpriteRenderer>().color = originalColor;
 
       flashRoutine = null;
     }

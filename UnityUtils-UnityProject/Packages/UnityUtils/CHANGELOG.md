@@ -5,6 +5,7 @@
 - ObjectColorFlash can now use materials while flashing
 - ObjectColorFlash has a static function to get either an unlit or lit material (prebuilt in)
 - ObjectColorFlash IsFlashing() function which returns a bool
+- ObjectColorFlash now only sets the changed material color and not both the material and the sprite renderers color
 
 ### Fixes
 - Fixed UIObjectToggleObjects Debug.Log()

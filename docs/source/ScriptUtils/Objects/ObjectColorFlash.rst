@@ -4,7 +4,8 @@ ObjectColorFlash
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Objects`
      
-Apply a **ObjectColorFlash** script to an object and call its functions to flash it a certain color for a certain time.
+Apply a **ObjectColorFlash** script to an object and call its functions to flash it a certain color for a certain time. 
+It works by changing the material of the specified object and changing the new materials color, then switching back to the default material after its done.
 
 .. warning::
 
