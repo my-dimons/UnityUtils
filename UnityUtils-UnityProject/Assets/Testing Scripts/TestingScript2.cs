@@ -29,10 +29,10 @@ public class TestingScript2 : MonoBehaviour
 
         modifierTest.AddTemporaryModifier(new ObjectModifierData<float>(ModifierType.Flat, 3), 1);
 
-        ObjectDelays.CallFunctionAfterTime(() => CameraShake.Screenshake(intensity: 5), 3);
-        ObjectDelays.CallFunctionAfterTime(() => CameraShake.Screenshake(intensity: 5), 3.2f);
-        ObjectDelays.CallFunctionAfterTime(() => CameraShake.Screenshake(intensity: 5), 4);
-        ObjectDelays.CallFunctionAfterTime(() => GetComponent<ObjectColorFlash>().FlashColor(Color.blue, 2), 3);
+        ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 3);
+        ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 3.2f);
+        ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 4);
+        ObjectDelays.Delay(() => GetComponent<ObjectColorFlash>().FlashColor(Color.blue, 2), 3);
     }
 
     private void Update()

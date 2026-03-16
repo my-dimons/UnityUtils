@@ -93,7 +93,7 @@ namespace UnityUtils.ScriptUtils.Audio {
         PlayAudioClipOnSource(clip, audioSource, volume, 0f, type, pitch);
 
       float destroyTime = AudioManager.CalculateClipLength(clip.length, audioSource.pitch);
-      ObjectDelays.DestroyUnscaledtime(temporaryGameObject, destroyTime);
+      ObjectDelays.DestroyUnscaledTime(temporaryGameObject, destroyTime);
     }
 
     private static void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.Sfx, float pitch = default) {
