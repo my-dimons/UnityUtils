@@ -1,9 +1,21 @@
+## v1.3.1.1 - Msc Fixes
+
+### Additions
+- ObjectColorFLash.FlashWhite() overload that only takes in duration
+
+### Fixes
+- Fixed Installation guide's git url
+- Fixed v1.3.1 additions changelog (Forgot to add ObjectColorFlash overloads)
+
+### Changes
+
 ## v1.3.1 - General Cleanup Before v1.4.0
 
 ### Additions
 - Contributing guide
 - ObjectColorFlash can now use materials while flashing
 - ObjectColorFlash has a static function to get either an unlit or lit material (prebuilt in)
+- ObjectColorFlash now has many overloaded functions for more usage
 - ObjectColorFlash IsFlashing() function which returns a bool
 - ObjectColorFlash now only sets the changed material color and not both the material and the sprite renderers color
 - ObjectDelay now has a DelayFrame() function that calls an action after a frame
