@@ -15,6 +15,7 @@
 - ObjectColorFlash default parameters can now be edited in the applied script's inspector
 - Removed ObjectColorFlash ColorFlashMaterial Enum (now only uses unlit material)
 - ObjectColorFlash removed all overloads and just made the parameters have a default value
+- Renamed Unity project from "UnityUtils-UnityProject" to "UnityUtils"
 
 
 ## v1.3.1 - General Cleanup Before v1.4.0
