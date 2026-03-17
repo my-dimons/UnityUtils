@@ -1,4 +1,4 @@
-## v1.3.1.1 - Msc Fixes
+## v1.3.2 - Msc Fixes
 
 ### Additions
 - ObjectColorFLash.FlashWhite() overload that only takes in duration
