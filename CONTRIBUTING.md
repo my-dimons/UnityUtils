@@ -9,9 +9,9 @@ To find issues to work on, look at what game version is currently in _progress_ 
 If you want to create a feature request/bug report, create an issue and I may add it to the todo list.
 
 ## Where to find files
-The UnityUtils scripts files can be found in `UnityUtils\UnityUtils-UnityProject\Packages\UnityUtils\Runtime\ScriptUtils` <br>
-Documentation files can be found in `UnityUtils\UnityUtils-UnityProject\docs\source` and most doc files are found in the `ScriptUtils` folder <br>
-You can find the changelog in `UnityUtils\UnityUtils-UnityProject\Packages\UnityUtils\CHANGELOG.md`
+The UnityUtils scripts files can be found in `UnityUtils\UnityUtils\Packages\UnityUtils\Runtime\ScriptUtils` <br>
+Documentation files can be found in `UnityUtils\UnityUtils\docs\source` and most doc files are found in the `ScriptUtils` folder <br>
+You can find the changelog in `UnityUtils\UnityUtils\Packages\UnityUtils\CHANGELOG.md`
 
 ## Docs
 To figure out how to make the documentation, look at other documentation files (Hopefully most things are self explainatory, but this guide will be updated accordingly). <br>
@@ -21,7 +21,7 @@ To generate the Doxygen files (For updating the documentation public members), o
 If doxygen is not installed you will need to install it from: https://www.doxygen.nl/index.html
 
 ## Changing Versions 
-To change the version edit the docs release and version in `UnityUtils\docs\source\conf.py`, and then update the version in `UnityUtils\UnityUtils-UnityProject\Packages\UnityUtils\package.json`
+To change the version edit the docs release and version in `UnityUtils\docs\source\conf.py`, and then update the version in `UnityUtils\UnityUtils\Packages\UnityUtils\package.json`
 
 ## Updating Changelog
 The changelog has a section for each version, each version has an `Additions`, `Fixes`, and `Changes` section
