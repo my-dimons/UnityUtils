@@ -3,42 +3,46 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</compoundname>
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
-    <sectiondef kind="public-type">
-      <memberdef kind="enum" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" prot="public" static="no" strong="yes">
-        <type></type>
-        <name>ColorFlashMaterial</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.ColorFlashMaterial</qualifiedname>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5facfc126be5c3f5c76fb082aa773f24b3d" prot="public">
-          <name>Unlit</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5fae5e556ecf935270736f5e46e73db06e4" prot="public">
-          <name>Lit</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a35e996cebd0f37cbd0df093fb2f2c26a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashDuration</definition>
+        <argsstring></argsstring>
+        <name>defaultFlashDuration</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashDuration</qualifiedname>
+        <initializer>= 0.1f</initializer>
         <briefdescription>
-<para>Specifies the material type used for color flash rendering effects. </para>
+<para>Represents the default duration, in seconds, for a flash. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="13" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="13" bodyend="16"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="10" column="20" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a653d2c53bff18a4b63d6196495c9e0b5" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashColor</definition>
+        <argsstring></argsstring>
+        <name>defaultFlashColor</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashColor</qualifiedname>
+        <initializer>= Color.white</initializer>
+        <briefdescription>
+<para>The default Color that the object will flash to if no color is specified. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="12" column="20" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool UnityUtils.ScriptUtils.Objects.ObjectColorFlash.logFlash</definition>
         <argsstring></argsstring>
         <name>logFlash</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.logFlash</qualifiedname>
+        <initializer>= false</initializer>
         <briefdescription>
 <para>If true, will Debug.Log the color and duration when flashing. </para>
         </briefdescription>
@@ -46,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="16" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" prot="private" static="no" mutable="no">
         <type>SpriteRenderer</type>
@@ -60,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="30" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="30" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="23" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" prot="private" static="no" mutable="no">
         <type>Coroutine</type>
@@ -74,42 +78,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="32" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="32" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="25" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a37b3256ae1e7d2a83edbcbb41cd8cf47" prot="private" static="yes" mutable="no">
-        <type>const float</type>
-        <definition>const float UnityUtils.ScriptUtils.Objects.ObjectColorFlash.DEFAULT_FLASH_DURATION</definition>
-        <argsstring></argsstring>
-        <name>DEFAULT_FLASH_DURATION</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.DEFAULT_FLASH_DURATION</qualifiedname>
-        <initializer>= 0.1f</initializer>
-        <briefdescription>
-<para>Represents the default duration, in seconds, for a flash. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="19" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="19" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a81dddb0bd52375dff1232817874a57d7" prot="private" static="yes" mutable="no">
-        <type>const <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" kindref="member">ColorFlashMaterial</ref></type>
-        <definition>const ColorFlashMaterial UnityUtils.ScriptUtils.Objects.ObjectColorFlash.DEFAULT_FLASH_MATERIAL</definition>
-        <argsstring></argsstring>
-        <name>DEFAULT_FLASH_MATERIAL</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.DEFAULT_FLASH_MATERIAL</qualifiedname>
-        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5facfc126be5c3f5c76fb082aa773f24b3d" kindref="member">ColorFlashMaterial.Unlit</ref></initializer>
-        <briefdescription>
-<para>The default <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" kindref="member">ColorFlashMaterial</ref> to use for flashing if no material is specified."/&gt;. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="22" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="22" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7c2e6d2a3e26938d0cb2eccfea864094" prot="private" static="yes" mutable="no">
         <type>const string</type>
         <definition>const string UnityUtils.ScriptUtils.Objects.ObjectColorFlash.UNLIT_MATERIAL_PATH</definition>
@@ -123,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="24" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="24" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="18" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a6b004ec906c53290cf6d1385083c1d64" prot="private" static="yes" mutable="no">
         <type>const string</type>
@@ -138,35 +110,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="25" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="25" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="19" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a62638592ab0f338a604d2cbd4056c110" prot="private" static="yes" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac4211c8ad2d697957fa2e46552cc4015" prot="private" static="yes" mutable="no">
         <type>Material</type>
-        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.unlitFlashMaterial</definition>
+        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashMaterial</definition>
         <argsstring></argsstring>
-        <name>unlitFlashMaterial</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.unlitFlashMaterial</qualifiedname>
+        <name>defaultFlashMaterial</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashMaterial</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="27" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="27" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ae7f8642d81335bc5f4865b742bfc0fce" prot="private" static="yes" mutable="no">
-        <type>Material</type>
-        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.litFlashMaterial</definition>
-        <argsstring></argsstring>
-        <name>litFlashMaterial</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.litFlashMaterial</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="28" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="28" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="21" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -182,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="34" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="34" bodyend="36"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="27" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="27" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a427a6aa6659ec7d651d4df39d091eaa4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -208,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="109" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="109" bodyend="126"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="63" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="63" bodyend="80"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -228,103 +186,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="42" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="42" bodyend="44"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="37" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="37" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1add8eeee7f183a8d644b048c8a2081916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a9cc6655566be1f4c88d90b2e27ada197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</definition>
-        <argsstring>(float duration, Material flashMaterial)</argsstring>
-        <name>FlashWhite</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</qualifiedname>
-        <param>
-          <type>float</type>
-          <declname>duration</declname>
-        </param>
-        <param>
-          <type>Material</type>
-          <declname>flashMaterial</declname>
-        </param>
-        <briefdescription>
-<para>Flashes the SpriteRenderer with a white color for the specified duration and with a specific material type. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>duration</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time to flash white</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>flashMaterial</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The material to use when flashing the color</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="51" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="51" bodyend="53"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a5ec8d01fdc22e7bc1229f684e7c02fdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</definition>
-        <argsstring>(Material flashMaterial)</argsstring>
-        <name>FlashWhite</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</qualifiedname>
-        <param>
-          <type>Material</type>
-          <declname>flashMaterial</declname>
-        </param>
-        <briefdescription>
-<para>Flashes the SpriteRenderer with a white color for 0.1s and with a specific material type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="58" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="58" bodyend="60"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a4d87a4039b5c0944a21308ffd4360e80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</definition>
-        <argsstring>()</argsstring>
-        <name>FlashWhite</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashWhite</qualifiedname>
-        <briefdescription>
-<para>Flashes the SpriteRenderer with a white color for 0.1s and with a lit material type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="65" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="65" bodyend="67"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab795a512beae898beda706dbf34d3814" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</definition>
-        <argsstring>(Color color, float duration, Material flashMaterial)</argsstring>
-        <name>FlashColor</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</qualifiedname>
+        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash</definition>
+        <argsstring>(Color color=default, float duration=default, Material flashMaterial=default)</argsstring>
+        <name>Flash</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash</qualifiedname>
         <param>
           <type>Color</type>
           <declname>color</declname>
+          <defval>default</defval>
         </param>
         <param>
           <type>float</type>
           <declname>duration</declname>
+          <defval>default</defval>
         </param>
         <param>
           <type>Material</type>
           <declname>flashMaterial</declname>
+          <defval>default</defval>
         </param>
         <briefdescription>
-<para>Flashes a SpriteRenderer to a certain color for a set time. </para>
+<para>Flashes a SpriteRenderer to a certain color for a set time and with a certain material. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -332,7 +218,7 @@
 <parametername>color</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Color to switch to</para>
+<para>Color to switch to. Default is the defaultFlashColor</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -340,7 +226,7 @@
 <parametername>duration</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Time to switch the color for in seconds</para>
+<para>Time to switch the color for in seconds. Default is the defaultFlashDuration</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -348,7 +234,7 @@
 <parametername>flashMaterial</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The material to use when flashing the color</para>
+<para>The material to use when flashing the color. Default is the defaultFlashDuration</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -356,143 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="75" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="75" bodyend="82"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</definition>
-        <argsstring>(Color color, float duration)</argsstring>
-        <name>FlashColor</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</qualifiedname>
-        <param>
-          <type>Color</type>
-          <declname>color</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>duration</declname>
-        </param>
-        <briefdescription>
-<para>Flashes a SpriteRenderer to a certain color for a set time. Uses the default flash material. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>color</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Color to switch to</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>duration</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Time to switch the color for in seconds</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="89" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="89" bodyend="91"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a12d757cfb40f6b63785b600905f8758e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</definition>
-        <argsstring>(Color color)</argsstring>
-        <name>FlashColor</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</qualifiedname>
-        <param>
-          <type>Color</type>
-          <declname>color</declname>
-        </param>
-        <briefdescription>
-<para>Flashes a SpriteRenderer to a certain color for 0.1s. Uses the default flash material. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>color</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Color to switch to</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="97" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="97" bodyend="99"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab72e7376e4fbd173036f7c60afd09c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</definition>
-        <argsstring>(Color color, Material flashMaterial)</argsstring>
-        <name>FlashColor</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.FlashColor</qualifiedname>
-        <param>
-          <type>Color</type>
-          <declname>color</declname>
-        </param>
-        <param>
-          <type>Material</type>
-          <declname>flashMaterial</declname>
-        </param>
-        <briefdescription>
-<para>Flashes a SpriteRenderer to a certain color for 0.1s. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>color</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Color to switch to</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="105" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="105" bodyend="107"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1afb07a5c2d8042beeb506323c369afde9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>Material</type>
-        <definition>static Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.GetFlashMaterial</definition>
-        <argsstring>(ColorFlashMaterial flashMaterial)</argsstring>
-        <name>GetFlashMaterial</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.GetFlashMaterial</qualifiedname>
-        <param>
-          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" kindref="member">ColorFlashMaterial</ref></type>
-          <declname>flashMaterial</declname>
-        </param>
-        <briefdescription>
-<para>Retrieves the material associated with the specified prebuilt flash material type. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>flashMaterial</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The type of flash material to get</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The material corresponding to the specified flash material type. Returns the lit material by default</para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="133" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="133" bodyend="142"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="47" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="47" bodyend="61"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -526,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="151" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="151" bodyend="158"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="89" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="89" bodyend="96"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -555,30 +305,21 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="6" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="6" bodyend="159"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="6" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="6" bodyend="97"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac1e73f6579f317f8d1d89ab6ac113e5f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>ColorFlashMaterial</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a37b3256ae1e7d2a83edbcbb41cd8cf47" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>DEFAULT_FLASH_DURATION</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a81dddb0bd52375dff1232817874a57d7" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>DEFAULT_FLASH_MATERIAL</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab795a512beae898beda706dbf34d3814" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashColor</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashColor</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a12d757cfb40f6b63785b600905f8758e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashColor</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ab72e7376e4fbd173036f7c60afd09c35" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashColor</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a653d2c53bff18a4b63d6196495c9e0b5" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashColor</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a35e996cebd0f37cbd0df093fb2f2c26a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashDuration</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac4211c8ad2d697957fa2e46552cc4015" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashMaterial</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a9cc6655566be1f4c88d90b2e27ada197" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>Flash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a427a6aa6659ec7d651d4df39d091eaa4" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashRoutine</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>flashRoutine</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1add8eeee7f183a8d644b048c8a2081916" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashWhite</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a5ec8d01fdc22e7bc1229f684e7c02fdd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashWhite</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a4d87a4039b5c0944a21308ffd4360e80" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashWhite</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1afb07a5c2d8042beeb506323c369afde9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>GetFlashMaterial</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7d3cf51320d13a68888ad697faadfa58" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>GetMaterialInstance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a441c884d75d143e9f4912a981cc91570" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>IsFlashing</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a6b004ec906c53290cf6d1385083c1d64" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>LIT_MATERIAL_PATH</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ae7f8642d81335bc5f4865b742bfc0fce" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>litFlashMaterial</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>logFlash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>spriteRenderer</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32d41790e2ebaa471fba32f69d7bac37" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>Start</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7c2e6d2a3e26938d0cb2eccfea864094" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>UNLIT_MATERIAL_PATH</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a62638592ab0f338a604d2cbd4056c110" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>unlitFlashMaterial</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

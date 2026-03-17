@@ -16,11 +16,10 @@ var searchData=
   ['clicksfx_13',['clickSfx',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#adc89b9acd4f48169e335c470ea3214b0',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
   ['clicktoggleobjects_14',['clickToggleObjects',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#aef812175219aab8f83291c06aa4b3816',1,'UnityUtils::ScriptUtils::UI::UIButtonToggleObjects']]],
   ['clickvolume_15',['clickVolume',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
-  ['colorflashmaterial_16',['ColorFlashMaterial',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html#ac1e73f6579f317f8d1d89ab6ac113e5f',1,'UnityUtils::ScriptUtils::Objects::ObjectColorFlash']]],
-  ['coroutinehelper_17',['CoroutineHelper',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html',1,'UnityUtils::ScriptUtils']]],
-  ['coroutinehelper_2ecs_18',['CoroutineHelper.cs',['../_coroutine_helper_8cs.html',1,'']]],
-  ['createrootsavedataifnotexisting_19',['CreateRootSaveDataIfNotExisting',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#aadc15994db95278bff0740c64f1d85b8',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
-  ['createsavedata_3c_20t_20_3e_20',['CreateSaveData&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a8022a7df159fcaae1f5515938b8c7e1b',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
-  ['currentplayingtrack_21',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a01739ca739685e352f8d04e24344d187',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['custom_22',['Custom',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['coroutinehelper_16',['CoroutineHelper',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html',1,'UnityUtils::ScriptUtils']]],
+  ['coroutinehelper_2ecs_17',['CoroutineHelper.cs',['../_coroutine_helper_8cs.html',1,'']]],
+  ['createrootsavedataifnotexisting_18',['CreateRootSaveDataIfNotExisting',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#aadc15994db95278bff0740c64f1d85b8',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
+  ['createsavedata_3c_20t_20_3e_19',['CreateSaveData&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a8022a7df159fcaae1f5515938b8c7e1b',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
+  ['currentplayingtrack_20',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a01739ca739685e352f8d04e24344d187',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
+  ['custom_21',['Custom',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

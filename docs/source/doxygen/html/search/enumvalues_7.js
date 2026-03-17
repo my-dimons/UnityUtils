@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['root_0',['Root',['../namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07afa03eb688ad8aa1db593d33dabd89bad',1,'UnityUtils::ScriptUtils::Objects']]]
+  ['sfx_0',['Sfx',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];
