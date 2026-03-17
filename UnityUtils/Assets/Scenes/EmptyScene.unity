@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  defaultFlashDuration: 0.1
-  defaultFlashColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultFlashDuration: 5
+  defaultFlashColor: {r: 0, g: 0.26466632, b: 1, a: 1}
   logFlash: 1
 --- !u!212 &19750658
 SpriteRenderer:

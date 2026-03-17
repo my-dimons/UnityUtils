@@ -1,11 +1,10 @@
 ## v1.3.3 - BUG FIX
 
-### Additions
-- Added more control for the damage flash
-	- Property for fade in/out time
-
 ### Fixes
-- Fixed ObjectColorFlash's material making sprites become 'low poly', now uses a shader graph that properly overrides the sprites color
+- Fixed ObjectColorFlash's material making sprites become 'low poly', now uses a shader graph that properly overrides the sprites color. More functionality is coming in v1.4.0 for damage flashing!
+
+### Changes
+- ObjectColorFlash's Flash() function now returns a coroutine, so it's possible to stop it if needed.
 
 ## v1.3.2 - Msc Fixes
 
