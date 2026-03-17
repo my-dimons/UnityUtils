@@ -25,7 +25,6 @@
 - ObjectColorFlash removed all overloads and just made the parameters have a default value
 - Renamed Unity project from "UnityUtils-UnityProject" to "UnityUtils"
 
-
 ## v1.3.1 - General Cleanup Before v1.4.0
 
 ### Additions
