@@ -6,8 +6,11 @@
 ### Fixes
 - Fixed Installation guide's git url
 - Fixed v1.3.1 additions changelog (Forgot to add ObjectColorFlash overloads)
+- Cleaned up ObjectColorFlash's documentation
 
 ### Changes
+- ObjectColorFlash renamed all FlashColor() and FlashWhite() functions to Flash()
+
 
 ## v1.3.1 - General Cleanup Before v1.4.0
 
