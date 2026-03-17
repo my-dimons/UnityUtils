@@ -8,9 +8,12 @@
 - Add new package with new name to Unity project
 - Fixed v1.3.1 additions changelog (Forgot to add ObjectColorFlash overloads)
 - Cleaned up ObjectColorFlash's documentation
+- Removed unnecessary Material duplications in ObjectColorFlash 
 
 ### Changes
 - ObjectColorFlash renamed all FlashColor() and FlashWhite() functions to Flash()
+- ObjectColorFlash default parameters can now be edited in the applied script's inspector
+- Removed ObjectColorFlash ColorFlashMaterial Enum (now only uses unlit material)
 
 
 ## v1.3.1 - General Cleanup Before v1.4.0
