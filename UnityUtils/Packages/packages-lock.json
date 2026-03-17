@@ -11,7 +11,7 @@
       "hash": "c54f63cb18a22382215b142b63e232f0f86fff58"
     },
     "com.mydimons.unityutils": {
-      "version": "file:UnityUtils",
+      "version": "file:com.mydimons.unityutils",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
