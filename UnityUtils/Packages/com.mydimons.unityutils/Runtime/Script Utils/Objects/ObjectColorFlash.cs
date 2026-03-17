@@ -15,10 +15,9 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// If true, will Debug.Log the color and duration when flashing.
     [SerializeField] private bool logFlash = false;
 
-    private const string UNLIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashUnlit";
-    private const string LIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashLit"; // Currently unused, but just in case its needed later.
+    private const string SPRITE_MATERIAL_PATH = "Materials/ColorFlash/ColorFlash-Unlit-Sprite"; // Currently unused, but just in case its needed later.
 
-    private static Material defaultFlashMaterial;
+    private static Material defaultFlashSpriteMaterial;
 
     private SpriteRenderer spriteRenderer;
 
@@ -27,7 +26,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     void Start() {
       spriteRenderer = GetComponent<SpriteRenderer>();
 
-      defaultFlashMaterial = Resources.Load<Material>(UNLIT_MATERIAL_PATH);
+      defaultFlashSpriteMaterial = Resources.Load<Material>(SPRITE_MATERIAL_PATH);
     }
 
     /// <summary>
@@ -50,7 +49,7 @@ namespace UnityUtils.ScriptUtils.Objects {
       if (duration == default)
         duration = defaultFlashDuration;
       if (flashMaterial == default)
-        flashMaterial = defaultFlashMaterial;
+        flashMaterial = defaultFlashSpriteMaterial;
 
       if (flashRoutine != null) {
         Debug.LogWarning("Unable to start color flash coroutine");
