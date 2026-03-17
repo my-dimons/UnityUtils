@@ -5,6 +5,7 @@
 
 ### Fixes
 - Fixed Installation guide's git url
+- Add new package with new name to Unity project
 - Fixed v1.3.1 additions changelog (Forgot to add ObjectColorFlash overloads)
 - Cleaned up ObjectColorFlash's documentation
 

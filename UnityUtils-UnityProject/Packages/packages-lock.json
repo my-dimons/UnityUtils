@@ -10,6 +10,15 @@
       },
       "hash": "c54f63cb18a22382215b142b63e232f0f86fff58"
     },
+    "com.mydimons.unityutils": {
+      "version": "file:UnityUtils",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.coffee.ui-particle": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "12.0.2",
       "depth": 0,
@@ -178,6 +187,13 @@
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.5",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
