@@ -7,8 +7,8 @@ project = 'Unity Utils'
 copyright = '2025, mydimons'
 author = 'mydimons'
 
-release = '1.3.1'
-version = '1.3.1'
+release = '1.3.1.1'
+version = '1.3.1.1'
 
 # -- General configuration
 
