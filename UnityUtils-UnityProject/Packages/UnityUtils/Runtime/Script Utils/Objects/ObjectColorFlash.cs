@@ -13,7 +13,7 @@ namespace UnityUtils.ScriptUtils.Objects {
 
     [Header("Debug Logs")]
     /// If true, will Debug.Log the color and duration when flashing.
-    [SerializeField] private bool logFlash;
+    [SerializeField] private bool logFlash = false;
 
     private const string UNLIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashUnlit";
     private const string LIT_MATERIAL_PATH = "Materials/ColorFlash/ColorFlashLit"; // Currently unused, but just in case its needed later.
@@ -41,73 +41,23 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// <summary>
     /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time and with a certain material.
     /// </summary>
-    /// <param name="color">Color to switch to</param>
-    /// <param name="duration">Time to switch the color for in seconds</param>
-    /// <param name="flashMaterial">The material to use when flashing the color</param>
-    public void Flash(Color color, float duration, Material flashMaterial) {
+    /// <param name="color">Color to switch to. Default is the <see cref="defaultFlashColor"/></param>
+    /// <param name="duration">Time to switch the color for in seconds. Default is the <see cref="defaultFlashDuration"/></param>
+    /// <param name="flashMaterial">The material to use when flashing the color. Default is the <see cref="defaultFlashDuration"/></param>
+    public void Flash(Color color = default, float duration = default, Material flashMaterial = default) {
+      if (color == default)
+        color = defaultFlashColor;
+      if (duration == default)
+        duration = defaultFlashDuration;
+      if (flashMaterial == default)
+        flashMaterial = defaultFlashMaterial;
+
       if (flashRoutine != null) {
         Debug.LogWarning("Unable to start color flash coroutine");
         StopCoroutine(flashRoutine);
       }
 
       flashRoutine = StartCoroutine(FlashRoutine(color, duration, GetMaterialInstance(flashMaterial)));
-    }
-
-    /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time. Uses the <see cref="defaultFlashMaterial"/>.
-    /// </summary>
-    /// <param name="color">Color to switch to</param>
-    /// <param name="duration">Time to switch the color for in seconds</param>
-    public void Flash(Color color, float duration) {
-      Flash(color, duration, defaultFlashMaterial);
-    }
-
-    /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for the <see cref="defaultFlashDuration"/>
-    /// </summary>
-    /// <param name="color">Color to switch to</param>
-    /// <param name="flashMaterial">The material to use when flashing the color</param>
-    public void Flash(Color color, Material flashMaterial) {
-      Flash(color, defaultFlashDuration, flashMaterial);
-    }
-
-
-    /// <summary>
-    /// Flashes the <see cref="SpriteRenderer"/> with a white color for the specified duration and with a specific material type.
-    /// </summary>
-    /// <param name="duration">Time to flash white</param>
-    /// <param name="flashMaterial">The material to use when flashing the color</param>
-    public void Flash(float duration, Material flashMaterial) {
-      Flash(Color.white, duration, flashMaterial);
-    }
-
-    /// <summary>
-    /// Flashes the <see cref="SpriteRenderer"/> with a white color for 0.1s and with a specific material type.
-    /// </summary>
-    public void Flash(Material flashMaterial) {
-      Flash(Color.white, defaultFlashDuration, flashMaterial);
-    }
-
-    /// <summary>
-    /// Flashes the <see cref="SpriteRenderer"/> with a white color for a set duration and the <see cref="defaultFlashMaterial"/>.
-    /// </summary>
-    public void Flash(float duration) {
-      Flash(Color.white, duration, defaultFlashMaterial);
-    }
-
-    /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/> to a certain color for 0.1s. Uses the default flash material.
-    /// </summary>
-    /// <param name="color">Color to switch to</param>
-    public void Flash(Color color) {
-      Flash(color, defaultFlashDuration, defaultFlashMaterial);
-    }
-
-    /// <summary>
-    /// Flashes the <see cref="SpriteRenderer"/> with a white color for <see cref="defaultFlashDuration"/> and the <see cref="defaultFlashMaterial"/>.
-    /// </summary>
-    public void Flash() {
-      Flash(defaultFlashDuration, defaultFlashMaterial);
     }
 
     private IEnumerator FlashRoutine(Color color, float duration, Material mat) {
