@@ -17,7 +17,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     [Space(10)]
 
     /// The default <see cref="Color"/> that the object will flash to if no color is specified.
-    //[ColorUsage(true, true)]
+    [ColorUsage(true, true)]
     [SerializeField] private Color defaultFlashColor = Color.white;
 
     [Header("Debug Logs")]
@@ -49,6 +49,10 @@ namespace UnityUtils.ScriptUtils.Objects {
       return flashRoutine != null;
     }
 
+    /// <summary>
+    /// Sets the material that is switched back to after a flash is finished.
+    /// </summary>
+    /// <param name="mat">Material to switch <see cref="originalMaterial"/> to</param>
     public void SetOriginalMaterial(Material mat) {
       originalMaterial = mat;
     }

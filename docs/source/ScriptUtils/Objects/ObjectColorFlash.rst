@@ -9,11 +9,7 @@ It works by changing the material of the specified object and changing the new m
 
 .. warning::
 
-   Do not modify a objects color or material while flashing, as it may interfere with the flashing. 
-
-.. tip::
-
-   Use ObjectColorFlash.FlashWhite(float duration) to easily apply damage flashes to objects!
+   Do not modify a objects material while flashing, as it may interfere with the flashing. You can check if an object is flashing by calling IsFlashing().
    
 Example Usage
 -------------
@@ -25,17 +21,18 @@ Example Usage
    public class ExampleScript : MonoBehaviour
    {
    	public ObjectColorFlash object;
+   	public Material otherMat;
    	
    	void Start()
    	{
    	   // Flashes the applied object white for 2 seconds.
-   	   object.FlashWhite(2);
+   	   object.Flash(duration: 2);
    	   
    	   // Flashes the applied object blue for 2 seconds.
-   	   object.FlashColor(Color.blue, 2);
+   	   object.Flash(Color.blue, 2);
    	   
-   	   // Get the prebuilt in Lit material
-   	   Material mat = ObjectColorFlash.GetFlashMaterial(ObjectColorFlash.ColorFlashMaterial.Lit);
+   	   // Set the original material that is switched to after flashing
+   	   object.SetOriginalMaterial(otherMat);
    	   
    	   // Check if the object is currently flashing
    	   bool isFlashing = object.IsFlashing();
