@@ -9,7 +9,7 @@ It works by changing the material of the specified object and changing the new m
 
 .. warning::
 
-   Do not modify a objects material while flashing, as it may interfere with the flashing. You can check if an object is flashing by calling IsFlashing().
+   Do not modify a objects material while flashing, as it will interfere with the flashing. You can check if an object is flashing by calling IsFlashing().
    
 Example Usage
 -------------
@@ -42,7 +42,7 @@ Example Usage
   
 .. warning::
 
-   ObjectColorFlash only currently works with SpriteRenderers, but Image compatibility is coming soon.
+   ObjectColorFlash only currently works with SpriteRenderers, but other compatibility is coming soon.
    
 Functions
 ---------
