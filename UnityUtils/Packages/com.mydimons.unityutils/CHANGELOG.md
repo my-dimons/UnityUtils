@@ -8,6 +8,7 @@
 - ObjectColorFlash now gets its original material on Start() instead of when flashing. This fixes an error where when flashing a ObjectColorFlash that is already flashing it would stay stuck in the flash material
 - Updated ObjectColorFlash's documentation
 - Update documentation input folder from "Packages/UnityUtils" -> "Packages/com.mydimons.unityutils" to fix documentation generation
+- Fix documentation install .git link (Was not properly displaying the link)
 
 ## v1.3.3 - BUG FIX
 
