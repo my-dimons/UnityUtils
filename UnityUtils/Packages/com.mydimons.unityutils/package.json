@@ -1,6 +1,6 @@
 {
   "name": "com.mydimons.unityutils",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "displayName": "UnityUtils",
   "description": "UnityUtils is an Open-Source Unity (C#) library that helps with rapid development of games.",
   "unity": "6000.2",
