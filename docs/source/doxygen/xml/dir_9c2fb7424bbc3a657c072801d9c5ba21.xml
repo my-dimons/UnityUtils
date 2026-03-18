@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_9c2fb7424bbc3a657c072801d9c5ba21" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils</compoundname>
+    <innerdir refid="dir_181dcde48b97099e06ccfc6a949024a2">Packages/com.mydimons.unityutils/Runtime</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/"/>
+  </compounddef>
+</doxygen>

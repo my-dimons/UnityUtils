@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="8" column="34" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="8" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="8" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" static="yes" mutable="no">
         <type>Dictionary&lt; Transform, Vector3 &gt;</type>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="15" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="15" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" static="yes" mutable="no">
         <type>Dictionary&lt; Transform, IEnumerator &gt;</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="18" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="18" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="29" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="29" bodyend="41"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="29" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="29" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a563dab7904805e9577ddb918c8aec831" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="65" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="65" bodyend="77"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="65" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="65" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1aac3539439afc70408a83173c0ae2e09a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="83" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="83" bodyend="88"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="83" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="83" bodyend="88"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -232,14 +232,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="42" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="42" bodyend="59"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="42" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="42" bodyend="59"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="6" bodyend="89"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" line="6" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="6" bodyend="89"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a6804bc3c5756f17ccfd18a8f8fdb3c4e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraBasePositions</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a71483b07ee237f0382ee4e586b6f3625" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>cameraCoroutines</name></member>

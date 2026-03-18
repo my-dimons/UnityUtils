@@ -11,22 +11,24 @@ Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Color\+
 \item 
 bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a441c884d75d143e9f4912a981cc91570}{Is\+Flashing}} ()
 \begin{DoxyCompactList}\small\item\em Determines whether a flashing operation is currently active. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a9cc6655566be1f4c88d90b2e27ada197}{Flash}} (Color color=default, float duration=default, Material flash\+Material=default)
-\begin{DoxyCompactList}\small\item\em Flashes a Sprite\+Renderer to a certain color for a set time and with a certain material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a628ff2851c54302ba71a3f4e1111db40}{Set\+Original\+Material}} (Material mat)
+\begin{DoxyCompactList}\small\item\em Sets the material that is switched back to after a flash is finished. \end{DoxyCompactList}\item 
+Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a65c272b476d56a02393b5b150d794df1}{Flash}} (Color color=default, float duration=default, Material flash\+Material=default)
+\begin{DoxyCompactList}\small\item\em Flashes a Sprite\+Renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a9cc6655566be1f4c88d90b2e27ada197}\index{UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}!Flash@{Flash}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a65c272b476d56a02393b5b150d794df1}\index{UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}!Flash@{Flash}}
 \index{Flash@{Flash}!UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}}
 \doxysubsubsection{\texorpdfstring{Flash()}{Flash()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a9cc6655566be1f4c88d90b2e27ada197} 
-void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Color\+Flash.\+Flash (\begin{DoxyParamCaption}\item[{Color}]{color}{ = {\ttfamily default}, }\item[{float}]{duration}{ = {\ttfamily default}, }\item[{Material}]{flash\+Material}{ = {\ttfamily default}}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a65c272b476d56a02393b5b150d794df1} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Color\+Flash.\+Flash (\begin{DoxyParamCaption}\item[{Color}]{color}{ = {\ttfamily default}, }\item[{float}]{duration}{ = {\ttfamily default}, }\item[{Material}]{flash\+Material}{ = {\ttfamily default}}\end{DoxyParamCaption})}
 
 
 
-Flashes a Sprite\+Renderer to a certain color for a set time and with a certain material. 
+Flashes a Sprite\+Renderer. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -37,6 +39,9 @@ Flashes a Sprite\+Renderer to a certain color for a set time and with a certain 
 {\em flash\+Material} & The material to use when flashing the color. Default is the default\+Flash\+Duration\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coroutine started by the flash
+\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a441c884d75d143e9f4912a981cc91570}\index{UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}!IsFlashing@{IsFlashing}}
 \index{IsFlashing@{IsFlashing}!UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}}
 \doxysubsubsection{\texorpdfstring{IsFlashing()}{IsFlashing()}}
@@ -50,8 +55,23 @@ Determines whether a flashing operation is currently active.
 \begin{DoxyReturn}{Returns}
 true if the object is flashing; otherwise, false.
 \end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a628ff2851c54302ba71a3f4e1111db40}\index{UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}!SetOriginalMaterial@{SetOriginalMaterial}}
+\index{SetOriginalMaterial@{SetOriginalMaterial}!UnityUtils.ScriptUtils.Objects.ObjectColorFlash@{UnityUtils.ScriptUtils.Objects.ObjectColorFlash}}
+\doxysubsubsection{\texorpdfstring{SetOriginalMaterial()}{SetOriginalMaterial()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_a628ff2851c54302ba71a3f4e1111db40} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Color\+Flash.\+Set\+Original\+Material (\begin{DoxyParamCaption}\item[{Material}]{mat}{}\end{DoxyParamCaption})}
+
+
+
+Sets the material that is switched back to after a flash is finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & Material to switch original\+Material to\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Objects/\mbox{\hyperlink{_object_color_flash_8cs}{Object\+Color\+Flash.\+cs}}\end{DoxyCompactItemize}
+Packages/com.\+mydimons.\+unityutils/\+Runtime/\+Script Utils/\+Objects/\mbox{\hyperlink{_object_color_flash_8cs}{Object\+Color\+Flash.\+cs}}\end{DoxyCompactItemize}

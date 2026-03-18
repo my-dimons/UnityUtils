@@ -14,6 +14,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="5" column="1"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="5" column="1"/>
   </compounddef>
 </doxygen>

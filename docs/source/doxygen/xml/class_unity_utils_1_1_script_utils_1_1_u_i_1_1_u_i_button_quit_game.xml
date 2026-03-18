@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="11" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="11" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a89c291f9246c9a9ffae076a53e459583" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="14" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="14" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad92170ee6ff16206fd7263c9de8c2087" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="17" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="17" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="17" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1add6b0ec7520642c46cae113425a1d32b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="20" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="20" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="22" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="22" bodyend="25"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="22" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="22" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ae65996b682fda47ff212a9f1d82e92b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="27" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="27" bodyend="30"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="27" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3a5a1fb15312aac861682f42f7078662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="32" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="32" bodyend="35"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="32" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="32" bodyend="35"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="37" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="37" bodyend="42"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="37" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="37" bodyend="42"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -196,7 +196,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="7" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="7" bodyend="43"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="7" bodyend="43"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad92170ee6ff16206fd7263c9de8c2087" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>clickQuit</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a89c291f9246c9a9ffae076a53e459583" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>exitQuit</name></member>

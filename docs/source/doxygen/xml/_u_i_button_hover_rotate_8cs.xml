@@ -121,6 +121,6 @@
 <codeline lineno="127"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs"/>
   </compounddef>
 </doxygen>

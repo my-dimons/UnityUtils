@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="12" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="12" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4ddf601a74156e0c3775792aa1f9ece4" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="15" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="15" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1aac66c4bfedf50856ecbdfe872fb380f9" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="18" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="18" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4efb31a0e91f9126130b08ec5dadf472" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="21" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="21" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="21" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="23" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="23" bodyend="25"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="23" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="23" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a79c9823b680448d3c0c7b3f6e555c5db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="27" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="27" bodyend="29"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="27" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="27" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1ada07523b1ea986b43ac4060efbd98bb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="31" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="31" bodyend="33"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="31" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="31" bodyend="33"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="35" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="35" bodyend="43"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="35" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="35" bodyend="43"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -199,7 +199,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="8" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="8" bodyend="44"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSpawnParticles.cs" bodystart="8" bodyend="44"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1aac66c4bfedf50856ecbdfe872fb380f9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</scope><name>clickParticlePrefabs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4ddf601a74156e0c3775792aa1f9ece4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</scope><name>exitParticlePrefabs</name></member>

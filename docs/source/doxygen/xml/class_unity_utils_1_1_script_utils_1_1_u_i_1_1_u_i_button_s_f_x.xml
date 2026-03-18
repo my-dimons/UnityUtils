@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="12" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="12" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ab8317c7209a24bf98f21bdead3fa32ad" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="14" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="14" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" prot="public" static="no" mutable="no">
         <type>AudioClip</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="19" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="19" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="19" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a66204a7a0a5c21f1dff4d2a37d3f1f38" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="21" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="21" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="21" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" prot="public" static="no" mutable="no">
         <type>AudioClip</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="26" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="26" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="29" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="29" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="29" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a134326d73212920ba4bebbaed6b7da80" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="34" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="34" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="34" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a899a8ade8749b3068571cb65622cf49a" prot="public" static="no" mutable="no">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="37" column="35" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="37" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="37" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae89df3943971c8847f19010c49257a02" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="44" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="44" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="44" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="44" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="39" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="39" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="39" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="46" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="46" bodyend="51"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="46" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="46" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="53" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="53" bodyend="61"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="53" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="53" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="63" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="63" bodyend="73"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="63" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="63" bodyend="73"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -283,7 +283,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="8" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="8" bodyend="74"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="8" bodyend="74"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>clickSfx</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>clickVolume</name></member>

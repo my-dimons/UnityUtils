@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="11" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="11" bodyend="14"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="11" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="11" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a0a46ec4bb430a513cb56dda6b8e671ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Coroutine</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="16" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="16" bodyend="19"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="16" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="16" bodyend="19"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="21" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="21" bodyend="24"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="21" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="21" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a7c2ab705e3dc1e73e4d865bed0c318e8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -103,14 +103,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="26" column="32" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="26" bodyend="29"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="26" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="26" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="6" bodyend="30"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="6" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="6" bodyend="30"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a917eed31e4a4fd1d0466cefb26fee767" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>Delay</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a03f2fa1e0188438fd52efa1781606a9d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>DelayCoroutine</name></member>

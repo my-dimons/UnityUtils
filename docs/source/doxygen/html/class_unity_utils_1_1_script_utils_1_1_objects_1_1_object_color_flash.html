@@ -102,18 +102,20 @@ Inheritance diagram for UnityUtils.ScriptUtils.Objects.ObjectColorFlash:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a441c884d75d143e9f4912a981cc91570" id="r_a441c884d75d143e9f4912a981cc91570"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441c884d75d143e9f4912a981cc91570">IsFlashing</a> ()</td></tr>
 <tr class="memdesc:a441c884d75d143e9f4912a981cc91570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a flashing operation is currently active.  <br /></td></tr>
-<tr class="memitem:a9cc6655566be1f4c88d90b2e27ada197" id="r_a9cc6655566be1f4c88d90b2e27ada197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cc6655566be1f4c88d90b2e27ada197">Flash</a> (Color color=default, float duration=default, Material flashMaterial=default)</td></tr>
-<tr class="memdesc:a9cc6655566be1f4c88d90b2e27ada197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flashes a SpriteRenderer to a certain color for a set time and with a certain material.  <br /></td></tr>
+<tr class="memitem:a628ff2851c54302ba71a3f4e1111db40" id="r_a628ff2851c54302ba71a3f4e1111db40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a628ff2851c54302ba71a3f4e1111db40">SetOriginalMaterial</a> (Material mat)</td></tr>
+<tr class="memdesc:a628ff2851c54302ba71a3f4e1111db40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material that is switched back to after a flash is finished.  <br /></td></tr>
+<tr class="memitem:a65c272b476d56a02393b5b150d794df1" id="r_a65c272b476d56a02393b5b150d794df1"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c272b476d56a02393b5b150d794df1">Flash</a> (Color color=default, float duration=default, Material flashMaterial=default)</td></tr>
+<tr class="memdesc:a65c272b476d56a02393b5b150d794df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flashes a SpriteRenderer.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a9cc6655566be1f4c88d90b2e27ada197" name="a9cc6655566be1f4c88d90b2e27ada197"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc6655566be1f4c88d90b2e27ada197">&#9670;&#160;</a></span>Flash()</h2>
+<a id="a65c272b476d56a02393b5b150d794df1" name="a65c272b476d56a02393b5b150d794df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c272b476d56a02393b5b150d794df1">&#9670;&#160;</a></span>Flash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash </td>
+          <td class="memname">Coroutine UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash </td>
           <td>(</td>
           <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>, </td>
         </tr>
@@ -130,7 +132,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flashes a SpriteRenderer to a certain color for a set time and with a certain material. </p>
+<p>Flashes a SpriteRenderer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">color</td><td>Color to switch to. Default is the defaultFlashColor</td></tr>
@@ -139,6 +141,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The coroutine started by the flash</dd></dl>
 
 </div>
 </div>
@@ -162,8 +165,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a628ff2851c54302ba71a3f4e1111db40" name="a628ff2851c54302ba71a3f4e1111db40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628ff2851c54302ba71a3f4e1111db40">&#9670;&#160;</a></span>SetOriginalMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.SetOriginalMaterial </td>
+          <td>(</td>
+          <td class="paramtype">Material</td>          <td class="paramname"><span class="paramname"><em>mat</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the material that is switched back to after a flash is finished. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Material to switch originalMaterial to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Packages/UnityUtils/Runtime/Script Utils/Objects/<a class="el" href="_object_color_flash_8cs.html">ObjectColorFlash.cs</a></li>
+<li>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/<a class="el" href="_object_color_flash_8cs.html">ObjectColorFlash.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

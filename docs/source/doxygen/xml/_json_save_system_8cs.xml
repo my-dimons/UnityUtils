@@ -138,6 +138,6 @@
 <codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs"/>
   </compounddef>
 </doxygen>

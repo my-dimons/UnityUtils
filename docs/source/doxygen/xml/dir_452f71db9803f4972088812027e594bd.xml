@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_452f71db9803f4972088812027e594bd" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera</compoundname>
+    <innerfile refid="_camera_billboard_8cs">CameraBillboard.cs</innerfile>
+    <innerfile refid="_camera_shake_8cs">CameraShake.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/"/>
+  </compounddef>
+</doxygen>

@@ -74,6 +74,6 @@
 <codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs"/>
   </compounddef>
 </doxygen>

@@ -24,7 +24,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// If true, will Debug.Log the color and duration when flashing.
     [SerializeField] private bool logFlash = false;
 
-    private const string SPRITE_MATERIAL_PATH = "Materials/ColorFlash/ColorFlash-Lit-Sprite-MAT"; // Currently unused, but just in case its needed later.
+    private const string SPRITE_MATERIAL_PATH = "Materials/ColorFlash/ColorFlash-Lit-Sprite-MAT";
 
     private static Material defaultFlashSpriteMaterial;
     /// Set on start as the sprite renderer's material. Can be changed by calling <see cref="SetOriginalMaterial(Material)"/>.
@@ -65,6 +65,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     /// <param name="color">Color to switch to. Default is the <see cref="defaultFlashColor"/></param>
     /// <param name="duration">Time to switch the color for in seconds. Default is the <see cref="defaultFlashDuration"/></param>
     /// <param name="flashMaterial">The material to use when flashing the color. Default is the <see cref="defaultFlashDuration"/></param>
+    /// <returns>The coroutine started by the flash</returns>
     public Coroutine Flash(Color color = default, float duration = default, Material flashMaterial = default) {
       if (color == default)
         color = defaultFlashColor;

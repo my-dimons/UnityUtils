@@ -81,14 +81,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="15" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="15" bodyend="28"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="15" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="15" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="5" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="5" bodyend="29"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles/ParticleSpawner.cs" line="5" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles/ParticleSpawner.cs" bodystart="5" bodyend="29"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner_1afe2dd4b725744f9986d1559c98c1eeaa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleSpawner</scope><name>SpawnBurstParticle</name></member>
     </listofallmembers>

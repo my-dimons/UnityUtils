@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="8" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="8" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="8" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="11" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="11" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0be010612d5456d3218bd89cead75f3e" prot="private" static="yes" mutable="no">
         <type>string</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="13" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="13" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="13" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="19" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="19" bodyend="44"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="19" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="19" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1adeb02be1194c87aae409ad59d945068c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="51" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="51" bodyend="60"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="51" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="51" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a8c94fba4c9ef83044b82d9519a64345b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="68" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="68" bodyend="86"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="68" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="68" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6eb6158cba5c53a76ef184b6cc4dd6be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="92" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="92" bodyend="105"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="92" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="92" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a274e9f22b04d7b140aa68789f562d8cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="111" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="111" bodyend="113"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="111" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="111" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a0cc8b7f0ed2293a8168abca71e6bebca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="119" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="119" bodyend="121"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="119" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="119" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a95d2a058b8834f394cb587a2c5076b92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="129" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="129" bodyend="137"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="129" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="129" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a3f94af3fd6f834d5d44c40863edea27f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="144" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="144" bodyend="146"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="144" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="144" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a9847f5f7caf9b3f4942f172bf56ca78d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="154" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="154" bodyend="157"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="154" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="154" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="164" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="164" bodyend="167"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="164" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="164" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -382,14 +382,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="172" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="172" bodyend="176"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="172" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="172" bodyend="176"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="6" bodyend="177"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" line="6" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/JsonSaveSystem.cs" bodystart="6" bodyend="177"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>CreateRootSaveDataIfNotExisting</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1a6eb6158cba5c53a76ef184b6cc4dd6be" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem</scope><name>Delete</name></member>

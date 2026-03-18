@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_f10a4a418d4992c5b9be90e84934bedd" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System</compoundname>
+    <innerdir refid="dir_3efc2c3d39c97d105de5aff9d00fb1aa">Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data</innerdir>
+    <innerfile refid="_json_save_system_8cs">JsonSaveSystem.cs</innerfile>
+    <innerfile refid="_save_system_manager_8cs">SaveSystemManager.cs</innerfile>
+    <innerfile refid="_save_system_utils_8cs">SaveSystemUtils.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/"/>
+  </compounddef>
+</doxygen>

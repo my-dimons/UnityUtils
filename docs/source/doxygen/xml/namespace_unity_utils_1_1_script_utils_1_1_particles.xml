@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="3" column="1"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles/ParticleModifier.cs" line="3" column="1"/>
   </compounddef>
 </doxygen>

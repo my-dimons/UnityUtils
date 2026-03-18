@@ -59,13 +59,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="5" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" bodystart="5" bodyend="16"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ModifierType.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ModifierType.cs" bodystart="5" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ModifierType.cs" line="1" column="1"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ModifierType.cs" line="1" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_4bf5c5ffc2a0732a67ca014148862437" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects</compoundname>
+    <innerfile refid="_modifier_type_8cs">ModifierType.cs</innerfile>
+    <innerfile refid="_object_animations_8cs">ObjectAnimations.cs</innerfile>
+    <innerfile refid="_object_color_flash_8cs">ObjectColorFlash.cs</innerfile>
+    <innerfile refid="_object_delays_8cs">ObjectDelays.cs</innerfile>
+    <innerfile refid="_object_modifier_data_8cs">ObjectModifierData.cs</innerfile>
+    <innerfile refid="_object_modifiers_8cs">ObjectModifiers.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/"/>
+  </compounddef>
+</doxygen>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="10" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="10" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="16" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="16" bodyend="33"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="16" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="16" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1471f8bb409c5171dd856c1527253d43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="39" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="39" bodyend="53"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="39" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="39" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ab9e4621a5437b9315028446af063ee8b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="59" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="59" bodyend="61"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="59" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="59" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a44ea94ab7d0fa6d624b639dc227be510" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>List&lt; <ref refid="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data" kindref="compound">ISaveableData</ref> &gt;</type>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="67" column="24"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="67" column="24"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a9d94ff58264b0f404cc1c2f54c14c1aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Dictionary&lt; string, <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref> &gt;</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="76" column="30" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="76" bodyend="114"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="76" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="76" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a8022a7df159fcaae1f5515938b8c7e1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref></type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="122" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="122" bodyend="127"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="122" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="122" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a1dc3203e46e8017422f4d5a16265b625" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot" kindref="compound">SaveSlot</ref></type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="134" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="134" bodyend="138"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="134" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="134" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1aac33818c46dcb4e59a559470cade3645" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="140" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="140" bodyend="144"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="140" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="140" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a4f6b03beaeb83add6b30a99605d7f2a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="146" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="146" bodyend="148"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="146" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="146" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ae5118682cd698d11440ea44e3f714259" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="150" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="150" bodyend="157"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="150" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="150" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a21fa91c0204cd0f1f603c0359fd50c74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -293,14 +293,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="159" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="159" bodyend="161"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="159" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="159" bodyend="161"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="8" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="8" bodyend="163"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" line="8" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/SaveSystemManager.cs" bodystart="8" bodyend="163"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1a8022a7df159fcaae1f5515938b8c7e1b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>CreateSaveData&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_1ab9e4621a5437b9315028446af063ee8b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager</scope><name>DeleteSaveSlot</name></member>

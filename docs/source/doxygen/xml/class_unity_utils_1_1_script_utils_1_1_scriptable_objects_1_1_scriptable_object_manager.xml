@@ -32,14 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="10" bodyend="23"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="10" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="10" bodyend="23"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="4" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="4" bodyend="24"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="4" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="4" bodyend="24"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</scope><name>GetScriptableObjects&lt; T &gt;</name></member>
     </listofallmembers>

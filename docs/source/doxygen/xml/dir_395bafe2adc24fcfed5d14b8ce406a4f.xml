@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_395bafe2adc24fcfed5d14b8ce406a4f" kind="dir">
     <compoundname>Packages</compoundname>
-    <innerdir refid="dir_0a98e380e168bd97e581fa585b1ffd96">Packages/UnityUtils</innerdir>
+    <innerdir refid="dir_9c2fb7424bbc3a657c072801d9c5ba21">Packages/com.mydimons.unityutils</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

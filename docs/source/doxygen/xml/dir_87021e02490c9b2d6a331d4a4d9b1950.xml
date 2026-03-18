@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_87021e02490c9b2d6a331d4a4d9b1950" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects</compoundname>
+    <innerfile refid="_scriptable_object_manager_8cs">ScriptableObjectManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects/"/>
+  </compounddef>
+</doxygen>

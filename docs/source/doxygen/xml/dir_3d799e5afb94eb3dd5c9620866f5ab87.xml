@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_3d799e5afb94eb3dd5c9620866f5ab87" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/UI</compoundname>
+    <innerfile refid="_u_i_button_debug_logs_8cs">UIButtonDebugLogs.cs</innerfile>
+    <innerfile refid="_u_i_button_hover_expand_8cs">UIButtonHoverExpand.cs</innerfile>
+    <innerfile refid="_u_i_button_hover_position_8cs">UIButtonHoverPosition.cs</innerfile>
+    <innerfile refid="_u_i_button_hover_rotate_8cs">UIButtonHoverRotate.cs</innerfile>
+    <innerfile refid="_u_i_button_quit_game_8cs">UIButtonQuitGame.cs</innerfile>
+    <innerfile refid="_u_i_button_scene_switcher_8cs">UIButtonSceneSwitcher.cs</innerfile>
+    <innerfile refid="_u_i_button_sfx_8cs">UIButtonSfx.cs</innerfile>
+    <innerfile refid="_u_i_button_spawn_particles_8cs">UIButtonSpawnParticles.cs</innerfile>
+    <innerfile refid="_u_i_button_toggle_objects_8cs">UIButtonToggleObjects.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/"/>
+  </compounddef>
+</doxygen>

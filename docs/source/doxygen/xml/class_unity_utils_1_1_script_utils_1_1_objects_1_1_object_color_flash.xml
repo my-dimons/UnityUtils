@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="10" column="20" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="10" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a653d2c53bff18a4b63d6196495c9e0b5" prot="private" static="no" mutable="no">
         <type>Color</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="12" column="20" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="21" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -50,7 +50,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="16" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="16" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="25" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1aa4f631c48875315841a8ee13084596cd" prot="private" static="no" mutable="no">
+        <type>Material</type>
+        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.originalMaterial</definition>
+        <argsstring></argsstring>
+        <name>originalMaterial</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.originalMaterial</qualifiedname>
+        <briefdescription>
+<para>Set on start as the sprite renderer&apos;s material. Can be changed by calling <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a628ff2851c54302ba71a3f4e1111db40" kindref="member">SetOriginalMaterial(Material)</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="31" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" prot="private" static="no" mutable="no">
         <type>SpriteRenderer</type>
@@ -64,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="23" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="23" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="33" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" prot="private" static="no" mutable="no">
         <type>Coroutine</type>
@@ -78,53 +93,38 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="25" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="25" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="35" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7c2e6d2a3e26938d0cb2eccfea864094" prot="private" static="yes" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac484b80d3cbd690407d6575a6aaffddc" prot="private" static="yes" mutable="no">
         <type>const string</type>
-        <definition>const string UnityUtils.ScriptUtils.Objects.ObjectColorFlash.UNLIT_MATERIAL_PATH</definition>
+        <definition>const string UnityUtils.ScriptUtils.Objects.ObjectColorFlash.SPRITE_MATERIAL_PATH</definition>
         <argsstring></argsstring>
-        <name>UNLIT_MATERIAL_PATH</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.UNLIT_MATERIAL_PATH</qualifiedname>
-        <initializer>= &quot;Materials/ColorFlash/ColorFlashUnlit&quot;</initializer>
+        <name>SPRITE_MATERIAL_PATH</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.SPRITE_MATERIAL_PATH</qualifiedname>
+        <initializer>= &quot;Materials/ColorFlash/ColorFlash-Lit-Sprite-MAT&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="18" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="27" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a6b004ec906c53290cf6d1385083c1d64" prot="private" static="yes" mutable="no">
-        <type>const string</type>
-        <definition>const string UnityUtils.ScriptUtils.Objects.ObjectColorFlash.LIT_MATERIAL_PATH</definition>
-        <argsstring></argsstring>
-        <name>LIT_MATERIAL_PATH</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.LIT_MATERIAL_PATH</qualifiedname>
-        <initializer>= &quot;Materials/ColorFlash/ColorFlashLit&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="19" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="19" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac4211c8ad2d697957fa2e46552cc4015" prot="private" static="yes" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a38bb6a0d50bde0a2c7b6ea0edd24ff3c" prot="private" static="yes" mutable="no">
         <type>Material</type>
-        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashMaterial</definition>
+        <definition>Material UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashSpriteMaterial</definition>
         <argsstring></argsstring>
-        <name>defaultFlashMaterial</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashMaterial</qualifiedname>
+        <name>defaultFlashSpriteMaterial</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.defaultFlashSpriteMaterial</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="21" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="21" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="29" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="27" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="27" bodyend="31"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="37" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="37" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a427a6aa6659ec7d651d4df39d091eaa4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="63" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="63" bodyend="80"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="90" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="90" bodyend="123"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -186,11 +186,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="37" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="37" bodyend="39"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="48" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="48" bodyend="50"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a9cc6655566be1f4c88d90b2e27ada197" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a628ff2851c54302ba71a3f4e1111db40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash</definition>
+        <definition>void UnityUtils.ScriptUtils.Objects.ObjectColorFlash.SetOriginalMaterial</definition>
+        <argsstring>(Material mat)</argsstring>
+        <name>SetOriginalMaterial</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.SetOriginalMaterial</qualifiedname>
+        <param>
+          <type>Material</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Sets the material that is switched back to after a flash is finished. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Material to switch originalMaterial to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="56" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a65c272b476d56a02393b5b150d794df1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Coroutine</type>
+        <definition>Coroutine UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash</definition>
         <argsstring>(Color color=default, float duration=default, Material flashMaterial=default)</argsstring>
         <name>Flash</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectColorFlash.Flash</qualifiedname>
@@ -210,7 +239,7 @@
           <defval>default</defval>
         </param>
         <briefdescription>
-<para>Flashes a SpriteRenderer to a certain color for a set time and with a certain material. </para>
+<para>Flashes a SpriteRenderer. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -238,11 +267,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>The coroutine started by the flash</para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="47" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="47" bodyend="61"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="69" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="69" bodyend="88"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -276,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="89" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="89" bodyend="96"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="132" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="132" bodyend="139"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -305,21 +336,22 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="6" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="6" bodyend="97"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" line="6" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectColorFlash.cs" bodystart="6" bodyend="140"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a653d2c53bff18a4b63d6196495c9e0b5" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashColor</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a35e996cebd0f37cbd0df093fb2f2c26a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashDuration</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac4211c8ad2d697957fa2e46552cc4015" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashMaterial</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a9cc6655566be1f4c88d90b2e27ada197" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>Flash</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a38bb6a0d50bde0a2c7b6ea0edd24ff3c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>defaultFlashSpriteMaterial</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a65c272b476d56a02393b5b150d794df1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>Flash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a427a6aa6659ec7d651d4df39d091eaa4" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>FlashRoutine</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>flashRoutine</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7d3cf51320d13a68888ad697faadfa58" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>GetMaterialInstance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a441c884d75d143e9f4912a981cc91570" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>IsFlashing</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a6b004ec906c53290cf6d1385083c1d64" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>LIT_MATERIAL_PATH</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>logFlash</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1aa4f631c48875315841a8ee13084596cd" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>originalMaterial</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a628ff2851c54302ba71a3f4e1111db40" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>SetOriginalMaterial</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1ac484b80d3cbd690407d6575a6aaffddc" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>SPRITE_MATERIAL_PATH</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>spriteRenderer</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32d41790e2ebaa471fba32f69d7bac37" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>Start</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7c2e6d2a3e26938d0cb2eccfea864094" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</scope><name>UNLIT_MATERIAL_PATH</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

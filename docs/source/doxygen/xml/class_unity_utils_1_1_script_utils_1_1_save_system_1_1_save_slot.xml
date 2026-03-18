@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="7" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="7" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="7" column="28" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a149d51b76b6dc0c3427097a1c95ede42" prot="public" static="no" mutable="no">
         <type>DateTime</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="10" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="10" column="21" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="13" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="13" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="13" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="15" column="12" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="15" bodyend="21"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="15" column="12" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="15" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="27" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="27" bodyend="30"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="27" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a06ced52c56cceeb7646bce6a59ef6711" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="33" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="33" bodyend="37"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="33" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="33" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a7456a2e533b25aa502a73dfcc8cd7a07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="39" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="39" bodyend="43"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="39" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="39" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a21246f590971b82b21cfe8cc634d614a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>List&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data" kindref="compound">SaveData</ref> &gt;</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="45" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="45" bodyend="47"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="45" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="45" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1abcd274c09f226cb8bb3831f03fb25f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="49" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="49" bodyend="52"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="49" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="49" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a9bd3dd5594a0795eaaac02758c207ce4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -176,14 +176,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="54" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="54" bodyend="57"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="54" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="54" bodyend="57"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="5" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="5" bodyend="58"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System/Save Data/SaveSlot.cs" bodystart="5" bodyend="58"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1ab7423c0241115a2fb6b596f920445908" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSlot</scope><name>AddSaveData</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_1a06ced52c56cceeb7646bce6a59ef6711" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::SaveSystem::SaveSlot</scope><name>AddSaveData</name></member>

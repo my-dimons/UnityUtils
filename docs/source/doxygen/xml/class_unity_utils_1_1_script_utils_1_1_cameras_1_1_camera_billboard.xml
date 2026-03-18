@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="6" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="6" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="6" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" prot="public" static="no" mutable="no">
         <type>Camera</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="11" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="11" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1acc4e01c9d65eff9a22e19b33c913494c" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="14" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="14" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="16" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="16" bodyend="19"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="16" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="16" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1aad9e27e594e19bce281e7adbacef1fd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="21" column="10" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="21" bodyend="23"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="21" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="21" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1a716c232454a0eabf180e19bf82e18bc1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="25" column="18" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="25" bodyend="29"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="25" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="25" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -121,7 +121,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="4" column="9" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="4" bodyend="30"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="4" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera/CameraBillboard.cs" bodystart="4" bodyend="30"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraBillboard</scope><name>billboardCamera</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1acc4e01c9d65eff9a22e19b33c913494c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraBillboard</scope><name>extraAngleRotation</name></member>

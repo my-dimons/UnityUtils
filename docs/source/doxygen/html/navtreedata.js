@@ -24,12 +24,37 @@
 */
 var NAVTREE =
 [
-  [ "UnityUtils", "index.html", ]
+  [ "UnityUtils", "index.html", [
+    [ "Packages", "namespaces.html", [
+      [ "Package List", "namespaces.html", "namespaces_dup" ],
+      [ "Package Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Properties", "functions_prop.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"_audio_manager_8cs.html",
+"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a95d2a058b8834f394cb587a2c5076b92",
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
