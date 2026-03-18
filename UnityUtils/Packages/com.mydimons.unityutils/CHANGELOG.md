@@ -1,3 +1,12 @@
+## v1.3.4 - Finally Fixing ObjectColorFlash (I hope)
+
+### Additions
+- ObjectColorFlash SetOriginalMaterial(Material) function
+
+### Fixes
+- ObjectColorFlash's Flash() function now ignores sprite renderers color (properly overriding color)
+- ObjectColorFlash now gets its original material on Start() instead of when flashing. This fixes an error where when flashing a ObjectColorFlash that is already flashing it would stay stuck in the flash material
+
 ## v1.3.3 - BUG FIX
 
 ### Fixes

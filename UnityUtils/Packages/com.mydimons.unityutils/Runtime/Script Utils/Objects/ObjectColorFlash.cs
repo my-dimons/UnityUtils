@@ -17,7 +17,7 @@ namespace UnityUtils.ScriptUtils.Objects {
     [Space(10)]
 
     /// The default <see cref="Color"/> that the object will flash to if no color is specified.
-    [ColorUsage(true, true)]
+    //[ColorUsage(true, true)]
     [SerializeField] private Color defaultFlashColor = Color.white;
 
     [Header("Debug Logs")]
@@ -27,6 +27,8 @@ namespace UnityUtils.ScriptUtils.Objects {
     private const string SPRITE_MATERIAL_PATH = "Materials/ColorFlash/ColorFlash-Lit-Sprite-MAT"; // Currently unused, but just in case its needed later.
 
     private static Material defaultFlashSpriteMaterial;
+    /// Set on start as the sprite renderer's material. Can be changed by calling <see cref="SetOriginalMaterial(Material)"/>.
+    private Material originalMaterial;
 
     private SpriteRenderer spriteRenderer;
 
@@ -34,6 +36,7 @@ namespace UnityUtils.ScriptUtils.Objects {
 
     void Start() {
       spriteRenderer = GetComponent<SpriteRenderer>();
+      originalMaterial = spriteRenderer.material;
 
       defaultFlashSpriteMaterial = Resources.Load<Material>(SPRITE_MATERIAL_PATH);
     }
@@ -46,6 +49,9 @@ namespace UnityUtils.ScriptUtils.Objects {
       return flashRoutine != null;
     }
 
+    public void SetOriginalMaterial(Material mat) {
+      originalMaterial = mat;
+    }
 
     // <param name="fadeTime">The time it takes to fade in and out the flash color. Default is the <see cref="defaultFadeTime"/></param>
     // <param name="flashAmount">How much the color will flash. Default is the <see cref="defaultFlashIntensity"/></param>
@@ -77,7 +83,6 @@ namespace UnityUtils.ScriptUtils.Objects {
     }
 
     private IEnumerator FlashRoutine(Color color, float duration, Material mat) {
-      Material originalMaterial = spriteRenderer.material;
       float currentFlashAmount = 0f;
       float elapsedTime = 0f;
 
